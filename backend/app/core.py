@@ -52,6 +52,9 @@ def load_personas() -> None:
             for i, f in enumerate(p.get("facts", []))
         ]
         p["card_summary"] = ""
+        p["handle"] = p["alias"]  # the made-up handle from the seed data
+        if config.REAL_NAMES:
+            p["alias"] = p["first_name"]  # "alias" is the display name every view and prompt uses
         PERSONAS[p["id"]] = p
     run_id = "startup"
     summaries = {pid: build_summary(p)[0] for pid, p in PERSONAS.items()}
@@ -106,7 +109,8 @@ def build_summary(p: dict[str, Any]) -> tuple[str, list[str]]:
     if p.get("interests"):
         parts.append("Into " + ", ".join(p["interests"]) + ".")
     parts += [f["value"].rstrip(".") + "." for f in facts if f["field"] != "dealbreaker"]
-    redacted, redactions, _, _ = llm.redact(" ".join(parts), [p["first_name"]])
+    known_names = [] if config.REAL_NAMES else [p["first_name"]]
+    redacted, redactions, _, _ = llm.redact(" ".join(parts), known_names)
     return f"{header} {redacted}", redactions
 
 

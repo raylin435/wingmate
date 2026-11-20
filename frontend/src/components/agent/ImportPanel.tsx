@@ -2,12 +2,15 @@
 
 import Link from "next/link";
 import { useRef, useState } from "react";
-import { ArrowRight, Check, ClipboardCopy, FileUp, ListTree, Sparkles, Upload } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check, FileUp, ListTree, Sparkles, Upload } from "lucide-react";
 import { api, errorMessage, type ImportResult } from "@/lib/api";
-import { Button, Card, CardTitle, ErrorBanner, Pill, cx } from "../ui";
+import { Button, Card, CardTitle, CopyButton, ErrorBanner, Pill, cx } from "../ui";
 
-export const IMPORT_PROMPT =
-  "List everything you know about me that would matter for dating: values, interests, lifestyle, deal-breakers, what I'm looking for. Use my own words where you can. Leave out health, finances and work details.";
+/** The full profile prompt lives in its own file; Step 1 only asks the assistant to read it. */
+export const PROMPT_FILE = "/prompt.txt";
+export const PROMPT_PAGE = "/prompt";
+// Public address of the deployed app; assistants like ChatGPT and Claude can't open localhost.
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://wingmate-agent.vercel.app").replace(/\/+$/, "");
 
 type Tab = "paste" | "export";
 
@@ -24,8 +27,10 @@ export function ImportPanel({
   const [busy, setBusy] = useState<null | "paste" | "export" | "sample">(null);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<ImportResult | null>(null);
-  const [copied, setCopied] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
+
+  const promptUrl = `${SITE_URL}${PROMPT_FILE}`;
+  const readInstruction = `Read ${promptUrl} and follow the instructions in it.`;
 
   async function run(kind: "paste" | "export" | "sample", fn: () => Promise<ImportResult>) {
     setBusy(kind);
@@ -41,22 +46,6 @@ export function ImportPanel({
     }
   }
 
-  async function copyPrompt() {
-    try {
-      await navigator.clipboard.writeText(IMPORT_PROMPT);
-    } catch {
-      // Clipboard API blocked (e.g. insecure origin): fall back to a hidden textarea.
-      const ta = document.createElement("textarea");
-      ta.value = IMPORT_PROMPT;
-      document.body.appendChild(ta);
-      ta.select();
-      document.execCommand("copy");
-      ta.remove();
-    }
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1600);
-  }
-
   return (
     <Card>
       <CardTitle
@@ -65,7 +54,7 @@ export function ImportPanel({
         title="Import what your AI already knows about you"
       />
 
-      <div role="tablist" className="mb-5 inline-flex rounded-xl border border-line bg-surface-2 p-1">
+      <div role="tablist" className="mb-5 inline-flex rounded-full border border-line bg-surface-2 p-1">
         {(
           [
             ["paste", "Paste from ChatGPT/Claude"],
@@ -78,8 +67,8 @@ export function ImportPanel({
             aria-selected={tab === key}
             onClick={() => setTab(key)}
             className={cx(
-              "rounded-lg px-3 py-1.5 text-sm font-medium transition",
-              tab === key ? "bg-surface text-fg shadow-sm ring-1 ring-line" : "text-muted hover:text-fg",
+              "rounded-full px-4 py-1.5 text-sm font-medium transition",
+              tab === key ? "bg-white text-fg shadow-sm ring-1 ring-line dark:bg-white/15" : "text-muted hover:text-fg",
             )}
           >
             {label}
@@ -91,29 +80,30 @@ export function ImportPanel({
         <div className="space-y-4">
           <div>
             <p className="mb-2 text-sm text-muted">
-              <span className="font-medium text-fg">Step 1.</span> Ask your assistant this:
+              <span className="font-medium text-fg">Step 1.</span> Ask your assistant to read the prompt file:
             </p>
-            <div className="relative rounded-xl border border-agent/30 bg-agent-soft/60 p-4 pr-14 text-sm leading-relaxed">
-              {IMPORT_PROMPT}
-              <button
-                onClick={copyPrompt}
-                className="absolute top-3 right-3 inline-flex items-center gap-1 rounded-md bg-surface px-2 py-1 text-xs font-medium text-agent ring-1 ring-agent/30 hover:bg-agent-soft"
-                aria-label="Copy prompt"
-              >
-                {copied ? <Check className="size-3.5" /> : <ClipboardCopy className="size-3.5" />}
-                {copied ? "Copied" : "Copy"}
-              </button>
+            <div className="flex flex-wrap items-center gap-3 rounded-2xl rounded-bl-md bg-bubble-me px-4 py-3 text-sm leading-relaxed text-white">
+              <span className="min-w-0 flex-1 break-words">
+                Read <span className="font-semibold underline decoration-white/50 underline-offset-2">{promptUrl}</span> and
+                follow the instructions in it.
+              </span>
+              <CopyButton text={readInstruction} variant="cta" />
             </div>
+            <p className="mt-2 text-xs">
+              <Link href={PROMPT_PAGE} className="inline-flex items-center gap-1 font-medium text-agent hover:underline">
+                See what the prompt asks <ArrowUpRight className="size-3.5" />
+              </Link>
+            </p>
           </div>
           <div>
             <p className="mb-2 text-sm text-muted">
-              <span className="font-medium text-fg">Step 2.</span> Paste its answer here:
+              <span className="font-medium text-fg">Step 2.</span> Paste the portrait it writes here:
             </p>
             <textarea
               value={text}
               onChange={(e) => setText(e.target.value)}
-              rows={6}
-              placeholder="e.g. You've said you love bouldering at Mission Cliffs on weeknights, you'd rather cook at home than go clubbing…"
+              rows={8}
+              placeholder="The Person I Know: …"
               className="w-full resize-y rounded-xl border border-line bg-surface-2 p-3 text-sm placeholder:text-muted/70 focus:border-agent focus:outline-none"
             />
           </div>
@@ -214,8 +204,8 @@ function ImportSummary({ result }: { result: ImportResult }) {
       <div className="flex flex-wrap items-center gap-2 sm:gap-3">
         {steps.map((s, i) => (
           <div key={s.label} className="flex items-center gap-2 sm:gap-3">
-            <div className="min-w-[88px] rounded-lg bg-surface px-3 py-2 ring-1 ring-line">
-              <div className="text-xl font-semibold tabular-nums">{s.value}</div>
+            <div className="min-w-[88px] rounded-xl bg-surface px-3 py-2 ring-1 ring-line">
+              <div className="font-display text-2xl leading-none tabular-nums">{s.value}</div>
               <div className="text-[11px] leading-tight text-muted">{s.label}</div>
             </div>
             {i < steps.length - 1 && <ArrowRight className="size-4 text-muted" />}

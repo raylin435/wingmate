@@ -14,7 +14,7 @@ import {
 } from "@/lib/api";
 import { usePersona } from "@/lib/persona-context";
 import { saveBooking } from "@/lib/storage";
-import { Button, Card, CardTitle, ErrorBanner, Pill, Skeleton, Spinner } from "@/components/ui";
+import { Button, Card, CardTitle, ErrorBanner, Pill, Skeleton, Spinner, PageHeader, Sticker } from "@/components/ui";
 import { CandidateCard } from "@/components/matches/CandidateCard";
 import { MatchBanner, RevealControls, Transcript, VerdictCard, useReveal } from "@/components/matches/PredateView";
 
@@ -149,26 +149,26 @@ export default function MatchesPage() {
 
   return (
     <div className="space-y-8">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-agent">Agent search</p>
-          <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">Matches for {myAlias}</h1>
-          <p className="mt-1 max-w-xl text-sm text-muted">
-            Your agent searches other agents by vector similarity, then reranks by reading their cards. Rank moves show
-            where the second look changed its mind.
-          </p>
-        </div>
-        <div className="flex items-center gap-3">
-          {search && (
-            <Pill tone="neutral" className="font-mono">
-              strategy: {search.strategy}
-            </Pill>
-          )}
-          <Button variant="agent" icon={<Search className="size-4" />} loading={searching} onClick={runSearch}>
-            {search ? "Search again" : "Find matches"}
-          </Button>
-        </div>
-      </div>
+      <PageHeader
+        kicker="Agent search"
+        tone="agent"
+        title={<>matches for {myAlias}</>}
+        action={
+          <div className="flex items-center gap-3">
+            {search && (
+              <Pill tone="neutral" className="glass font-mono">
+                strategy: {search.strategy}
+              </Pill>
+            )}
+            <Button variant="cta" icon={<Search className="size-4" />} loading={searching} onClick={runSearch}>
+              {search ? "Search again" : "Find matches"}
+            </Button>
+          </div>
+        }
+      >
+        Your agent searches other agents by vector similarity, then reranks by reading their cards. Rank moves show
+        where the second look changed its mind.
+      </PageHeader>
 
       {searchError && <ErrorBanner message={searchError} onRetry={runSearch} />}
 
@@ -183,7 +183,7 @@ export default function MatchesPage() {
       {!search && !searching && !searchError && (
         <Card className="py-12 text-center">
           <Sparkles className="mx-auto mb-3 size-8 text-agent" />
-          <p className="font-medium">Ready when you are.</p>
+          <p className="font-display text-3xl">Ready when you are.</p>
           <p className="text-sm text-muted">Hit “Find matches” to let your agent scan the other 29 agents.</p>
         </Card>
       )}
@@ -218,10 +218,10 @@ export default function MatchesPage() {
         <div ref={predateRef} className="scroll-mt-24 space-y-5">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
-              <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-agent">
+              <Sticker tone="agent" className="mb-2">
                 Agent-to-agent pre-date
-              </p>
-              <h2 className="text-xl font-semibold tracking-tight">
+              </Sticker>
+              <h2 className="font-display text-[34px] leading-tight tracking-tight">
                 {myAlias}&apos;s agent <span className="text-muted">×</span> {candidate.alias}&apos;s agent
               </h2>
             </div>
@@ -268,7 +268,7 @@ export default function MatchesPage() {
                   {!accept && (
                     <>
                       <p className="mb-4 text-sm text-muted">
-                        Accepting reveals first names to each other. Nothing is booked until both humans accept.
+                        Nothing is booked until both of you accept.
                       </p>
                       <Button
                         variant="human"
@@ -282,18 +282,18 @@ export default function MatchesPage() {
                   )}
                   {accept && !accept.both_accepted && (
                     <p className="text-sm text-muted">
-                      Your yes is recorded. Waiting for {candidate.alias} to accept. First names stay hidden until then.
+                      Your yes is recorded. Waiting for {candidate.alias} to accept.
                     </p>
                   )}
                   {accept?.both_accepted && (
                     <div className="animate-msg-in space-y-5">
-                      <div className="flex flex-wrap items-center gap-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+                      <div className="flex flex-wrap items-center gap-3 font-display text-4xl tracking-tight sm:text-5xl">
                         <span className="text-human">{myName ?? myAlias}</span>
                         <HeartHandshake className="size-7 text-human" />
                         <span className="text-human">{theirName ?? candidate.alias}</span>
                       </div>
                       <p className="text-sm text-muted">
-                        Names revealed. Your agents will pick a venue that suits you both.
+                        It&apos;s mutual. Your agents will pick a venue that suits you both.
                       </p>
                       <Button
                         variant="human"
