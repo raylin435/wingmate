@@ -78,7 +78,7 @@ export type ImportResult = {
   dropped_untraceable: number;
 };
 
-export type SponsorKey = "sie" | "singlestore" | "cognee" | "statsig" | "amplitude" | "persona";
+export type SponsorKey = "sie" | "singlestore" | "cognee" | "statsig" | "amplitude";
 
 export type StatusResponse = {
   sponsors: Record<SponsorKey, boolean>;
@@ -193,8 +193,7 @@ export const api = {
     request<{ ok: true }>(`/api/personas/${enc(id)}/facts/${enc(factId)}`, { method: "DELETE" }),
 
   publish: (id: string) => request<PublishResponse>(`/api/personas/${enc(id)}/publish`, { method: "POST" }),
-  verify: (id: string, inquiry_id?: string) =>
-    request<VerifyResponse>(`/api/personas/${enc(id)}/verify`, json(inquiry_id ? { inquiry_id } : {})),
+  verify: (id: string) => request<VerifyResponse>(`/api/personas/${enc(id)}/verify`, json({})),
 
   search: (id: string) => request<SearchResponse>(`/api/match/${enc(id)}/search`, { method: "POST" }),
   predate: (id: string, candidate_id: string, run_id?: string) =>

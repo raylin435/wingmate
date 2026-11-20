@@ -39,7 +39,7 @@ type AuditEvent = { id: number; run_id: string; ts: string; step: string; actor:
 
 | Method | Path | Body | Returns |
 |---|---|---|---|
-| GET | `/api/status` | | `{ sponsors: {sie, singlestore, cognee, statsig, amplitude, persona: boolean}, demo_persona: "maya" }` |
+| GET | `/api/status` | | `{ sponsors: {sie, singlestore, cognee, statsig, amplitude: boolean}, demo_persona: "maya" }` |
 | GET | `/api/personas` | | `PersonaSummary[]` |
 | GET | `/api/personas/{id}` | | `Persona` |
 | POST | `/api/personas/{id}/import/paste` | `{ text: string }` | `ImportResult` |
@@ -48,7 +48,7 @@ type AuditEvent = { id: number; run_id: string; ts: string; step: string; actor:
 | PATCH | `/api/personas/{id}/facts/{fact_id}` | `{ approved?, share?, value? }` | `Fact` |
 | DELETE | `/api/personas/{id}/facts/{fact_id}` | | `{ ok: true }` |
 | POST | `/api/personas/{id}/publish` | | `{ card_summary: string, redactions: string[], run_id }` |
-| POST | `/api/personas/{id}/verify` | `{ inquiry_id?: string }` | `{ verified: true }` |
+| POST | `/api/personas/{id}/verify` | | `{ verified: true, method: "simulated" }` |
 | POST | `/api/match/{id}/search` | | `{ run_id, strategy, candidates: Candidate[] }` |
 | POST | `/api/match/{id}/predate` | `{ candidate_id, run_id? }` | `{ run_id, transcript: A2AMessage[], verdicts: Record<agentId, Verdict>, match: boolean, avg_score, threshold }` |
 | POST | `/api/match/{id}/accept` | `{ candidate_id, run_id }` | `{ both_accepted: boolean, revealed: { [agentId]: first_name } }` |

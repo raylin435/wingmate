@@ -48,10 +48,6 @@ class FactPatch(BaseModel):
     value: str | None = None
 
 
-class VerifyBody(BaseModel):
-    inquiry_id: str | None = None
-
-
 class CandidateBody(BaseModel):
     candidate_id: str
     run_id: str | None = None
@@ -61,7 +57,7 @@ class CandidateBody(BaseModel):
 def status():
     return {"sponsors": {"sie": llm.live(), "singlestore": core.DIRECTORY.name == "singlestore",
                          "cognee": integrations.cognee_enabled(), "statsig": integrations._statsig is not None,
-                         "amplitude": integrations._amp is not None, "persona": bool(config.PERSONA_API_KEY)},
+                         "amplitude": integrations._amp is not None},
             "demo_persona": config.DEMO_PERSONA}
 
 
@@ -131,9 +127,9 @@ def publish(pid: str):
 
 
 @app.post("/api/personas/{pid}/verify")
-def verify(pid: str, body: VerifyBody | None = None):
+def verify(pid: str):
     _persona(pid)
-    return core.set_verified(pid, body.inquiry_id if body else None)
+    return core.set_verified(pid)
 
 
 @app.post("/api/match/{pid}/search")

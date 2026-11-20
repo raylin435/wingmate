@@ -1,11 +1,8 @@
-"""Statsig (matching policy + experiment), Amplitude (product + agent events), Persona (identity),
-Cognee (memory graph). Each is optional and degrades to a local default."""
+"""Statsig (matching policy + experiment), Amplitude (product + agent events) and Cognee (memory graph). Each is optional and degrades to a local default."""
 
 import asyncio
 import threading
 from typing import Any
-
-import httpx
 
 from . import config
 
@@ -109,21 +106,6 @@ def shutdown() -> None:
             _statsig.shutdown().wait()
     except Exception:
         pass
-
-
-# ---------------------------------------------------------------- Persona
-def persona_inquiry_passed(inquiry_id: str | None) -> tuple[bool, str]:
-    if not config.PERSONA_API_KEY or not inquiry_id:
-        return True, "sandbox-simulated"
-    try:
-        r = httpx.get(f"https://withpersona.com/api/v1/inquiries/{inquiry_id}",
-                      headers={"Authorization": f"Bearer {config.PERSONA_API_KEY}",
-                               "Persona-Version": "2023-01-05"}, timeout=15)
-        r.raise_for_status()
-        status = r.json()["data"]["attributes"]["status"]
-        return status in ("completed", "approved"), f"persona:{status}"
-    except Exception as exc:
-        return False, f"persona-error:{exc}"
 
 
 # ---------------------------------------------------------------- Cognee

@@ -19,7 +19,7 @@ All people in this repo are fictional. No real dating or chat data is used.
 08 Book the date ◄─ 07 Both humans opt in ◄─ 06 Agent ↔ agent pre-date ◄─ 05 Filter → vector → rerank
    (venue + .ics)      (names revealed)         (SIE chat + memory recall)    (SingleStore + SIE score)
 
-Across every step: Statsig match policy + experiment · Amplitude events · Persona verified badge · audit trail
+Across every step: Statsig match policy + experiment · Amplitude events · verified-only discovery · audit trail
 ```
 
 **Reliable context.** Every fact the agent holds carries the exact words it came from. Facts that
@@ -41,7 +41,9 @@ verdict, deal-breaker check, opt-in and booking, with the model and latency for 
 | **SingleStore** | The agent directory. One SQL query applies hard filters (verified, ages, genders, mutual preferences) and vector similarity together. It also stores the audit trail. |
 | **Statsig** | `match_policy` dynamic config (pool size, rerank cut, turns, min score, model) and the `matching_strategy` experiment (vector-only vs agent pre-date). |
 | **Amplitude** | Product funnel events (`memory_imported` → `match_search_run` → `pre_date_completed` → `match_accepted` → `date_booked`) and an `[Agent] Model Call` event per model call with model and latency. |
-| **Persona** | Identity check. Only verified people's agents can be discovered. |
+
+**Verified-only discovery.** Only verified people's agents appear in search. The identity check is
+simulated in this demo; a production version would plug in an identity provider.
 
 Each integration is optional. Without its key, Wingmate uses a labeled local fallback (`local:*` in the
 audit trail), so the demo always runs.

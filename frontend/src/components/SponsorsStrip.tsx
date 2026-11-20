@@ -11,7 +11,6 @@ const SPONSORS: { key: SponsorKey; label: string }[] = [
   { key: "cognee", label: "Cognee" },
   { key: "statsig", label: "Statsig" },
   { key: "amplitude", label: "Amplitude" },
-  { key: "persona", label: "Persona" },
 ];
 
 export function SponsorsStrip() {

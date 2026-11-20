@@ -132,8 +132,9 @@ def publish(pid: str) -> dict[str, Any]:
     return {"card_summary": summary, "redactions": redactions, "run_id": run_id}
 
 
-def set_verified(pid: str, inquiry_id: str | None) -> dict[str, Any]:
-    ok, how = integrations.persona_inquiry_passed(inquiry_id)
+def set_verified(pid: str) -> dict[str, Any]:
+    """Simulated identity check for the demo. A real deployment would call an identity provider here."""
+    ok, how = True, "simulated"
     run_id = audit.new_run_id()
     audit.log(run_id, "identity_check", f"human:{pid}", None, None, result=how, passed=ok)
     if ok:

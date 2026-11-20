@@ -110,7 +110,7 @@ export default function MyAgentPage() {
               </Pill>
             ) : (
               <Button variant="human" icon={<ShieldCheck className="size-4" />} loading={verifying} onClick={verify}>
-                Verify identity (Persona sandbox)
+                Verify identity (simulated)
               </Button>
             )}
             {verifyError && <p className="max-w-xs text-xs text-danger">{verifyError}</p>}
