@@ -1,0 +1,174 @@
+[
+  {
+    "uuid": "a4da3e4f-9af4-570f-8e64-07b5134b94dc",
+    "name": "Naming a design system",
+    "created_at": "2026-02-25T06:13:20.000000Z",
+    "updated_at": "2026-02-25T06:13:55.000000Z",
+    "chat_messages": [
+      {
+        "uuid": "c071065e-6e8e-5fcf-8be7-86b3e0d88dcd",
+        "sender": "human",
+        "text": "Help me name an internal design system. We build tools for home renovation teams.",
+        "created_at": "2026-02-25T06:13:35.000000Z"
+      },
+      {
+        "uuid": "aaa24be4-755a-5113-9171-e1de2a7e5e25",
+        "sender": "assistant",
+        "text": "Some ideas: Framework, Plumb, Joist, Level, Mortar. Plumb is short and memorable.",
+        "created_at": "2026-02-25T06:13:55.000000Z"
+      }
+    ]
+  },
+  {
+    "uuid": "789f1108-f7b8-5994-ba9e-2d8c4a9396b8",
+    "name": "Dating after a breakup",
+    "created_at": "2026-03-06T06:13:20.000000Z",
+    "updated_at": "2026-03-06T06:14:20.000000Z",
+    "chat_messages": [
+      {
+        "uuid": "0cd2209d-502a-5961-ad6d-3591875a67c9",
+        "sender": "human",
+        "text": "I'm ready to date again but nervous. I want someone curious and outdoorsy who would happily split a plate of dumplings and doesn't smoke.",
+        "created_at": "2026-03-06T06:13:35.000000Z"
+      },
+      {
+        "uuid": "b495ebd0-ecd5-50da-a2c8-d5e1b7e306dc",
+        "sender": "assistant",
+        "text": "That is a clear picture. What does a good first date feel like for you?",
+        "created_at": "2026-03-06T06:13:55.000000Z"
+      },
+      {
+        "uuid": "d622ee87-043a-5f7a-9c37-6779ffb4f7ad",
+        "sender": "human",
+        "text": "Daytime, low pressure, with a walk. And my dog Biscuit can come along if it's outdoors.",
+        "created_at": "2026-03-06T06:14:20.000000Z"
+      }
+    ]
+  },
+  {
+    "uuid": "71198155-6b15-5d72-abec-3b1e16bce794",
+    "name": "Figma plugin idea",
+    "created_at": "2026-03-15T06:13:20.000000Z",
+    "updated_at": "2026-03-15T06:13:55.000000Z",
+    "chat_messages": [
+      {
+        "uuid": "61292f71-117c-55e0-81cb-bbc7a515495b",
+        "sender": "human",
+        "text": "I'm brainstorming a Figma plugin that checks spacing consistency. Thoughts?",
+        "created_at": "2026-03-15T06:13:35.000000Z"
+      },
+      {
+        "uuid": "20896ef9-1f51-516d-b28d-0189ce3ea3cd",
+        "sender": "assistant",
+        "text": "Useful. Start with a lint that flags off-grid spacing and offers a one-click snap.",
+        "created_at": "2026-03-15T06:13:55.000000Z"
+      }
+    ]
+  },
+  {
+    "uuid": "552b9111-3d83-5ea2-a9a8-5746f333da04",
+    "name": "Trail running shoes",
+    "created_at": "2026-03-24T06:13:20.000000Z",
+    "updated_at": "2026-03-24T06:13:55.000000Z",
+    "chat_messages": [
+      {
+        "uuid": "c4dea3c8-75b3-5778-92e5-e8388ffc27b7",
+        "sender": "human",
+        "text": "Compare trail shoes for muddy Marin trails, I run about 20 miles a week.",
+        "created_at": "2026-03-24T06:13:35.000000Z"
+      },
+      {
+        "uuid": "7f6a14a6-1c67-59a5-9ba6-d077734e0778",
+        "sender": "assistant",
+        "text": "Look for aggressive lugs, a rock plate, and a snug heel. Try a few on at a local running store.",
+        "created_at": "2026-03-24T06:13:55.000000Z"
+      }
+    ]
+  },
+  {
+    "uuid": "3f8fc8a6-47d1-5a48-94ae-1af5901ff7f1",
+    "name": "Weekend board game picks",
+    "created_at": "2026-04-02T06:13:20.000000Z",
+    "updated_at": "2026-04-02T06:13:55.000000Z",
+    "chat_messages": [
+      {
+        "uuid": "bdd243d3-adcc-5a8f-8c10-9ee8ad0d345b",
+        "sender": "human",
+        "text": "Recommend three board games for a group that loves Wingspan and Catan.",
+        "created_at": "2026-04-02T06:13:35.000000Z"
+      },
+      {
+        "uuid": "09ed8b36-392f-5033-892d-ee5d47712ec1",
+        "sender": "assistant",
+        "text": "Try Everdell, Terraforming Mars, and Cascadia.",
+        "created_at": "2026-04-02T06:13:55.000000Z"
+      }
+    ]
+  },
+  {
+    "uuid": "0a8bae46-3dab-5a1b-b91a-3bb61ad3c7c3",
+    "name": "Pottery glaze questions",
+    "created_at": "2026-04-11T06:13:20.000000Z",
+    "updated_at": "2026-04-11T06:13:55.000000Z",
+    "chat_messages": [
+      {
+        "uuid": "eab31204-203a-5652-aefd-b13f65e20510",
+        "sender": "human",
+        "text": "I'm taking a beginner pottery class. What's the difference between underglaze and glaze?",
+        "created_at": "2026-04-11T06:13:35.000000Z"
+      },
+      {
+        "uuid": "a32a7ec0-f769-5a64-bc28-9b6e5d5c9e91",
+        "sender": "assistant",
+        "text": "Underglaze is for color and decoration under a clear glaze, while glaze creates the final glassy surface.",
+        "created_at": "2026-04-11T06:13:55.000000Z"
+      }
+    ]
+  },
+  {
+    "uuid": "a09adbe6-ee64-55f7-af4a-437f27d51854",
+    "name": "Budget for a bay area move",
+    "created_at": "2026-04-20T06:13:20.000000Z",
+    "updated_at": "2026-04-20T06:13:55.000000Z",
+    "chat_messages": [
+      {
+        "uuid": "56f33c1f-fa62-5a00-bcf9-77e18c1838e0",
+        "sender": "human",
+        "text": "Estimate monthly costs if I move from the Inner Sunset to a one-bedroom in the Richmond.",
+        "created_at": "2026-04-20T06:13:35.000000Z"
+      },
+      {
+        "uuid": "14e696ac-ecc9-5264-b0dd-8c716d40cfbb",
+        "sender": "assistant",
+        "text": "Rent is similar. Factor in moving costs, deposits, and utilities of about 150 to 200 per month.",
+        "created_at": "2026-04-20T06:13:55.000000Z"
+      }
+    ]
+  },
+  {
+    "uuid": "16b6d7f4-0fc9-5562-b70e-d686f8acf8ec",
+    "name": "Talking about kids on a first date",
+    "created_at": "2026-04-29T06:13:20.000000Z",
+    "updated_at": "2026-04-29T06:14:20.000000Z",
+    "chat_messages": [
+      {
+        "uuid": "6390e1f9-d717-5608-be12-168ad3e215b9",
+        "sender": "human",
+        "text": "How do I bring up kids on a first date when I honestly don't know what I want?",
+        "created_at": "2026-04-29T06:13:35.000000Z"
+      },
+      {
+        "uuid": "1cfcfad4-eb33-532a-b6ea-cac049bc4e3e",
+        "sender": "assistant",
+        "text": "Be honest: I'm open but unsure, and I would like to explore it with the right person.",
+        "created_at": "2026-04-29T06:13:55.000000Z"
+      },
+      {
+        "uuid": "244fc612-be8e-5fa6-b89d-0add8208902a",
+        "sender": "human",
+        "text": "That feels right. I don't want to pretend to be certain.",
+        "created_at": "2026-04-29T06:14:20.000000Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,223 @@
+{
+  "id": "priya",
+  "first_name": "Priya",
+  "alias": "Standup Spectator",
+  "age": 31,
+  "gender": "woman",
+  "seeking": {
+    "genders": [
+      "man"
+    ],
+    "min_age": 29,
+    "max_age": 38
+  },
+  "neighborhood": "Cole Valley",
+  "tagline": "Pediatric dentist with unreasonably dry humor.",
+  "avatar_color": "#F4A261",
+  "attributes": {
+    "smokes": false,
+    "wants_kids": "unsure",
+    "drinks": "socially",
+    "pets": "none",
+    "religion_important": false,
+    "early_bird": false
+  },
+  "dealbreakers": [
+    {
+      "attr": "smokes",
+      "equals": true,
+      "label": "smoking"
+    }
+  ],
+  "interests": [
+    "comedy",
+    "board games",
+    "south indian food",
+    "pickleball"
+  ],
+  "free_slots": [
+    "2026-11-25T18:30",
+    "2026-11-27T19:30",
+    "2026-11-27T13:00"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hey, I'm your Wingmate. Let's start easy: tell me about yourself and what a good week looks like."
+    },
+    {
+      "role": "user",
+      "text": "I'm a pediatric dentist, which means my humor is unreasonably dry. A good week has a comedy show, a board game night, and masala dosa."
+    },
+    {
+      "role": "assistant",
+      "text": "Nice. What do your weekends usually look like?"
+    },
+    {
+      "role": "user",
+      "text": "I'm at a comedy show most Friday nights and board games on Sundays."
+    },
+    {
+      "role": "assistant",
+      "text": "Food is a big signal. What are you always down to eat?"
+    },
+    {
+      "role": "user",
+      "text": "I'd drive across the Bay for a good masala dosa."
+    },
+    {
+      "role": "assistant",
+      "text": "What else do you do to move, make, or unwind?"
+    },
+    {
+      "role": "user",
+      "text": "Pickleball, true crime podcasts, and trying to master my mom's sambar."
+    },
+    {
+      "role": "assistant",
+      "text": "How's work, and does it leave you energy for dating?"
+    },
+    {
+      "role": "user",
+      "text": "Long clinic days but I leave on time. Dating is a priority."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your relationship with drinking?"
+    },
+    {
+      "role": "user",
+      "text": "I drink socially, a cocktail or two with friends."
+    },
+    {
+      "role": "assistant",
+      "text": "Any smoking, vaping or similar I should know about, for you or in a match?"
+    },
+    {
+      "role": "user",
+      "text": "I don't smoke or vape."
+    },
+    {
+      "role": "assistant",
+      "text": "How do you feel about having kids someday?"
+    },
+    {
+      "role": "user",
+      "text": "I'm on the fence about kids, still figuring it out."
+    },
+    {
+      "role": "assistant",
+      "text": "Pets? A dog, a cat, allergies, none?"
+    },
+    {
+      "role": "user",
+      "text": "No pets, but I'd love a cat."
+    },
+    {
+      "role": "assistant",
+      "text": "How important are religion or spirituality to you, and what values matter most?"
+    },
+    {
+      "role": "user",
+      "text": "Religion isn't important to me, though I like Diwali with family."
+    },
+    {
+      "role": "assistant",
+      "text": "Morning person or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I'm a night owl and my best jokes happen after ten."
+    },
+    {
+      "role": "assistant",
+      "text": "What are you hoping to find in a partner?"
+    },
+    {
+      "role": "user",
+      "text": "I want someone funny, kind and secure enough to laugh at themselves."
+    },
+    {
+      "role": "assistant",
+      "text": "Any hard dealbreakers I should screen for?"
+    },
+    {
+      "role": "user",
+      "text": "Smoking is a hard no for me."
+    },
+    {
+      "role": "assistant",
+      "text": "Last one: when are you free for a first date this coming week?"
+    },
+    {
+      "role": "user",
+      "text": "Wednesday evening or Friday after seven work."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "Comedy shows and board games",
+      "quote": "I'm at a comedy show most Friday nights and board games on Sundays",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "South Indian food",
+      "quote": "I'd drive across the Bay for a good masala dosa",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Drinks socially",
+      "quote": "I drink socially, a cocktail or two with friends",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Does not smoke",
+      "quote": "I don't smoke or vape",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Unsure about kids",
+      "quote": "I'm on the fence about kids",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Religion not important",
+      "quote": "Religion isn't important to me",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Night owl",
+      "quote": "I'm a night owl and my best jokes happen after ten",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Wants funny, kind partner",
+      "quote": "I want someone funny, kind and secure enough to laugh at themselves",
+      "share": "public"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "Dealbreaker: smoking",
+      "quote": "Smoking is a hard no for me",
+      "share": "private"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Wednesday evening and Friday evening",
+      "quote": "Wednesday evening or Friday after seven work",
+      "share": "public"
+    }
+  ]
+}

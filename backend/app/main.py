@@ -188,6 +188,15 @@ def get_config(persona_id: str = config.DEMO_PERSONA):
             "statsig_live": integrations._statsig is not None}
 
 
+@app.post("/api/reset")
+def reset():
+    """Reload the seed personas so the demo can be rehearsed from a clean state."""
+    core.PERSONAS.clear()
+    match.RUNS.clear()
+    core.load_personas()
+    return {"ok": True, "personas": len(core.PERSONAS)}
+
+
 @app.post("/api/simulate")
 def simulate():
     return match.simulate()

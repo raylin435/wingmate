@@ -1,0 +1,229 @@
+{
+  "id": "marcus",
+  "first_name": "Marcus",
+  "alias": "Sunday Pitmaster",
+  "age": 34,
+  "gender": "man",
+  "seeking": {
+    "genders": [
+      "woman"
+    ],
+    "min_age": 28,
+    "max_age": 37
+  },
+  "neighborhood": "Bernal Heights",
+  "tagline": "ER nurse, cookout captain, choir-loft alumnus.",
+  "avatar_color": "#6D597A",
+  "attributes": {
+    "smokes": false,
+    "wants_kids": "yes",
+    "drinks": "socially",
+    "pets": "none",
+    "religion_important": true,
+    "early_bird": true
+  },
+  "dealbreakers": [
+    {
+      "attr": "religion_important",
+      "equals": false,
+      "label": "not religious"
+    },
+    {
+      "attr": "wants_kids",
+      "equals": "no",
+      "label": "not wanting kids"
+    }
+  ],
+  "interests": [
+    "bbq",
+    "soccer",
+    "hiking",
+    "soul records",
+    "church"
+  ],
+  "free_slots": [
+    "2026-11-23T18:30",
+    "2026-11-27T18:00",
+    "2026-11-27T12:00"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hey, I'm your Wingmate. Let's start easy: tell me about yourself and what a good week looks like."
+    },
+    {
+      "role": "user",
+      "text": "I'm an ER nurse and a deacon's kid. A good week is long shifts, a big cookout, and a hike to reset."
+    },
+    {
+      "role": "assistant",
+      "text": "Nice. What do your weekends usually look like?"
+    },
+    {
+      "role": "user",
+      "text": "I grill ribs in my backyard most Saturdays, and Sundays I'm at church followed by pickup soccer."
+    },
+    {
+      "role": "assistant",
+      "text": "Food is a big signal. What are you always down to eat?"
+    },
+    {
+      "role": "user",
+      "text": "Mac and cheese, ribs, peach cobbler, I'll eat all of it. I make a mean gumbo."
+    },
+    {
+      "role": "assistant",
+      "text": "What else do you do to move, make, or unwind?"
+    },
+    {
+      "role": "user",
+      "text": "Pickup soccer, hiking Mount Sutro, and digging through old soul records."
+    },
+    {
+      "role": "assistant",
+      "text": "How's work, and does it leave you energy for dating?"
+    },
+    {
+      "role": "user",
+      "text": "Twelve-hour nursing shifts three days a week, so my weeks are lumpy but my days off are all yours."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your relationship with drinking?"
+    },
+    {
+      "role": "user",
+      "text": "I'll have a glass of wine at a wedding and that's about it."
+    },
+    {
+      "role": "assistant",
+      "text": "Any smoking, vaping or similar I should know about, for you or in a match?"
+    },
+    {
+      "role": "user",
+      "text": "I don't smoke, my mom raised me better."
+    },
+    {
+      "role": "assistant",
+      "text": "How do you feel about having kids someday?"
+    },
+    {
+      "role": "user",
+      "text": "I definitely want kids, two or three. That's a big part of my plan."
+    },
+    {
+      "role": "assistant",
+      "text": "Pets? A dog, a cat, allergies, none?"
+    },
+    {
+      "role": "user",
+      "text": "No pets with my shift schedule, but I grew up with a golden retriever."
+    },
+    {
+      "role": "assistant",
+      "text": "How important are religion or spirituality to you, and what values matter most?"
+    },
+    {
+      "role": "user",
+      "text": "My faith is really important to me, and I'd want a partner who respects that or shares it."
+    },
+    {
+      "role": "assistant",
+      "text": "Morning person or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I'm up at five to hit the gym before shifts."
+    },
+    {
+      "role": "assistant",
+      "text": "What are you hoping to find in a partner?"
+    },
+    {
+      "role": "user",
+      "text": "I want a partner who wants a family and a home full of laughter."
+    },
+    {
+      "role": "assistant",
+      "text": "Any hard dealbreakers I should screen for?"
+    },
+    {
+      "role": "user",
+      "text": "I need someone who is not against faith, and who is open to kids."
+    },
+    {
+      "role": "assistant",
+      "text": "Last one: when are you free for a first date this coming week?"
+    },
+    {
+      "role": "user",
+      "text": "I'm off Monday and Friday evenings. Saturday daytime sometimes too."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "BBQ and cookouts",
+      "quote": "I grill ribs in my backyard most Saturdays",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "Southern comfort food",
+      "quote": "Mac and cheese, ribs, peach cobbler, I'll eat all of it",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Drinks socially",
+      "quote": "I'll have a glass of wine at a wedding and that's about it",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Does not smoke",
+      "quote": "I don't smoke, my mom raised me better",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Wants kids",
+      "quote": "I definitely want kids, two or three",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Faith is important",
+      "quote": "My faith is really important to me",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Early bird",
+      "quote": "I'm up at five to hit the gym before shifts",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Wants partner with shared family goals",
+      "quote": "I want a partner who wants a family and a home full of laughter",
+      "share": "public"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "Needs faith-friendly, kid-friendly partner",
+      "quote": "I need someone who is not against faith, and who is open to kids",
+      "share": "private"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Monday and Friday evenings",
+      "quote": "I'm off Monday and Friday evenings",
+      "share": "public"
+    }
+  ]
+}

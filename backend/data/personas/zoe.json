@@ -1,0 +1,223 @@
+{
+  "id": "zoe",
+  "first_name": "Zoe",
+  "alias": "Bay Kayaker",
+  "age": 32,
+  "gender": "woman",
+  "seeking": {
+    "genders": [
+      "man"
+    ],
+    "min_age": 30,
+    "max_age": 38
+  },
+  "neighborhood": "Hayes Valley",
+  "tagline": "Landscape architect who paddles the Bay and hates small talk.",
+  "avatar_color": "#3D405B",
+  "attributes": {
+    "smokes": false,
+    "wants_kids": "no",
+    "drinks": "socially",
+    "pets": "has_cat",
+    "religion_important": false,
+    "early_bird": true
+  },
+  "dealbreakers": [
+    {
+      "attr": "wants_kids",
+      "equals": "yes",
+      "label": "wanting kids"
+    }
+  ],
+  "interests": [
+    "kayaking",
+    "sourdough",
+    "running",
+    "craft beer"
+  ],
+  "free_slots": [
+    "2026-11-21T18:30",
+    "2026-11-24T19:00",
+    "2026-11-27T18:00"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hey, I'm your Wingmate. Let's start easy: tell me about yourself and what a good week looks like."
+    },
+    {
+      "role": "user",
+      "text": "I'm a landscape architect. A good week has a Bay paddle, a loaf of sourdough, and an evening away from a screen."
+    },
+    {
+      "role": "assistant",
+      "text": "Nice. What do your weekends usually look like?"
+    },
+    {
+      "role": "user",
+      "text": "I kayak on the Bay most Saturdays when the wind is mild."
+    },
+    {
+      "role": "assistant",
+      "text": "Food is a big signal. What are you always down to eat?"
+    },
+    {
+      "role": "user",
+      "text": "I bake sourdough every week and I'll trade a loaf for a good IPA."
+    },
+    {
+      "role": "assistant",
+      "text": "What else do you do to move, make, or unwind?"
+    },
+    {
+      "role": "user",
+      "text": "Running, kayaking, and gardening."
+    },
+    {
+      "role": "assistant",
+      "text": "How's work, and does it leave you energy for dating?"
+    },
+    {
+      "role": "user",
+      "text": "Steady hours, I'm free most evenings."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your relationship with drinking?"
+    },
+    {
+      "role": "user",
+      "text": "I'll have a craft beer or two, usually on weekends."
+    },
+    {
+      "role": "assistant",
+      "text": "Any smoking, vaping or similar I should know about, for you or in a match?"
+    },
+    {
+      "role": "user",
+      "text": "I don't smoke."
+    },
+    {
+      "role": "assistant",
+      "text": "How do you feel about having kids someday?"
+    },
+    {
+      "role": "user",
+      "text": "I don't want kids, and I've known that since I was a teenager."
+    },
+    {
+      "role": "assistant",
+      "text": "Pets? A dog, a cat, allergies, none?"
+    },
+    {
+      "role": "user",
+      "text": "I have a cat named Rye."
+    },
+    {
+      "role": "assistant",
+      "text": "How important are religion or spirituality to you, and what values matter most?"
+    },
+    {
+      "role": "user",
+      "text": "Religion isn't important to me."
+    },
+    {
+      "role": "assistant",
+      "text": "Morning person or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I'm a morning person."
+    },
+    {
+      "role": "assistant",
+      "text": "What are you hoping to find in a partner?"
+    },
+    {
+      "role": "user",
+      "text": "I want someone calm and outdoorsy who loves the water."
+    },
+    {
+      "role": "assistant",
+      "text": "Any hard dealbreakers I should screen for?"
+    },
+    {
+      "role": "user",
+      "text": "If someone wants kids it's a dealbreaker."
+    },
+    {
+      "role": "assistant",
+      "text": "Last one: when are you free for a first date this coming week?"
+    },
+    {
+      "role": "user",
+      "text": "Saturday evening, Tuesday evening or Friday after six work."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "Kayaking on the Bay",
+      "quote": "I kayak on the Bay most Saturdays when the wind is mild",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "Sourdough and craft beer",
+      "quote": "I bake sourdough every week and I'll trade a loaf for a good IPA",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Drinks socially",
+      "quote": "I'll have a craft beer or two, usually on weekends",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Does not smoke",
+      "quote": "I don't smoke",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Does not want kids",
+      "quote": "I don't want kids, and I've known that since I was a teenager",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Religion not important",
+      "quote": "Religion isn't important to me",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Early bird",
+      "quote": "I'm a morning person",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Wants calm, outdoorsy partner",
+      "quote": "I want someone calm and outdoorsy who loves the water",
+      "share": "public"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "Dealbreaker: wants kids",
+      "quote": "If someone wants kids it's a dealbreaker",
+      "share": "private"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Saturday evening, Tuesday and Friday evenings",
+      "quote": "Saturday evening, Tuesday evening or Friday after six work",
+      "share": "public"
+    }
+  ]
+}

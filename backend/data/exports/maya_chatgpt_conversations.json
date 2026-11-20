@@ -1,0 +1,3976 @@
+[
+  {
+    "title": "VLOOKUP vs XLOOKUP",
+    "create_time": 1770000000.0,
+    "update_time": 1770000047.0,
+    "mapping": {
+      "root-000": {
+        "id": "root-000",
+        "message": null,
+        "parent": null,
+        "children": [
+          "000-00-f764e388"
+        ]
+      },
+      "000-00-f764e388": {
+        "id": "000-00-f764e388",
+        "message": {
+          "id": "000-00-f764e388",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1770000020.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "What's the difference between VLOOKUP and XLOOKUP in Google Sheets? I keep getting #N/A on my vendor sheet."
+            ]
+          }
+        },
+        "parent": "root-000",
+        "children": [
+          "000-01-faa505c0"
+        ]
+      },
+      "000-01-faa505c0": {
+        "id": "000-01-faa505c0",
+        "message": {
+          "id": "000-01-faa505c0",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1770000047.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "XLOOKUP searches in any direction and returns a column you pick, while VLOOKUP needs the key in the first column. Your #N/A is likely trailing spaces; wrap the key in TRIM()."
+            ]
+          }
+        },
+        "parent": "000-00-f764e388",
+        "children": []
+      }
+    },
+    "current_node": "000-01-faa505c0"
+  },
+  {
+    "title": "Pivot table for survey results",
+    "create_time": 1770267840.0,
+    "update_time": 1770267962.0,
+    "mapping": {
+      "root-001": {
+        "id": "root-001",
+        "message": null,
+        "parent": null,
+        "children": [
+          "001-00-5625f0f2"
+        ]
+      },
+      "001-00-5625f0f2": {
+        "id": "001-00-5625f0f2",
+        "message": {
+          "id": "001-00-5625f0f2",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1770267860.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I have 400 rows of usability survey results. How do I build a pivot table showing average score by task and by participant segment?"
+            ]
+          }
+        },
+        "parent": "root-001",
+        "children": [
+          "001-01-19034858"
+        ]
+      },
+      "001-01-19034858": {
+        "id": "001-01-19034858",
+        "message": {
+          "id": "001-01-19034858",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1770267887.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Insert > Pivot table, put Task in Rows, Segment in Columns, and Score in Values summarized by AVERAGE."
+            ]
+          }
+        },
+        "parent": "001-00-5625f0f2",
+        "children": [
+          "001-02-621e34b6"
+        ]
+      },
+      "001-02-621e34b6": {
+        "id": "001-02-621e34b6",
+        "message": {
+          "id": "001-02-621e34b6",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1770267921.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Can I add a count of responses too?"
+            ]
+          }
+        },
+        "parent": "001-01-19034858",
+        "children": [
+          "001-03-083297ec"
+        ]
+      },
+      "001-03-083297ec": {
+        "id": "001-03-083297ec",
+        "message": {
+          "id": "001-03-083297ec",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1770267962.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Yes, add Score again in Values and set it to COUNTA."
+            ]
+          }
+        },
+        "parent": "001-02-621e34b6",
+        "children": []
+      }
+    },
+    "current_node": "001-03-083297ec"
+  },
+  {
+    "title": "Trail half marathon training plan",
+    "create_time": 1770535680.0,
+    "update_time": 1770535802.0,
+    "mapping": {
+      "root-002": {
+        "id": "root-002",
+        "message": null,
+        "parent": null,
+        "children": [
+          "002-00-30c1773d"
+        ]
+      },
+      "002-00-30c1773d": {
+        "id": "002-00-30c1773d",
+        "message": {
+          "id": "002-00-30c1773d",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1770535700.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I'm training for a trail half marathon in Marin in February. I'm on the trail before 7 most Saturdays with my dog Biscuit. Can you build a 10 week plan?"
+            ]
+          }
+        },
+        "parent": "root-002",
+        "children": [
+          "002-01-155da48d"
+        ]
+      },
+      "002-01-155da48d": {
+        "id": "002-01-155da48d",
+        "message": {
+          "id": "002-01-155da48d",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1770535727.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Happy to. How many miles are you running now and how many days a week?"
+            ]
+          }
+        },
+        "parent": "002-00-30c1773d",
+        "children": [
+          "002-02-02a698f5"
+        ]
+      },
+      "002-02-02a698f5": {
+        "id": "002-02-02a698f5",
+        "message": {
+          "id": "002-02-02a698f5",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1770535761.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "About 20 miles a week over four runs. Saturday is my long run, I like going early because the trails are empty and I'm a morning person anyway."
+            ]
+          }
+        },
+        "parent": "002-01-155da48d",
+        "children": [
+          "002-03-29714e01"
+        ]
+      },
+      "002-03-29714e01": {
+        "id": "002-03-29714e01",
+        "message": {
+          "id": "002-03-29714e01",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1770535802.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Great base. Here is a 10 week plan with a long run building from 9 to 12 miles, one hill session, and a down week every fourth week."
+            ]
+          }
+        },
+        "parent": "002-02-02a698f5",
+        "children": []
+      }
+    },
+    "current_node": "002-03-29714e01"
+  },
+  {
+    "title": "Conditional formatting formula",
+    "create_time": 1770803520.0,
+    "update_time": 1770803567.0,
+    "mapping": {
+      "root-003": {
+        "id": "root-003",
+        "message": null,
+        "parent": null,
+        "children": [
+          "003-00-50d34979"
+        ]
+      },
+      "003-00-50d34979": {
+        "id": "003-00-50d34979",
+        "message": {
+          "id": "003-00-50d34979",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1770803540.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "How do I highlight an entire row in Sheets if column D says 'Blocked'?"
+            ]
+          }
+        },
+        "parent": "root-003",
+        "children": [
+          "003-01-1735e61e"
+        ]
+      },
+      "003-01-1735e61e": {
+        "id": "003-01-1735e61e",
+        "message": {
+          "id": "003-01-1735e61e",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1770803567.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Use a custom formula rule on the range A2:H100: =$D2=\"Blocked\". The dollar sign anchors the column."
+            ]
+          }
+        },
+        "parent": "003-00-50d34979",
+        "children": []
+      }
+    },
+    "current_node": "003-01-1735e61e"
+  },
+  {
+    "title": "Python pandas groupby",
+    "create_time": 1771071360.0,
+    "update_time": 1771071407.0,
+    "mapping": {
+      "root-004": {
+        "id": "root-004",
+        "message": null,
+        "parent": null,
+        "children": [
+          "004-00-43b65b7d"
+        ]
+      },
+      "004-00-43b65b7d": {
+        "id": "004-00-43b65b7d",
+        "message": {
+          "id": "004-00-43b65b7d",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1771071380.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "My pandas groupby returns a MultiIndex and I just want flat columns. How?"
+            ]
+          }
+        },
+        "parent": "root-004",
+        "children": [
+          "004-01-3db4f749"
+        ]
+      },
+      "004-01-3db4f749": {
+        "id": "004-01-3db4f749",
+        "message": {
+          "id": "004-01-3db4f749",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1771071407.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Call .reset_index() after the aggregation, or pass as_index=False to groupby. For named aggregates use .agg(total=('amt','sum'))."
+            ]
+          }
+        },
+        "parent": "004-00-43b65b7d",
+        "children": []
+      }
+    },
+    "current_node": "004-01-3db4f749"
+  },
+  {
+    "title": "Regex to extract order numbers",
+    "create_time": 1771339200.0,
+    "update_time": 1771339247.0,
+    "mapping": {
+      "root-005": {
+        "id": "root-005",
+        "message": null,
+        "parent": null,
+        "children": [
+          "005-00-15cdcf90"
+        ]
+      },
+      "005-00-15cdcf90": {
+        "id": "005-00-15cdcf90",
+        "message": {
+          "id": "005-00-15cdcf90",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1771339220.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I need a regex that pulls order numbers like ORD-2024-00871 out of messy email text."
+            ]
+          }
+        },
+        "parent": "root-005",
+        "children": [
+          "005-01-2578d149"
+        ]
+      },
+      "005-01-2578d149": {
+        "id": "005-01-2578d149",
+        "message": {
+          "id": "005-01-2578d149",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1771339247.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Try ORD-\\d{4}-\\d{5}. Add \\b on both sides if you want to avoid partial matches."
+            ]
+          }
+        },
+        "parent": "005-00-15cdcf90",
+        "children": []
+      }
+    },
+    "current_node": "005-01-2578d149"
+  },
+  {
+    "title": "Bio help for a dating profile",
+    "create_time": 1771607040.0,
+    "update_time": 1771607162.0,
+    "mapping": {
+      "root-006": {
+        "id": "root-006",
+        "message": null,
+        "parent": null,
+        "children": [
+          "006-00-d2093a66"
+        ]
+      },
+      "006-00-d2093a66": {
+        "id": "006-00-d2093a66",
+        "message": {
+          "id": "006-00-d2093a66",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1771607060.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I'm thinking of trying dating apps again. Can you help me write a bio? I'm a product designer in the Inner Sunset, I love trail running, dumplings, and live jazz."
+            ]
+          }
+        },
+        "parent": "root-006",
+        "children": [
+          "006-01-9b2e79bd"
+        ]
+      },
+      "006-01-9b2e79bd": {
+        "id": "006-01-9b2e79bd",
+        "message": {
+          "id": "006-01-9b2e79bd",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1771607087.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Sure. What tone do you want, and what do you want a match to know about you?"
+            ]
+          }
+        },
+        "parent": "006-00-d2093a66",
+        "children": [
+          "006-02-de0161a3"
+        ]
+      },
+      "006-02-de0161a3": {
+        "id": "006-02-de0161a3",
+        "message": {
+          "id": "006-02-de0161a3",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1771607121.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Playful. I'd like someone curious and outdoorsy who would happily split a plate of dumplings. I have a beagle mix named Biscuit and she's basically my co-pilot."
+            ]
+          }
+        },
+        "parent": "006-01-9b2e79bd",
+        "children": [
+          "006-03-cadc880d"
+        ]
+      },
+      "006-03-cadc880d": {
+        "id": "006-03-cadc880d",
+        "message": {
+          "id": "006-03-cadc880d",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1771607162.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Draft: Product designer, trail runner, dumpling cartographer. Biscuit the beagle mix is my co-pilot. Looking for someone who will race me to the last xiao long bao."
+            ]
+          }
+        },
+        "parent": "006-02-de0161a3",
+        "children": []
+      }
+    },
+    "current_node": "006-03-cadc880d"
+  },
+  {
+    "title": "CSS flexbox centering",
+    "create_time": 1771874880.0,
+    "update_time": 1771874927.0,
+    "mapping": {
+      "root-007": {
+        "id": "root-007",
+        "message": null,
+        "parent": null,
+        "children": [
+          "007-00-188d77e1"
+        ]
+      },
+      "007-00-188d77e1": {
+        "id": "007-00-188d77e1",
+        "message": {
+          "id": "007-00-188d77e1",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1771874900.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I can never remember how to center a div both ways. Help?"
+            ]
+          }
+        },
+        "parent": "root-007",
+        "children": [
+          "007-01-9e758b7f"
+        ]
+      },
+      "007-01-9e758b7f": {
+        "id": "007-01-9e758b7f",
+        "message": {
+          "id": "007-01-9e758b7f",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1771874927.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "On the parent: display:flex; justify-content:center; align-items:center; and give it a height."
+            ]
+          }
+        },
+        "parent": "007-00-188d77e1",
+        "children": []
+      }
+    },
+    "current_node": "007-01-9e758b7f"
+  },
+  {
+    "title": "Git rebase vs merge",
+    "create_time": 1772142720.0,
+    "update_time": 1772142767.0,
+    "mapping": {
+      "root-008": {
+        "id": "root-008",
+        "message": null,
+        "parent": null,
+        "children": [
+          "008-00-9715b7ba"
+        ]
+      },
+      "008-00-9715b7ba": {
+        "id": "008-00-9715b7ba",
+        "message": {
+          "id": "008-00-9715b7ba",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1772142740.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "When should I rebase versus merge for a long-lived feature branch on our design tokens repo?"
+            ]
+          }
+        },
+        "parent": "root-008",
+        "children": [
+          "008-01-8415a4a2"
+        ]
+      },
+      "008-01-8415a4a2": {
+        "id": "008-01-8415a4a2",
+        "message": {
+          "id": "008-01-8415a4a2",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1772142767.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Rebase for a clean linear history on private branches; merge when others share the branch so you do not rewrite public history."
+            ]
+          }
+        },
+        "parent": "008-00-9715b7ba",
+        "children": []
+      }
+    },
+    "current_node": "008-01-8415a4a2"
+  },
+  {
+    "title": "Figma auto layout spacing",
+    "create_time": 1772410560.0,
+    "update_time": 1772410607.0,
+    "mapping": {
+      "root-009": {
+        "id": "root-009",
+        "message": null,
+        "parent": null,
+        "children": [
+          "009-00-e2be1901"
+        ]
+      },
+      "009-00-e2be1901": {
+        "id": "009-00-e2be1901",
+        "message": {
+          "id": "009-00-e2be1901",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1772410580.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "My auto layout card keeps collapsing when the text is short. How do I set a minimum width?"
+            ]
+          }
+        },
+        "parent": "root-009",
+        "children": [
+          "009-01-f93ad58b"
+        ]
+      },
+      "009-01-f93ad58b": {
+        "id": "009-01-f93ad58b",
+        "message": {
+          "id": "009-01-f93ad58b",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1772410607.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Set the frame to fixed width or add a min-width in the resizing options, and keep the text layer on Fill container."
+            ]
+          }
+        },
+        "parent": "009-00-e2be1901",
+        "children": []
+      }
+    },
+    "current_node": "009-01-f93ad58b"
+  },
+  {
+    "title": "Why I can't date smokers",
+    "create_time": 1772678400.0,
+    "update_time": 1772678522.0,
+    "mapping": {
+      "root-010": {
+        "id": "root-010",
+        "message": null,
+        "parent": null,
+        "children": [
+          "010-00-ff6b4c71"
+        ]
+      },
+      "010-00-ff6b4c71": {
+        "id": "010-00-ff6b4c71",
+        "message": {
+          "id": "010-00-ff6b4c71",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1772678420.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "My friend set me up and I found out halfway through dinner that he smokes. I left early and felt kind of bad. But I really can't date someone who smokes."
+            ]
+          }
+        },
+        "parent": "root-010",
+        "children": [
+          "010-01-d44e4b74"
+        ]
+      },
+      "010-01-d44e4b74": {
+        "id": "010-01-d44e4b74",
+        "message": {
+          "id": "010-01-d44e4b74",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1772678447.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "That sounds like a firm boundary. Do you want help communicating it kindly next time?"
+            ]
+          }
+        },
+        "parent": "010-00-ff6b4c71",
+        "children": [
+          "010-02-d1084b6b"
+        ]
+      },
+      "010-02-d1084b6b": {
+        "id": "010-02-d1084b6b",
+        "message": {
+          "id": "010-02-d1084b6b",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1772678481.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Yeah. My dad had COPD for years and I watched him struggle to breathe. Also my ex smoked and I could smell it on everything. It's just a hard no for me."
+            ]
+          }
+        },
+        "parent": "010-01-d44e4b74",
+        "children": [
+          "010-03-f5feac66"
+        ]
+      },
+      "010-03-f5feac66": {
+        "id": "010-03-f5feac66",
+        "message": {
+          "id": "010-03-f5feac66",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1772678522.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "That makes sense. You could say early: I'm not a fit with smoking because of my family history. It is honest and kind."
+            ]
+          }
+        },
+        "parent": "010-02-d1084b6b",
+        "children": []
+      }
+    },
+    "current_node": "010-03-f5feac66"
+  },
+  {
+    "title": "Cups to grams conversion",
+    "create_time": 1772946240.0,
+    "update_time": 1772946287.0,
+    "mapping": {
+      "root-011": {
+        "id": "root-011",
+        "message": null,
+        "parent": null,
+        "children": [
+          "011-00-2d7df6fc"
+        ]
+      },
+      "011-00-2d7df6fc": {
+        "id": "011-00-2d7df6fc",
+        "message": {
+          "id": "011-00-2d7df6fc",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1772946260.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Convert 2 and 1/4 cups of all-purpose flour to grams."
+            ]
+          }
+        },
+        "parent": "root-011",
+        "children": [
+          "011-01-3cede2c1"
+        ]
+      },
+      "011-01-3cede2c1": {
+        "id": "011-01-3cede2c1",
+        "message": {
+          "id": "011-01-3cede2c1",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1772946287.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Roughly 270 grams, using about 120 grams per cup."
+            ]
+          }
+        },
+        "parent": "011-00-2d7df6fc",
+        "children": []
+      }
+    },
+    "current_node": "011-01-3cede2c1"
+  },
+  {
+    "title": "Doubling a cookie recipe",
+    "create_time": 1773214080.0,
+    "update_time": 1773214127.0,
+    "mapping": {
+      "root-012": {
+        "id": "root-012",
+        "message": null,
+        "parent": null,
+        "children": [
+          "012-00-cacf4307"
+        ]
+      },
+      "012-00-cacf4307": {
+        "id": "012-00-cacf4307",
+        "message": {
+          "id": "012-00-cacf4307",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1773214100.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I need to double a recipe that calls for 3/4 cup brown sugar and 1 egg. What do I use?"
+            ]
+          }
+        },
+        "parent": "root-012",
+        "children": [
+          "012-01-e5c2a5f7"
+        ]
+      },
+      "012-01-e5c2a5f7": {
+        "id": "012-01-e5c2a5f7",
+        "message": {
+          "id": "012-01-e5c2a5f7",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1773214127.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "1 1/2 cups brown sugar and 2 eggs. Keep the baking soda at double too, but check that your pan holds the dough."
+            ]
+          }
+        },
+        "parent": "012-00-cacf4307",
+        "children": []
+      }
+    },
+    "current_node": "012-01-e5c2a5f7"
+  },
+  {
+    "title": "Lisbon trip logistics",
+    "create_time": 1773481920.0,
+    "update_time": 1773482042.0,
+    "mapping": {
+      "root-013": {
+        "id": "root-013",
+        "message": null,
+        "parent": null,
+        "children": [
+          "013-00-d5c75389"
+        ]
+      },
+      "013-00-d5c75389": {
+        "id": "013-00-d5c75389",
+        "message": {
+          "id": "013-00-d5c75389",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1773481940.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I land in Lisbon at 9:40am and the hotel check-in is 3pm. Best way to spend the gap and handle bags?"
+            ]
+          }
+        },
+        "parent": "root-013",
+        "children": [
+          "013-01-575cb0e0"
+        ]
+      },
+      "013-01-575cb0e0": {
+        "id": "013-01-575cb0e0",
+        "message": {
+          "id": "013-01-575cb0e0",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1773481967.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Store bags at the airport or a luggage service near Baixa, then do a walk through Alfama and lunch at a market hall."
+            ]
+          }
+        },
+        "parent": "013-00-d5c75389",
+        "children": [
+          "013-02-b3a0cffd"
+        ]
+      },
+      "013-02-b3a0cffd": {
+        "id": "013-02-b3a0cffd",
+        "message": {
+          "id": "013-02-b3a0cffd",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1773482001.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "And how do I get from the airport to the city?"
+            ]
+          }
+        },
+        "parent": "013-01-575cb0e0",
+        "children": [
+          "013-03-146ec76a"
+        ]
+      },
+      "013-03-146ec76a": {
+        "id": "013-03-146ec76a",
+        "message": {
+          "id": "013-03-146ec76a",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1773482042.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "The metro red line runs straight into the center in about 30 minutes and costs a couple of euros."
+            ]
+          }
+        },
+        "parent": "013-02-b3a0cffd",
+        "children": []
+      }
+    },
+    "current_node": "013-03-146ec76a"
+  },
+  {
+    "title": "First date ideas that aren't a bar",
+    "create_time": 1773749760.0,
+    "update_time": 1773749882.0,
+    "mapping": {
+      "root-014": {
+        "id": "root-014",
+        "message": null,
+        "parent": null,
+        "children": [
+          "014-00-42229293"
+        ]
+      },
+      "014-00-42229293": {
+        "id": "014-00-42229293",
+        "message": {
+          "id": "014-00-42229293",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1773749780.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I hate loud bars for first dates. I'd rather do something daytime. What are good first date ideas in SF?"
+            ]
+          }
+        },
+        "parent": "root-014",
+        "children": [
+          "014-01-5e6b3395"
+        ]
+      },
+      "014-01-5e6b3395": {
+        "id": "014-01-5e6b3395",
+        "message": {
+          "id": "014-01-5e6b3395",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1773749807.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Coffee and a walk, a dumpling lunch, a trailhead meet-up, or a game cafe are all low pressure."
+            ]
+          }
+        },
+        "parent": "014-00-42229293",
+        "children": [
+          "014-02-f26c6311"
+        ]
+      },
+      "014-02-f26c6311": {
+        "id": "014-02-f26c6311",
+        "message": {
+          "id": "014-02-f26c6311",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1773749841.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "A dumpling lunch followed by a walk is exactly my vibe. And I'm free Saturday evenings or Sunday late morning usually."
+            ]
+          }
+        },
+        "parent": "014-01-5e6b3395",
+        "children": [
+          "014-03-fdbf6818"
+        ]
+      },
+      "014-03-fdbf6818": {
+        "id": "014-03-fdbf6818",
+        "message": {
+          "id": "014-03-fdbf6818",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1773749882.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Then a Sunday late morning dumpling lunch with a walk to Golden Gate Park would be perfect."
+            ]
+          }
+        },
+        "parent": "014-02-f26c6311",
+        "children": []
+      }
+    },
+    "current_node": "014-03-fdbf6818"
+  },
+  {
+    "title": "Tahoe weekend packing list",
+    "create_time": 1774017600.0,
+    "update_time": 1774017647.0,
+    "mapping": {
+      "root-015": {
+        "id": "root-015",
+        "message": null,
+        "parent": null,
+        "children": [
+          "015-00-ea9f8412"
+        ]
+      },
+      "015-00-ea9f8412": {
+        "id": "015-00-ea9f8412",
+        "message": {
+          "id": "015-00-ea9f8412",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1774017620.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Make me a packing list for a two-night winter cabin weekend in Tahoe with friends, car trip."
+            ]
+          }
+        },
+        "parent": "root-015",
+        "children": [
+          "015-01-09a60e33"
+        ]
+      },
+      "015-01-09a60e33": {
+        "id": "015-01-09a60e33",
+        "message": {
+          "id": "015-01-09a60e33",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1774017647.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Layers, waterproof boots, chains, snacks, headlamp, board games, a speaker, and a cooler for the group dinner."
+            ]
+          }
+        },
+        "parent": "015-00-ea9f8412",
+        "children": []
+      }
+    },
+    "current_node": "015-01-09a60e33"
+  },
+  {
+    "title": "Portland flight options",
+    "create_time": 1774285440.0,
+    "update_time": 1774285487.0,
+    "mapping": {
+      "root-016": {
+        "id": "root-016",
+        "message": null,
+        "parent": null,
+        "children": [
+          "016-00-367c116c"
+        ]
+      },
+      "016-00-367c116c": {
+        "id": "016-00-367c116c",
+        "message": {
+          "id": "016-00-367c116c",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1774285460.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Compare flying SFO to Portland versus taking the train for a work offsite."
+            ]
+          }
+        },
+        "parent": "root-016",
+        "children": [
+          "016-01-c957a3f8"
+        ]
+      },
+      "016-01-c957a3f8": {
+        "id": "016-01-c957a3f8",
+        "message": {
+          "id": "016-01-c957a3f8",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1774285487.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Flying is about 1h45 but with airport time it is roughly equal door to door. The train is scenic yet takes much longer, so only choose it if you have a day to spare."
+            ]
+          }
+        },
+        "parent": "016-00-367c116c",
+        "children": []
+      }
+    },
+    "current_node": "016-01-c957a3f8"
+  },
+  {
+    "title": "Email to landlord about heater",
+    "create_time": 1774553280.0,
+    "update_time": 1774553327.0,
+    "mapping": {
+      "root-017": {
+        "id": "root-017",
+        "message": null,
+        "parent": null,
+        "children": [
+          "017-00-42c6e5c6"
+        ]
+      },
+      "017-00-42c6e5c6": {
+        "id": "017-00-42c6e5c6",
+        "message": {
+          "id": "017-00-42c6e5c6",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1774553300.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Draft a polite but firm email to my landlord. The heater has been broken for nine days."
+            ]
+          }
+        },
+        "parent": "root-017",
+        "children": [
+          "017-01-86a2ca67"
+        ]
+      },
+      "017-01-86a2ca67": {
+        "id": "017-01-86a2ca67",
+        "message": {
+          "id": "017-01-86a2ca67",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1774553327.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Subject: Heater repair needed. Hi Mr. Castillo, the heater in unit 3 has not worked since the 4th. Could you confirm a repair date this week? I can provide access any weekday afternoon. Thank you."
+            ]
+          }
+        },
+        "parent": "017-00-42c6e5c6",
+        "children": []
+      }
+    },
+    "current_node": "017-01-86a2ca67"
+  },
+  {
+    "title": "Pottery class at Clayworks",
+    "create_time": 1774821120.0,
+    "update_time": 1774821242.0,
+    "mapping": {
+      "root-018": {
+        "id": "root-018",
+        "message": null,
+        "parent": null,
+        "children": [
+          "018-00-d9b2795d"
+        ]
+      },
+      "018-00-d9b2795d": {
+        "id": "018-00-d9b2795d",
+        "message": {
+          "id": "018-00-d9b2795d",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1774821140.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I signed up for a beginner pottery class on Wednesday nights at a studio in Dogpatch! I'm obsessed with how relaxing the wheel is even though my bowls look like hats."
+            ]
+          }
+        },
+        "parent": "root-018",
+        "children": [
+          "018-01-d71d02cd"
+        ]
+      },
+      "018-01-d71d02cd": {
+        "id": "018-01-d71d02cd",
+        "message": {
+          "id": "018-01-d71d02cd",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1774821167.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "That is wonderful. Want tips for centering clay?"
+            ]
+          }
+        },
+        "parent": "018-00-d9b2795d",
+        "children": [
+          "018-02-b9472c20"
+        ]
+      },
+      "018-02-b9472c20": {
+        "id": "018-02-b9472c20",
+        "message": {
+          "id": "018-02-b9472c20",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1774821201.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Yes please. I'd love to find someone who would do a pottery class together honestly. It's one of my favorite things right now."
+            ]
+          }
+        },
+        "parent": "018-01-d71d02cd",
+        "children": [
+          "018-03-067ed4b4"
+        ]
+      },
+      "018-03-067ed4b4": {
+        "id": "018-03-067ed4b4",
+        "message": {
+          "id": "018-03-067ed4b4",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1774821242.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Centering: brace your elbows against your hips, use steady pressure, and keep your wheel speed fast at the start."
+            ]
+          }
+        },
+        "parent": "018-02-b9472c20",
+        "children": []
+      }
+    },
+    "current_node": "018-03-067ed4b4"
+  },
+  {
+    "title": "Email declining a vendor",
+    "create_time": 1775088960.0,
+    "update_time": 1775089007.0,
+    "mapping": {
+      "root-019": {
+        "id": "root-019",
+        "message": null,
+        "parent": null,
+        "children": [
+          "019-00-9b62dc0b"
+        ]
+      },
+      "019-00-9b62dc0b": {
+        "id": "019-00-9b62dc0b",
+        "message": {
+          "id": "019-00-9b62dc0b",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1775088980.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Write a short email telling a vendor we are going with another provider, keep it kind."
+            ]
+          }
+        },
+        "parent": "root-019",
+        "children": [
+          "019-01-b3384f69"
+        ]
+      },
+      "019-01-b3384f69": {
+        "id": "019-01-b3384f69",
+        "message": {
+          "id": "019-01-b3384f69",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1775089007.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Thank you for the proposal and for your time. After review we have decided to move in a different direction. We appreciate the effort and would be glad to stay in touch."
+            ]
+          }
+        },
+        "parent": "019-00-9b62dc0b",
+        "children": []
+      }
+    },
+    "current_node": "019-01-b3384f69"
+  },
+  {
+    "title": "Raise request talking points",
+    "create_time": 1775356800.0,
+    "update_time": 1775356847.0,
+    "mapping": {
+      "root-020": {
+        "id": "root-020",
+        "message": null,
+        "parent": null,
+        "children": [
+          "020-00-2ebf09a7"
+        ]
+      },
+      "020-00-2ebf09a7": {
+        "id": "020-00-2ebf09a7",
+        "message": {
+          "id": "020-00-2ebf09a7",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1775356820.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Help me outline how to ask my manager for a raise, I led two launches this year."
+            ]
+          }
+        },
+        "parent": "root-020",
+        "children": [
+          "020-01-73a5d537"
+        ]
+      },
+      "020-01-73a5d537": {
+        "id": "020-01-73a5d537",
+        "message": {
+          "id": "020-01-73a5d537",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1775356847.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Lead with impact: both launches, metrics, scope growth, then state the number you want and ask for a timeline to decide."
+            ]
+          }
+        },
+        "parent": "020-00-2ebf09a7",
+        "children": []
+      }
+    },
+    "current_node": "020-01-73a5d537"
+  },
+  {
+    "title": "Resume bullets for a design systems project",
+    "create_time": 1775624640.0,
+    "update_time": 1775624687.0,
+    "mapping": {
+      "root-021": {
+        "id": "root-021",
+        "message": null,
+        "parent": null,
+        "children": [
+          "021-00-484c4f88"
+        ]
+      },
+      "021-00-484c4f88": {
+        "id": "021-00-484c4f88",
+        "message": {
+          "id": "021-00-484c4f88",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1775624660.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Turn this into a strong resume bullet: built a component library used by 6 teams."
+            ]
+          }
+        },
+        "parent": "root-021",
+        "children": [
+          "021-01-71f046c5"
+        ]
+      },
+      "021-01-71f046c5": {
+        "id": "021-01-71f046c5",
+        "message": {
+          "id": "021-01-71f046c5",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1775624687.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Built and launched a component library adopted by 6 product teams, cutting UI build time by about a third and eliminating inconsistent patterns."
+            ]
+          }
+        },
+        "parent": "021-00-484c4f88",
+        "children": []
+      }
+    },
+    "current_node": "021-01-71f046c5"
+  },
+  {
+    "title": "Wingspan strategy",
+    "create_time": 1775892480.0,
+    "update_time": 1775892602.0,
+    "mapping": {
+      "root-022": {
+        "id": "root-022",
+        "message": null,
+        "parent": null,
+        "children": [
+          "022-00-75b8908d"
+        ]
+      },
+      "022-00-75b8908d": {
+        "id": "022-00-75b8908d",
+        "message": {
+          "id": "022-00-75b8908d",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1775892500.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I want to get better at Wingspan. Any strategies? I play with friends every other Sunday."
+            ]
+          }
+        },
+        "parent": "root-022",
+        "children": [
+          "022-01-a3b4a827"
+        ]
+      },
+      "022-01-a3b4a827": {
+        "id": "022-01-a3b4a827",
+        "message": {
+          "id": "022-01-a3b4a827",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1775892527.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Focus on engine building early with bird powers that chain, and plan egg placement for end-of-round goals."
+            ]
+          }
+        },
+        "parent": "022-00-75b8908d",
+        "children": [
+          "022-02-7000f5ba"
+        ]
+      },
+      "022-02-7000f5ba": {
+        "id": "022-02-7000f5ba",
+        "message": {
+          "id": "022-02-7000f5ba",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1775892561.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Love that. I'm kind of a board game person in general, I'd happily date someone who owns Catan and Ticket to Ride."
+            ]
+          }
+        },
+        "parent": "022-01-a3b4a827",
+        "children": [
+          "022-03-68b9d37b"
+        ]
+      },
+      "022-03-68b9d37b": {
+        "id": "022-03-68b9d37b",
+        "message": {
+          "id": "022-03-68b9d37b",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1775892602.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Then a game night would be a great second date idea."
+            ]
+          }
+        },
+        "parent": "022-02-7000f5ba",
+        "children": []
+      }
+    },
+    "current_node": "022-03-68b9d37b"
+  },
+  {
+    "title": "Color contrast for buttons",
+    "create_time": 1776160320.0,
+    "update_time": 1776160367.0,
+    "mapping": {
+      "root-023": {
+        "id": "root-023",
+        "message": null,
+        "parent": null,
+        "children": [
+          "023-00-c33fc860"
+        ]
+      },
+      "023-00-c33fc860": {
+        "id": "023-00-c33fc860",
+        "message": {
+          "id": "023-00-c33fc860",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1776160340.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Is white text on #7FB069 accessible?"
+            ]
+          }
+        },
+        "parent": "root-023",
+        "children": [
+          "023-01-a7e125e5"
+        ]
+      },
+      "023-01-a7e125e5": {
+        "id": "023-01-a7e125e5",
+        "message": {
+          "id": "023-01-a7e125e5",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1776160367.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "It fails WCAG AA at roughly 2.3:1. Darken the green to something like #3F7D2A or use dark text."
+            ]
+          }
+        },
+        "parent": "023-00-c33fc860",
+        "children": []
+      }
+    },
+    "current_node": "023-01-a7e125e5"
+  },
+  {
+    "title": "User interview script",
+    "create_time": 1776428160.0,
+    "update_time": 1776428207.0,
+    "mapping": {
+      "root-024": {
+        "id": "root-024",
+        "message": null,
+        "parent": null,
+        "children": [
+          "024-00-afe4e474"
+        ]
+      },
+      "024-00-afe4e474": {
+        "id": "024-00-afe4e474",
+        "message": {
+          "id": "024-00-afe4e474",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1776428180.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Write a 30-minute user interview script for people who plan their own home renovations."
+            ]
+          }
+        },
+        "parent": "root-024",
+        "children": [
+          "024-01-ae879efd"
+        ]
+      },
+      "024-01-ae879efd": {
+        "id": "024-01-ae879efd",
+        "message": {
+          "id": "024-01-ae879efd",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1776428207.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Open with warm-up and consent, then past behavior questions, a walkthrough of their last project, pain points, and close with a magic wand question."
+            ]
+          }
+        },
+        "parent": "024-00-afe4e474",
+        "children": []
+      }
+    },
+    "current_node": "024-01-ae879efd"
+  },
+  {
+    "title": "Workshop agenda",
+    "create_time": 1776696000.0,
+    "update_time": 1776696047.0,
+    "mapping": {
+      "root-025": {
+        "id": "root-025",
+        "message": null,
+        "parent": null,
+        "children": [
+          "025-00-2543e725"
+        ]
+      },
+      "025-00-2543e725": {
+        "id": "025-00-2543e725",
+        "message": {
+          "id": "025-00-2543e725",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1776696020.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Build a two-hour agenda for a design sprint kickoff with eight people."
+            ]
+          }
+        },
+        "parent": "root-025",
+        "children": [
+          "025-01-40a56420"
+        ]
+      },
+      "025-01-40a56420": {
+        "id": "025-01-40a56420",
+        "message": {
+          "id": "025-01-40a56420",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1776696047.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "10 min intro, 25 min problem framing, 30 min lightning demos, 15 min break, 30 min sketching, 10 min voting."
+            ]
+          }
+        },
+        "parent": "025-00-2543e725",
+        "children": []
+      }
+    },
+    "current_node": "025-01-40a56420"
+  },
+  {
+    "title": "Sichuan dumplings from scratch",
+    "create_time": 1776963840.0,
+    "update_time": 1776963962.0,
+    "mapping": {
+      "root-026": {
+        "id": "root-026",
+        "message": null,
+        "parent": null,
+        "children": [
+          "026-00-48797b19"
+        ]
+      },
+      "026-00-48797b19": {
+        "id": "026-00-48797b19",
+        "message": {
+          "id": "026-00-48797b19",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1776963860.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I want to make Sichuan-style wontons in chili oil from scratch. I will cross the city for a good soup dumpling but I want to learn to make my own."
+            ]
+          }
+        },
+        "parent": "root-026",
+        "children": [
+          "026-01-deb9c5b2"
+        ]
+      },
+      "026-01-deb9c5b2": {
+        "id": "026-01-deb9c5b2",
+        "message": {
+          "id": "026-01-deb9c5b2",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1776963887.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Start with a pork filling with ginger and white pepper, wrap them in thin skins, and make a chili oil with Sichuan peppercorn."
+            ]
+          }
+        },
+        "parent": "026-00-48797b19",
+        "children": [
+          "026-02-0068d91b"
+        ]
+      },
+      "026-02-0068d91b": {
+        "id": "026-02-0068d91b",
+        "message": {
+          "id": "026-02-0068d91b",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1776963921.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Perfect. I'd love to cook this with a partner someday. My idea of a great date is a kitchen and a playlist."
+            ]
+          }
+        },
+        "parent": "026-01-deb9c5b2",
+        "children": [
+          "026-03-5180eef0"
+        ]
+      },
+      "026-03-5180eef0": {
+        "id": "026-03-5180eef0",
+        "message": {
+          "id": "026-03-5180eef0",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1776963962.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Then keep the playlist jazzy and the chili oil on the side."
+            ]
+          }
+        },
+        "parent": "026-02-0068d91b",
+        "children": []
+      }
+    },
+    "current_node": "026-03-5180eef0"
+  },
+  {
+    "title": "Pricing page copy",
+    "create_time": 1777231680.0,
+    "update_time": 1777231727.0,
+    "mapping": {
+      "root-027": {
+        "id": "root-027",
+        "message": null,
+        "parent": null,
+        "children": [
+          "027-00-4413d993"
+        ]
+      },
+      "027-00-4413d993": {
+        "id": "027-00-4413d993",
+        "message": {
+          "id": "027-00-4413d993",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1777231700.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Suggest three headline options for a SaaS pricing page for a small team scheduling tool."
+            ]
+          }
+        },
+        "parent": "root-027",
+        "children": [
+          "027-01-613cf341"
+        ]
+      },
+      "027-01-613cf341": {
+        "id": "027-01-613cf341",
+        "message": {
+          "id": "027-01-613cf341",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1777231727.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Simple pricing that scales with your team. Pay for seats you actually use. Start free, upgrade when you grow."
+            ]
+          }
+        },
+        "parent": "027-00-4413d993",
+        "children": []
+      }
+    },
+    "current_node": "027-01-613cf341"
+  },
+  {
+    "title": "Leaky faucet fix",
+    "create_time": 1777499520.0,
+    "update_time": 1777499567.0,
+    "mapping": {
+      "root-028": {
+        "id": "root-028",
+        "message": null,
+        "parent": null,
+        "children": [
+          "028-00-a282cb9a"
+        ]
+      },
+      "028-00-a282cb9a": {
+        "id": "028-00-a282cb9a",
+        "message": {
+          "id": "028-00-a282cb9a",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1777499540.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "My kitchen faucet drips from the spout handle. How do I fix it?"
+            ]
+          }
+        },
+        "parent": "root-028",
+        "children": [
+          "028-01-4e285ec2"
+        ]
+      },
+      "028-01-4e285ec2": {
+        "id": "028-01-4e285ec2",
+        "message": {
+          "id": "028-01-4e285ec2",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1777499567.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Turn off the water, remove the handle, and replace the worn cartridge or O-ring. Bring the old part to the hardware store to match it."
+            ]
+          }
+        },
+        "parent": "028-00-a282cb9a",
+        "children": []
+      }
+    },
+    "current_node": "028-01-4e285ec2"
+  },
+  {
+    "title": "Houseplant yellow leaves",
+    "create_time": 1777767360.0,
+    "update_time": 1777767407.0,
+    "mapping": {
+      "root-029": {
+        "id": "root-029",
+        "message": null,
+        "parent": null,
+        "children": [
+          "029-00-d757e292"
+        ]
+      },
+      "029-00-d757e292": {
+        "id": "029-00-d757e292",
+        "message": {
+          "id": "029-00-d757e292",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1777767380.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "My pothos has yellow leaves and soggy soil. Help."
+            ]
+          }
+        },
+        "parent": "root-029",
+        "children": [
+          "029-01-4419d370"
+        ]
+      },
+      "029-01-4419d370": {
+        "id": "029-01-4419d370",
+        "message": {
+          "id": "029-01-4419d370",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1777767407.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Classic overwatering. Let the top two inches dry out between waterings and make sure the pot drains."
+            ]
+          }
+        },
+        "parent": "029-00-d757e292",
+        "children": []
+      }
+    },
+    "current_node": "029-01-4419d370"
+  },
+  {
+    "title": "Jazz night in the Fillmore",
+    "create_time": 1778035200.0,
+    "update_time": 1778035322.0,
+    "mapping": {
+      "root-030": {
+        "id": "root-030",
+        "message": null,
+        "parent": null,
+        "children": [
+          "030-00-e9e9790d"
+        ]
+      },
+      "030-00-e9e9790d": {
+        "id": "030-00-e9e9790d",
+        "message": {
+          "id": "030-00-e9e9790d",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1778035220.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I want to find live jazz on a weeknight in the Fillmore this week. I love it. It is my favorite kind of date but I never find anyone to go with."
+            ]
+          }
+        },
+        "parent": "root-030",
+        "children": [
+          "030-01-f6dcba37"
+        ]
+      },
+      "030-01-f6dcba37": {
+        "id": "030-01-f6dcba37",
+        "message": {
+          "id": "030-01-f6dcba37",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1778035247.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Try a small listening room with a late set on Wednesday or Thursday."
+            ]
+          }
+        },
+        "parent": "030-00-e9e9790d",
+        "children": [
+          "030-02-6b0faf28"
+        ]
+      },
+      "030-02-6b0faf28": {
+        "id": "030-02-6b0faf28",
+        "message": {
+          "id": "030-02-6b0faf28",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1778035281.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Thursday is Thanksgiving so I'll aim for Wednesday. I'm usually in bed by ten though, so an early set please."
+            ]
+          }
+        },
+        "parent": "030-01-f6dcba37",
+        "children": [
+          "030-03-69ddb13d"
+        ]
+      },
+      "030-03-69ddb13d": {
+        "id": "030-03-69ddb13d",
+        "message": {
+          "id": "030-03-69ddb13d",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1778035322.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Look for the 7pm set. Here are some questions to ask when booking."
+            ]
+          }
+        },
+        "parent": "030-02-6b0faf28",
+        "children": []
+      }
+    },
+    "current_node": "030-03-69ddb13d"
+  },
+  {
+    "title": "Unit conversion for a tent",
+    "create_time": 1778303040.0,
+    "update_time": 1778303087.0,
+    "mapping": {
+      "root-031": {
+        "id": "root-031",
+        "message": null,
+        "parent": null,
+        "children": [
+          "031-00-4ac14ddc"
+        ]
+      },
+      "031-00-4ac14ddc": {
+        "id": "031-00-4ac14ddc",
+        "message": {
+          "id": "031-00-4ac14ddc",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1778303060.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "How many square feet is a 10 by 12 meter tent, and how many people does it seat at rounds?"
+            ]
+          }
+        },
+        "parent": "root-031",
+        "children": [
+          "031-01-0a06b9a8"
+        ]
+      },
+      "031-01-0a06b9a8": {
+        "id": "031-01-0a06b9a8",
+        "message": {
+          "id": "031-01-0a06b9a8",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1778303087.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "That is about 1,292 square feet, seating roughly 80 people at rounds of eight."
+            ]
+          }
+        },
+        "parent": "031-00-4ac14ddc",
+        "children": []
+      }
+    },
+    "current_node": "031-01-0a06b9a8"
+  },
+  {
+    "title": "Quarterly estimated taxes",
+    "create_time": 1778570880.0,
+    "update_time": 1778570927.0,
+    "mapping": {
+      "root-032": {
+        "id": "root-032",
+        "message": null,
+        "parent": null,
+        "children": [
+          "032-00-96a83c84"
+        ]
+      },
+      "032-00-96a83c84": {
+        "id": "032-00-96a83c84",
+        "message": {
+          "id": "032-00-96a83c84",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1778570900.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I did some freelance work. How do quarterly estimated taxes work in California?"
+            ]
+          }
+        },
+        "parent": "root-032",
+        "children": [
+          "032-01-314e6800"
+        ]
+      },
+      "032-01-314e6800": {
+        "id": "032-01-314e6800",
+        "message": {
+          "id": "032-01-314e6800",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1778570927.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "You pay federal and state estimates on April 15, June 15, September 15, and January 15. A tax pro can confirm safe-harbor amounts for you."
+            ]
+          }
+        },
+        "parent": "032-00-96a83c84",
+        "children": []
+      }
+    },
+    "current_node": "032-01-314e6800"
+  },
+  {
+    "title": "Summary of Atomic Habits",
+    "create_time": 1778838720.0,
+    "update_time": 1778838767.0,
+    "mapping": {
+      "root-033": {
+        "id": "root-033",
+        "message": null,
+        "parent": null,
+        "children": [
+          "033-00-1a49e528"
+        ]
+      },
+      "033-00-1a49e528": {
+        "id": "033-00-1a49e528",
+        "message": {
+          "id": "033-00-1a49e528",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1778838740.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Give me a five-bullet summary of Atomic Habits."
+            ]
+          }
+        },
+        "parent": "root-033",
+        "children": [
+          "033-01-220ff3b0"
+        ]
+      },
+      "033-01-220ff3b0": {
+        "id": "033-01-220ff3b0",
+        "message": {
+          "id": "033-01-220ff3b0",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1778838767.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Small changes compound; focus on identity; make cues obvious; make habits easy and attractive; track and review."
+            ]
+          }
+        },
+        "parent": "033-00-1a49e528",
+        "children": []
+      }
+    },
+    "current_node": "033-01-220ff3b0"
+  },
+  {
+    "title": "Do I want kids?",
+    "create_time": 1779106560.0,
+    "update_time": 1779106682.0,
+    "mapping": {
+      "root-034": {
+        "id": "root-034",
+        "message": null,
+        "parent": null,
+        "children": [
+          "034-00-109246a8"
+        ]
+      },
+      "034-00-109246a8": {
+        "id": "034-00-109246a8",
+        "message": {
+          "id": "034-00-109246a8",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1779106580.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I honestly don't know if I want kids. I turn 30 next year and everyone keeps asking me. I told my mom I was unsure and she got quiet."
+            ]
+          }
+        },
+        "parent": "root-034",
+        "children": [
+          "034-01-d309917b"
+        ]
+      },
+      "034-01-d309917b": {
+        "id": "034-01-d309917b",
+        "message": {
+          "id": "034-01-d309917b",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1779106607.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "It is okay to be unsure. What feels clearer, a life with or without kids?"
+            ]
+          }
+        },
+        "parent": "034-00-109246a8",
+        "children": [
+          "034-02-27f46363"
+        ]
+      },
+      "034-02-27f46363": {
+        "id": "034-02-27f46363",
+        "message": {
+          "id": "034-02-27f46363",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1779106641.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Mostly I'm just not sure. I'd rather meet the right person and decide together. I don't want to date someone who is dead set either way."
+            ]
+          }
+        },
+        "parent": "034-01-d309917b",
+        "children": [
+          "034-03-ac8b9898"
+        ]
+      },
+      "034-03-ac8b9898": {
+        "id": "034-03-ac8b9898",
+        "message": {
+          "id": "034-03-ac8b9898",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1779106682.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "That is a reasonable stance. You can say it plainly on a first date."
+            ]
+          }
+        },
+        "parent": "034-02-27f46363",
+        "children": []
+      }
+    },
+    "current_node": "034-03-ac8b9898"
+  },
+  {
+    "title": "SQL join question",
+    "create_time": 1779374400.0,
+    "update_time": 1779374447.0,
+    "mapping": {
+      "root-035": {
+        "id": "root-035",
+        "message": null,
+        "parent": null,
+        "children": [
+          "035-00-d719a88b"
+        ]
+      },
+      "035-00-d719a88b": {
+        "id": "035-00-d719a88b",
+        "message": {
+          "id": "035-00-d719a88b",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1779374420.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "What is the difference between LEFT JOIN and INNER JOIN with an example for orders and customers?"
+            ]
+          }
+        },
+        "parent": "root-035",
+        "children": [
+          "035-01-05e0d86c"
+        ]
+      },
+      "035-01-05e0d86c": {
+        "id": "035-01-05e0d86c",
+        "message": {
+          "id": "035-01-05e0d86c",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1779374447.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "INNER JOIN keeps customers with orders only. LEFT JOIN keeps all customers and fills NULLs where there is no order."
+            ]
+          }
+        },
+        "parent": "035-00-d719a88b",
+        "children": []
+      }
+    },
+    "current_node": "035-01-05e0d86c"
+  },
+  {
+    "title": "Google Sheets budget template",
+    "create_time": 1779642240.0,
+    "update_time": 1779642287.0,
+    "mapping": {
+      "root-036": {
+        "id": "root-036",
+        "message": null,
+        "parent": null,
+        "children": [
+          "036-00-17e4c129"
+        ]
+      },
+      "036-00-17e4c129": {
+        "id": "036-00-17e4c129",
+        "message": {
+          "id": "036-00-17e4c129",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1779642260.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Set up a monthly budget sheet with categories, planned, and actual columns plus variance."
+            ]
+          }
+        },
+        "parent": "root-036",
+        "children": [
+          "036-01-2e254667"
+        ]
+      },
+      "036-01-2e254667": {
+        "id": "036-01-2e254667",
+        "message": {
+          "id": "036-01-2e254667",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1779642287.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Columns: Category, Planned, Actual, Variance =C2-B2, and a SUM row. Add conditional formatting for negative variance."
+            ]
+          }
+        },
+        "parent": "036-00-17e4c129",
+        "children": []
+      }
+    },
+    "current_node": "036-01-2e254667"
+  },
+  {
+    "title": "Meeting notes cleanup",
+    "create_time": 1779910080.0,
+    "update_time": 1779910127.0,
+    "mapping": {
+      "root-037": {
+        "id": "root-037",
+        "message": null,
+        "parent": null,
+        "children": [
+          "037-00-1a6fe3f3"
+        ]
+      },
+      "037-00-1a6fe3f3": {
+        "id": "037-00-1a6fe3f3",
+        "message": {
+          "id": "037-00-1a6fe3f3",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1779910100.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Clean up these messy notes into action items with owners and dates."
+            ]
+          }
+        },
+        "parent": "root-037",
+        "children": [
+          "037-01-b73f6b45"
+        ]
+      },
+      "037-01-b73f6b45": {
+        "id": "037-01-b73f6b45",
+        "message": {
+          "id": "037-01-b73f6b45",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1779910127.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Here is a table: Action, Owner, Due. I flagged two items that had no owner, so confirm those."
+            ]
+          }
+        },
+        "parent": "037-00-1a6fe3f3",
+        "children": []
+      }
+    },
+    "current_node": "037-01-b73f6b45"
+  },
+  {
+    "title": "Sister's wedding speech",
+    "create_time": 1780177920.0,
+    "update_time": 1780178042.0,
+    "mapping": {
+      "root-038": {
+        "id": "root-038",
+        "message": null,
+        "parent": null,
+        "children": [
+          "038-00-fdd491cc"
+        ]
+      },
+      "038-00-fdd491cc": {
+        "id": "038-00-fdd491cc",
+        "message": {
+          "id": "038-00-fdd491cc",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1780177940.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I'm giving a toast at my sister's wedding in June. She's my best friend and we grew up trail running with our dad before he got sick."
+            ]
+          }
+        },
+        "parent": "root-038",
+        "children": [
+          "038-01-70b959dd"
+        ]
+      },
+      "038-01-70b959dd": {
+        "id": "038-01-70b959dd",
+        "message": {
+          "id": "038-01-70b959dd",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1780177967.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I'm sorry about your dad. Do you want the toast to include him?"
+            ]
+          }
+        },
+        "parent": "038-00-fdd491cc",
+        "children": [
+          "038-02-ef507f3d"
+        ]
+      },
+      "038-02-ef507f3d": {
+        "id": "038-02-ef507f3d",
+        "message": {
+          "id": "038-02-ef507f3d",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1780178001.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Yes, a small mention. And some jokes about her terrible puns, which I clearly inherited."
+            ]
+          }
+        },
+        "parent": "038-01-70b959dd",
+        "children": [
+          "038-03-c60e2b4e"
+        ]
+      },
+      "038-03-c60e2b4e": {
+        "id": "038-03-c60e2b4e",
+        "message": {
+          "id": "038-03-c60e2b4e",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1780178042.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Here is a draft: Anna taught me that the best views are on the steepest trails."
+            ]
+          }
+        },
+        "parent": "038-02-ef507f3d",
+        "children": []
+      }
+    },
+    "current_node": "038-03-c60e2b4e"
+  },
+  {
+    "title": "Slack message tone",
+    "create_time": 1780445760.0,
+    "update_time": 1780445807.0,
+    "mapping": {
+      "root-039": {
+        "id": "root-039",
+        "message": null,
+        "parent": null,
+        "children": [
+          "039-00-7dd18164"
+        ]
+      },
+      "039-00-7dd18164": {
+        "id": "039-00-7dd18164",
+        "message": {
+          "id": "039-00-7dd18164",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1780445780.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Rewrite this so it does not sound passive aggressive: As I mentioned before, the mocks are blocked."
+            ]
+          }
+        },
+        "parent": "root-039",
+        "children": [
+          "039-01-1e836c59"
+        ]
+      },
+      "039-01-1e836c59": {
+        "id": "039-01-1e836c59",
+        "message": {
+          "id": "039-01-1e836c59",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1780445807.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Quick flag: the mocks are still blocked on the copy review. Could we get that done by Thursday?"
+            ]
+          }
+        },
+        "parent": "039-00-7dd18164",
+        "children": []
+      }
+    },
+    "current_node": "039-01-1e836c59"
+  },
+  {
+    "title": "JavaScript debounce",
+    "create_time": 1780713600.0,
+    "update_time": 1780713647.0,
+    "mapping": {
+      "root-040": {
+        "id": "root-040",
+        "message": null,
+        "parent": null,
+        "children": [
+          "040-00-7fd0cdf8"
+        ]
+      },
+      "040-00-7fd0cdf8": {
+        "id": "040-00-7fd0cdf8",
+        "message": {
+          "id": "040-00-7fd0cdf8",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1780713620.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Explain debounce vs throttle for a search input."
+            ]
+          }
+        },
+        "parent": "root-040",
+        "children": [
+          "040-01-50666762"
+        ]
+      },
+      "040-01-50666762": {
+        "id": "040-01-50666762",
+        "message": {
+          "id": "040-01-50666762",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1780713647.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Debounce waits until typing stops; throttle limits calls to one per interval. Use debounce for search suggestions."
+            ]
+          }
+        },
+        "parent": "040-00-7fd0cdf8",
+        "children": []
+      }
+    },
+    "current_node": "040-01-50666762"
+  },
+  {
+    "title": "Excel date formula",
+    "create_time": 1780981440.0,
+    "update_time": 1780981487.0,
+    "mapping": {
+      "root-041": {
+        "id": "root-041",
+        "message": null,
+        "parent": null,
+        "children": [
+          "041-00-9911df44"
+        ]
+      },
+      "041-00-9911df44": {
+        "id": "041-00-9911df44",
+        "message": {
+          "id": "041-00-9911df44",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1780981460.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "How do I calculate the number of business days between two dates?"
+            ]
+          }
+        },
+        "parent": "root-041",
+        "children": [
+          "041-01-3845dc47"
+        ]
+      },
+      "041-01-3845dc47": {
+        "id": "041-01-3845dc47",
+        "message": {
+          "id": "041-01-3845dc47",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1780981487.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Use NETWORKDAYS(start, end, holidays). In Sheets it is the same function name."
+            ]
+          }
+        },
+        "parent": "041-00-9911df44",
+        "children": []
+      }
+    },
+    "current_node": "041-01-3845dc47"
+  },
+  {
+    "title": "Dog sitting for Biscuit",
+    "create_time": 1781249280.0,
+    "update_time": 1781249402.0,
+    "mapping": {
+      "root-042": {
+        "id": "root-042",
+        "message": null,
+        "parent": null,
+        "children": [
+          "042-00-070eadfd"
+        ]
+      },
+      "042-00-070eadfd": {
+        "id": "042-00-070eadfd",
+        "message": {
+          "id": "042-00-070eadfd",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1781249300.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Can you help me write a post for a neighborhood group asking for a dog sitter? Biscuit is a beagle mix, friendly, loves hikes, hates the vacuum."
+            ]
+          }
+        },
+        "parent": "root-042",
+        "children": [
+          "042-01-63dfba54"
+        ]
+      },
+      "042-01-63dfba54": {
+        "id": "042-01-63dfba54",
+        "message": {
+          "id": "042-01-63dfba54",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1781249327.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Draft: Looking for a kind dog sitter for a sweet beagle mix who loves hikes. Two weekends in March."
+            ]
+          }
+        },
+        "parent": "042-00-070eadfd",
+        "children": [
+          "042-02-c985ad5b"
+        ]
+      },
+      "042-02-c985ad5b": {
+        "id": "042-02-c985ad5b",
+        "message": {
+          "id": "042-02-c985ad5b",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1781249361.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Add that I prefer someone who runs. She needs a lot of exercise."
+            ]
+          }
+        },
+        "parent": "042-01-63dfba54",
+        "children": [
+          "042-03-8952007c"
+        ]
+      },
+      "042-03-8952007c": {
+        "id": "042-03-8952007c",
+        "message": {
+          "id": "042-03-8952007c",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1781249402.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Done. I added a line about daily walks and trail runs."
+            ]
+          }
+        },
+        "parent": "042-02-c985ad5b",
+        "children": []
+      }
+    },
+    "current_node": "042-03-8952007c"
+  },
+  {
+    "title": "Kitchen measurement fractions",
+    "create_time": 1781517120.0,
+    "update_time": 1781517167.0,
+    "mapping": {
+      "root-043": {
+        "id": "root-043",
+        "message": null,
+        "parent": null,
+        "children": [
+          "043-00-4c548702"
+        ]
+      },
+      "043-00-4c548702": {
+        "id": "043-00-4c548702",
+        "message": {
+          "id": "043-00-4c548702",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1781517140.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "How many tablespoons are in 3/8 cup?"
+            ]
+          }
+        },
+        "parent": "root-043",
+        "children": [
+          "043-01-998f7a9d"
+        ]
+      },
+      "043-01-998f7a9d": {
+        "id": "043-01-998f7a9d",
+        "message": {
+          "id": "043-01-998f7a9d",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1781517167.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Six tablespoons."
+            ]
+          }
+        },
+        "parent": "043-00-4c548702",
+        "children": []
+      }
+    },
+    "current_node": "043-01-998f7a9d"
+  },
+  {
+    "title": "Airbnb vs hotel for team offsite",
+    "create_time": 1781784960.0,
+    "update_time": 1781785007.0,
+    "mapping": {
+      "root-044": {
+        "id": "root-044",
+        "message": null,
+        "parent": null,
+        "children": [
+          "044-00-b2c5069c"
+        ]
+      },
+      "044-00-b2c5069c": {
+        "id": "044-00-b2c5069c",
+        "message": {
+          "id": "044-00-b2c5069c",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1781784980.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "We have 9 people for a 3 night offsite. Airbnb house or hotel?"
+            ]
+          }
+        },
+        "parent": "root-044",
+        "children": [
+          "044-01-3cde9db6"
+        ]
+      },
+      "044-01-3cde9db6": {
+        "id": "044-01-3cde9db6",
+        "message": {
+          "id": "044-01-3cde9db6",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1781785007.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "A house is cheaper and better for working sessions; a hotel has fewer logistics. For nine people I would pick a large house with a big table."
+            ]
+          }
+        },
+        "parent": "044-00-b2c5069c",
+        "children": []
+      }
+    },
+    "current_node": "044-01-3cde9db6"
+  },
+  {
+    "title": "Dark mode design tokens",
+    "create_time": 1782052800.0,
+    "update_time": 1782052847.0,
+    "mapping": {
+      "root-045": {
+        "id": "root-045",
+        "message": null,
+        "parent": null,
+        "children": [
+          "045-00-6b60b89a"
+        ]
+      },
+      "045-00-6b60b89a": {
+        "id": "045-00-6b60b89a",
+        "message": {
+          "id": "045-00-6b60b89a",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1782052820.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "How should I name semantic color tokens for light and dark themes?"
+            ]
+          }
+        },
+        "parent": "root-045",
+        "children": [
+          "045-01-26e8f06b"
+        ]
+      },
+      "045-01-26e8f06b": {
+        "id": "045-01-26e8f06b",
+        "message": {
+          "id": "045-01-26e8f06b",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1782052847.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Use roles instead of values: surface-default, text-primary, border-subtle. Map each role to light and dark values."
+            ]
+          }
+        },
+        "parent": "045-00-6b60b89a",
+        "children": []
+      }
+    },
+    "current_node": "045-01-26e8f06b"
+  },
+  {
+    "title": "Texting rhythm with a new match",
+    "create_time": 1782320640.0,
+    "update_time": 1782320762.0,
+    "mapping": {
+      "root-046": {
+        "id": "root-046",
+        "message": null,
+        "parent": null,
+        "children": [
+          "046-00-4182a8e7"
+        ]
+      },
+      "046-00-4182a8e7": {
+        "id": "046-00-4182a8e7",
+        "message": {
+          "id": "046-00-4182a8e7",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1782320660.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I've been texting a guy and he replies at 1am. I'm asleep by ten! Is that a sign we aren't compatible?"
+            ]
+          }
+        },
+        "parent": "root-046",
+        "children": [
+          "046-01-78c10cd0"
+        ]
+      },
+      "046-01-78c10cd0": {
+        "id": "046-01-78c10cd0",
+        "message": {
+          "id": "046-01-78c10cd0",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1782320687.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Not necessarily, but schedule mismatch matters. What does your ideal rhythm look like?"
+            ]
+          }
+        },
+        "parent": "046-00-4182a8e7",
+        "children": [
+          "046-02-459c3839"
+        ]
+      },
+      "046-02-459c3839": {
+        "id": "046-02-459c3839",
+        "message": {
+          "id": "046-02-459c3839",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1782320721.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I like early mornings and early dinners. I'm an early bird and I'd rather meet in person during the day than text all night."
+            ]
+          }
+        },
+        "parent": "046-01-78c10cd0",
+        "children": [
+          "046-03-ef61cac6"
+        ]
+      },
+      "046-03-ef61cac6": {
+        "id": "046-03-ef61cac6",
+        "message": {
+          "id": "046-03-ef61cac6",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1782320762.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Then propose a Sunday morning plan and see how he responds."
+            ]
+          }
+        },
+        "parent": "046-02-459c3839",
+        "children": []
+      }
+    },
+    "current_node": "046-03-ef61cac6"
+  },
+  {
+    "title": "Lorem ipsum alternatives",
+    "create_time": 1782588480.0,
+    "update_time": 1782588527.0,
+    "mapping": {
+      "root-047": {
+        "id": "root-047",
+        "message": null,
+        "parent": null,
+        "children": [
+          "047-00-91178e15"
+        ]
+      },
+      "047-00-91178e15": {
+        "id": "047-00-91178e15",
+        "message": {
+          "id": "047-00-91178e15",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1782588500.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Give me realistic placeholder copy for a plant delivery app onboarding screen."
+            ]
+          }
+        },
+        "parent": "root-047",
+        "children": [
+          "047-01-626a5fa1"
+        ]
+      },
+      "047-01-626a5fa1": {
+        "id": "047-01-626a5fa1",
+        "message": {
+          "id": "047-01-626a5fa1",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1782588527.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Welcome. Tell us about your space, and we will match you with plants that thrive in your light."
+            ]
+          }
+        },
+        "parent": "047-00-91178e15",
+        "children": []
+      }
+    },
+    "current_node": "047-01-626a5fa1"
+  },
+  {
+    "title": "Presentation outline for roadmap",
+    "create_time": 1782856320.0,
+    "update_time": 1782856367.0,
+    "mapping": {
+      "root-048": {
+        "id": "root-048",
+        "message": null,
+        "parent": null,
+        "children": [
+          "048-00-4c5cf869"
+        ]
+      },
+      "048-00-4c5cf869": {
+        "id": "048-00-4c5cf869",
+        "message": {
+          "id": "048-00-4c5cf869",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1782856340.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Outline a 10-slide quarterly roadmap presentation for execs."
+            ]
+          }
+        },
+        "parent": "root-048",
+        "children": [
+          "048-01-e86f3aff"
+        ]
+      },
+      "048-01-e86f3aff": {
+        "id": "048-01-e86f3aff",
+        "message": {
+          "id": "048-01-e86f3aff",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1782856367.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Goals, recap, metrics, themes, roadmap, risks, dependencies, resourcing, asks, next steps."
+            ]
+          }
+        },
+        "parent": "048-00-4c5cf869",
+        "children": []
+      }
+    },
+    "current_node": "048-01-e86f3aff"
+  },
+  {
+    "title": "Python script to rename files",
+    "create_time": 1783124160.0,
+    "update_time": 1783124207.0,
+    "mapping": {
+      "root-049": {
+        "id": "root-049",
+        "message": null,
+        "parent": null,
+        "children": [
+          "049-00-7dd96661"
+        ]
+      },
+      "049-00-7dd96661": {
+        "id": "049-00-7dd96661",
+        "message": {
+          "id": "049-00-7dd96661",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1783124180.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Write a Python script that renames all files in a folder to lowercase with underscores."
+            ]
+          }
+        },
+        "parent": "root-049",
+        "children": [
+          "049-01-a376ee53"
+        ]
+      },
+      "049-01-a376ee53": {
+        "id": "049-01-a376ee53",
+        "message": {
+          "id": "049-01-a376ee53",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1783124207.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Use pathlib: loop through iterdir(), build a new name with lower() and replace(' ', '_'), then call rename()."
+            ]
+          }
+        },
+        "parent": "049-00-7dd96661",
+        "children": []
+      }
+    },
+    "current_node": "049-01-a376ee53"
+  },
+  {
+    "title": "Therapy homework on boundaries",
+    "create_time": 1783392000.0,
+    "update_time": 1783392122.0,
+    "mapping": {
+      "root-050": {
+        "id": "root-050",
+        "message": null,
+        "parent": null,
+        "children": [
+          "050-00-a2481524"
+        ]
+      },
+      "050-00-a2481524": {
+        "id": "050-00-a2481524",
+        "message": {
+          "id": "050-00-a2481524",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1783392020.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "My therapist wants me to practice stating needs earlier in dating. Mine are: no smoking, honesty, and someone who doesn't need to drink every weekend."
+            ]
+          }
+        },
+        "parent": "root-050",
+        "children": [
+          "050-01-6a18a56b"
+        ]
+      },
+      "050-01-6a18a56b": {
+        "id": "050-01-6a18a56b",
+        "message": {
+          "id": "050-01-6a18a56b",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1783392047.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Those are clear. Let's practice a script."
+            ]
+          }
+        },
+        "parent": "050-00-a2481524",
+        "children": [
+          "050-02-1c91732f"
+        ]
+      },
+      "050-02-1c91732f": {
+        "id": "050-02-1c91732f",
+        "message": {
+          "id": "050-02-1c91732f",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1783392081.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I have a glass of wine or a beer when I'm out, maybe twice a week, so I'm not anti-drinking. I just don't love heavy partiers."
+            ]
+          }
+        },
+        "parent": "050-01-6a18a56b",
+        "children": [
+          "050-03-8934b7e3"
+        ]
+      },
+      "050-03-8934b7e3": {
+        "id": "050-03-8934b7e3",
+        "message": {
+          "id": "050-03-8934b7e3",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1783392122.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Script: I enjoy a drink socially, but I prefer plans that don't revolve around it."
+            ]
+          }
+        },
+        "parent": "050-02-1c91732f",
+        "children": []
+      }
+    },
+    "current_node": "050-03-8934b7e3"
+  },
+  {
+    "title": "Spanish translation for a sign",
+    "create_time": 1783659840.0,
+    "update_time": 1783659887.0,
+    "mapping": {
+      "root-051": {
+        "id": "root-051",
+        "message": null,
+        "parent": null,
+        "children": [
+          "051-00-c4e95117"
+        ]
+      },
+      "051-00-c4e95117": {
+        "id": "051-00-c4e95117",
+        "message": {
+          "id": "051-00-c4e95117",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1783659860.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Translate to Spanish: Please leave packages at the front door."
+            ]
+          }
+        },
+        "parent": "root-051",
+        "children": [
+          "051-01-eabc2bea"
+        ]
+      },
+      "051-01-eabc2bea": {
+        "id": "051-01-eabc2bea",
+        "message": {
+          "id": "051-01-eabc2bea",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1783659887.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Por favor deje los paquetes en la puerta principal."
+            ]
+          }
+        },
+        "parent": "051-00-c4e95117",
+        "children": []
+      }
+    },
+    "current_node": "051-01-eabc2bea"
+  },
+  {
+    "title": "Standing desk height",
+    "create_time": 1783927680.0,
+    "update_time": 1783927727.0,
+    "mapping": {
+      "root-052": {
+        "id": "root-052",
+        "message": null,
+        "parent": null,
+        "children": [
+          "052-00-9de492d4"
+        ]
+      },
+      "052-00-9de492d4": {
+        "id": "052-00-9de492d4",
+        "message": {
+          "id": "052-00-9de492d4",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1783927700.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "What is the ideal standing desk height for someone 5 foot 6?"
+            ]
+          }
+        },
+        "parent": "root-052",
+        "children": [
+          "052-01-098d7917"
+        ]
+      },
+      "052-01-098d7917": {
+        "id": "052-01-098d7917",
+        "message": {
+          "id": "052-01-098d7917",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1783927727.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Elbows at about 90 degrees: roughly 40 to 41 inches for most people your height."
+            ]
+          }
+        },
+        "parent": "052-00-9de492d4",
+        "children": []
+      }
+    },
+    "current_node": "052-01-098d7917"
+  },
+  {
+    "title": "Carpool schedule for offsite",
+    "create_time": 1784195520.0,
+    "update_time": 1784195567.0,
+    "mapping": {
+      "root-053": {
+        "id": "root-053",
+        "message": null,
+        "parent": null,
+        "children": [
+          "053-00-41d594cd"
+        ]
+      },
+      "053-00-41d594cd": {
+        "id": "053-00-41d594cd",
+        "message": {
+          "id": "053-00-41d594cd",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1784195540.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Make a carpool plan for 11 people and 3 cars leaving at 8am."
+            ]
+          }
+        },
+        "parent": "root-053",
+        "children": [
+          "053-01-7f3d5aee"
+        ]
+      },
+      "053-01-7f3d5aee": {
+        "id": "053-01-7f3d5aee",
+        "message": {
+          "id": "053-01-7f3d5aee",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1784195567.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Car A: 4 people, Car B: 4 people, Car C: 3 people, with pickup stops listed in order of distance."
+            ]
+          }
+        },
+        "parent": "053-00-41d594cd",
+        "children": []
+      }
+    },
+    "current_node": "053-01-7f3d5aee"
+  },
+  {
+    "title": "Weekend plan: Muir Woods vs Mt Sutro",
+    "create_time": 1784463360.0,
+    "update_time": 1784463482.0,
+    "mapping": {
+      "root-054": {
+        "id": "root-054",
+        "message": null,
+        "parent": null,
+        "children": [
+          "054-00-08d23612"
+        ]
+      },
+      "054-00-08d23612": {
+        "id": "054-00-08d23612",
+        "message": {
+          "id": "054-00-08d23612",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1784463380.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Plan a Saturday: sunrise trail run, then brunch, then something chill. Biscuit comes along, so dog-friendly spots only."
+            ]
+          }
+        },
+        "parent": "root-054",
+        "children": [
+          "054-01-bb4ed6af"
+        ]
+      },
+      "054-01-bb4ed6af": {
+        "id": "054-01-bb4ed6af",
+        "message": {
+          "id": "054-01-bb4ed6af",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1784463407.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Mount Sutro at sunrise, then a dog-friendly patio brunch in the Inner Sunset, then a browse in a bookstore."
+            ]
+          }
+        },
+        "parent": "054-00-08d23612",
+        "children": [
+          "054-02-3d10b7e0"
+        ]
+      },
+      "054-02-3d10b7e0": {
+        "id": "054-02-3d10b7e0",
+        "message": {
+          "id": "054-02-3d10b7e0",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1784463441.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Love it. Add dumplings for dinner. I'm basically a dumpling person in human form."
+            ]
+          }
+        },
+        "parent": "054-01-bb4ed6af",
+        "children": [
+          "054-03-64c952bd"
+        ]
+      },
+      "054-03-64c952bd": {
+        "id": "054-03-64c952bd",
+        "message": {
+          "id": "054-03-64c952bd",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1784463482.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Added. A Richmond dumpling spot would make the loop complete."
+            ]
+          }
+        },
+        "parent": "054-02-3d10b7e0",
+        "children": []
+      }
+    },
+    "current_node": "054-03-64c952bd"
+  },
+  {
+    "title": "Fix Wi-Fi dropping",
+    "create_time": 1784731200.0,
+    "update_time": 1784731247.0,
+    "mapping": {
+      "root-055": {
+        "id": "root-055",
+        "message": null,
+        "parent": null,
+        "children": [
+          "055-00-7d52feec"
+        ]
+      },
+      "055-00-7d52feec": {
+        "id": "055-00-7d52feec",
+        "message": {
+          "id": "055-00-7d52feec",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1784731220.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "My Wi-Fi drops every evening around 8pm. Any ideas?"
+            ]
+          }
+        },
+        "parent": "root-055",
+        "children": [
+          "055-01-45b15717"
+        ]
+      },
+      "055-01-45b15717": {
+        "id": "055-01-45b15717",
+        "message": {
+          "id": "055-01-45b15717",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1784731247.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Likely congestion on the 2.4GHz band. Try changing channels, moving to 5GHz, or restarting the router on a schedule."
+            ]
+          }
+        },
+        "parent": "055-00-7d52feec",
+        "children": []
+      }
+    },
+    "current_node": "055-01-45b15717"
+  },
+  {
+    "title": "Google Calendar recurring event",
+    "create_time": 1784999040.0,
+    "update_time": 1784999087.0,
+    "mapping": {
+      "root-056": {
+        "id": "root-056",
+        "message": null,
+        "parent": null,
+        "children": [
+          "056-00-f787638f"
+        ]
+      },
+      "056-00-f787638f": {
+        "id": "056-00-f787638f",
+        "message": {
+          "id": "056-00-f787638f",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1784999060.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "How do I set a recurring event for the first Monday of each month?"
+            ]
+          }
+        },
+        "parent": "root-056",
+        "children": [
+          "056-01-ba67fc72"
+        ]
+      },
+      "056-01-ba67fc72": {
+        "id": "056-01-ba67fc72",
+        "message": {
+          "id": "056-01-ba67fc72",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1784999087.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Choose Custom recurrence, monthly, and select On the first Monday."
+            ]
+          }
+        },
+        "parent": "056-00-f787638f",
+        "children": []
+      }
+    },
+    "current_node": "056-01-ba67fc72"
+  },
+  {
+    "title": "Hex codes for a brand palette",
+    "create_time": 1785266880.0,
+    "update_time": 1785266927.0,
+    "mapping": {
+      "root-057": {
+        "id": "root-057",
+        "message": null,
+        "parent": null,
+        "children": [
+          "057-00-87c2a862"
+        ]
+      },
+      "057-00-87c2a862": {
+        "id": "057-00-87c2a862",
+        "message": {
+          "id": "057-00-87c2a862",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1785266900.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Suggest a warm terracotta and sage palette with hex codes for a small bakery brand."
+            ]
+          }
+        },
+        "parent": "root-057",
+        "children": [
+          "057-01-70b8b846"
+        ]
+      },
+      "057-01-70b8b846": {
+        "id": "057-01-70b8b846",
+        "message": {
+          "id": "057-01-70b8b846",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1785266927.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Terracotta #E07A5F, sage #81B29A, cream #F4F1DE, ink #3D405B, and butter #F2CC8F."
+            ]
+          }
+        },
+        "parent": "057-00-87c2a862",
+        "children": []
+      }
+    },
+    "current_node": "057-01-70b8b846"
+  },
+  {
+    "title": "Ex stuff and what I want now",
+    "create_time": 1785534720.0,
+    "update_time": 1785534842.0,
+    "mapping": {
+      "root-058": {
+        "id": "root-058",
+        "message": null,
+        "parent": null,
+        "children": [
+          "058-00-8944b68a"
+        ]
+      },
+      "058-00-8944b68a": {
+        "id": "058-00-8944b68a",
+        "message": {
+          "id": "058-00-8944b68a",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1785534740.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I got out of a three year relationship last spring. He smoked and was very indoorsy. I want someone who gets outside with me and is kind."
+            ]
+          }
+        },
+        "parent": "root-058",
+        "children": [
+          "058-01-7f74bcbc"
+        ]
+      },
+      "058-01-7f74bcbc": {
+        "id": "058-01-7f74bcbc",
+        "message": {
+          "id": "058-01-7f74bcbc",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1785534767.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "What did you learn about what you need?"
+            ]
+          }
+        },
+        "parent": "058-00-8944b68a",
+        "children": [
+          "058-02-2aa29a3f"
+        ]
+      },
+      "058-02-2aa29a3f": {
+        "id": "058-02-2aa29a3f",
+        "message": {
+          "id": "058-02-2aa29a3f",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1785534801.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "That I need someone curious and communicative. I'm ready to date again but I want to be intentional, I want a real partner not just a Friday night."
+            ]
+          }
+        },
+        "parent": "058-01-7f74bcbc",
+        "children": [
+          "058-03-52c9bc5e"
+        ]
+      },
+      "058-03-52c9bc5e": {
+        "id": "058-03-52c9bc5e",
+        "message": {
+          "id": "058-03-52c9bc5e",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1785534842.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "That is a great clarity to bring into dating."
+            ]
+          }
+        },
+        "parent": "058-02-2aa29a3f",
+        "children": []
+      }
+    },
+    "current_node": "058-03-52c9bc5e"
+  },
+  {
+    "title": "Notion project template",
+    "create_time": 1785802560.0,
+    "update_time": 1785802607.0,
+    "mapping": {
+      "root-059": {
+        "id": "root-059",
+        "message": null,
+        "parent": null,
+        "children": [
+          "059-00-16395c14"
+        ]
+      },
+      "059-00-16395c14": {
+        "id": "059-00-16395c14",
+        "message": {
+          "id": "059-00-16395c14",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1785802580.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Make me a Notion template for tracking design projects."
+            ]
+          }
+        },
+        "parent": "root-059",
+        "children": [
+          "059-01-3554ae1a"
+        ]
+      },
+      "059-01-3554ae1a": {
+        "id": "059-01-3554ae1a",
+        "message": {
+          "id": "059-01-3554ae1a",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1785802607.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Database with Status, Owner, Due date, Links, and a board view grouped by Status."
+            ]
+          }
+        },
+        "parent": "059-00-16395c14",
+        "children": []
+      }
+    },
+    "current_node": "059-01-3554ae1a"
+  },
+  {
+    "title": "APR vs APY",
+    "create_time": 1786070400.0,
+    "update_time": 1786070447.0,
+    "mapping": {
+      "root-060": {
+        "id": "root-060",
+        "message": null,
+        "parent": null,
+        "children": [
+          "060-00-b4b89e5c"
+        ]
+      },
+      "060-00-b4b89e5c": {
+        "id": "060-00-b4b89e5c",
+        "message": {
+          "id": "060-00-b4b89e5c",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1786070420.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "What is the difference between APR and APY on a savings account?"
+            ]
+          }
+        },
+        "parent": "root-060",
+        "children": [
+          "060-01-7d13ec2e"
+        ]
+      },
+      "060-01-7d13ec2e": {
+        "id": "060-01-7d13ec2e",
+        "message": {
+          "id": "060-01-7d13ec2e",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1786070447.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "APY includes compounding, APR does not, so APY is the better number for comparing savings."
+            ]
+          }
+        },
+        "parent": "060-00-b4b89e5c",
+        "children": []
+      }
+    },
+    "current_node": "060-01-7d13ec2e"
+  }
+]

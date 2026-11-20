@@ -46,7 +46,9 @@ def load_personas() -> None:
         p.setdefault("verified", p["id"] != config.DEMO_PERSONA)
         p["user_messages"] = [m["text"] for m in p.get("chat", []) if m["role"] == "user"]
         p["facts"] = [
-            {**f, "id": f"{p['id']}-s{i}", "approved": True, "source": "seed"}
+            {**f, "id": f"{p['id']}-s{i}", "approved": True, "source": "seed",
+             # seed data marks matching-only facts "private"; agents may use them, cards may not
+             "share": "agent_only" if f.get("share") == "private" else f.get("share", "public")}
             for i, f in enumerate(p.get("facts", []))
         ]
         p["card_summary"] = ""

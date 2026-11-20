@@ -1,0 +1,218 @@
+{
+  "id": "imani",
+  "first_name": "Imani",
+  "alias": "Garden Poet",
+  "age": 33,
+  "gender": "woman",
+  "seeking": {
+    "genders": [
+      "woman",
+      "nonbinary"
+    ],
+    "min_age": 29,
+    "max_age": 38
+  },
+  "neighborhood": "Bayview",
+  "tagline": "Community gardener and poet with a soul food problem.",
+  "avatar_color": "#6D597A",
+  "attributes": {
+    "smokes": false,
+    "wants_kids": "yes",
+    "drinks": "socially",
+    "pets": "has_dog",
+    "religion_important": true,
+    "early_bird": true
+  },
+  "dealbreakers": [],
+  "interests": [
+    "gardening",
+    "poetry",
+    "soul food",
+    "live jazz"
+  ],
+  "free_slots": [
+    "2026-11-22T13:00",
+    "2026-11-25T18:30",
+    "2026-11-27T18:30"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hi! I'm here to help you meet people worth meeting. Who are you, and what does a good week look like?"
+    },
+    {
+      "role": "user",
+      "text": "I'm a librarian and a community gardener. A good week has a poetry night, garden work, and Sunday supper."
+    },
+    {
+      "role": "assistant",
+      "text": "Love that. How do you typically spend your weekends?"
+    },
+    {
+      "role": "user",
+      "text": "I garden Saturday mornings and read poetry on Sundays."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your food personality? What would you happily eat on repeat?"
+    },
+    {
+      "role": "user",
+      "text": "I cook collards and cornbread for my whole block."
+    },
+    {
+      "role": "assistant",
+      "text": "What else fills your free time?"
+    },
+    {
+      "role": "user",
+      "text": "Jazz at small rooms, poetry open mics, and volunteering."
+    },
+    {
+      "role": "assistant",
+      "text": "Tell me about work. Does it leave room for dating?"
+    },
+    {
+      "role": "user",
+      "text": "Library hours are steady, I have evenings free."
+    },
+    {
+      "role": "assistant",
+      "text": "Drinking: where do you land?"
+    },
+    {
+      "role": "user",
+      "text": "I'll have a glass of wine at dinner."
+    },
+    {
+      "role": "assistant",
+      "text": "Smoking or vaping, anything I should know, either way?"
+    },
+    {
+      "role": "user",
+      "text": "I don't smoke."
+    },
+    {
+      "role": "assistant",
+      "text": "Kids: where are you on that?"
+    },
+    {
+      "role": "user",
+      "text": "I want kids, maybe through adoption."
+    },
+    {
+      "role": "assistant",
+      "text": "Any pets in your life?"
+    },
+    {
+      "role": "user",
+      "text": "I have a dog named Maple."
+    },
+    {
+      "role": "assistant",
+      "text": "How big a role do religion or spirituality play, and what do you value most in people?"
+    },
+    {
+      "role": "user",
+      "text": "My faith is important to me, and community matters most."
+    },
+    {
+      "role": "assistant",
+      "text": "Early bird or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I'm up at six to garden."
+    },
+    {
+      "role": "assistant",
+      "text": "What kind of person are you hoping to meet?"
+    },
+    {
+      "role": "user",
+      "text": "I want someone grounded and loving who cares about community."
+    },
+    {
+      "role": "assistant",
+      "text": "Anything that's a hard no for you?"
+    },
+    {
+      "role": "user",
+      "text": "I can't stand disrespect."
+    },
+    {
+      "role": "assistant",
+      "text": "Final question: which times next week could work for a first date?"
+    },
+    {
+      "role": "user",
+      "text": "Sunday afternoon or Wednesday evening work."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "Gardening and poetry",
+      "quote": "I garden Saturday mornings and read poetry on Sundays",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "Soul food",
+      "quote": "I cook collards and cornbread for my whole block",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Drinks socially",
+      "quote": "I'll have a glass of wine at dinner",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Does not smoke",
+      "quote": "I don't smoke",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Wants kids",
+      "quote": "I want kids, maybe through adoption",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Faith is important",
+      "quote": "My faith is important to me",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Early bird",
+      "quote": "I'm up at six to garden",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Wants grounded, loving partner",
+      "quote": "I want someone grounded and loving who cares about community",
+      "share": "public"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "Dislikes disrespect",
+      "quote": "I can't stand disrespect",
+      "share": "private"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Sunday afternoon and Wednesday evening",
+      "quote": "Sunday afternoon or Wednesday evening work",
+      "share": "public"
+    }
+  ]
+}

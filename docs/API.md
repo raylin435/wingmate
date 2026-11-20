@@ -56,6 +56,7 @@ type AuditEvent = { id: number; run_id: string; ts: string; step: string; actor:
 | GET | `/api/bookings/{booking_id}.ics` | | `text/calendar` |
 | GET | `/api/audit/{run_id}` | | `AuditEvent[]` (oldest first) |
 | GET | `/api/config` | | `{ policy: {...match_policy}, strategy: "vector_only" \| "agent_predate" }` |
+| POST | `/api/reset` | | `{ ok, personas }` reload seed data for a clean demo run |
 | POST | `/api/simulate` | | `{ by_strategy: { [arm]: {searched, proposed, mutual_accept, booked} } }` |
 
 ```ts

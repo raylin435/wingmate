@@ -1,0 +1,217 @@
+{
+  "id": "jordan",
+  "first_name": "Jordan",
+  "alias": "Late-Night Cartographer",
+  "age": 31,
+  "gender": "man",
+  "seeking": {
+    "genders": [
+      "woman"
+    ],
+    "min_age": 26,
+    "max_age": 35
+  },
+  "neighborhood": "Hayes Valley",
+  "tagline": "Sound engineer, trail runner, dumpling scholar.",
+  "avatar_color": "#3D405B",
+  "attributes": {
+    "smokes": true,
+    "wants_kids": "unsure",
+    "drinks": "socially",
+    "pets": "none",
+    "religion_important": false,
+    "early_bird": true
+  },
+  "dealbreakers": [],
+  "interests": [
+    "trail running",
+    "dumplings",
+    "live jazz",
+    "board games"
+  ],
+  "free_slots": [
+    "2026-11-22T11:00",
+    "2026-11-23T19:00",
+    "2026-11-25T18:30"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hi! I'm here to help you meet people worth meeting. Who are you, and what does a good week look like?"
+    },
+    {
+      "role": "user",
+      "text": "I'm a sound engineer and a bit of a night-time wanderer. A perfect week is a trail run, a good jazz set, and dumplings with friends."
+    },
+    {
+      "role": "assistant",
+      "text": "Love that. How do you typically spend your weekends?"
+    },
+    {
+      "role": "user",
+      "text": "I'm out on the Marin Headlands trails most Saturday mornings, then I'm hunting for the best dumplings in the city."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your food personality? What would you happily eat on repeat?"
+    },
+    {
+      "role": "user",
+      "text": "Soup dumplings are my love language. Also a hole-in-the-wall noodle guy. I'll cook for you if you let me."
+    },
+    {
+      "role": "assistant",
+      "text": "What else fills your free time?"
+    },
+    {
+      "role": "user",
+      "text": "Live jazz, board games with my roommates, and long runs. I play upright bass, badly."
+    },
+    {
+      "role": "assistant",
+      "text": "Tell me about work. Does it leave room for dating?"
+    },
+    {
+      "role": "user",
+      "text": "I freelance so my hours bend. I actually have time and energy for dating, which is rare."
+    },
+    {
+      "role": "assistant",
+      "text": "Drinking: where do you land?"
+    },
+    {
+      "role": "user",
+      "text": "I'll have a whiskey or two when there's music, but never to excess."
+    },
+    {
+      "role": "assistant",
+      "text": "Smoking or vaping, anything I should know, either way?"
+    },
+    {
+      "role": "user",
+      "text": "I still smoke a few cigarettes when I'm out with friends, mostly at shows. I'm trying to cut down but I'm not there yet."
+    },
+    {
+      "role": "assistant",
+      "text": "Kids: where are you on that?"
+    },
+    {
+      "role": "user",
+      "text": "I could see kids in the future but I'm in no rush."
+    },
+    {
+      "role": "assistant",
+      "text": "Any pets in your life?"
+    },
+    {
+      "role": "user",
+      "text": "No pets right now because my landlord is strict, but I'm a dog person all the way."
+    },
+    {
+      "role": "assistant",
+      "text": "How big a role do religion or spirituality play, and what do you value most in people?"
+    },
+    {
+      "role": "user",
+      "text": "Religion isn't a big thing for me. Honesty, loyalty and showing up matter more."
+    },
+    {
+      "role": "assistant",
+      "text": "Early bird or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I'm up early for runs, so I'm a morning person even after late shows. Weird combo, I know."
+    },
+    {
+      "role": "assistant",
+      "text": "What kind of person are you hoping to meet?"
+    },
+    {
+      "role": "user",
+      "text": "I want someone adventurous and kind who is up for a spontaneous trail and a late dumpling dinner."
+    },
+    {
+      "role": "assistant",
+      "text": "Anything that's a hard no for you?"
+    },
+    {
+      "role": "user",
+      "text": "Flakiness is my pet peeve. I'm pretty easy otherwise."
+    },
+    {
+      "role": "assistant",
+      "text": "Final question: which times next week could work for a first date?"
+    },
+    {
+      "role": "user",
+      "text": "Sunday late morning, Monday evening and Wednesday evening all work for me."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "Runs trails on weekends",
+      "quote": "out on the Marin Headlands trails most Saturday mornings",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "Dumpling devotee",
+      "quote": "Soup dumplings are my love language",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Drinks socially",
+      "quote": "I'll have a whiskey or two when there's music, but never to excess",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Smokes occasionally",
+      "quote": "I still smoke a few cigarettes when I'm out with friends",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Unsure about kids",
+      "quote": "I could see kids in the future but I'm in no rush",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Religion not important",
+      "quote": "Religion isn't a big thing for me",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Early riser",
+      "quote": "I'm a morning person even after late shows",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Wants adventurous, kind partner",
+      "quote": "I want someone adventurous and kind who is up for a spontaneous trail and a late dumpling dinner",
+      "share": "public"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "Dislikes flakiness",
+      "quote": "Flakiness is my pet peeve",
+      "share": "private"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Sunday morning, Monday and Wednesday evening",
+      "quote": "Sunday late morning, Monday evening and Wednesday evening all work for me",
+      "share": "public"
+    }
+  ]
+}
