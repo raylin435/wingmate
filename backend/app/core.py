@@ -101,13 +101,13 @@ def shareable_facts(p: dict[str, Any], include_agent_only: bool = True) -> list[
 
 def build_summary(p: dict[str, Any]) -> tuple[str, list[str]]:
     facts = shareable_facts(p, include_agent_only=False)
-    parts = [f"{p['alias']}, {p['age']}, {p['neighborhood']}."]
+    header = f"{p['alias']}, {p['age']}, {p['neighborhood']}."  # public by design, never redacted
+    parts = []
     if p.get("interests"):
         parts.append("Into " + ", ".join(p["interests"]) + ".")
     parts += [f["value"].rstrip(".") + "." for f in facts if f["field"] != "dealbreaker"]
-    text = " ".join(parts)
-    redacted, redactions, _, _ = llm.redact(text, [p["first_name"]])
-    return redacted, redactions
+    redacted, redactions, _, _ = llm.redact(" ".join(parts), [p["first_name"]])
+    return f"{header} {redacted}", redactions
 
 
 def seeking_text(p: dict[str, Any]) -> str:

@@ -138,7 +138,7 @@ def redact(text: str, known_names: list[str]) -> tuple[str, list[str], str, int]
                                       labels=["person", "organization", "email", "phone number", "street address"])
                 res = res[0] if isinstance(res, list) else res
                 for ent in sorted(res.get("entities") or [], key=lambda e: -len(e["text"])):
-                    if ent.get("score", 1) >= 0.5 and ent["text"] in text:
+                    if ent.get("score", 1) >= 0.7 and len(ent["text"]) > 2 and ent["text"] in text:
                         text = text.replace(ent["text"], f"[{ent['label']}]")
                         redactions.append(f"{ent['label']}: {ent['text']}")
                 model = config.PII_MODEL
