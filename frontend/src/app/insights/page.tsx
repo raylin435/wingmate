@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { FlaskConical, Play, SlidersHorizontal } from "lucide-react";
 import { api, errorMessage, type ConfigResponse, type FunnelCounts, type SimulateResponse } from "@/lib/api";
-import { Button, Card, CardTitle, ErrorBanner, Pill, Skeleton, cx } from "@/components/ui";
+import { Button, Card, CardTitle, ErrorBanner, Pill, Skeleton, cx, PageHeader } from "@/components/ui";
 
 const STAGES: { key: keyof FunnelCounts; label: string }[] = [
   { key: "searched", label: "Searched" },
@@ -51,14 +51,10 @@ export default function InsightsPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-agent">Experimentation</p>
-        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">Insights</h1>
-        <p className="mt-1 max-w-xl text-sm text-muted">
-          Does letting agents go on the pre-date beat plain vector matching? The live match policy and a funnel
-          simulation per strategy.
-        </p>
-      </div>
+      <PageHeader kicker="Experimentation" tone="tag" title="insights">
+        Does letting agents go on the pre-date beat plain vector matching? The live match policy and a funnel
+        simulation per strategy.
+      </PageHeader>
 
       <div className="grid gap-6 lg:grid-cols-[360px_minmax(0,1fr)]">
         <Card className="min-w-0">

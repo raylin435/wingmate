@@ -128,7 +128,7 @@ function BookingCard({ booking, stored }: { booking: Booking; stored: StoredBook
   const me = stored?.my_first_name;
   const them = stored?.partner_first_name ?? stored?.partner_alias;
   return (
-    <section className="relative overflow-hidden rounded-3xl border border-human/30 bg-surface">
+    <section className="glass relative overflow-hidden rounded-[30px]">
       <div
         className="pointer-events-none absolute inset-0 opacity-60 dark:opacity-40"
         style={{
@@ -146,7 +146,7 @@ function BookingCard({ booking, stored }: { booking: Booking; stored: StoredBook
               {me} &amp; {them}
             </p>
           )}
-          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">{booking.venue.name}</h1>
+          <h1 className="font-display text-[44px] leading-[0.95] tracking-tight sm:text-[60px]">{booking.venue.name}</h1>
           <p className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted">
             <span className="inline-flex items-center gap-1">
               <MapPin className="size-4" /> {booking.venue.neighborhood}
@@ -174,11 +174,11 @@ function BookingCard({ booking, stored }: { booking: Booking; stored: StoredBook
           )}
         </div>
         <div className="flex flex-col items-start gap-3 md:items-end">
-          <div className="rounded-2xl bg-surface px-5 py-4 text-center ring-1 ring-line">
+          <div className="rotate-3 rounded-md bg-white px-5 py-4 text-center text-[#1d2326] shadow-[0_14px_30px_-14px_rgba(0,0,0,0.55)]">
             <div className="text-xs font-semibold uppercase tracking-wider text-human">
               {formatDateRangeLA(booking.start, booking.end).day.split(",")[0]}
             </div>
-            <div className="text-4xl font-semibold tabular-nums">
+            <div className="font-display text-5xl leading-none tabular-nums">
               {new Intl.DateTimeFormat("en-US", { timeZone: "America/Los_Angeles", day: "numeric" }).format(
                 new Date(booking.start),
               )}
@@ -191,7 +191,7 @@ function BookingCard({ booking, stored }: { booking: Booking; stored: StoredBook
           </div>
           <a
             href={api.icsUrl(booking.id)}
-            className="inline-flex h-10 items-center gap-2 rounded-lg bg-human px-4 text-sm font-medium text-white shadow-sm shadow-human/20 hover:brightness-110 dark:text-[#1a0a10]"
+            className="inline-flex h-11 items-center gap-2 rounded-full bg-human px-5 text-sm font-semibold text-white shadow-[0_10px_24px_-12px_var(--human)] hover:brightness-110 dark:text-[#2a0718]"
           >
             <CalendarPlus className="size-4" /> Add to calendar
           </a>

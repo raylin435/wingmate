@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { AlertCircle, Bot, Check, FastForward, Heart, RotateCcw, ThumbsDown, ThumbsUp, X } from "lucide-react";
 import type { A2AMessage, PredateResponse, Verdict } from "@/lib/api";
-import { Button, Pill, cx } from "../ui";
+import { Button, Pill, Sticker, cx } from "../ui";
 
 const REVEAL_MS = 700;
 
@@ -38,13 +38,13 @@ function Typing({ mine }: { mine: boolean }) {
   return (
     <div
       className={cx(
-        "inline-flex items-center gap-1 rounded-2xl px-4 py-3",
-        mine ? "bg-agent-soft" : "bg-surface-2 ring-1 ring-line",
+        "inline-flex items-center gap-1 rounded-[20px] px-4 py-3",
+        mine ? "rounded-bl-md bg-bubble-me" : "rounded-br-md bg-bubble-them md:rounded-br-[20px] md:rounded-bl-md",
       )}
       aria-label="Agent is typing"
     >
       {[0, 1, 2].map((i) => (
-        <span key={i} className={cx("typing-dot size-1.5 rounded-full", mine ? "bg-agent" : "bg-muted")} />
+        <span key={i} className={cx("typing-dot size-1.5 rounded-full", mine ? "bg-white" : "bg-muted")} />
       ))}
     </div>
   );
@@ -71,8 +71,8 @@ export function Transcript({
   const typingMine = next ? isMine(next, myId) : true;
 
   return (
-    <div className="rounded-2xl border border-line bg-surface">
-      <div className="grid grid-cols-2 border-b border-line text-xs font-semibold">
+    <div className="glass overflow-hidden rounded-[30px]">
+      <div className="grid grid-cols-2 border-b border-line bg-white/35 text-xs font-semibold dark:bg-white/5">
         <div className="flex items-center gap-2 px-4 py-3 text-agent">
           <Bot className="size-4" /> {myLabel}
         </div>
@@ -92,15 +92,15 @@ export function Transcript({
                 mine ? "items-start md:col-start-1" : "items-end md:col-start-2 md:items-start",
               )}
             >
-              <span className={cx("mb-1 text-[11px] font-medium", mine ? "text-agent" : "text-muted")}>
+              <span className="mb-1 px-1 text-[11px] font-medium text-muted">
                 {m.alias} · turn {m.turn}
               </span>
               <div
                 className={cx(
-                  "max-w-[92%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed md:max-w-full",
+                  "max-w-[92%] rounded-[20px] px-4 py-2.5 text-sm leading-relaxed shadow-[0_6px_16px_-12px_rgba(0,0,0,0.5)] md:max-w-full",
                   mine
-                    ? "rounded-tl-sm bg-agent-soft text-fg"
-                    : "rounded-tr-sm bg-surface-2 ring-1 ring-line md:rounded-tl-sm md:rounded-tr-2xl",
+                    ? "rounded-bl-md bg-bubble-me text-white"
+                    : "rounded-br-md bg-bubble-them text-fg md:rounded-br-[20px] md:rounded-bl-md",
                 )}
               >
                 {m.text}
@@ -143,17 +143,17 @@ export function VerdictCard({ title, verdict, mine }: { title: string; verdict?:
   const max = scoreMax(verdict.score);
   const pct = Math.min(100, (verdict.score / max) * 100);
   return (
-    <div className="animate-msg-in rounded-2xl border border-line bg-surface p-5">
+    <div className="glass animate-msg-in rounded-[26px] p-5 sm:p-6">
       <div className="mb-4 flex items-center justify-between gap-3">
         <div>
-          <p className={cx("text-[11px] font-semibold uppercase tracking-[0.14em]", mine ? "text-agent" : "text-muted")}>
+          <Sticker tone={mine ? "agent" : "neutral"} className="mb-1.5 text-[15px]">
             Verdict
-          </p>
-          <h3 className="font-semibold">{title}</h3>
+          </Sticker>
+          <h3 className="font-display text-2xl leading-tight">{title}</h3>
         </div>
         <div className="flex items-center gap-3">
           <div className="text-right">
-            <div className="text-2xl font-semibold tabular-nums">
+            <div className="font-display text-4xl leading-none tabular-nums">
               {fmtScore(verdict.score)}
               <span className="text-sm font-normal text-muted">/{max === 1 ? 100 : max}</span>
             </div>
@@ -214,13 +214,15 @@ export function MatchBanner({ result }: { result: PredateResponse }) {
   return (
     <div
       className={cx(
-        "animate-msg-in flex flex-wrap items-center gap-3 rounded-2xl px-5 py-4",
-        result.match ? "bg-human text-white dark:text-[#1a0a10]" : "bg-surface-2 ring-1 ring-line",
+        "animate-msg-in flex flex-wrap items-center gap-3 rounded-[26px] px-6 py-5",
+        result.match
+          ? "bg-[linear-gradient(120deg,#c4166f,#9d1460)] text-white shadow-[0_18px_40px_-20px_#c4166f]"
+          : "glass",
       )}
     >
       {result.match ? <Heart className="size-6 fill-current" /> : <X className="size-6 text-muted" />}
       <div className="flex-1">
-        <p className="font-semibold">
+        <p className="font-display text-[26px] leading-tight">
           {result.match ? "Both agents recommend a first date" : "The agents decided to pass"}
         </p>
         <p className={cx("text-sm", result.match ? "opacity-90" : "text-muted")}>
