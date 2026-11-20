@@ -133,8 +133,23 @@ if config.COGNEE_ENABLED != "0":
     try:
         import os
 
+        if config.SIE_API_KEY and not os.environ.get("LLM_API_KEY"):
+            # Run Cognee's graph extraction and embeddings on SIE's OpenAI-compatible endpoints.
+            for k, v in {
+                "LLM_PROVIDER": "custom", "LLM_ENDPOINT": "https://api.superlinked.com/v1",
+                "LLM_MODEL": f"openai/{config.CHAT_MODEL}", "LLM_API_KEY": config.SIE_API_KEY,
+                "EMBEDDING_PROVIDER": "custom", "EMBEDDING_ENDPOINT": "https://api.superlinked.com/v1",
+                "EMBEDDING_MODEL": f"openai/{config.EMBED_MODEL}", "EMBEDDING_DIMENSIONS": "1024",
+                "EMBEDDING_API_KEY": config.SIE_API_KEY, "ENABLE_BACKEND_ACCESS_CONTROL": "false",
+            }.items():
+                if not os.environ.get(k, "").strip():
+                    os.environ[k] = v
+
         if config.COGNEE_ENABLED == "1" or os.environ.get("LLM_API_KEY"):
             import cognee  # noqa: F401
+            import litellm
+
+            litellm.drop_params = True  # SIE's embeddings endpoint rejects the `dimensions` param
 
             _cognee_loop = asyncio.new_event_loop()
             threading.Thread(target=_cognee_loop.run_forever, daemon=True).start()
@@ -180,7 +195,7 @@ def cognee_recall(uid: str, question: str) -> str | None:
                                    datasets=[f"wingmate_{uid}"])
 
     try:
-        res = _run(go(), timeout=45)
+        res = _run(go(), timeout=config.COGNEE_RECALL_TIMEOUT_S)
         if isinstance(res, list):
             res = " ".join(str(r) for r in res[:2])
         return str(res)[:600] if res else None

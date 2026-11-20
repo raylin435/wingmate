@@ -26,14 +26,16 @@ STATSIG_SERVER_KEY = env("STATSIG_SERVER_KEY")
 AMPLITUDE_API_KEY = env("AMPLITUDE_API_KEY")
 PERSONA_API_KEY = env("PERSONA_API_KEY")
 COGNEE_ENABLED = env("COGNEE_ENABLED", "auto")  # auto | 1 | 0
+COGNEE_RECALL_TIMEOUT_S = float(env("COGNEE_RECALL_TIMEOUT_S", "8"))
 
 CHAT_MODEL = env("SIE_CHAT_MODEL", "Qwen/Qwen3.8-27B-FP8")
-EMBED_MODEL = env("SIE_EMBED_MODEL", "Qwen/Qwen3-Embedding-4B")
+EMBED_MODEL = env("SIE_EMBED_MODEL", "BAAI/bge-m3")
 RERANK_MODEL = env("SIE_RERANK_MODEL", "Qwen/Qwen3-Reranker-4B")
-CLASSIFY_MODEL = env("SIE_CLASSIFY_MODEL", "knowledgator/gliclass-large-v3.0")
+CLASSIFY_MODEL = env("SIE_CLASSIFY_MODEL", "fastino/gliner2-large-v1")
 PII_MODEL = env("SIE_PII_MODEL", "numind/NuNER_Zero")
 
 DEMO_PERSONA = "maya"
+WARM_MEMORY = (env("WARM_MEMORY", "maya,theo,jordan,ben,kenji,diego") or "").split(",")
 TIMEZONE = "America/Los_Angeles"
 
 DEFAULT_POLICY = {

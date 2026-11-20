@@ -97,18 +97,21 @@ _WORK_HINTS = ("spreadsheet", "excel", "python", "code", "sql", "bug", "deploy",
 
 
 def classify_personal(texts: list[str]) -> tuple[list[bool], str, int]:
-    labels = ["personal life, dating, hobbies or relationships",
-              "work, coding, school or admin tasks", "other"]
+    """Keep a conversation when GLiNER2 finds personal-life spans that outscore work spans."""
+    personal = ["hobby or personal interest", "dating or relationship", "lifestyle habit", "family or pet"]
+    work = ["work or coding task", "admin or school task"]
     with timer() as t:
         if _client is not None and texts:
             try:
-                out = _client.extract(config.CLASSIFY_MODEL, [{"text": x[:3000]} for x in texts], labels=labels)
+                out = _client.extract(config.CLASSIFY_MODEL, [{"text": x[:2000]} for x in texts],
+                                      labels=personal + work)
                 out = out if isinstance(out, list) else [out]
                 flags = []
                 for o in out:
-                    cls = o.get("classifications") or []
-                    top = max(cls, key=lambda c: c["score"]) if cls else {"label": "other"}
-                    flags.append(top["label"] == labels[0])
+                    ents = o.get("entities") or []
+                    p = sum(e["score"] for e in ents if e["label"] in personal)
+                    w = sum(e["score"] for e in ents if e["label"] in work)
+                    flags.append(p >= 1.0 and p > w)
                 return flags, config.CLASSIFY_MODEL, since(t)
             except Exception as exc:
                 _warn("classify", exc)

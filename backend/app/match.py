@@ -3,6 +3,7 @@
 import json
 import re
 import uuid
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta
 from typing import Any
 
@@ -90,7 +91,7 @@ def _system(p: dict[str, Any], words: int) -> str:
             f"You are chatting with another person's agent to decide whether the two humans should meet.\n"
             f"What you know about your owner (fact ids in brackets):\n{_facts_block(p)}\n"
             f"Interests: {', '.join(p.get('interests', []))}. Deal-breakers: {dbs}.\n"
-            "Rules: never reveal names, contact details, employer or exact address. Answer the other agent "
+            "Rules: never reveal names, contact details, employer, health details or exact address. Answer the other agent "
             "honestly, including about smoking, kids, drinking and pets. If you don't know, say so; never invent. "
             "Ask about your owner's deal-breakers early. Be warm and specific. "
             f"Reply with one message under {words} words, no preamble.")
@@ -100,8 +101,9 @@ def _live_turn(speaker: dict, other: dict, transcript: list[dict], words: int, r
     msgs = [{"role": "system", "content": _system(speaker, words)}]
     last_other = next((m["text"] for m in reversed(transcript) if m["from"] == other["id"]), None)
     if last_other:
-        snippet, src = core.recall(speaker["id"], last_other)
-        audit.log(run_id, "memory_recall", f"agent:{speaker['id']}", src, None, question=last_other[:200],
+        with audit.timer() as rt:
+            snippet, src = core.recall(speaker["id"], last_other)
+        audit.log(run_id, "memory_recall", f"agent:{speaker['id']}", src, rt["ms"], question=last_other[:200],
                   answer=snippet[:300])
         if snippet:
             msgs[0]["content"] += f"\nFrom your owner's memory, relevant to the latest message: {snippet}"
@@ -222,9 +224,14 @@ def predate(pid: str, cid: str, run_id: str | None) -> dict[str, Any]:
         transcript.append({"turn": turn, "from": speaker["id"], "alias": speaker["alias"], "text": text})
         audit.log(run_id, "a2a_message", f"agent:{speaker['id']}", model, ms, turn=turn, text=text)
     verdicts: dict[str, Any] = {}
+    live_verdicts: dict[str, tuple] = {}
+    if live_ok:  # both agents judge at the same time
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            futures = {me["id"]: pool.submit(_live_verdict, me, other, transcript) for me, other in ((a, b), (b, a))}
+            live_verdicts = {k: f.result() for k, f in futures.items()}
     for me, other in ((a, b), (b, a)):
         their_text = " ".join(m["text"] for m in transcript if m["from"] == other["id"])
-        v, model, ms = _live_verdict(me, other, transcript) if live_ok else (None, "local:rule-verdict", 0)
+        v, model, ms = live_verdicts.get(me["id"], (None, "local:rule-verdict", 0))
         if v is None:
             v, model = _mock_verdict(me, other, their_text), "local:rule-verdict"
         valid_ids = {f["id"] for f in me["facts"]}

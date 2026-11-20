@@ -17,8 +17,11 @@ async def lifespan(_: FastAPI):
     match.load_venues()
     if integrations.cognee_enabled():
         def warm():
-            for pid in [config.DEMO_PERSONA] + [p for p in core.PERSONAS if p != config.DEMO_PERSONA]:
-                core.ingest_memory(pid)
+            # Build memory graphs for the demo persona and her likely candidates first; the rest
+            # fall back to vector memory recall so startup stays cheap.
+            for pid in config.WARM_MEMORY:
+                if pid in core.PERSONAS:
+                    core.ingest_memory(pid)
         threading.Thread(target=warm, daemon=True).start()
     yield
     integrations.shutdown()
