@@ -3,6 +3,8 @@ applies the hard filters and vector similarity together. Without SINGLESTORE_URL
 in memory with numpy."""
 
 import json
+import threading
+from contextlib import contextmanager
 from typing import Any
 
 import numpy as np
@@ -43,20 +45,50 @@ class SingleStoreDirectory:
     name = "singlestore"
 
     def __init__(self, url: str) -> None:
-        import singlestoredb as s2
-
-        self.conn = s2.connect(url, autocommit=True)
+        self.url = url
+        self.lock = threading.RLock()
+        self.conn = self._connect()
         self.dim: int | None = None
-        with self.conn.cursor() as cur:
+        with self.cursor() as cur:
             cur.execute("""CREATE TABLE IF NOT EXISTS audit_events (
                 id BIGINT PRIMARY KEY, run_id VARCHAR(32), ts VARCHAR(40), step VARCHAR(48),
                 actor VARCHAR(64), model VARCHAR(128), latency_ms INT, detail JSON, KEY (run_id))""")
         audit.add_sink(self._audit_sink)
 
+    def _connect(self):
+        import singlestoredb as s2
+
+        return s2.connect(self.url, autocommit=True)
+
+    @contextmanager
+    def cursor(self):
+        """One connection shared by request threads: serialize access and reconnect once if the
+        server closed an idle connection."""
+        with self.lock:
+            try:
+                with self.conn.cursor() as probe:
+                    probe.execute("SELECT 1")
+                    probe.fetchall()
+            except Exception:
+                print("[store] SingleStore connection was closed, reconnecting")
+                self.conn = self._connect()
+            try:
+                cur = self.conn.cursor()
+            except Exception:
+                self.conn = self._connect()
+                cur = self.conn.cursor()
+            try:
+                yield cur
+            finally:
+                try:
+                    cur.close()
+                except Exception:
+                    pass
+
     def _ensure_table(self, dim: int) -> None:
         if self.dim == dim:
             return
-        with self.conn.cursor() as cur:
+        with self.cursor() as cur:
             cur.execute("SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'agent_cards' AND table_schema = DATABASE()")
             exists = cur.fetchone()[0] > 0
             if exists:
@@ -74,7 +106,7 @@ class SingleStoreDirectory:
 
     def upsert(self, card: dict[str, Any], vec: np.ndarray) -> None:
         self._ensure_table(len(vec))
-        with self.conn.cursor() as cur:
+        with self.cursor() as cur:
             cur.execute(
                 "REPLACE INTO agent_cards VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
                 (card["agent_id"], card["alias"], card["age"], card["gender"], card["neighborhood"],
@@ -83,7 +115,7 @@ class SingleStoreDirectory:
             )
 
     def set_verified(self, agent_id: str, verified: bool) -> None:
-        with self.conn.cursor() as cur:
+        with self.cursor() as cur:
             cur.execute("UPDATE agent_cards SET verified = %s WHERE agent_id = %s", (verified, agent_id))
 
     def search(self, me: dict[str, Any], qvec: np.ndarray, limit: int) -> list[dict[str, Any]]:
@@ -101,7 +133,7 @@ class SingleStoreDirectory:
             ORDER BY sim DESC LIMIT %s"""
         params = [json.dumps([float(x) for x in qvec]), me["id"], s["min_age"], s["max_age"], *genders,
                   me["age"], me["age"], me["gender"], limit]
-        with self.conn.cursor() as cur:
+        with self.cursor() as cur:
             cur.execute(sql, params)
             cols = [d[0] for d in cur.description]
             rows = [dict(zip(cols, r)) for r in cur.fetchall()]
@@ -112,7 +144,7 @@ class SingleStoreDirectory:
         return rows
 
     def _audit_sink(self, e: dict[str, Any]) -> None:
-        with self.conn.cursor() as cur:
+        with self.cursor() as cur:
             cur.execute("INSERT INTO audit_events VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
                         (e["id"] + _AUDIT_OFFSET, e["run_id"], e["ts"], e["step"], e["actor"], e["model"],
                          e["latency_ms"], json.dumps(e["detail"], default=str)))
