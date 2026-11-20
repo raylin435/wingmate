@@ -122,7 +122,9 @@ if config.COGNEE_ENABLED != "0":
                 "LLM_MODEL": f"openai/{config.CHAT_MODEL}", "LLM_API_KEY": config.SIE_API_KEY,
                 "EMBEDDING_PROVIDER": "custom", "EMBEDDING_ENDPOINT": "https://api.superlinked.com/v1",
                 "EMBEDDING_MODEL": f"openai/{config.EMBED_MODEL}", "EMBEDDING_DIMENSIONS": "1024",
-                "EMBEDDING_API_KEY": config.SIE_API_KEY, "ENABLE_BACKEND_ACCESS_CONTROL": "false",
+                "EMBEDDING_API_KEY": config.SIE_API_KEY,
+                # keep each owner's memory isolated: per-dataset access control on, no shared Q&A cache
+                "ENABLE_BACKEND_ACCESS_CONTROL": "true", "CACHING": "false",
             }.items():
                 if not os.environ.get(k, "").strip():
                     os.environ[k] = v
@@ -179,7 +181,14 @@ def cognee_recall(uid: str, question: str) -> str | None:
     try:
         res = _run(go(), timeout=config.COGNEE_RECALL_TIMEOUT_S)
         if isinstance(res, list):
-            res = " ".join(str(r) for r in res[:2])
+            parts = []
+            for r in res[:2]:
+                if isinstance(r, dict) and "search_result" in r:  # per-dataset result envelope
+                    sr = r["search_result"]
+                    parts += [str(x) for x in (sr if isinstance(sr, list) else [sr])]
+                else:
+                    parts.append(str(r))
+            res = " ".join(parts)
         return str(res)[:600] if res else None
     except Exception as exc:
         print(f"[cognee] recall failed for {uid}: {exc}")
