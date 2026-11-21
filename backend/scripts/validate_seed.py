@@ -35,8 +35,8 @@ for f in sorted(glob.glob(str(DATA / "personas" / "*.json"))):
         err(f"{f}: filename != id")
     personas[pid] = p
 
-if len(personas) != 30:
-    err(f"expected 30 personas, got {len(personas)}")
+if len(personas) != 31:
+    err(f"expected 31 personas, got {len(personas)}")
 aliases = [p["alias"] for p in personas.values()]
 if len(set(aliases)) != len(aliases):
     err("duplicate aliases")
@@ -98,41 +98,41 @@ def mutual(a, b):
     return acceptable(a, b) and acceptable(b, a)
 
 
-# --- Maya / Jordan / Theo storyline -----------------------------------------
+# --- Rachel / Chris / Matt storyline -----------------------------------------
 try:
-    maya, jordan, theo = personas["maya"], personas["jordan"], personas["theo"]
-    if not jordan["attributes"]["smokes"]:
-        err("jordan must smoke")
-    if not any(d["attr"] == "smokes" and d["equals"] is True for d in maya["dealbreakers"]):
-        err("maya must have smoking dealbreaker")
-    if not any(f["field"] == "dealbreaker" and "smoke" in f["quote"] for f in maya["facts"]):
-        err("maya needs a smoking dealbreaker fact quote")
-    if not any("smoke" in f["quote"] and f["field"] == "lifestyle" for f in jordan["facts"]):
-        err("jordan needs a lifestyle smoking fact")
-    shared = set(maya["free_slots"]) & set(theo["free_slots"])
+    rachel, chris, matt = personas["rachel"], personas["chris"], personas["matt"]
+    if not chris["attributes"]["smokes"]:
+        err("chris must smoke")
+    if not any(d["attr"] == "smokes" and d["equals"] is True for d in rachel["dealbreakers"]):
+        err("rachel must have smoking dealbreaker")
+    if not any(f["field"] == "dealbreaker" and "smoke" in f["quote"] for f in rachel["facts"]):
+        err("rachel needs a smoking dealbreaker fact quote")
+    if not any("smoke" in f["quote"] and f["field"] == "lifestyle" for f in chris["facts"]):
+        err("chris needs a lifestyle smoking fact")
+    shared = set(rachel["free_slots"]) & set(matt["free_slots"])
     if len(shared) < 2:
-        err(f"theo shares only {len(shared)} slots with maya")
-    for name, man in (("jordan", jordan), ("theo", theo)):
-        s = maya["seeking"]
+        err(f"matt shares only {len(shared)} slots with rachel")
+    for name, man in (("chris", chris), ("matt", matt)):
+        s = rachel["seeking"]
         if not (man["gender"] in s["genders"] and s["min_age"] <= man["age"] <= s["max_age"]):
-            err(f"{name} outside maya's seeking range")
+            err(f"{name} outside rachel's seeking range")
         ms = man["seeking"]
-        if not ("woman" in ms["genders"] and ms["min_age"] <= maya["age"] <= ms["max_age"]):
-            err(f"{name} does not seek maya's profile")
-    if violates(maya, theo) or violates(theo, maya):
-        err("theo conflicts with maya on a dealbreaker")
-    if not violates(maya, jordan):
-        err("jordan should trip maya's dealbreaker")
-    mi = set(maya["interests"])
-    if len(mi & set(jordan["interests"])) < 3:
-        err("jordan should overlap maya's interests (>=3)")
-    if len(mi & set(theo["interests"])) < 3:
-        err("theo should overlap maya's interests (>=3)")
-    weaker = [pid for pid, p in personas.items() if pid not in ("maya", "jordan", "theo") and mutual(maya, p)]
+        if not ("woman" in ms["genders"] and ms["min_age"] <= rachel["age"] <= ms["max_age"]):
+            err(f"{name} does not seek rachel's profile")
+    if violates(rachel, matt) or violates(matt, rachel):
+        err("matt conflicts with rachel on a dealbreaker")
+    if not violates(rachel, chris):
+        err("chris should trip rachel's dealbreaker")
+    mi = set(rachel["interests"])
+    if len(mi & set(chris["interests"])) < 3:
+        err("chris should overlap rachel's interests (>=3)")
+    if len(mi & set(matt["interests"])) < 3:
+        err("matt should overlap rachel's interests (>=3)")
+    weaker = [pid for pid, p in personas.items() if pid not in ("rachel", "chris", "matt") and mutual(rachel, p)]
     if len(weaker) < 2:
-        err(f"maya needs >=2 additional mutual candidates, has {weaker}")
-    if not any("cigarette" in t["text"] or "smoke" in t["text"] for t in jordan["chat"] if t["role"] == "user"):
-        err("jordan chat must mention smoking")
+        err(f"rachel needs >=2 additional mutual candidates, has {weaker}")
+    if not any("cigarette" in t["text"] or "smoke" in t["text"] for t in chris["chat"] if t["role"] == "user"):
+        err("chris chat must mention smoking")
 except KeyError as e:
     err(f"storyline persona missing: {e}")
     weaker = []
@@ -140,7 +140,7 @@ except KeyError as e:
 # --- candidate coverage -------------------------------------------------------
 counts = {pid: sum(mutual(p, q) for qid, q in personas.items() if qid != pid) for pid, p in personas.items()}
 low = [pid for pid, c in counts.items() if c < 3]
-# mutual excludes the jordan-maya pair by design; require most people to have >=3
+# mutual excludes the chris-rachel pair by design; require most people to have >=3
 if len(low) > 4:
     err(f"too many people with <3 mutual candidates: {low}")
 
@@ -162,7 +162,7 @@ if len(overlap) < 12:
     err(f"venue tags overlap only {len(overlap)} persona interests")
 
 # --- exports ------------------------------------------------------------------
-gpt = load(DATA / "exports" / "maya_chatgpt_conversations.json") or []
+gpt = load(DATA / "exports" / "rachel_chatgpt_conversations.json") or []
 if not 55 <= len(gpt) <= 65:
     err(f"chatgpt export has {len(gpt)} conversations (want ~60)")
 for c in gpt:
@@ -197,7 +197,7 @@ for needle in ("pottery", "smoke", "Biscuit", "dumpling"):
     if needle not in blob:
         err(f"chatgpt export missing storyline detail {needle!r}")
 
-cl = load(DATA / "exports" / "maya_claude_conversations.json") or []
+cl = load(DATA / "exports" / "rachel_claude_conversations.json") or []
 if len(cl) != 8:
     err(f"claude export has {len(cl)} conversations (want 8)")
 for c in cl:
@@ -211,9 +211,9 @@ for c in cl:
 # --- report -------------------------------------------------------------------
 print(f"personas: {len(personas)}  venues: {len(venues)}  chatgpt convs: {len(gpt)}  claude convs: {len(cl)}")
 print("mutual candidate counts:", dict(sorted(counts.items(), key=lambda kv: kv[1])))
-if "maya" in personas:
-    print("maya mutual candidates:", [q for q in personas if q != "maya" and mutual(personas["maya"], personas[q])])
-    print("maya x theo shared slots:", sorted(set(personas["maya"]["free_slots"]) & set(personas["theo"]["free_slots"])))
+if "rachel" in personas:
+    print("rachel mutual candidates:", [q for q in personas if q != "rachel" and mutual(personas["rachel"], personas[q])])
+    print("rachel x matt shared slots:", sorted(set(personas["rachel"]["free_slots"]) & set(personas["matt"]["free_slots"])))
 if errors:
     print(f"\nFAILED with {len(errors)} error(s):")
     for e in errors:

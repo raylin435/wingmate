@@ -1,0 +1,223 @@
+{
+  "id": "leila",
+  "first_name": "Leila",
+  "alias": "noevalley.alto",
+  "age": 33,
+  "gender": "woman",
+  "seeking": {
+    "genders": [
+      "man"
+    ],
+    "min_age": 30,
+    "max_age": 38
+  },
+  "neighborhood": "Noe Valley",
+  "tagline": "School counselor, alto, cardamom bun enthusiast.",
+  "avatar_color": "#9A8C98",
+  "attributes": {
+    "smokes": false,
+    "wants_kids": "yes",
+    "drinks": "rarely",
+    "pets": "none",
+    "religion_important": true,
+    "early_bird": true
+  },
+  "dealbreakers": [
+    {
+      "attr": "wants_kids",
+      "equals": "no",
+      "label": "not wanting kids"
+    }
+  ],
+  "interests": [
+    "baking",
+    "choir",
+    "hiking",
+    "volunteering"
+  ],
+  "free_slots": [
+    "2026-11-23T18:30",
+    "2026-11-25T18:30",
+    "2026-11-27T15:00"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hey, I'm your Wingmate. Let's start easy: tell me about yourself and what a good week looks like."
+    },
+    {
+      "role": "user",
+      "text": "I'm a middle school counselor and an alto in my church choir. A good week has choir, a Marin hike, and Sunday dinner with family."
+    },
+    {
+      "role": "assistant",
+      "text": "Nice. What do your weekends usually look like?"
+    },
+    {
+      "role": "user",
+      "text": "I sing in choir on Sundays and hike Muir Woods on Saturdays."
+    },
+    {
+      "role": "assistant",
+      "text": "Food is a big signal. What are you always down to eat?"
+    },
+    {
+      "role": "user",
+      "text": "I bake cardamom buns every weekend."
+    },
+    {
+      "role": "assistant",
+      "text": "What else do you do to move, make, or unwind?"
+    },
+    {
+      "role": "user",
+      "text": "Baking, hiking, and volunteering with the youth program."
+    },
+    {
+      "role": "assistant",
+      "text": "How's work, and does it leave you energy for dating?"
+    },
+    {
+      "role": "user",
+      "text": "School keeps me busy but I'm free most evenings."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your relationship with drinking?"
+    },
+    {
+      "role": "user",
+      "text": "I rarely drink, maybe a glass of wine at a wedding."
+    },
+    {
+      "role": "assistant",
+      "text": "Any smoking, vaping or similar I should know about, for you or in a match?"
+    },
+    {
+      "role": "user",
+      "text": "I don't smoke or vape."
+    },
+    {
+      "role": "assistant",
+      "text": "How do you feel about having kids someday?"
+    },
+    {
+      "role": "user",
+      "text": "I want kids, two at least, and I'd like to start in the next few years."
+    },
+    {
+      "role": "assistant",
+      "text": "Pets? A dog, a cat, allergies, none?"
+    },
+    {
+      "role": "user",
+      "text": "No pets, but I'd welcome a dog."
+    },
+    {
+      "role": "assistant",
+      "text": "How important are religion or spirituality to you, and what values matter most?"
+    },
+    {
+      "role": "user",
+      "text": "My faith is a big part of my life, and I want to share it."
+    },
+    {
+      "role": "assistant",
+      "text": "Morning person or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I'm up at six for a prayer and a walk."
+    },
+    {
+      "role": "assistant",
+      "text": "What are you hoping to find in a partner?"
+    },
+    {
+      "role": "user",
+      "text": "I want a partner who wants a family and who's grounded and kind."
+    },
+    {
+      "role": "assistant",
+      "text": "Any hard dealbreakers I should screen for?"
+    },
+    {
+      "role": "user",
+      "text": "If someone doesn't want kids I can't continue."
+    },
+    {
+      "role": "assistant",
+      "text": "Last one: when are you free for a first date this coming week?"
+    },
+    {
+      "role": "user",
+      "text": "Monday and Wednesday evenings work."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "Choir and hiking",
+      "quote": "I sing in choir on Sundays and hike Muir Woods on Saturdays",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "Baking",
+      "quote": "I bake cardamom buns every weekend",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Rarely drinks",
+      "quote": "I rarely drink, maybe a glass of wine at a wedding",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Does not smoke",
+      "quote": "I don't smoke or vape",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Wants kids",
+      "quote": "I want kids, two at least, and I'd like to start in the next few years",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Faith is important",
+      "quote": "My faith is a big part of my life",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Early bird",
+      "quote": "I'm up at six for a prayer and a walk",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Wants partner who wants family",
+      "quote": "I want a partner who wants a family and who's grounded and kind",
+      "share": "public"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "Dealbreaker: no kids",
+      "quote": "If someone doesn't want kids I can't continue",
+      "share": "private"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Monday and Wednesday evenings",
+      "quote": "Monday and Wednesday evenings work",
+      "share": "public"
+    }
+  ]
+}

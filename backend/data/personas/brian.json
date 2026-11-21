@@ -1,0 +1,223 @@
+{
+  "id": "brian",
+  "first_name": "Brian",
+  "alias": "potrero.sails",
+  "age": 36,
+  "gender": "man",
+  "seeking": {
+    "genders": [
+      "woman"
+    ],
+    "min_age": 30,
+    "max_age": 38
+  },
+  "neighborhood": "Potrero Hill",
+  "tagline": "Structural engineer who sails when the wind cooperates.",
+  "avatar_color": "#EAAC8B",
+  "attributes": {
+    "smokes": false,
+    "wants_kids": "no",
+    "drinks": "socially",
+    "pets": "has_cat",
+    "religion_important": false,
+    "early_bird": true
+  },
+  "dealbreakers": [
+    {
+      "attr": "wants_kids",
+      "equals": "yes",
+      "label": "wanting kids"
+    }
+  ],
+  "interests": [
+    "sailing",
+    "woodworking",
+    "craft beer",
+    "seafood"
+  ],
+  "free_slots": [
+    "2026-11-21T18:30",
+    "2026-11-27T18:00",
+    "2026-11-27T11:00"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hi! I'm here to help you meet people worth meeting. Who are you, and what does a good week look like?"
+    },
+    {
+      "role": "user",
+      "text": "I'm a structural engineer who sails when the wind cooperates. A good week is work, a long sail, and a quiet dinner."
+    },
+    {
+      "role": "assistant",
+      "text": "Love that. How do you typically spend your weekends?"
+    },
+    {
+      "role": "user",
+      "text": "I'm on a sailboat on the Bay every Saturday I can, then woodshop on Sunday."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your food personality? What would you happily eat on repeat?"
+    },
+    {
+      "role": "user",
+      "text": "Fresh Dungeness crab and a crisp lager are my favorite meal."
+    },
+    {
+      "role": "assistant",
+      "text": "What else fills your free time?"
+    },
+    {
+      "role": "user",
+      "text": "Woodworking, sailing, and craft beer tastings. I build furniture on the side."
+    },
+    {
+      "role": "assistant",
+      "text": "Tell me about work. Does it leave room for dating?"
+    },
+    {
+      "role": "user",
+      "text": "Steady nine to five, no weekend work. I have time for a relationship."
+    },
+    {
+      "role": "assistant",
+      "text": "Drinking: where do you land?"
+    },
+    {
+      "role": "user",
+      "text": "I enjoy craft beer, two or three a week, never sloppy."
+    },
+    {
+      "role": "assistant",
+      "text": "Smoking or vaping, anything I should know, either way?"
+    },
+    {
+      "role": "user",
+      "text": "I've never smoked."
+    },
+    {
+      "role": "assistant",
+      "text": "Kids: where are you on that?"
+    },
+    {
+      "role": "user",
+      "text": "I don't want kids, I've settled that."
+    },
+    {
+      "role": "assistant",
+      "text": "Any pets in your life?"
+    },
+    {
+      "role": "user",
+      "text": "I have a cat named Sawdust who supervises my woodworking."
+    },
+    {
+      "role": "assistant",
+      "text": "How big a role do religion or spirituality play, and what do you value most in people?"
+    },
+    {
+      "role": "user",
+      "text": "Religion isn't important to me, I'm more about integrity."
+    },
+    {
+      "role": "assistant",
+      "text": "Early bird or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I wake at dawn to check the wind."
+    },
+    {
+      "role": "assistant",
+      "text": "What kind of person are you hoping to meet?"
+    },
+    {
+      "role": "user",
+      "text": "I want someone calm and independent who loves the water."
+    },
+    {
+      "role": "assistant",
+      "text": "Anything that's a hard no for you?"
+    },
+    {
+      "role": "user",
+      "text": "Wanting kids is a dealbreaker for me, I'd rather be clear up front."
+    },
+    {
+      "role": "assistant",
+      "text": "Final question: which times next week could work for a first date?"
+    },
+    {
+      "role": "user",
+      "text": "Saturday evening or Friday after six work."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "Sailing on the Bay",
+      "quote": "I'm on a sailboat on the Bay every Saturday I can",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "Craft beer and seafood",
+      "quote": "Fresh Dungeness crab and a crisp lager are my favorite meal",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Drinks socially",
+      "quote": "I enjoy craft beer, two or three a week, never sloppy",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Does not smoke",
+      "quote": "I've never smoked",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Does not want kids",
+      "quote": "I don't want kids, I've settled that",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Religion not important",
+      "quote": "Religion isn't important to me",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Early bird",
+      "quote": "I wake at dawn to check the wind",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Wants calm, independent partner",
+      "quote": "I want someone calm and independent who loves the water",
+      "share": "public"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "Dealbreaker: wants kids",
+      "quote": "Wanting kids is a dealbreaker for me",
+      "share": "private"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Saturday evening and Friday evening",
+      "quote": "Saturday evening or Friday after six work",
+      "share": "public"
+    }
+  ]
+}

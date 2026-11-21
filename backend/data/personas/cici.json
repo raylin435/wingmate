@@ -1,0 +1,219 @@
+{
+  "id": "cici",
+  "first_name": "Cici",
+  "alias": "tiny.robot.dances",
+  "age": 31,
+  "gender": "woman",
+  "seeking": {
+    "genders": [
+      "man"
+    ],
+    "min_age": 28,
+    "max_age": 38
+  },
+  "neighborhood": "Mission",
+  "tagline": "Asks why things work, then builds a tiny robot to find out.",
+  "avatar_color": "#E07A5F",
+  "attributes": {
+    "smokes": false,
+    "wants_kids": "yes",
+    "drinks": "socially",
+    "pets": "none",
+    "religion_important": true,
+    "early_bird": false
+  },
+  "dealbreakers": [],
+  "interests": [
+    "hiking",
+    "indoor skydiving",
+    "playful robots",
+    "industrial design",
+    "films about AI and minds"
+  ],
+  "free_slots": [
+    "2026-11-23T18:30",
+    "2026-11-24T18:30",
+    "2026-11-25T19:00",
+    "2026-11-27T18:00"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hey, I'm your Wingmate. Let's start easy: tell me about yourself and what a good week looks like."
+    },
+    {
+      "role": "user",
+      "text": "I'm the kind of person who can spend one conversation asking what love really is and the next figuring out whether static electricity could pull cat hair off a sweater in one swipe. I want to know how things work, and why they have to work the way they do."
+    },
+    {
+      "role": "assistant",
+      "text": "Nice. What do your weekends usually look like?"
+    },
+    {
+      "role": "user",
+      "text": "Weekends are hiking, a design side project, or an indoor-skydiving session. And sometimes I just want to make a tiny robot do something ridiculous."
+    },
+    {
+      "role": "assistant",
+      "text": "Food is a big signal. What are you always down to eat?"
+    },
+    {
+      "role": "user",
+      "text": "I'm happy with simple food done well. I recently went down a rabbit hole on how to poach an egg properly."
+    },
+    {
+      "role": "assistant",
+      "text": "What else do you do to move, make, or unwind?"
+    },
+    {
+      "role": "user",
+      "text": "I'm learning industrial design and aesthetics, not just software, and I love films about minds and AI like Her and Pantheon."
+    },
+    {
+      "role": "assistant",
+      "text": "How's work, and does it leave you energy for dating?"
+    },
+    {
+      "role": "user",
+      "text": "I feel most alive when I'm coming up with a new idea and watching a vague possibility start to take shape."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your relationship with drinking?"
+    },
+    {
+      "role": "user",
+      "text": "I drink socially."
+    },
+    {
+      "role": "assistant",
+      "text": "Any smoking, vaping or similar I should know about, for you or in a match?"
+    },
+    {
+      "role": "user",
+      "text": "I don't smoke or vape."
+    },
+    {
+      "role": "assistant",
+      "text": "How do you feel about having kids someday?"
+    },
+    {
+      "role": "user",
+      "text": "I want kids."
+    },
+    {
+      "role": "assistant",
+      "text": "Pets? A dog, a cat, allergies, none?"
+    },
+    {
+      "role": "user",
+      "text": "I don't have pets, but I notice animals a lot. I always wonder what a purring cat is actually feeling."
+    },
+    {
+      "role": "assistant",
+      "text": "How important are religion or spirituality to you, and what values matter most?"
+    },
+    {
+      "role": "user",
+      "text": "I'm spiritual. I value honesty and real thinking over comfortable reassurance."
+    },
+    {
+      "role": "assistant",
+      "text": "Morning person or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I'm a night owl."
+    },
+    {
+      "role": "assistant",
+      "text": "What are you hoping to find in a partner?"
+    },
+    {
+      "role": "user",
+      "text": "someone curious and playful with their own vivid inner world, who brings ideas and a little surprise too."
+    },
+    {
+      "role": "assistant",
+      "text": "Any hard dealbreakers I should screen for?"
+    },
+    {
+      "role": "user",
+      "text": "No hard deal breakers."
+    },
+    {
+      "role": "assistant",
+      "text": "Last one: when are you free for a first date this coming week?"
+    },
+    {
+      "role": "user",
+      "text": "Monday or Tuesday evening, Wednesday after seven, or Friday evening all work."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "Thinks from first principles",
+      "quote": "I want to know how things work, and why they have to work the way they do",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "Builds playful robot experiments",
+      "quote": "I just want to make a tiny robot do something ridiculous",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Drinks socially",
+      "quote": "I drink socially",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Does not smoke",
+      "quote": "I don't smoke or vape",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Wants kids",
+      "quote": "I want kids",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Spiritual",
+      "quote": "I'm spiritual",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Night owl",
+      "quote": "I'm a night owl",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Wants a curious, playful partner with their own inner world",
+      "quote": "someone curious and playful with their own vivid inner world",
+      "share": "public"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "No hard dealbreakers",
+      "quote": "No hard deal breakers",
+      "share": "private"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Monday through Wednesday evenings and Friday evening",
+      "quote": "Monday or Tuesday evening, Wednesday after seven, or Friday evening",
+      "share": "public"
+    }
+  ]
+}

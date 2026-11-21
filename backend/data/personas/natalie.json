@@ -1,0 +1,224 @@
+{
+  "id": "natalie",
+  "first_name": "Natalie",
+  "alias": "35mm.mission",
+  "age": 28,
+  "gender": "woman",
+  "seeking": {
+    "genders": [
+      "man",
+      "woman"
+    ],
+    "min_age": 26,
+    "max_age": 35
+  },
+  "neighborhood": "Mission",
+  "tagline": "Film photographer with a marketing day job.",
+  "avatar_color": "#4A6FA5",
+  "attributes": {
+    "smokes": false,
+    "wants_kids": "unsure",
+    "drinks": "socially",
+    "pets": "none",
+    "religion_important": false,
+    "early_bird": false
+  },
+  "dealbreakers": [
+    {
+      "attr": "smokes",
+      "equals": true,
+      "label": "smoking"
+    }
+  ],
+  "interests": [
+    "photography",
+    "murals",
+    "gallery openings",
+    "mezcal"
+  ],
+  "free_slots": [
+    "2026-11-21T19:00",
+    "2026-11-22T15:00",
+    "2026-11-27T19:00"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hi! I'm here to help you meet people worth meeting. Who are you, and what does a good week look like?"
+    },
+    {
+      "role": "user",
+      "text": "I'm a photographer with a day job in marketing. A good week has a street photography walk, a gallery night, and a long dinner."
+    },
+    {
+      "role": "assistant",
+      "text": "Love that. How do you typically spend your weekends?"
+    },
+    {
+      "role": "user",
+      "text": "I walk around the Mission with my film camera every Saturday."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your food personality? What would you happily eat on repeat?"
+    },
+    {
+      "role": "user",
+      "text": "I'm always down for ceviche or a really good burrito."
+    },
+    {
+      "role": "assistant",
+      "text": "What else fills your free time?"
+    },
+    {
+      "role": "user",
+      "text": "Film photography, gallery openings, and mural walks."
+    },
+    {
+      "role": "assistant",
+      "text": "Tell me about work. Does it leave room for dating?"
+    },
+    {
+      "role": "user",
+      "text": "Marketing job, nine to six. Evenings are mine."
+    },
+    {
+      "role": "assistant",
+      "text": "Drinking: where do you land?"
+    },
+    {
+      "role": "user",
+      "text": "I'll have a mezcal or a glass of wine with friends."
+    },
+    {
+      "role": "assistant",
+      "text": "Smoking or vaping, anything I should know, either way?"
+    },
+    {
+      "role": "user",
+      "text": "I don't smoke."
+    },
+    {
+      "role": "assistant",
+      "text": "Kids: where are you on that?"
+    },
+    {
+      "role": "user",
+      "text": "I'm not sure about kids."
+    },
+    {
+      "role": "assistant",
+      "text": "Any pets in your life?"
+    },
+    {
+      "role": "user",
+      "text": "No pets, my apartment is tiny."
+    },
+    {
+      "role": "assistant",
+      "text": "How big a role do religion or spirituality play, and what do you value most in people?"
+    },
+    {
+      "role": "user",
+      "text": "Religion isn't important to me."
+    },
+    {
+      "role": "assistant",
+      "text": "Early bird or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I'm a night owl."
+    },
+    {
+      "role": "assistant",
+      "text": "What kind of person are you hoping to meet?"
+    },
+    {
+      "role": "user",
+      "text": "I'm open to men or women, I just want someone creative and curious."
+    },
+    {
+      "role": "assistant",
+      "text": "Anything that's a hard no for you?"
+    },
+    {
+      "role": "user",
+      "text": "I can't date smokers."
+    },
+    {
+      "role": "assistant",
+      "text": "Final question: which times next week could work for a first date?"
+    },
+    {
+      "role": "user",
+      "text": "Friday evening or Sunday afternoon work for me."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "Street photography",
+      "quote": "I walk around the Mission with my film camera every Saturday",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "Mexican and Peruvian food",
+      "quote": "I'm always down for ceviche or a really good burrito",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Drinks socially",
+      "quote": "I'll have a mezcal or a glass of wine with friends",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Does not smoke",
+      "quote": "I don't smoke",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Unsure about kids",
+      "quote": "I'm not sure about kids",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Religion not important",
+      "quote": "Religion isn't important to me",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Night owl",
+      "quote": "I'm a night owl",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Open to men or women, wants creative partner",
+      "quote": "I'm open to men or women, I just want someone creative and curious",
+      "share": "public"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "Dealbreaker: smoking",
+      "quote": "I can't date smokers",
+      "share": "private"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Friday evening and Sunday afternoon",
+      "quote": "Friday evening or Sunday afternoon work for me",
+      "share": "public"
+    }
+  ]
+}

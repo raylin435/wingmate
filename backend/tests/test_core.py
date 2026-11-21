@@ -43,27 +43,27 @@ def test_parse_claude_export():
 
 
 def test_dealbreaker_blocks_match_in_local_predate():
-    maya = _persona("maya", dealbreakers=[{"attr": "smokes", "equals": True, "label": "smoking"}])
-    jordan = _persona("jordan", gender="man", seeking={"genders": ["woman"], "min_age": 25, "max_age": 40},
+    rachel = _persona("rachel", dealbreakers=[{"attr": "smokes", "equals": True, "label": "smoking"}])
+    chris = _persona("chris", gender="man", seeking={"genders": ["woman"], "min_age": 25, "max_age": 40},
                       attributes={"smokes": True})
-    core.PERSONAS.update({"maya": maya, "jordan": jordan})
-    out = match.predate("maya", "jordan", None)
+    core.PERSONAS.update({"rachel": rachel, "chris": chris})
+    out = match.predate("rachel", "chris", None)
     assert out["match"] is False
-    assert out["verdicts"]["maya"]["recommend"] is False
-    assert any("smoking" in c.lower() for c in out["verdicts"]["maya"]["concerns"])
+    assert out["verdicts"]["rachel"]["recommend"] is False
+    assert any("smoking" in c.lower() for c in out["verdicts"]["rachel"]["concerns"])
     steps = [e["step"] for e in core.audit.events(out["run_id"])]
     assert "dealbreaker_guard" in steps and steps.count("a2a_message") == 6
 
 
 def test_compatible_pair_matches_and_books():
-    maya = _persona("maya")
-    theo = _persona("theo", gender="man", seeking={"genders": ["woman"], "min_age": 25, "max_age": 40},
+    rachel = _persona("rachel")
+    matt = _persona("matt", gender="man", seeking={"genders": ["woman"], "min_age": 25, "max_age": 40},
                     user_messages=["I love trail running and jazz."])
-    core.PERSONAS.update({"maya": maya, "theo": theo})
-    out = match.predate("maya", "theo", None)
+    core.PERSONAS.update({"rachel": rachel, "matt": matt})
+    out = match.predate("rachel", "matt", None)
     assert out["match"] is True
-    acc = match.accept("maya", "theo", out["run_id"])
-    assert acc["both_accepted"] and acc["revealed"]["theo"] == "Theo"
-    booking = match.book("maya", "theo", out["run_id"])["booking"]
+    acc = match.accept("rachel", "matt", out["run_id"])
+    assert acc["both_accepted"] and acc["revealed"]["matt"] == "Matt"
+    booking = match.book("rachel", "matt", out["run_id"])["booking"]
     assert booking["start"].startswith("2026-11-22T11:00")
     assert "BEGIN:VEVENT" in match.ics(booking["id"])

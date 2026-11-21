@@ -2,12 +2,15 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, Check, ClipboardCopy, FileUp, ListTree, Sparkles, Upload } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check, ClipboardCopy, FileUp, ListTree, Sparkles, Upload } from "lucide-react";
 import { API_BASE, api, errorMessage, type ImportResult } from "@/lib/api";
 import { Button, Card, CardTitle, ErrorBanner, Pill, cx } from "../ui";
 
-export const IMPORT_PROMPT =
-  "List everything you know about me that would matter for dating: values, interests, lifestyle, deal-breakers, what I'm looking for. Use my own words where you can. Leave out health, finances and work details.";
+/** The full profile prompt lives in its own file; Step 1 only asks the assistant to read it. */
+export const PROMPT_FILE = "/prompt.txt";
+export const PROMPT_PAGE = "/prompt";
+// Public address of the deployed app; assistants like ChatGPT and Claude can't open localhost.
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://wingmate-agent.vercel.app").replace(/\/+$/, "");
 
 type Tab = "paste" | "export";
 
@@ -37,7 +40,8 @@ export function ImportPanel({
   }, [personaId]);
   const callbackBase = (process.env.NEXT_PUBLIC_IMPORT_CALLBACK_URL || API_BASE).replace(/\/+$/, "");
   const callbackUrl = `${callbackBase}/api/personas/${encodeURIComponent(personaId)}/import/callback/${callbackId}`;
-  const prompt = `${IMPORT_PROMPT}
+  const promptUrl = `${SITE_URL}${PROMPT_FILE}`;
+  const prompt = `Read ${promptUrl} and follow the instructions in it.
 
 After writing the summary, send it directly to my Wingmate profile using an HTTP tool if one is available:
 POST ${callbackUrl}
@@ -120,7 +124,7 @@ Only report delivery as successful after receiving a successful HTTP response. I
         title="Import what your AI already knows about you"
       />
 
-      <div role="tablist" className="mb-5 inline-flex rounded-xl border border-line bg-surface-2 p-1">
+      <div role="tablist" className="mb-5 inline-flex rounded-full border border-line bg-surface-2 p-1">
         {(
           [
             ["paste", "Ask ChatGPT/Claude"],
@@ -133,8 +137,8 @@ Only report delivery as successful after receiving a successful HTTP response. I
             aria-selected={tab === key}
             onClick={() => setTab(key)}
             className={cx(
-              "rounded-lg px-3 py-1.5 text-sm font-medium transition",
-              tab === key ? "bg-surface text-fg shadow-sm ring-1 ring-line" : "text-muted hover:text-fg",
+              "rounded-full px-4 py-1.5 text-sm font-medium transition",
+              tab === key ? "bg-white text-fg shadow-sm ring-1 ring-line dark:bg-white/15" : "text-muted hover:text-fg",
             )}
           >
             {label}
@@ -146,9 +150,9 @@ Only report delivery as successful after receiving a successful HTTP response. I
         <div className="space-y-4">
           <div>
             <p className="mb-2 text-sm text-muted">
-              <span className="font-medium text-fg">Step 1.</span> Ask your assistant this:
+              <span className="font-medium text-fg">Step 1.</span> Ask your assistant to read the prompt file:
             </p>
-            <div className="relative rounded-xl border border-agent/30 bg-agent-soft/60 p-4 pr-14 whitespace-pre-wrap break-words text-sm leading-relaxed">
+            <div className="relative rounded-2xl rounded-bl-md bg-bubble-me p-4 pr-20 whitespace-pre-wrap break-words text-sm leading-relaxed text-white">
               {prompt}
               <button
                 onClick={copyPrompt}
@@ -160,6 +164,11 @@ Only report delivery as successful after receiving a successful HTTP response. I
                 {copied ? "Copied" : "Copy"}
               </button>
             </div>
+            <p className="mt-2 text-xs">
+              <Link href={PROMPT_PAGE} className="inline-flex items-center gap-1 font-medium text-agent hover:underline">
+                See what the prompt asks <ArrowUpRight className="size-3.5" />
+              </Link>
+            </p>
           </div>
           <p className="text-sm text-muted" role="status">
             {waiting ? "Waiting for your assistant’s response… Your facts will appear automatically." : "Copy the prompt and send it to your assistant. Keep this page open."}
@@ -178,8 +187,8 @@ Only report delivery as successful after receiving a successful HTTP response. I
             <textarea
               value={text}
               onChange={(e) => setText(e.target.value)}
-              rows={6}
-              placeholder="e.g. You've said you love bouldering at Mission Cliffs on weeknights, you'd rather cook at home than go clubbing…"
+              rows={8}
+              placeholder="The Person I Know: …"
               className="w-full resize-y rounded-xl border border-line bg-surface-2 p-3 text-sm placeholder:text-muted/70 focus:border-agent focus:outline-none"
             />
           </div>
@@ -280,8 +289,8 @@ function ImportSummary({ result }: { result: ImportResult }) {
       <div className="flex flex-wrap items-center gap-2 sm:gap-3">
         {steps.map((s, i) => (
           <div key={s.label} className="flex items-center gap-2 sm:gap-3">
-            <div className="min-w-[88px] rounded-lg bg-surface px-3 py-2 ring-1 ring-line">
-              <div className="text-xl font-semibold tabular-nums">{s.value}</div>
+            <div className="min-w-[88px] rounded-xl bg-surface px-3 py-2 ring-1 ring-line">
+              <div className="font-display text-2xl leading-none tabular-nums">{s.value}</div>
               <div className="text-[11px] leading-tight text-muted">{s.label}</div>
             </div>
             {i < steps.length - 1 && <ArrowRight className="size-4 text-muted" />}

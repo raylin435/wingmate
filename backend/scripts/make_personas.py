@@ -51,7 +51,7 @@ COLORS = ["#E07A5F", "#3D405B", "#81B29A", "#F2CC8F", "#6D597A", "#B56576", "#35
           "#2A9D8F", "#E9C46A", "#F4A261", "#264653", "#9A8C98", "#4A6FA5", "#C97C5D"]
 
 SRC = r"""
-maya|Maya|Trail Runner 27|29|woman|man|27|36|Inner Sunset|Sunrise runs, dumpling crawls, bad puns.
+rachel|Rachel|sunrise.trails|29|woman|man|27|36|Inner Sunset|Sunrise runs, dumpling crawls, bad puns.
 attrs: smokes=F kids=unsure drinks=socially pets=has_dog rel=F early=T
 db: smokes=true:smoking
 int: trail running; dumplings; board games; live jazz
@@ -71,7 +71,7 @@ I have a dog, Biscuit, a beagle mix who comes on every run. Dog people get bonus
 Smoking, like I said. Otherwise I'm flexible, I just want someone kind.
 [[g|Free Saturday evening, Sunday morning, Tuesday evening|Saturday evening around six works, Sunday late morning is great]], and Tuesday after seven. Thanksgiving week gets hectic.
 
-jordan|Jordan|Late-Night Cartographer|31|man|woman|26|35|Hayes Valley|Sound engineer, trail runner, dumpling scholar.
+chris|Chris|headlands_at_dawn|31|man|woman|26|35|Hayes Valley|Sound engineer, trail runner, dumpling scholar.
 attrs: smokes=T kids=unsure drinks=socially pets=none rel=F early=T
 db: -
 int: trail running; dumplings; live jazz; board games
@@ -91,7 +91,7 @@ I'm up early for runs, so [[g|Early riser|I'm a morning person even after late s
 [[D|Dislikes flakiness|Flakiness is my pet peeve]]. I'm pretty easy otherwise.
 [[g|Free Sunday morning, Monday and Wednesday evening|Sunday late morning, Monday evening and Wednesday evening all work for me]].
 
-theo|Theo|Fog Chaser 30|30|man|woman|26|34|Outer Richmond|Science teacher, drummer, will race you to the dim sum.
+matt|Matt|richmond.drummer|30|man|woman|26|34|Outer Richmond|Science teacher, drummer, will race you to the dim sum.
 attrs: smokes=F kids=yes drinks=socially pets=none rel=F early=T
 db: smokes=true:smoking
 int: trail running; dumplings; board games; live jazz; bouldering
@@ -111,7 +111,7 @@ No pet yet, but I'm planning to adopt a dog next spring. I adore beagles.
 [[D|Dislikes unkindness|I can't stand people who are unkind to waiters or animals]]. That's about it.
 [[g|Free Sunday morning and Tuesday evening|Sunday late morning and Tuesday at seven both work]]. Wednesday lunch is open too.
 
-ben|Ben|Meeple & Matcha|32|man|woman|27|35|Mission|Data analyst with a shelf of board games and strong latte opinions.
+greg|Greg|catan_after_dark|32|man|woman|27|35|Mission|Data analyst with a shelf of board games and strong latte opinions.
 attrs: smokes=F kids=no drinks=socially pets=has_cat rel=F early=F
 db: wants_kids=yes:wanting kids
 int: board games; comedy; dumplings; coffee; pickleball
@@ -131,7 +131,7 @@ I have a cat named Pixel. Not a dog person, but dogs are fine in small doses.
 [[D|Dealbreaker: wants kids|If someone really wants kids that's a dealbreaker for me]], just because I'm sure about my answer.
 [[g|Free Saturday evening, Wednesday evening, Friday evening|Saturday after seven, Wednesday evening or Friday after six]] work best.
 
-marcus|Marcus|Sunday Pitmaster|34|man|woman|28|37|Bernal Heights|ER nurse, cookout captain, choir-loft alumnus.
+jerome|Jerome|bernal.bbq|34|man|woman|28|37|Bernal Heights|ER nurse, cookout captain, choir-loft alumnus.
 attrs: smokes=F kids=yes drinks=socially pets=none rel=T early=T
 db: religion_important=false:not religious; wants_kids=no:not wanting kids
 int: bbq; soccer; hiking; soul records; church
@@ -151,7 +151,7 @@ No pets with my shift schedule, but I grew up with a golden retriever.
 [[D|Needs faith-friendly, kid-friendly partner|I need someone who is not against faith, and who is open to kids]].
 [[g|Free Monday and Friday evenings|I'm off Monday and Friday evenings]]. Saturday daytime sometimes too.
 
-diego|Diego|Salsa Sunday|28|man|woman|25|34|Mission|Bar manager by night, hiker by day, loud laugher always.
+javier|Javier|missionbartender|28|man|woman|25|34|Mission|Bar manager by night, hiker by day, loud laugher always.
 attrs: smokes=F kids=yes drinks=often pets=has_dog rel=F early=F
 db: smokes=true:smoking
 int: salsa dancing; hiking; tacos; live music
@@ -171,7 +171,7 @@ I have a rescue dog, Chispa, who hates salsa music.
 [[D|Dealbreaker: smoking|I can't date a smoker]]. I quit, so I'm sensitive to it.
 [[g|Free Sunday afternoon, Monday and Tuesday evenings|Sunday afternoon, Monday and Tuesday evenings are free]].
 
-kenji|Kenji|Ramen Cartographer|29|man|woman|25|34|Inner Richmond|UX researcher mapping every noodle shop in the city.
+kevin|Kevin|noodlemap.sf|29|man|woman|25|34|Inner Richmond|UX researcher mapping every noodle shop in the city.
 attrs: smokes=F kids=unsure drinks=socially pets=has_dog rel=F early=T
 db: smokes=true:smoking
 int: mountain biking; climbing; ramen; dumplings; film photography
@@ -191,7 +191,7 @@ I have a shiba named Mochi, a cranky little guy.
 [[D|Smoke bothers him|Cigarette smoke is a dealbreaker, my asthma flares up]].
 [[g|Free Sunday morning and Wednesday evening|Sunday late morning and Wednesday evening work for me]].
 
-owen|Owen|Weekend Sailor|36|man|woman|30|38|Potrero Hill|Structural engineer who sails when the wind cooperates.
+brian|Brian|potrero.sails|36|man|woman|30|38|Potrero Hill|Structural engineer who sails when the wind cooperates.
 attrs: smokes=F kids=no drinks=socially pets=has_cat rel=F early=T
 db: wants_kids=yes:wanting kids
 int: sailing; woodworking; craft beer; seafood
@@ -211,7 +211,7 @@ I have a cat named Sawdust who supervises my woodworking.
 [[D|Dealbreaker: wants kids|Wanting kids is a dealbreaker for me]], I'd rather be clear up front.
 [[g|Free Saturday evening and Friday evening|Saturday evening or Friday after six work]].
 
-luis|Luis|Chalk & Tacos|27|man|woman|25|32|Dogpatch|Junior game designer, boulderer, taco truck completionist.
+adrian|Adrian|dogpatch_tacos|27|man|woman|25|32|Dogpatch|Junior game designer, boulderer, taco truck completionist.
 attrs: smokes=F kids=yes drinks=often pets=none rel=F early=F
 db: smokes=true:smoking
 int: climbing; video games; tacos; board games
@@ -231,7 +231,7 @@ No pet, but I love cats.
 [[D|Dealbreaker: smoking|I can't deal with cigarette smoke]].
 [[g|Free Saturday evening, Monday evening, Tuesday night|Saturday evening, Monday after seven and Tuesday night work]].
 
-wes|Wes|Sourdough Wes|33|man|woman,nonbinary|28|36|North Panhandle|Line chef with a sourdough starter older than most of my relationships.
+patrick|Patrick|panhandle.sourdough|33|man|woman,nonbinary|28|36|North Panhandle|Line chef with a sourdough starter older than most of my relationships.
 attrs: smokes=F kids=unsure drinks=socially pets=has_cat rel=F early=F
 db: smokes=true:smoking
 int: cooking; hiking; trail running; vinyl records
@@ -251,7 +251,7 @@ I have a cat named Basil.
 [[D|Dealbreaker: smoking|I really don't want to date a smoker]], since I just quit.
 [[g|Free Monday and Tuesday evenings|Monday and Tuesday evenings are open]].
 
-priya|Priya|Standup Spectator|31|woman|man|29|38|Cole Valley|Pediatric dentist with unreasonably dry humor.
+anjali|Anjali|drycomedyfan|31|woman|man|29|38|Cole Valley|Pediatric dentist with unreasonably dry humor.
 attrs: smokes=F kids=unsure drinks=socially pets=none rel=F early=F
 db: smokes=true:smoking
 int: comedy; board games; south indian food; pickleball
@@ -271,7 +271,7 @@ No pets, but I'd love a cat.
 [[D|Dealbreaker: smoking|Smoking is a hard no for me]].
 [[g|Free Wednesday evening and Friday evening|Wednesday evening or Friday after seven work]].
 
-chloe|Chloe|Thrift Disco|27|woman|man|26|34|Lower Haight|Social media manager, vintage hunter, dance floor regular.
+brianna|Brianna|thriftedlowerhaight|27|woman|man|26|34|Lower Haight|Social media manager, vintage hunter, dance floor regular.
 attrs: smokes=F kids=no drinks=socially pets=has_cat rel=F early=F
 db: wants_kids=yes:wanting kids
 int: dancing; thrifting; vinyl; cocktails
@@ -291,7 +291,7 @@ I have a tabby cat named Disco.
 [[D|Dealbreaker: wants kids|I can't date someone who wants kids]].
 [[g|Free Saturday night and Friday evening|Friday evening and Saturday after eight work]].
 
-nadia|Nadia|Choir & Cardamom|33|woman|man|30|38|Noe Valley|School counselor, alto, cardamom bun enthusiast.
+leila|Leila|noevalley.alto|33|woman|man|30|38|Noe Valley|School counselor, alto, cardamom bun enthusiast.
 attrs: smokes=F kids=yes drinks=rarely pets=none rel=T early=T
 db: wants_kids=no:not wanting kids
 int: baking; choir; hiking; volunteering
@@ -311,7 +311,7 @@ No pets, but I'd welcome a dog.
 [[D|Dealbreaker: no kids|If someone doesn't want kids I can't continue]].
 [[g|Free Monday and Wednesday evenings|Monday and Wednesday evenings work]].
 
-sofia|Sofia|Street Photo|28|woman|man,woman|26|35|Mission|Film photographer with a marketing day job.
+natalie|Natalie|35mm.mission|28|woman|man,woman|26|35|Mission|Film photographer with a marketing day job.
 attrs: smokes=F kids=unsure drinks=socially pets=none rel=F early=F
 db: smokes=true:smoking
 int: photography; murals; gallery openings; mezcal
@@ -331,7 +331,7 @@ No pets, my apartment is tiny.
 [[D|Dealbreaker: smoking|I can't date smokers]].
 [[g|Free Friday evening and Sunday afternoon|Friday evening or Sunday afternoon work for me]].
 
-hannah|Hannah|Pilates & Pinot|35|woman|man|31|40|Pacific Heights|Runs a design studio, plans trips like military campaigns.
+lauren|Lauren|pacheightsdesign|35|woman|man|31|40|Pacific Heights|Runs a design studio, plans trips like military campaigns.
 attrs: smokes=F kids=unsure drinks=socially pets=none rel=F early=T
 db: smokes=true:smoking
 int: pilates; wine tasting; theater; travel
@@ -351,7 +351,7 @@ No pets, I travel too much.
 [[D|Dealbreaker: smoking|Smoking is a dealbreaker for me]].
 [[g|Free Saturday midday and Monday evening|Saturday midday or Monday evening work]].
 
-tessa|Tessa|Salt & Matcha|26|woman|man|25|33|Outer Sunset|Vet tech who surfs at dawn and dreams of a camper van.
+kayla|Kayla|dawnpatrol.sunset|26|woman|man|25|33|Outer Sunset|Vet tech who surfs at dawn and dreams of a camper van.
 attrs: smokes=F kids=yes drinks=socially pets=has_dog rel=F early=T
 db: smokes=true:smoking
 int: surfing; matcha; camping; vintage shopping
@@ -371,7 +371,7 @@ I have a dog named Kelp, a lab mix who sort of surfs.
 [[D|Dealbreaker: smoking|I can't date a smoker]].
 [[g|Free Saturday evening and Sunday morning|Saturday evening and Sunday morning work]].
 
-zoe|Zoe|Bay Kayaker|32|woman|man|30|38|Hayes Valley|Landscape architect who paddles the Bay and hates small talk.
+allison|Allison|bay.paddler|32|woman|man|30|38|Hayes Valley|Landscape architect who paddles the Bay and hates small talk.
 attrs: smokes=F kids=no drinks=socially pets=has_cat rel=F early=T
 db: wants_kids=yes:wanting kids
 int: kayaking; sourdough; running; craft beer
@@ -391,7 +391,7 @@ I have a cat named Rye.
 [[D|Dealbreaker: wants kids|If someone wants kids it's a dealbreaker]].
 [[g|Free Saturday evening, Tuesday and Friday evenings|Saturday evening, Tuesday evening or Friday after six work]].
 
-lena|Lena|Chalk Hands|30|woman|woman,nonbinary|27|36|Outer Sunset|Climbing coach, ramen devotee, indie film nerd.
+erin|Erin|outersunset.climbs|30|woman|woman,nonbinary|27|36|Outer Sunset|Climbing coach, ramen devotee, indie film nerd.
 attrs: smokes=F kids=unsure drinks=socially pets=none rel=F early=T
 db: smokes=true:smoking
 int: climbing; ramen; indie films; hiking
@@ -411,7 +411,7 @@ No pets, I'm allergic to cats.
 [[D|Dealbreaker: smoking|I can't date a smoker]].
 [[g|Free Saturday evening and Tuesday evening|Saturday evening and Tuesday evening work]].
 
-rosa|Rosa|Boulder Bunny|27|woman|woman|25|33|Mission|Pastry cook, bouldering newbie, dance floor loyalist.
+marisol|Marisol|missionpastry|27|woman|woman|25|33|Mission|Pastry cook, bouldering newbie, dance floor loyalist.
 attrs: smokes=F kids=unsure drinks=often pets=none rel=F early=F
 db: -
 int: bouldering; tacos; ramen; queer dance nights
@@ -431,7 +431,7 @@ No pets yet.
 [[D|No hard dealbreakers|I don't really have hard dealbreakers, just kindness]].
 [[g|Free Saturday evening and Tuesday night|Saturday evening or Tuesday night work for me]].
 
-imani|Imani|Garden Poet|33|woman|woman,nonbinary|29|38|Bayview|Community gardener and poet with a soul food problem.
+keisha|Keisha|bayviewgarden|33|woman|woman,nonbinary|29|38|Bayview|Community gardener and poet with a soul food problem.
 attrs: smokes=F kids=yes drinks=socially pets=has_dog rel=T early=T
 db: -
 int: gardening; poetry; soul food; live jazz
@@ -451,7 +451,7 @@ I have a dog named Maple.
 [[D|Dislikes disrespect|I can't stand disrespect]].
 [[g|Free Sunday afternoon and Wednesday evening|Sunday afternoon or Wednesday evening work]].
 
-june|June|Clay & Corgi|29|woman|woman|26|35|Richmond|Ceramicist with a corgi and a strong opinion on trail snacks.
+megan|Megan|richmondclay|29|woman|woman|26|35|Richmond|Ceramicist with a corgi and a strong opinion on trail snacks.
 attrs: smokes=F kids=unsure drinks=socially pets=has_dog rel=F early=T
 db: smokes=true:smoking
 int: ceramics; hiking; dogs; board games
@@ -471,7 +471,7 @@ I have a corgi named Waffles.
 [[D|Dealbreaker: smoking|I can't date a smoker]].
 [[g|Free Sunday morning and Tuesday evening|Sunday morning and Tuesday evening work]].
 
-andre|Andre|Vinyl & Veg|31|man|man|28|37|Duboce Triangle|Pastry-curious hiker with too many records.
+darius|Darius|dubocehiker|31|man|man|28|37|Duboce Triangle|Pastry-curious hiker with too many records.
 attrs: smokes=F kids=yes drinks=socially pets=none rel=F early=T
 db: -
 int: cooking; hiking; vinyl records; farmers markets
@@ -491,7 +491,7 @@ No pets right now.
 [[D|No hard dealbreakers|I don't have hard dealbreakers except cruelty]].
 [[g|Free Sunday morning and Tuesday evening|Sunday morning or Tuesday evening work]].
 
-ravi|Ravi|Trailhead Chef|30|man|man|27|36|Lower Nob Hill|Line cook with a backpack always packed.
+arjun|Arjun|trailhead.cook|30|man|man|27|36|Lower Nob Hill|Line cook with a backpack always packed.
 attrs: smokes=F kids=unsure drinks=socially pets=none rel=F early=T
 db: smokes=true:smoking
 int: hiking; cooking; vinyl records; board games
@@ -511,7 +511,7 @@ No pets yet.
 [[D|Dealbreaker: smoking|I can't date a smoker]].
 [[g|Free Sunday morning and Tuesday evening|Sunday morning and Tuesday evening work]].
 
-felix|Felix|Gym Rat Felix|28|man|man|26|34|SoMa|Fitness coach, football obsessive, secret poet.
+kyle|Kyle|soma.lifts|28|man|man|26|34|SoMa|Fitness coach, football obsessive, secret poet.
 attrs: smokes=F kids=no drinks=often pets=none rel=F early=T
 db: -
 int: lifting; football; podcasts; brunch
@@ -531,7 +531,7 @@ No pets.
 [[D|No hard dealbreakers|I don't have any hard dealbreakers]].
 [[g|Free Saturday evening and Monday evening|Saturday evening or Monday evening work]].
 
-caleb|Caleb|Cat Dad Carpenter|35|man|man|30|40|Glen Park|Carpenter with two cats and a very patient sourdough.
+nate|Nate|glenparkwoodshop|35|man|man|30|40|Glen Park|Carpenter with two cats and a very patient sourdough.
 attrs: smokes=F kids=no drinks=socially pets=has_cat rel=F early=T
 db: smokes=true:smoking
 int: woodworking; wine; cats; hiking
@@ -551,7 +551,7 @@ I have two cats.
 [[D|Dealbreaker: smoking|I can't date a smoker]].
 [[g|Free Sunday morning and Wednesday evening|Sunday morning or Wednesday evening work]].
 
-miles|Miles|Night DJ|26|man|man,nonbinary|25|32|Western Addition|DJ and gallery assistant chasing the perfect bassline.
+isaiah|Isaiah|basslinesf|26|man|man,nonbinary|25|32|Western Addition|DJ and gallery assistant chasing the perfect bassline.
 attrs: smokes=F kids=unsure drinks=often pets=none rel=F early=F
 db: -
 int: DJing; art shows; synths; dancing
@@ -571,7 +571,7 @@ No pets.
 [[D|No hard dealbreakers|I don't have hard dealbreakers]].
 [[g|Free Saturday night and Tuesday night|Saturday night or Tuesday night work]].
 
-eli|Eli|Skatepark Eli|29|man|man,nonbinary|26|35|Excelsior|Bike mechanic and skater with a punk-show habit.
+tyler|Tyler|excelsiorskate|29|man|man,nonbinary|26|35|Excelsior|Bike mechanic and skater with a punk-show habit.
 attrs: smokes=T kids=unsure drinks=socially pets=none rel=F early=F
 db: -
 int: skating; ramen; bike rides; punk shows
@@ -591,7 +591,7 @@ No pets.
 [[D|No hard dealbreakers|I don't have hard dealbreakers]].
 [[g|Free Saturday evening, Tuesday and Wednesday evening|Saturday evening, Tuesday evening or Wednesday evening work]].
 
-ash|Ash|Zine Wanderer|28|nonbinary|man,woman,nonbinary|25|35|Mission|Zine maker, bouldering regular, bakery scout.
+robin|Robin|risoprints|28|nonbinary|man,woman,nonbinary|25|35|Mission|Zine maker, bouldering regular, bakery scout.
 attrs: smokes=F kids=no drinks=socially pets=has_cat rel=F early=F
 db: -
 int: zine fairs; bouldering; bakeries; thrifting
@@ -611,7 +611,7 @@ I have a cat named Pixel Dust.
 [[D|No hard dealbreakers|I don't have hard dealbreakers]].
 [[g|Free Saturday evening and Sunday morning|Saturday evening or Sunday morning work]].
 
-kit|Kit|Boulder Baker|31|nonbinary|woman,nonbinary|27|36|Bernal Heights|Baker who climbs, zines, and thrifts on weekends.
+alex|Alex|bernalbakes|31|nonbinary|woman,nonbinary|27|36|Bernal Heights|Baker who climbs, zines, and thrifts on weekends.
 attrs: smokes=F kids=no drinks=socially pets=none rel=F early=T
 db: smokes=true:smoking
 int: bouldering; baking; zine fairs; thrifting
@@ -631,7 +631,7 @@ No pets.
 [[D|Dealbreaker: smoking|I can't date a smoker]].
 [[g|Free Sunday morning and Tuesday evening|Sunday morning or Tuesday evening work]].
 
-river|River|Synth & Thrift|27|nonbinary|man,nonbinary|25|33|Potrero Hill|Modular synth tinkerer with an eye for thrift finds.
+jamie|Jamie|patchcables|27|nonbinary|man,nonbinary|25|33|Potrero Hill|Modular synth tinkerer with an eye for thrift finds.
 attrs: smokes=F kids=unsure drinks=socially pets=none rel=F early=F
 db: -
 int: modular synths; thrifting; bike rides; ramen
@@ -650,6 +650,26 @@ No pets.
 [[s|Wants creative, kind partner|I want someone creative and kind]].
 [[D|No hard dealbreakers|I don't have hard dealbreakers]].
 [[g|Free Saturday evening and Tuesday evening|Saturday evening or Tuesday evening work]].
+
+cici|Cici|tiny.robot.dances|31|woman|man|28|38|Mission|Asks why things work, then builds a tiny robot to find out.
+attrs: smokes=F kids=yes drinks=socially pets=none rel=T early=F
+db: -
+int: hiking; indoor skydiving; playful robots; industrial design; films about AI and minds
+slots: 23T18:30 24T18:30 25T19:00 27T18:00
+I'm the kind of person who can spend one conversation asking what love really is and the next figuring out whether static electricity could pull cat hair off a sweater in one swipe. [[i|Thinks from first principles|I want to know how things work, and why they have to work the way they do]].
+Weekends are hiking, a design side project, or an indoor-skydiving session. And sometimes [[i|Builds playful robot experiments|I just want to make a tiny robot do something ridiculous]].
+I'm happy with simple food done well. I recently went down a rabbit hole on how to poach an egg properly.
+I'm learning industrial design and aesthetics, not just software, and I love films about minds and AI like Her and Pantheon.
+I feel most alive when I'm coming up with a new idea and watching a vague possibility start to take shape.
+[[L|Drinks socially|I drink socially]].
+[[L|Does not smoke|I don't smoke or vape]].
+[[V|Wants kids|I want kids]].
+I don't have pets, but I notice animals a lot. I always wonder what a purring cat is actually feeling.
+[[v|Spiritual|I'm spiritual]]. I value honesty and real thinking over comfortable reassurance.
+[[g|Night owl|I'm a night owl]].
+[[s|Wants a curious, playful partner with their own inner world|someone curious and playful with their own vivid inner world]], who brings ideas and a little surprise too.
+[[D|No hard dealbreakers|No hard deal breakers]].
+[[g|Free Monday through Wednesday evenings and Friday evening|Monday or Tuesday evening, Wednesday after seven, or Friday evening]] all work.
 """
 
 

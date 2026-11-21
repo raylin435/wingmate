@@ -1,0 +1,224 @@
+{
+  "id": "rachel",
+  "first_name": "Rachel",
+  "alias": "sunrise.trails",
+  "age": 29,
+  "gender": "woman",
+  "seeking": {
+    "genders": [
+      "man"
+    ],
+    "min_age": 27,
+    "max_age": 36
+  },
+  "neighborhood": "Inner Sunset",
+  "tagline": "Sunrise runs, dumpling crawls, bad puns.",
+  "avatar_color": "#E07A5F",
+  "attributes": {
+    "smokes": false,
+    "wants_kids": "unsure",
+    "drinks": "socially",
+    "pets": "has_dog",
+    "religion_important": false,
+    "early_bird": true
+  },
+  "dealbreakers": [
+    {
+      "attr": "smokes",
+      "equals": true,
+      "label": "smoking"
+    }
+  ],
+  "interests": [
+    "trail running",
+    "dumplings",
+    "board games",
+    "live jazz"
+  ],
+  "free_slots": [
+    "2026-11-21T18:00",
+    "2026-11-22T11:00",
+    "2026-11-24T19:00",
+    "2026-11-25T18:30"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hey, I'm your Wingmate. Let's start easy: tell me about yourself and what a good week looks like."
+    },
+    {
+      "role": "user",
+      "text": "I'm a product designer who lives for the weekend. A good week has two trail runs, one night out with friends, and nothing on my calendar Sunday evening."
+    },
+    {
+      "role": "assistant",
+      "text": "Nice. What do your weekends usually look like?"
+    },
+    {
+      "role": "user",
+      "text": "Saturdays I'm on the trail before 7 most Saturdays with my dog Biscuit, then a slow brunch. Sundays are board games or a jazz set somewhere in the Fillmore."
+    },
+    {
+      "role": "assistant",
+      "text": "Food is a big signal. What are you always down to eat?"
+    },
+    {
+      "role": "user",
+      "text": "Dumplings, always. I will cross the city for a good soup dumpling and I'm slowly working through every xiao long bao spot in the Richmond."
+    },
+    {
+      "role": "assistant",
+      "text": "What else do you do to move, make, or unwind?"
+    },
+    {
+      "role": "user",
+      "text": "Besides running I love board games, Wingspan especially, and live jazz on a weeknight when I can swing it."
+    },
+    {
+      "role": "assistant",
+      "text": "How's work, and does it leave you energy for dating?"
+    },
+    {
+      "role": "user",
+      "text": "Work is busy but reasonable, around 45 hours. I have energy for dating if the plans are low-key."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your relationship with drinking?"
+    },
+    {
+      "role": "user",
+      "text": "I have a glass of wine or a beer when I'm out, maybe twice a week, never more than a couple."
+    },
+    {
+      "role": "assistant",
+      "text": "Any smoking, vaping or similar I should know about, for you or in a match?"
+    },
+    {
+      "role": "user",
+      "text": "Smoking is the one thing I can't do. I really can't date someone who smokes, my dad had COPD for years. I don't smoke or vape myself."
+    },
+    {
+      "role": "assistant",
+      "text": "How do you feel about having kids someday?"
+    },
+    {
+      "role": "user",
+      "text": "I honestly don't know if I want kids, ask me again in a year. I'm open if it's the right person."
+    },
+    {
+      "role": "assistant",
+      "text": "Pets? A dog, a cat, allergies, none?"
+    },
+    {
+      "role": "user",
+      "text": "I have a dog, Biscuit, a beagle mix who comes on every run. Dog people get bonus points."
+    },
+    {
+      "role": "assistant",
+      "text": "How important are religion or spirituality to you, and what values matter most?"
+    },
+    {
+      "role": "user",
+      "text": "Religion isn't important to me, but I care a lot about kindness and showing up for people."
+    },
+    {
+      "role": "assistant",
+      "text": "Morning person or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I'm up at 5:45 every day and fading by ten. Night owls, I'll be the one yawning at your show."
+    },
+    {
+      "role": "assistant",
+      "text": "What are you hoping to find in a partner?"
+    },
+    {
+      "role": "user",
+      "text": "I want someone curious and outdoorsy who would happily split a plate of dumplings and doesn't take themselves too seriously."
+    },
+    {
+      "role": "assistant",
+      "text": "Any hard dealbreakers I should screen for?"
+    },
+    {
+      "role": "user",
+      "text": "Smoking, like I said. Otherwise I'm flexible, I just want someone kind."
+    },
+    {
+      "role": "assistant",
+      "text": "Last one: when are you free for a first date this coming week?"
+    },
+    {
+      "role": "user",
+      "text": "Saturday evening around six works, Sunday late morning is great, and Tuesday after seven. Thanksgiving week gets hectic."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "Runs trails at sunrise",
+      "quote": "on the trail before 7 most Saturdays",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "Dumpling obsessive",
+      "quote": "I will cross the city for a good soup dumpling",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Drinks socially",
+      "quote": "I have a glass of wine or a beer when I'm out, maybe twice a week",
+      "share": "private"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "Smoking is a dealbreaker",
+      "quote": "I really can't date someone who smokes",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Does not smoke",
+      "quote": "I don't smoke or vape myself",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Unsure about kids",
+      "quote": "I honestly don't know if I want kids",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Religion not important",
+      "quote": "Religion isn't important to me",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Early bird",
+      "quote": "I'm up at 5:45 every day",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Wants curious, outdoorsy partner",
+      "quote": "I want someone curious and outdoorsy who would happily split a plate of dumplings",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Saturday evening, Sunday morning, Tuesday evening",
+      "quote": "Saturday evening around six works, Sunday late morning is great",
+      "share": "public"
+    }
+  ]
+}

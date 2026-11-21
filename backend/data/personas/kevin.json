@@ -1,0 +1,224 @@
+{
+  "id": "kevin",
+  "first_name": "Kevin",
+  "alias": "noodlemap.sf",
+  "age": 29,
+  "gender": "man",
+  "seeking": {
+    "genders": [
+      "woman"
+    ],
+    "min_age": 25,
+    "max_age": 34
+  },
+  "neighborhood": "Inner Richmond",
+  "tagline": "UX researcher mapping every noodle shop in the city.",
+  "avatar_color": "#355070",
+  "attributes": {
+    "smokes": false,
+    "wants_kids": "unsure",
+    "drinks": "socially",
+    "pets": "has_dog",
+    "religion_important": false,
+    "early_bird": true
+  },
+  "dealbreakers": [
+    {
+      "attr": "smokes",
+      "equals": true,
+      "label": "smoking"
+    }
+  ],
+  "interests": [
+    "mountain biking",
+    "climbing",
+    "ramen",
+    "dumplings",
+    "film photography"
+  ],
+  "free_slots": [
+    "2026-11-22T11:00",
+    "2026-11-25T19:00",
+    "2026-11-27T18:30"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hey, I'm your Wingmate. Let's start easy: tell me about yourself and what a good week looks like."
+    },
+    {
+      "role": "user",
+      "text": "I'm a UX researcher who plans weekends around ramen maps. A good week includes a climb, a long bike ride, and a new noodle spot."
+    },
+    {
+      "role": "assistant",
+      "text": "Nice. What do your weekends usually look like?"
+    },
+    {
+      "role": "user",
+      "text": "I'm on my mountain bike or at the climbing gym every weekend, then ramen."
+    },
+    {
+      "role": "assistant",
+      "text": "Food is a big signal. What are you always down to eat?"
+    },
+    {
+      "role": "user",
+      "text": "I keep a spreadsheet of every ramen and dumpling place I've tried. Eighty-four and counting."
+    },
+    {
+      "role": "assistant",
+      "text": "What else do you do to move, make, or unwind?"
+    },
+    {
+      "role": "user",
+      "text": "Film photography, mountain biking, and quiet live jazz at small clubs."
+    },
+    {
+      "role": "assistant",
+      "text": "How's work, and does it leave you energy for dating?"
+    },
+    {
+      "role": "user",
+      "text": "Hybrid work and lots of energy after hours. I'd love midweek dates."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your relationship with drinking?"
+    },
+    {
+      "role": "user",
+      "text": "I drink sake or a beer with food, maybe once a week."
+    },
+    {
+      "role": "assistant",
+      "text": "Any smoking, vaping or similar I should know about, for you or in a match?"
+    },
+    {
+      "role": "user",
+      "text": "I don't smoke or vape."
+    },
+    {
+      "role": "assistant",
+      "text": "How do you feel about having kids someday?"
+    },
+    {
+      "role": "user",
+      "text": "I'm genuinely unsure about kids, I'd want to talk about it."
+    },
+    {
+      "role": "assistant",
+      "text": "Pets? A dog, a cat, allergies, none?"
+    },
+    {
+      "role": "user",
+      "text": "I have a shiba named Mochi, a cranky little guy."
+    },
+    {
+      "role": "assistant",
+      "text": "How important are religion or spirituality to you, and what values matter most?"
+    },
+    {
+      "role": "user",
+      "text": "Religion isn't important to me, though I like the New Year traditions."
+    },
+    {
+      "role": "assistant",
+      "text": "Morning person or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I'm usually up at six for the first ride."
+    },
+    {
+      "role": "assistant",
+      "text": "What are you hoping to find in a partner?"
+    },
+    {
+      "role": "user",
+      "text": "I want someone adventurous and curious about food who doesn't mind a long bike ride."
+    },
+    {
+      "role": "assistant",
+      "text": "Any hard dealbreakers I should screen for?"
+    },
+    {
+      "role": "user",
+      "text": "Cigarette smoke is a dealbreaker, my asthma flares up."
+    },
+    {
+      "role": "assistant",
+      "text": "Last one: when are you free for a first date this coming week?"
+    },
+    {
+      "role": "user",
+      "text": "Sunday late morning and Wednesday evening work for me."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "Mountain biking and climbing",
+      "quote": "I'm on my mountain bike or at the climbing gym every weekend",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "Ramen and dumplings",
+      "quote": "I keep a spreadsheet of every ramen and dumpling place I've tried",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Drinks socially",
+      "quote": "I drink sake or a beer with food, maybe once a week",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Does not smoke",
+      "quote": "I don't smoke or vape",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Unsure about kids",
+      "quote": "I'm genuinely unsure about kids",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Religion not important",
+      "quote": "Religion isn't important to me",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Early bird",
+      "quote": "I'm usually up at six for the first ride",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Wants adventurous foodie",
+      "quote": "I want someone adventurous and curious about food who doesn't mind a long bike ride",
+      "share": "public"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "Smoke bothers him",
+      "quote": "Cigarette smoke is a dealbreaker, my asthma flares up",
+      "share": "private"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Sunday morning and Wednesday evening",
+      "quote": "Sunday late morning and Wednesday evening work for me",
+      "share": "public"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import { createContext, useCallback, useContext, useEffect, useState } from "rea
 import { api, errorMessage, type PersonaSummary } from "./api";
 
 const STORAGE_KEY = "wingmate.persona";
-export const DEFAULT_PERSONA = "maya";
+export const DEFAULT_PERSONA = "rachel";
 
 type Ctx = {
   personaId: string;

@@ -4,7 +4,7 @@ import { ArrowDown, ArrowUp, MapPin, Minus, Send } from "lucide-react";
 import type { Candidate } from "@/lib/api";
 import { Avatar, Button, cx } from "../ui";
 
-const PALETTE = ["#C9295F", "#17807F", "#7C3AED", "#D97706", "#2563EB", "#DB2777", "#059669", "#9333EA"];
+const PALETTE = ["#E0207F", "#1F6FE0", "#7C3AED", "#D97706", "#0E7C86", "#DB2777", "#059669", "#9333EA"];
 
 export function colorFor(id: string) {
   let h = 0;
@@ -18,9 +18,9 @@ export function RankMove({ from, to }: { from: number; to: number }) {
   return (
     <span
       className={cx(
-        "inline-flex items-center gap-1 rounded-md px-2 py-0.5 font-mono text-xs font-semibold tabular-nums",
-        delta > 0 && "bg-agent-soft text-agent",
-        delta < 0 && "bg-human-soft text-human",
+        "inline-flex items-center gap-1 rounded-full px-2.5 py-1 font-mono text-xs font-semibold tabular-nums",
+        delta > 0 && "bg-agent text-white dark:text-[#04152e]",
+        delta < 0 && "bg-human text-white dark:text-[#2a0718]",
         delta === 0 && "bg-surface-2 text-muted ring-1 ring-line",
       )}
       title={`Vector rank #${from}, after agent rerank #${to}`}
@@ -36,9 +36,12 @@ function ScoreBar({ label, value, tone }: { label: string; value: number; tone: 
   return (
     <div className="flex items-center gap-2 text-[11px]">
       <span className="w-12 shrink-0 text-muted">{label}</span>
-      <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-surface-2 ring-1 ring-line">
+      <div className="h-2 flex-1 overflow-hidden rounded-full bg-surface-2 ring-1 ring-line">
         <div
-          className={cx("h-full rounded-full", tone === "agent" ? "bg-agent" : "bg-muted/50")}
+          className={cx(
+            "h-full rounded-full",
+            tone === "agent" ? "bg-[linear-gradient(90deg,var(--agent),var(--human))]" : "bg-muted/45",
+          )}
           style={{ width: `${pct}%` }}
         />
       </div>
@@ -61,16 +64,25 @@ export function CandidateCard({
   return (
     <article
       className={cx(
-        "flex flex-col rounded-2xl border bg-surface p-4 transition",
-        active ? "border-agent ring-2 ring-agent/20" : "border-line hover:border-agent/40",
+        "glass relative flex flex-col rounded-[26px] p-5 transition duration-300 hover:-translate-y-1",
+        active && "ring-2 ring-agent",
       )}
     >
+      <span className="absolute -top-3 -left-2 z-10 -rotate-6 bg-tag px-2 py-0.5 font-display text-xl leading-tight text-tag-fg shadow-[0_6px_14px_-8px_rgba(0,0,0,0.6)]">
+        #{c.rerank_rank}
+      </span>
       <div className="flex items-start gap-3">
-        <Avatar name={c.alias} color={colorFor(c.agent_id)} size={44} />
-        <div className="min-w-0 flex-1">
+        <Avatar
+          name={c.alias}
+          color={colorFor(c.agent_id)}
+          size={56}
+          shape="photo"
+          tilt={c.rerank_rank % 2 ? -4 : 3}
+        />
+        <div className="min-w-0 flex-1 pl-1">
           <div className="flex flex-wrap items-baseline gap-x-2">
-            <h3 className="truncate font-semibold">{c.alias}</h3>
-            <span className="text-sm text-muted">{c.age}</span>
+            <h3 className="truncate font-display text-[24px] leading-tight">{c.alias}</h3>
+            <span className="font-display text-xl text-muted">{c.age}</span>
           </div>
           <p className="flex items-center gap-1 text-xs text-muted">
             <MapPin className="size-3" /> {c.neighborhood}

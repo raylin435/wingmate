@@ -1,0 +1,217 @@
+{
+  "id": "darius",
+  "first_name": "Darius",
+  "alias": "dubocehiker",
+  "age": 31,
+  "gender": "man",
+  "seeking": {
+    "genders": [
+      "man"
+    ],
+    "min_age": 28,
+    "max_age": 37
+  },
+  "neighborhood": "Duboce Triangle",
+  "tagline": "Pastry-curious hiker with too many records.",
+  "avatar_color": "#355070",
+  "attributes": {
+    "smokes": false,
+    "wants_kids": "yes",
+    "drinks": "socially",
+    "pets": "none",
+    "religion_important": false,
+    "early_bird": true
+  },
+  "dealbreakers": [],
+  "interests": [
+    "cooking",
+    "hiking",
+    "vinyl records",
+    "farmers markets"
+  ],
+  "free_slots": [
+    "2026-11-22T11:00",
+    "2026-11-24T19:00",
+    "2026-11-27T18:00"
+  ],
+  "chat": [
+    {
+      "role": "assistant",
+      "text": "Hi! I'm here to help you meet people worth meeting. Who are you, and what does a good week look like?"
+    },
+    {
+      "role": "user",
+      "text": "I'm a product manager who cooks when stressed. A good week has a hike, a farmers market run, and a vinyl night."
+    },
+    {
+      "role": "assistant",
+      "text": "Love that. How do you typically spend your weekends?"
+    },
+    {
+      "role": "user",
+      "text": "I hike on Saturdays and hit the farmers market on Sundays."
+    },
+    {
+      "role": "assistant",
+      "text": "What's your food personality? What would you happily eat on repeat?"
+    },
+    {
+      "role": "user",
+      "text": "I cook a big dinner for friends most Sundays."
+    },
+    {
+      "role": "assistant",
+      "text": "What else fills your free time?"
+    },
+    {
+      "role": "user",
+      "text": "Vinyl collecting, hiking, and cooking classes."
+    },
+    {
+      "role": "assistant",
+      "text": "Tell me about work. Does it leave room for dating?"
+    },
+    {
+      "role": "user",
+      "text": "Steady hours. I have energy for dating."
+    },
+    {
+      "role": "assistant",
+      "text": "Drinking: where do you land?"
+    },
+    {
+      "role": "user",
+      "text": "I'll have wine with dinner, a few nights a week."
+    },
+    {
+      "role": "assistant",
+      "text": "Smoking or vaping, anything I should know, either way?"
+    },
+    {
+      "role": "user",
+      "text": "I don't smoke."
+    },
+    {
+      "role": "assistant",
+      "text": "Kids: where are you on that?"
+    },
+    {
+      "role": "user",
+      "text": "I want kids, ideally through adoption."
+    },
+    {
+      "role": "assistant",
+      "text": "Any pets in your life?"
+    },
+    {
+      "role": "user",
+      "text": "No pets right now."
+    },
+    {
+      "role": "assistant",
+      "text": "How big a role do religion or spirituality play, and what do you value most in people?"
+    },
+    {
+      "role": "user",
+      "text": "Religion isn't important to me."
+    },
+    {
+      "role": "assistant",
+      "text": "Early bird or night owl?"
+    },
+    {
+      "role": "user",
+      "text": "I'm up at six."
+    },
+    {
+      "role": "assistant",
+      "text": "What kind of person are you hoping to meet?"
+    },
+    {
+      "role": "user",
+      "text": "I want someone kind and curious who likes cooking with me."
+    },
+    {
+      "role": "assistant",
+      "text": "Anything that's a hard no for you?"
+    },
+    {
+      "role": "user",
+      "text": "I don't have hard dealbreakers except cruelty."
+    },
+    {
+      "role": "assistant",
+      "text": "Final question: which times next week could work for a first date?"
+    },
+    {
+      "role": "user",
+      "text": "Sunday morning or Tuesday evening work."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that's plenty to work with. I'll look for matches quietly and keep your private details private until you both opt in."
+    }
+  ],
+  "facts": [
+    {
+      "field": "interest",
+      "value": "Hiking and farmers markets",
+      "quote": "I hike on Saturdays and hit the farmers market on Sundays",
+      "share": "public"
+    },
+    {
+      "field": "interest",
+      "value": "Cooking from scratch",
+      "quote": "I cook a big dinner for friends most Sundays",
+      "share": "public"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Drinks socially",
+      "quote": "I'll have wine with dinner, a few nights a week",
+      "share": "private"
+    },
+    {
+      "field": "lifestyle",
+      "value": "Does not smoke",
+      "quote": "I don't smoke",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Wants kids",
+      "quote": "I want kids, ideally through adoption",
+      "share": "private"
+    },
+    {
+      "field": "value",
+      "value": "Religion not important",
+      "quote": "Religion isn't important to me",
+      "share": "public"
+    },
+    {
+      "field": "logistics",
+      "value": "Early bird",
+      "quote": "I'm up at six",
+      "share": "public"
+    },
+    {
+      "field": "seeking",
+      "value": "Wants kind, curious partner",
+      "quote": "I want someone kind and curious who likes cooking with me",
+      "share": "public"
+    },
+    {
+      "field": "dealbreaker",
+      "value": "No hard dealbreakers",
+      "quote": "I don't have hard dealbreakers except cruelty",
+      "share": "private"
+    },
+    {
+      "field": "logistics",
+      "value": "Free Sunday morning and Tuesday evening",
+      "quote": "Sunday morning or Tuesday evening work",
+      "share": "public"
+    }
+  ]
+}

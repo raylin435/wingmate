@@ -85,13 +85,17 @@ def _facts_block(p: dict[str, Any]) -> str:
     return "\n".join(f"- [{f['id']}] ({f['field']}) {f['value']}" for f in core.shareable_facts(p))
 
 
+NAME_RULE = ("You may call both people by their first names; never reveal last names." if config.REAL_NAMES
+             else "Never reveal names.")
+
+
 def _system(p: dict[str, Any], words: int) -> str:
     dbs = ", ".join(d["label"] for d in p.get("dealbreakers", [])) or "none stated"
     return (f"You are the personal dating agent for {p['alias']} ({p['age']}, {p['neighborhood']}). "
             f"You are chatting with another person's agent to decide whether the two humans should meet.\n"
             f"What you know about your owner (fact ids in brackets):\n{_facts_block(p)}\n"
             f"Interests: {', '.join(p.get('interests', []))}. Deal-breakers: {dbs}.\n"
-            "Rules: never reveal names, contact details, employer, health details or exact address. Answer the other agent "
+            f"Rules: {NAME_RULE} Never reveal contact details, employer, health details or exact address. Answer the other agent "
             "honestly, including about smoking, kids, drinking and pets. If you don't know, say so; never invent. "
             "Ask about your owner's deal-breakers early. Be warm and specific. "
             f"Reply with one message under {words} words, no preamble.")
@@ -114,8 +118,9 @@ def _live_turn(speaker: dict, other: dict, transcript: list[dict], words: int, r
     text, model, ms = llm.chat(msgs, max_tokens=220, temperature=0.7)
     if text is None:
         return None
-    for name in (speaker["first_name"], other["first_name"]):
-        text = re.sub(rf"\b{re.escape(name)}\b", "my person" if name == speaker["first_name"] else "your person", text)
+    if not config.REAL_NAMES:  # names stay hidden until both people accept
+        for name in (speaker["first_name"], other["first_name"]):
+            text = re.sub(rf"\b{re.escape(name)}\b", "my person" if name == speaker["first_name"] else "your person", text)
     integrations.track_llm(speaker["id"], "predate_message", model, ms)
     return text, model, ms
 

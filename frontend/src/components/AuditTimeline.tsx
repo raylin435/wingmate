@@ -8,7 +8,7 @@ import { Button, ErrorBanner, Skeleton, cx } from "./ui";
 type ActorKind = "human" | "agent" | "system";
 
 function actorKind(actor: string): ActorKind {
-  // Backend actors look like "agent:maya", "human:theo", "system", "statsig".
+  // Backend actors look like "agent:rachel", "human:matt", "system", "statsig".
   const a = actor.toLowerCase();
   if (a.startsWith("agent")) return "agent";
   if (a.startsWith("human") || a.startsWith("user")) return "human";
