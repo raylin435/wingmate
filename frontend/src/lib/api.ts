@@ -166,6 +166,8 @@ export const api = {
 
   importPaste: (id: string, text: string) =>
     request<ImportResult>(`/api/personas/${enc(id)}/import/paste`, json({ text })),
+  importCallbackStatus: (id: string, requestId: string) =>
+    request<{ result: ImportResult | null }>(`/api/personas/${enc(id)}/import/callback/${enc(requestId)}`),
   importExport: (id: string, file: File) => {
     const form = new FormData();
     form.append("file", file);

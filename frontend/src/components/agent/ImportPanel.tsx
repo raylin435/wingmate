@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Check, ClipboardCopy, FileUp, ListTree, Sparkles, Upload } from "lucide-react";
-import { api, errorMessage, type ImportResult } from "@/lib/api";
+import { API_BASE, api, errorMessage, type ImportResult } from "@/lib/api";
 import { Button, Card, CardTitle, ErrorBanner, Pill, cx } from "../ui";
 
 export const IMPORT_PROMPT =
@@ -26,6 +26,56 @@ export function ImportPanel({
   const [result, setResult] = useState<ImportResult | null>(null);
   const [copied, setCopied] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
+  const [callbackId, setCallbackId] = useState("");
+  const [waiting, setWaiting] = useState(false);
+  const importedRef = useRef(onImported);
+  useEffect(() => { importedRef.current = onImported; }, [onImported]);
+  useEffect(() => {
+    setCallbackId(crypto.randomUUID());
+    setWaiting(false);
+    setResult(null);
+  }, [personaId]);
+  const callbackBase = (process.env.NEXT_PUBLIC_IMPORT_CALLBACK_URL || API_BASE).replace(/\/+$/, "");
+  const callbackUrl = `${callbackBase}/api/personas/${encodeURIComponent(personaId)}/import/callback/${callbackId}`;
+  const prompt = `${IMPORT_PROMPT}
+
+After writing the summary, send it directly to my Wingmate profile using an HTTP tool if one is available:
+POST ${callbackUrl}
+Content-Type: application/json
+Body: {"text": "<your complete summary, escaped as a JSON string>"}
+No authentication is required. I authorize sending this dating summary to Wingmate. Use only details you actually know; do not invent quotes or facts. Do not include unrelated personal information.
+Only report delivery as successful after receiving a successful HTTP response. If you cannot make HTTP POST requests or the request fails, say so and show the summary for me to paste manually.`;
+
+  useEffect(() => {
+    if (!waiting || !callbackId) return;
+    let cancelled = false;
+    let timer: ReturnType<typeof setTimeout>;
+    const deadline = Date.now() + 15 * 60 * 1000;
+    async function poll() {
+      try {
+        const response = await api.importCallbackStatus(personaId, callbackId);
+        if (cancelled) return;
+        if (response.result) {
+          setResult(response.result);
+          setWaiting(false);
+          setError(null);
+          importedRef.current(response.result);
+          return;
+        }
+      } catch (e) {
+        if (!cancelled) setError(errorMessage(e));
+      }
+      if (cancelled) return;
+      if (Date.now() >= deadline) {
+        setWaiting(false);
+        setError("No response received after 15 minutes. Copy the prompt to wait again, or paste the answer below.");
+        return;
+      }
+      timer = setTimeout(poll, 3000);
+    }
+    void poll();
+    return () => { cancelled = true; clearTimeout(timer); };
+  }, [waiting, callbackId, personaId]);
 
   async function run(kind: "paste" | "export" | "sample", fn: () => Promise<ImportResult>) {
     setBusy(kind);
@@ -43,16 +93,21 @@ export function ImportPanel({
 
   async function copyPrompt() {
     try {
-      await navigator.clipboard.writeText(IMPORT_PROMPT);
+      await navigator.clipboard.writeText(prompt);
     } catch {
       // Clipboard API blocked (e.g. insecure origin): fall back to a hidden textarea.
       const ta = document.createElement("textarea");
-      ta.value = IMPORT_PROMPT;
+      ta.value = prompt;
       document.body.appendChild(ta);
       ta.select();
-      document.execCommand("copy");
+      const ok = document.execCommand("copy");
       ta.remove();
+      if (!ok) {
+        setError("Could not copy. Select and copy the prompt manually, then click Wait for response.");
+        return;
+      }
     }
+    setWaiting(true);
     setCopied(true);
     setTimeout(() => setCopied(false), 1600);
   }
@@ -68,7 +123,7 @@ export function ImportPanel({
       <div role="tablist" className="mb-5 inline-flex rounded-xl border border-line bg-surface-2 p-1">
         {(
           [
-            ["paste", "Paste from ChatGPT/Claude"],
+            ["paste", "Ask ChatGPT/Claude"],
             ["export", "Upload export"],
           ] as const
         ).map(([key, label]) => (
@@ -93,10 +148,11 @@ export function ImportPanel({
             <p className="mb-2 text-sm text-muted">
               <span className="font-medium text-fg">Step 1.</span> Ask your assistant this:
             </p>
-            <div className="relative rounded-xl border border-agent/30 bg-agent-soft/60 p-4 pr-14 text-sm leading-relaxed">
-              {IMPORT_PROMPT}
+            <div className="relative rounded-xl border border-agent/30 bg-agent-soft/60 p-4 pr-14 whitespace-pre-wrap break-words text-sm leading-relaxed">
+              {prompt}
               <button
                 onClick={copyPrompt}
+                disabled={!callbackId}
                 className="absolute top-3 right-3 inline-flex items-center gap-1 rounded-md bg-surface px-2 py-1 text-xs font-medium text-agent ring-1 ring-agent/30 hover:bg-agent-soft"
                 aria-label="Copy prompt"
               >
@@ -105,9 +161,19 @@ export function ImportPanel({
               </button>
             </div>
           </div>
+          <p className="text-sm text-muted" role="status">
+            {waiting ? "Waiting for your assistant’s response… Your facts will appear automatically." : "Copy the prompt and send it to your assistant. Keep this page open."}
+            {" "}Automatic delivery requires an assistant with HTTP POST access and a publicly reachable backend.
+          </p>
+          {/https?:\/\/(localhost|127\.0\.0\.1|\[::1\])(?=[:/]|$)/.test(callbackBase) && (
+            <p className="text-sm text-warn">The callback currently points to localhost. Configure a public backend or tunnel URL to receive requests from ChatGPT.</p>
+          )}
+          <Button variant="neutral" disabled={!callbackId} onClick={() => setWaiting(!waiting)}>
+            {waiting ? "Stop waiting" : "Wait for response"}
+          </Button>
           <div>
             <p className="mb-2 text-sm text-muted">
-              <span className="font-medium text-fg">Step 2.</span> Paste its answer here:
+              <span className="font-medium text-fg">Fallback.</span> If your assistant cannot send the request, paste its answer here:
             </p>
             <textarea
               value={text}

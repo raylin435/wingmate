@@ -74,3 +74,18 @@ matching with agent pre-dates. These numbers come from simulated people, not rea
 
 ## Team
 Add names and contact emails here before submitting.
+
+### Direct assistant import (demo)
+
+The import prompt includes an unauthenticated HTTP POST callback with a per-page request ID.
+Copying the prompt starts polling for up to 15 minutes; received facts appear for review automatically.
+The assistant must have an HTTP POST tool. A prompt alone does not grant that capability; manual paste remains available.
+Set `NEXT_PUBLIC_API_URL` to a publicly reachable backend before building the frontend.
+Alternatively set `NEXT_PUBLIC_IMPORT_CALLBACK_URL` to a public tunnel for callbacks while the browser uses a local API.
+Both addresses must reach the same backend process. The backend must include the callback routes.
+Callback receipts are held in memory (up to 500), so run one worker for this demo; restarting clears them.
+Repeated POSTs to the same request ID return the original result without importing twice.
+There is no authentication, as requested for the prototype.
+
+`POST /api/personas/{pid}/import/callback/{request_id}` accepts `{"text":"summary"}`.
+`GET` at the same path returns `{"result":null}` while waiting, then the import result.

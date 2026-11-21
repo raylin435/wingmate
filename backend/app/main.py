@@ -1,6 +1,7 @@
 """Wingmate API. Run: uv run uvicorn app.main:app --reload --port 8000"""
 
 import threading
+from uuid import UUID
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
@@ -78,6 +79,30 @@ def import_paste(pid: str, body: PasteBody):
         return importer.import_paste(pid, body.text)
     except ValueError as exc:
         raise HTTPException(400, str(exc))
+
+
+# Demo-only, single-process callback receipts. No authentication, matching paste imports.
+_callback_results: dict[tuple[str, UUID], dict] = {}
+_callback_lock = threading.Lock()
+
+
+@app.post("/api/personas/{pid}/import/callback/{request_id}")
+def import_callback(pid: str, request_id: UUID, body: PasteBody):
+    _persona(pid)
+    key = (pid, request_id)
+    with _callback_lock:
+        if key not in _callback_results:
+            result = import_paste(pid, body)
+            if len(_callback_results) >= 500:
+                del _callback_results[next(iter(_callback_results))]
+            _callback_results[key] = result
+        return _callback_results[key]
+
+
+@app.get("/api/personas/{pid}/import/callback/{request_id}")
+def import_callback_status(pid: str, request_id: UUID):
+    _persona(pid)
+    return {"result": _callback_results.get((pid, request_id))}
 
 
 @app.post("/api/personas/{pid}/import/export")
@@ -190,6 +215,7 @@ def get_config(persona_id: str = config.DEMO_PERSONA):
 @app.post("/api/reset")
 def reset():
     """Reload the seed personas so the demo can be rehearsed from a clean state."""
+    _callback_results.clear()
     core.PERSONAS.clear()
     match.RUNS.clear()
     core.load_personas()
