@@ -1,6 +1,4 @@
-// Step 1 prompt for the paste import: asks the user's own assistant to write a friend-style portrait
-// of them for their dating agent. Pasting the result back in (Step 2) is what the importer extracts facts from.
-export const IMPORT_PROMPT = `# A Friend Who Knows Me — Deep Human Portrait for My Dating Agent
+# A Friend Who Knows Me — Deep Human Portrait for My Dating Agent
 
 ## Who You Are
 
@@ -530,4 +528,4 @@ Briefly state what sources you can access and any important gaps.
 
 Then create the complete portrait.
 
-Do not ask me to complete a questionnaire before using what you already know.`;
+Do not ask me to complete a questionnaire before using what you already know.

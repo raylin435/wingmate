@@ -33,6 +33,10 @@ RERANK_MODEL = env("SIE_RERANK_MODEL", "Qwen/Qwen3-Reranker-4B")
 CLASSIFY_MODEL = env("SIE_CLASSIFY_MODEL", "fastino/gliner2-large-v1")
 PII_MODEL = env("SIE_PII_MODEL", "numind/NuNER_Zero")
 
+# Show people by their first name everywhere (cards, chat, agent prompts). Set REAL_NAMES=0 to go back to
+# made-up handles with names revealed only after both people accept.
+REAL_NAMES = (env("REAL_NAMES", "1") or "1").lower() not in ("0", "false", "no", "off")
+
 DEMO_PERSONA = "rachel"
 WARM_MEMORY = (env("WARM_MEMORY", "rachel,matt,chris,greg,kevin,javier") or "").split(",")
 TIMEZONE = "America/Los_Angeles"

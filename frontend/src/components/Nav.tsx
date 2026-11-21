@@ -13,16 +13,20 @@ const LINKS = [
   { href: "/insights", label: "Insights" },
 ];
 
+export function LogoMark({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 32 32" className={className} aria-hidden>
+      <circle cx="12" cy="16" r="8.5" fill="#ff2cab" />
+      <circle cx="20" cy="16" r="8.5" fill="#3d8bff" opacity="0.85" />
+    </svg>
+  );
+}
+
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
-      <svg viewBox="0 0 32 32" className="size-7" aria-hidden>
-        <circle cx="12" cy="16" r="8.5" className="fill-human" />
-        <circle cx="20" cy="16" r="8.5" className="fill-agent" opacity="0.85" />
-      </svg>
-      <span className="text-[17px]">
-        Wing<span className="text-human">mate</span>
-      </span>
+    <Link href="/" className="flex items-center gap-2 text-white">
+      <LogoMark className="size-7" />
+      <span className="font-display text-[28px] leading-none tracking-tight">wingmate</span>
     </Link>
   );
 }
@@ -35,10 +39,10 @@ export function Nav() {
     : [{ id: personaId || DEFAULT_PERSONA, alias: personaId || DEFAULT_PERSONA, first_name: "" }];
 
   return (
-    <header className="sticky top-0 z-30 border-b border-line bg-bg/85 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-3 gap-y-2 px-4 py-3 sm:flex-nowrap sm:px-6">
+    <header className="sticky top-0 z-30 border-b border-white/15 bg-[#2f5664]/55 backdrop-blur-xl backdrop-saturate-150 dark:bg-[#081022]/65">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-3 gap-y-2 px-4 py-3 sm:px-6 lg:flex-nowrap">
         <Logo />
-        <nav className="order-3 -mx-1 flex w-full gap-1 overflow-x-auto sm:order-none sm:mx-0 sm:ml-6 sm:w-auto">
+        <nav className="order-3 -mx-1 flex w-full gap-1 overflow-x-auto lg:order-none lg:mx-0 lg:ml-6 lg:w-auto">
           {LINKS.map((l) => {
             const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
             return (
@@ -46,8 +50,10 @@ export function Nav() {
                 key={l.href}
                 href={l.href}
                 className={cx(
-                  "rounded-lg px-3 py-1.5 text-sm font-medium whitespace-nowrap transition",
-                  active ? "bg-surface text-fg shadow-sm ring-1 ring-line" : "text-muted hover:text-fg",
+                  "rounded-full px-3.5 py-1.5 text-sm font-medium whitespace-nowrap transition",
+                  active
+                    ? "bg-white/95 font-semibold text-[#c4166f] shadow-[0_6px_18px_-10px_rgba(0,0,0,0.5)]"
+                    : "text-white/85 hover:bg-white/12 hover:text-white",
                 )}
               >
                 {l.label}
@@ -55,12 +61,12 @@ export function Nav() {
             );
           })}
         </nav>
-        <label className="relative ml-auto flex items-center gap-2 text-xs text-muted">
-          <span className="hidden sm:inline">Viewing as</span>
+        <label className="relative ml-auto flex items-center gap-2 text-xs text-white/80">
+          <span className="hidden lg:inline">Viewing as</span>
           <select
             value={personaId}
             onChange={(e) => setPersonaId(e.target.value)}
-            className="h-9 appearance-none rounded-lg border border-line bg-surface py-1 pr-8 pl-3 text-sm font-medium text-fg"
+            className="h-9 max-w-[200px] appearance-none truncate rounded-full border border-white/35 bg-white/12 py-1 pr-8 pl-3.5 text-sm font-medium text-white [color-scheme:dark] hover:bg-white/18"
             aria-label="Switch persona"
           >
             {options.map((p) => (
@@ -70,7 +76,7 @@ export function Nav() {
               </option>
             ))}
           </select>
-          <ChevronDown className="pointer-events-none absolute right-2.5 size-4" />
+          <ChevronDown className="pointer-events-none absolute right-2.5 size-4 text-white" />
         </label>
       </div>
     </header>
