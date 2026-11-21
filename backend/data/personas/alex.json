@@ -1,24 +1,25 @@
 {
-  "id": "kenji",
-  "first_name": "Kenji",
-  "alias": "Ramen Cartographer",
-  "age": 29,
-  "gender": "man",
+  "id": "alex",
+  "first_name": "Alex",
+  "alias": "bernalbakes",
+  "age": 31,
+  "gender": "nonbinary",
   "seeking": {
     "genders": [
-      "woman"
+      "woman",
+      "nonbinary"
     ],
-    "min_age": 25,
-    "max_age": 34
+    "min_age": 27,
+    "max_age": 36
   },
-  "neighborhood": "Inner Richmond",
-  "tagline": "UX researcher mapping every noodle shop in the city.",
-  "avatar_color": "#355070",
+  "neighborhood": "Bernal Heights",
+  "tagline": "Baker who climbs, zines, and thrifts on weekends.",
+  "avatar_color": "#4A6FA5",
   "attributes": {
     "smokes": false,
-    "wants_kids": "unsure",
+    "wants_kids": "no",
     "drinks": "socially",
-    "pets": "has_dog",
+    "pets": "none",
     "religion_important": false,
     "early_bird": true
   },
@@ -30,15 +31,14 @@
     }
   ],
   "interests": [
-    "mountain biking",
-    "climbing",
-    "ramen",
-    "dumplings",
-    "film photography"
+    "bouldering",
+    "baking",
+    "zine fairs",
+    "thrifting"
   ],
   "free_slots": [
     "2026-11-22T11:00",
-    "2026-11-25T19:00",
+    "2026-11-24T19:00",
     "2026-11-27T18:30"
   ],
   "chat": [
@@ -48,7 +48,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a UX researcher who plans weekends around ramen maps. A good week includes a climb, a long bike ride, and a new noodle spot."
+      "text": "I'm a baker who climbs. A good week has bouldering, a zine fair, and a thrift run."
     },
     {
       "role": "assistant",
@@ -56,7 +56,7 @@
     },
     {
       "role": "user",
-      "text": "I'm on my mountain bike or at the climbing gym every weekend, then ramen."
+      "text": "I boulder on Saturdays and bake all day Sundays."
     },
     {
       "role": "assistant",
@@ -64,7 +64,7 @@
     },
     {
       "role": "user",
-      "text": "I keep a spreadsheet of every ramen and dumpling place I've tried. Eighty-four and counting."
+      "text": "I love bakeries and ramen."
     },
     {
       "role": "assistant",
@@ -72,7 +72,7 @@
     },
     {
       "role": "user",
-      "text": "Film photography, mountain biking, and quiet live jazz at small clubs."
+      "text": "Zines, thrifting, and bouldering."
     },
     {
       "role": "assistant",
@@ -80,7 +80,7 @@
     },
     {
       "role": "user",
-      "text": "Hybrid work and lots of energy after hours. I'd love midweek dates."
+      "text": "Baker hours start at four."
     },
     {
       "role": "assistant",
@@ -88,7 +88,7 @@
     },
     {
       "role": "user",
-      "text": "I drink sake or a beer with food, maybe once a week."
+      "text": "I'll have a glass of wine."
     },
     {
       "role": "assistant",
@@ -96,7 +96,7 @@
     },
     {
       "role": "user",
-      "text": "I don't smoke or vape."
+      "text": "I don't smoke."
     },
     {
       "role": "assistant",
@@ -104,7 +104,7 @@
     },
     {
       "role": "user",
-      "text": "I'm genuinely unsure about kids, I'd want to talk about it."
+      "text": "I don't want kids."
     },
     {
       "role": "assistant",
@@ -112,7 +112,7 @@
     },
     {
       "role": "user",
-      "text": "I have a shiba named Mochi, a cranky little guy."
+      "text": "No pets."
     },
     {
       "role": "assistant",
@@ -120,7 +120,7 @@
     },
     {
       "role": "user",
-      "text": "Religion isn't important to me, though I like the New Year traditions."
+      "text": "Religion isn't important to me."
     },
     {
       "role": "assistant",
@@ -128,7 +128,7 @@
     },
     {
       "role": "user",
-      "text": "I'm usually up at six for the first ride."
+      "text": "I'm up at four for work."
     },
     {
       "role": "assistant",
@@ -136,7 +136,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone adventurous and curious about food who doesn't mind a long bike ride."
+      "text": "I want someone creative and adventurous."
     },
     {
       "role": "assistant",
@@ -144,7 +144,7 @@
     },
     {
       "role": "user",
-      "text": "Cigarette smoke is a dealbreaker, my asthma flares up."
+      "text": "I can't date a smoker."
     },
     {
       "role": "assistant",
@@ -152,7 +152,7 @@
     },
     {
       "role": "user",
-      "text": "Sunday late morning and Wednesday evening work for me."
+      "text": "Sunday morning or Tuesday evening work."
     },
     {
       "role": "assistant",
@@ -162,32 +162,32 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Mountain biking and climbing",
-      "quote": "I'm on my mountain bike or at the climbing gym every weekend",
+      "value": "Bouldering and baking",
+      "quote": "I boulder on Saturdays and bake all day Sundays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Ramen and dumplings",
-      "quote": "I keep a spreadsheet of every ramen and dumpling place I've tried",
+      "value": "Bakeries and ramen",
+      "quote": "I love bakeries and ramen",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I drink sake or a beer with food, maybe once a week",
+      "quote": "I'll have a glass of wine",
       "share": "private"
     },
     {
       "field": "lifestyle",
       "value": "Does not smoke",
-      "quote": "I don't smoke or vape",
+      "quote": "I don't smoke",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Unsure about kids",
-      "quote": "I'm genuinely unsure about kids",
+      "value": "Does not want kids",
+      "quote": "I don't want kids",
       "share": "private"
     },
     {
@@ -199,25 +199,25 @@
     {
       "field": "logistics",
       "value": "Early bird",
-      "quote": "I'm usually up at six for the first ride",
+      "quote": "I'm up at four for work",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants adventurous foodie",
-      "quote": "I want someone adventurous and curious about food who doesn't mind a long bike ride",
+      "value": "Wants creative, adventurous partner",
+      "quote": "I want someone creative and adventurous",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "Smoke bothers him",
-      "quote": "Cigarette smoke is a dealbreaker, my asthma flares up",
+      "value": "Dealbreaker: smoking",
+      "quote": "I can't date a smoker",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Sunday morning and Wednesday evening",
-      "quote": "Sunday late morning and Wednesday evening work for me",
+      "value": "Free Sunday morning and Tuesday evening",
+      "quote": "Sunday morning or Tuesday evening work",
       "share": "public"
     }
   ]

@@ -1,26 +1,26 @@
 {
-  "id": "luis",
-  "first_name": "Luis",
-  "alias": "Chalk & Tacos",
-  "age": 27,
-  "gender": "man",
+  "id": "lauren",
+  "first_name": "Lauren",
+  "alias": "pacheightsdesign",
+  "age": 35,
+  "gender": "woman",
   "seeking": {
     "genders": [
-      "woman"
+      "man"
     ],
-    "min_age": 25,
-    "max_age": 32
+    "min_age": 31,
+    "max_age": 40
   },
-  "neighborhood": "Dogpatch",
-  "tagline": "Junior game designer, boulderer, taco truck completionist.",
-  "avatar_color": "#2A9D8F",
+  "neighborhood": "Pacific Heights",
+  "tagline": "Runs a design studio, plans trips like military campaigns.",
+  "avatar_color": "#C97C5D",
   "attributes": {
     "smokes": false,
-    "wants_kids": "yes",
-    "drinks": "often",
+    "wants_kids": "unsure",
+    "drinks": "socially",
     "pets": "none",
     "religion_important": false,
-    "early_bird": false
+    "early_bird": true
   },
   "dealbreakers": [
     {
@@ -30,15 +30,16 @@
     }
   ],
   "interests": [
-    "climbing",
-    "video games",
-    "tacos",
-    "board games"
+    "pilates",
+    "wine tasting",
+    "theater",
+    "travel"
   ],
   "free_slots": [
-    "2026-11-21T19:00",
+    "2026-11-21T12:00",
     "2026-11-23T19:00",
-    "2026-11-24T20:00"
+    "2026-11-25T18:30",
+    "2026-11-27T19:00"
   ],
   "chat": [
     {
@@ -47,7 +48,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a junior game designer. A good week has two climbing sessions, one big taco night and a lot of co-op games."
+      "text": "I run a small design consultancy and I'm finally making time for dating. A good week has pilates, a play, and dinner with someone interesting."
     },
     {
       "role": "assistant",
@@ -55,7 +56,7 @@
     },
     {
       "role": "user",
-      "text": "I climb Saturday mornings and play co-op games on Sundays."
+      "text": "I do reformer pilates Saturday mornings and catch a play most Sunday afternoons."
     },
     {
       "role": "assistant",
@@ -63,7 +64,7 @@
     },
     {
       "role": "user",
-      "text": "I'll eat tacos every day if no one stops me."
+      "text": "I love a long dinner of small plates and a bottle of Riesling."
     },
     {
       "role": "assistant",
@@ -71,7 +72,7 @@
     },
     {
       "role": "user",
-      "text": "Bouldering, co-op board games, and a little live music."
+      "text": "Travel planning, wine country day trips and the occasional ballet."
     },
     {
       "role": "assistant",
@@ -79,7 +80,7 @@
     },
     {
       "role": "user",
-      "text": "Startup hours are fine, I leave by six most days."
+      "text": "I own my schedule, which helps. I've got time for dinners midweek."
     },
     {
       "role": "assistant",
@@ -87,7 +88,7 @@
     },
     {
       "role": "user",
-      "text": "I go out for drinks a few nights a week."
+      "text": "I enjoy wine with dinner a few nights a week."
     },
     {
       "role": "assistant",
@@ -95,7 +96,7 @@
     },
     {
       "role": "user",
-      "text": "I don't smoke."
+      "text": "I don't smoke and never have."
     },
     {
       "role": "assistant",
@@ -103,7 +104,7 @@
     },
     {
       "role": "user",
-      "text": "I want kids someday, probably in my thirties."
+      "text": "I'm open to kids but not set on it."
     },
     {
       "role": "assistant",
@@ -111,7 +112,7 @@
     },
     {
       "role": "user",
-      "text": "No pet, but I love cats."
+      "text": "No pets, I travel too much."
     },
     {
       "role": "assistant",
@@ -127,7 +128,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a night owl for sure."
+      "text": "I'm up at six for pilates before work."
     },
     {
       "role": "assistant",
@@ -135,7 +136,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone fun and easygoing who'll try a new taco truck with me."
+      "text": "I want someone established, curious and ready to commit."
     },
     {
       "role": "assistant",
@@ -143,7 +144,7 @@
     },
     {
       "role": "user",
-      "text": "I can't deal with cigarette smoke."
+      "text": "Smoking is a dealbreaker for me."
     },
     {
       "role": "assistant",
@@ -151,7 +152,7 @@
     },
     {
       "role": "user",
-      "text": "Saturday evening, Monday after seven and Tuesday night work."
+      "text": "Saturday midday or Monday evening work."
     },
     {
       "role": "assistant",
@@ -161,32 +162,32 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Climbing and video games",
-      "quote": "I climb Saturday mornings and play co-op games on Sundays",
+      "value": "Pilates and theater",
+      "quote": "I do reformer pilates Saturday mornings and catch a play most Sunday afternoons",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Tacos and Korean BBQ",
-      "quote": "I'll eat tacos every day if no one stops me",
+      "value": "Wine and small plates",
+      "quote": "I love a long dinner of small plates and a bottle of Riesling",
       "share": "public"
     },
     {
       "field": "lifestyle",
-      "value": "Drinks often",
-      "quote": "I go out for drinks a few nights a week",
+      "value": "Drinks socially",
+      "quote": "I enjoy wine with dinner a few nights a week",
       "share": "private"
     },
     {
       "field": "lifestyle",
       "value": "Does not smoke",
-      "quote": "I don't smoke",
+      "quote": "I don't smoke and never have",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Wants kids",
-      "quote": "I want kids someday, probably in my thirties",
+      "value": "Unsure about kids",
+      "quote": "I'm open to kids but not set on it",
       "share": "private"
     },
     {
@@ -197,26 +198,26 @@
     },
     {
       "field": "logistics",
-      "value": "Night owl",
-      "quote": "I'm a night owl for sure",
+      "value": "Early bird",
+      "quote": "I'm up at six for pilates before work",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants fun, easygoing partner",
-      "quote": "I want someone fun and easygoing who'll try a new taco truck with me",
+      "value": "Wants established, curious partner",
+      "quote": "I want someone established, curious and ready to commit",
       "share": "public"
     },
     {
       "field": "dealbreaker",
       "value": "Dealbreaker: smoking",
-      "quote": "I can't deal with cigarette smoke",
+      "quote": "Smoking is a dealbreaker for me",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Saturday evening, Monday evening, Tuesday night",
-      "quote": "Saturday evening, Monday after seven and Tuesday night work",
+      "value": "Free Saturday midday and Monday evening",
+      "quote": "Saturday midday or Monday evening work",
       "share": "public"
     }
   ]

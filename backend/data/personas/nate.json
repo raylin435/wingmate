@@ -1,24 +1,24 @@
 {
-  "id": "hannah",
-  "first_name": "Hannah",
-  "alias": "Pilates & Pinot",
+  "id": "nate",
+  "first_name": "Nate",
+  "alias": "glenparkwoodshop",
   "age": 35,
-  "gender": "woman",
+  "gender": "man",
   "seeking": {
     "genders": [
       "man"
     ],
-    "min_age": 31,
+    "min_age": 30,
     "max_age": 40
   },
-  "neighborhood": "Pacific Heights",
-  "tagline": "Runs a design studio, plans trips like military campaigns.",
-  "avatar_color": "#C97C5D",
+  "neighborhood": "Glen Park",
+  "tagline": "Carpenter with two cats and a very patient sourdough.",
+  "avatar_color": "#E9C46A",
   "attributes": {
     "smokes": false,
-    "wants_kids": "unsure",
+    "wants_kids": "no",
     "drinks": "socially",
-    "pets": "none",
+    "pets": "has_cat",
     "religion_important": false,
     "early_bird": true
   },
@@ -30,16 +30,15 @@
     }
   ],
   "interests": [
-    "pilates",
-    "wine tasting",
-    "theater",
-    "travel"
+    "woodworking",
+    "wine",
+    "cats",
+    "hiking"
   ],
   "free_slots": [
-    "2026-11-21T12:00",
-    "2026-11-23T19:00",
+    "2026-11-22T11:00",
     "2026-11-25T18:30",
-    "2026-11-27T19:00"
+    "2026-11-27T18:30"
   ],
   "chat": [
     {
@@ -48,7 +47,7 @@
     },
     {
       "role": "user",
-      "text": "I run a small design consultancy and I'm finally making time for dating. A good week has pilates, a play, and dinner with someone interesting."
+      "text": "I'm a carpenter who builds furniture. A good week has woodworking, a hike, and wine."
     },
     {
       "role": "assistant",
@@ -56,7 +55,7 @@
     },
     {
       "role": "user",
-      "text": "I do reformer pilates Saturday mornings and catch a play most Sunday afternoons."
+      "text": "I build furniture on Saturdays and hike on Sundays."
     },
     {
       "role": "assistant",
@@ -64,7 +63,7 @@
     },
     {
       "role": "user",
-      "text": "I love a long dinner of small plates and a bottle of Riesling."
+      "text": "I love wine and cheese nights."
     },
     {
       "role": "assistant",
@@ -72,7 +71,7 @@
     },
     {
       "role": "user",
-      "text": "Travel planning, wine country day trips and the occasional ballet."
+      "text": "Cats, hiking, and cooking."
     },
     {
       "role": "assistant",
@@ -80,7 +79,7 @@
     },
     {
       "role": "user",
-      "text": "I own my schedule, which helps. I've got time for dinners midweek."
+      "text": "Steady hours."
     },
     {
       "role": "assistant",
@@ -88,7 +87,7 @@
     },
     {
       "role": "user",
-      "text": "I enjoy wine with dinner a few nights a week."
+      "text": "I drink wine socially."
     },
     {
       "role": "assistant",
@@ -96,7 +95,7 @@
     },
     {
       "role": "user",
-      "text": "I don't smoke and never have."
+      "text": "I don't smoke."
     },
     {
       "role": "assistant",
@@ -104,7 +103,7 @@
     },
     {
       "role": "user",
-      "text": "I'm open to kids but not set on it."
+      "text": "I don't want kids."
     },
     {
       "role": "assistant",
@@ -112,7 +111,7 @@
     },
     {
       "role": "user",
-      "text": "No pets, I travel too much."
+      "text": "I have two cats."
     },
     {
       "role": "assistant",
@@ -128,7 +127,7 @@
     },
     {
       "role": "user",
-      "text": "I'm up at six for pilates before work."
+      "text": "I'm up at six."
     },
     {
       "role": "assistant",
@@ -136,7 +135,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone established, curious and ready to commit."
+      "text": "I want someone warm and steady."
     },
     {
       "role": "assistant",
@@ -144,7 +143,7 @@
     },
     {
       "role": "user",
-      "text": "Smoking is a dealbreaker for me."
+      "text": "I can't date a smoker."
     },
     {
       "role": "assistant",
@@ -152,7 +151,7 @@
     },
     {
       "role": "user",
-      "text": "Saturday midday or Monday evening work."
+      "text": "Sunday morning or Wednesday evening work."
     },
     {
       "role": "assistant",
@@ -162,32 +161,32 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Pilates and theater",
-      "quote": "I do reformer pilates Saturday mornings and catch a play most Sunday afternoons",
+      "value": "Woodworking and hiking",
+      "quote": "I build furniture on Saturdays and hike on Sundays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Wine and small plates",
-      "quote": "I love a long dinner of small plates and a bottle of Riesling",
+      "value": "Wine and cheese",
+      "quote": "I love wine and cheese nights",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I enjoy wine with dinner a few nights a week",
+      "quote": "I drink wine socially",
       "share": "private"
     },
     {
       "field": "lifestyle",
       "value": "Does not smoke",
-      "quote": "I don't smoke and never have",
+      "quote": "I don't smoke",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Unsure about kids",
-      "quote": "I'm open to kids but not set on it",
+      "value": "Does not want kids",
+      "quote": "I don't want kids",
       "share": "private"
     },
     {
@@ -199,25 +198,25 @@
     {
       "field": "logistics",
       "value": "Early bird",
-      "quote": "I'm up at six for pilates before work",
+      "quote": "I'm up at six",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants established, curious partner",
-      "quote": "I want someone established, curious and ready to commit",
+      "value": "Wants warm, steady partner",
+      "quote": "I want someone warm and steady",
       "share": "public"
     },
     {
       "field": "dealbreaker",
       "value": "Dealbreaker: smoking",
-      "quote": "Smoking is a dealbreaker for me",
+      "quote": "I can't date a smoker",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Saturday midday and Monday evening",
-      "quote": "Saturday midday or Monday evening work",
+      "value": "Free Sunday morning and Wednesday evening",
+      "quote": "Sunday morning or Wednesday evening work",
       "share": "public"
     }
   ]

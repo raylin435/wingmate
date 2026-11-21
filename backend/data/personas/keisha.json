@@ -1,38 +1,39 @@
 {
-  "id": "felix",
-  "first_name": "Felix",
-  "alias": "Gym Rat Felix",
-  "age": 28,
-  "gender": "man",
+  "id": "keisha",
+  "first_name": "Keisha",
+  "alias": "bayviewgarden",
+  "age": 33,
+  "gender": "woman",
   "seeking": {
     "genders": [
-      "man"
+      "woman",
+      "nonbinary"
     ],
-    "min_age": 26,
-    "max_age": 34
+    "min_age": 29,
+    "max_age": 38
   },
-  "neighborhood": "SoMa",
-  "tagline": "Fitness coach, football obsessive, secret poet.",
-  "avatar_color": "#2A9D8F",
+  "neighborhood": "Bayview",
+  "tagline": "Community gardener and poet with a soul food problem.",
+  "avatar_color": "#6D597A",
   "attributes": {
     "smokes": false,
-    "wants_kids": "no",
-    "drinks": "often",
-    "pets": "none",
-    "religion_important": false,
+    "wants_kids": "yes",
+    "drinks": "socially",
+    "pets": "has_dog",
+    "religion_important": true,
     "early_bird": true
   },
   "dealbreakers": [],
   "interests": [
-    "lifting",
-    "football",
-    "podcasts",
-    "brunch"
+    "gardening",
+    "poetry",
+    "soul food",
+    "live jazz"
   ],
   "free_slots": [
-    "2026-11-21T19:00",
-    "2026-11-23T19:00",
-    "2026-11-27T19:00"
+    "2026-11-22T13:00",
+    "2026-11-25T18:30",
+    "2026-11-27T18:30"
   ],
   "chat": [
     {
@@ -41,7 +42,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a fitness coach. A good week has lifting, football, and brunch."
+      "text": "I'm a librarian and a community gardener. A good week has a poetry night, garden work, and Sunday supper."
     },
     {
       "role": "assistant",
@@ -49,7 +50,7 @@
     },
     {
       "role": "user",
-      "text": "I lift on Saturdays and watch football on Sundays."
+      "text": "I garden Saturday mornings and read poetry on Sundays."
     },
     {
       "role": "assistant",
@@ -57,7 +58,7 @@
     },
     {
       "role": "user",
-      "text": "I'll eat brunch every weekend."
+      "text": "I cook collards and cornbread for my whole block."
     },
     {
       "role": "assistant",
@@ -65,7 +66,7 @@
     },
     {
       "role": "user",
-      "text": "Podcasts, poetry, and trying new restaurants."
+      "text": "Jazz at small rooms, poetry open mics, and volunteering."
     },
     {
       "role": "assistant",
@@ -73,7 +74,7 @@
     },
     {
       "role": "user",
-      "text": "Coaching hours start at five."
+      "text": "Library hours are steady, I have evenings free."
     },
     {
       "role": "assistant",
@@ -81,7 +82,7 @@
     },
     {
       "role": "user",
-      "text": "I drink a few nights a week."
+      "text": "I'll have a glass of wine at dinner."
     },
     {
       "role": "assistant",
@@ -97,7 +98,7 @@
     },
     {
       "role": "user",
-      "text": "I don't want kids."
+      "text": "I want kids, maybe through adoption."
     },
     {
       "role": "assistant",
@@ -105,7 +106,7 @@
     },
     {
       "role": "user",
-      "text": "No pets."
+      "text": "I have a dog named Maple."
     },
     {
       "role": "assistant",
@@ -113,7 +114,7 @@
     },
     {
       "role": "user",
-      "text": "Religion isn't important to me."
+      "text": "My faith is important to me, and community matters most."
     },
     {
       "role": "assistant",
@@ -121,7 +122,7 @@
     },
     {
       "role": "user",
-      "text": "I'm up at five."
+      "text": "I'm up at six to garden."
     },
     {
       "role": "assistant",
@@ -129,7 +130,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone fun and driven who likes the gym."
+      "text": "I want someone grounded and loving who cares about community."
     },
     {
       "role": "assistant",
@@ -137,7 +138,7 @@
     },
     {
       "role": "user",
-      "text": "I don't have any hard dealbreakers."
+      "text": "I can't stand disrespect."
     },
     {
       "role": "assistant",
@@ -145,7 +146,7 @@
     },
     {
       "role": "user",
-      "text": "Saturday evening or Monday evening work."
+      "text": "Sunday afternoon or Wednesday evening work."
     },
     {
       "role": "assistant",
@@ -155,20 +156,20 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Lifting and football",
-      "quote": "I lift on Saturdays and watch football on Sundays",
+      "value": "Gardening and poetry",
+      "quote": "I garden Saturday mornings and read poetry on Sundays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Brunch and burgers",
-      "quote": "I'll eat brunch every weekend",
+      "value": "Soul food",
+      "quote": "I cook collards and cornbread for my whole block",
       "share": "public"
     },
     {
       "field": "lifestyle",
-      "value": "Drinks often",
-      "quote": "I drink a few nights a week",
+      "value": "Drinks socially",
+      "quote": "I'll have a glass of wine at dinner",
       "share": "private"
     },
     {
@@ -179,38 +180,38 @@
     },
     {
       "field": "value",
-      "value": "Does not want kids",
-      "quote": "I don't want kids",
+      "value": "Wants kids",
+      "quote": "I want kids, maybe through adoption",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Religion not important",
-      "quote": "Religion isn't important to me",
+      "value": "Faith is important",
+      "quote": "My faith is important to me",
       "share": "public"
     },
     {
       "field": "logistics",
       "value": "Early bird",
-      "quote": "I'm up at five",
+      "quote": "I'm up at six to garden",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants fun, driven partner",
-      "quote": "I want someone fun and driven who likes the gym",
+      "value": "Wants grounded, loving partner",
+      "quote": "I want someone grounded and loving who cares about community",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "No hard dealbreakers",
-      "quote": "I don't have any hard dealbreakers",
+      "value": "Dislikes disrespect",
+      "quote": "I can't stand disrespect",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Saturday evening and Monday evening",
-      "quote": "Saturday evening or Monday evening work",
+      "value": "Free Sunday afternoon and Wednesday evening",
+      "quote": "Sunday afternoon or Wednesday evening work",
       "share": "public"
     }
   ]

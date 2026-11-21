@@ -1,19 +1,20 @@
 {
-  "id": "ravi",
-  "first_name": "Ravi",
-  "alias": "Trailhead Chef",
+  "id": "erin",
+  "first_name": "Erin",
+  "alias": "outersunset.climbs",
   "age": 30,
-  "gender": "man",
+  "gender": "woman",
   "seeking": {
     "genders": [
-      "man"
+      "woman",
+      "nonbinary"
     ],
     "min_age": 27,
     "max_age": 36
   },
-  "neighborhood": "Lower Nob Hill",
-  "tagline": "Line cook with a backpack always packed.",
-  "avatar_color": "#EAAC8B",
+  "neighborhood": "Outer Sunset",
+  "tagline": "Climbing coach, ramen devotee, indie film nerd.",
+  "avatar_color": "#81B29A",
   "attributes": {
     "smokes": false,
     "wants_kids": "unsure",
@@ -30,76 +31,76 @@
     }
   ],
   "interests": [
-    "hiking",
-    "cooking",
-    "vinyl records",
-    "board games"
+    "climbing",
+    "ramen",
+    "indie films",
+    "hiking"
   ],
   "free_slots": [
-    "2026-11-22T11:00",
+    "2026-11-21T18:00",
     "2026-11-24T19:00",
-    "2026-11-27T10:00"
+    "2026-11-26T11:00"
   ],
   "chat": [
     {
       "role": "assistant",
-      "text": "Hey, I'm your Wingmate. Let's start easy: tell me about yourself and what a good week looks like."
+      "text": "Hi! I'm here to help you meet people worth meeting. Who are you, and what does a good week look like?"
     },
     {
       "role": "user",
-      "text": "I'm a sous chef who spends days off outside. A good week has a hike, a record store, and a long dinner."
+      "text": "I coach at a climbing gym and moonlight as a ramen critic. A good week has outdoor climbing, a new noodle shop, and an indie film."
     },
     {
       "role": "assistant",
-      "text": "Nice. What do your weekends usually look like?"
+      "text": "Love that. How do you typically spend your weekends?"
     },
     {
       "role": "user",
-      "text": "I hike on Sundays and dig through record stores on Saturdays."
+      "text": "I climb at Mount Tam most Saturdays, then a long soup."
     },
     {
       "role": "assistant",
-      "text": "Food is a big signal. What are you always down to eat?"
+      "text": "What's your food personality? What would you happily eat on repeat?"
     },
     {
       "role": "user",
-      "text": "I make my own pasta and my mother's dal."
+      "text": "I rate every ramen shop I visit on a ten-point scale."
     },
     {
       "role": "assistant",
-      "text": "What else do you do to move, make, or unwind?"
+      "text": "What else fills your free time?"
     },
     {
       "role": "user",
-      "text": "Hiking, cooking, board games, and records."
+      "text": "Indie films, hiking, and thrifted sweaters."
     },
     {
       "role": "assistant",
-      "text": "How's work, and does it leave you energy for dating?"
+      "text": "Tell me about work. Does it leave room for dating?"
     },
     {
       "role": "user",
-      "text": "Kitchen hours but I'm off Sundays."
+      "text": "Coaching ends by seven. I have energy for dates after."
     },
     {
       "role": "assistant",
-      "text": "What's your relationship with drinking?"
+      "text": "Drinking: where do you land?"
     },
     {
       "role": "user",
-      "text": "I'll have a drink or two with friends."
+      "text": "I'll have a beer or two, maybe weekly."
     },
     {
       "role": "assistant",
-      "text": "Any smoking, vaping or similar I should know about, for you or in a match?"
+      "text": "Smoking or vaping, anything I should know, either way?"
     },
     {
       "role": "user",
-      "text": "I don't smoke or vape."
+      "text": "I don't smoke."
     },
     {
       "role": "assistant",
-      "text": "How do you feel about having kids someday?"
+      "text": "Kids: where are you on that?"
     },
     {
       "role": "user",
@@ -107,15 +108,15 @@
     },
     {
       "role": "assistant",
-      "text": "Pets? A dog, a cat, allergies, none?"
+      "text": "Any pets in your life?"
     },
     {
       "role": "user",
-      "text": "No pets yet."
+      "text": "No pets, I'm allergic to cats."
     },
     {
       "role": "assistant",
-      "text": "How important are religion or spirituality to you, and what values matter most?"
+      "text": "How big a role do religion or spirituality play, and what do you value most in people?"
     },
     {
       "role": "user",
@@ -123,23 +124,23 @@
     },
     {
       "role": "assistant",
-      "text": "Morning person or night owl?"
+      "text": "Early bird or night owl?"
     },
     {
       "role": "user",
-      "text": "I'm up at six for hikes."
+      "text": "I'm up at six."
     },
     {
       "role": "assistant",
-      "text": "What are you hoping to find in a partner?"
+      "text": "What kind of person are you hoping to meet?"
     },
     {
       "role": "user",
-      "text": "I want someone kind and adventurous who'll eat anything I cook."
+      "text": "I want someone adventurous and thoughtful who'll try a V4 with me."
     },
     {
       "role": "assistant",
-      "text": "Any hard dealbreakers I should screen for?"
+      "text": "Anything that's a hard no for you?"
     },
     {
       "role": "user",
@@ -147,11 +148,11 @@
     },
     {
       "role": "assistant",
-      "text": "Last one: when are you free for a first date this coming week?"
+      "text": "Final question: which times next week could work for a first date?"
     },
     {
       "role": "user",
-      "text": "Sunday morning and Tuesday evening work."
+      "text": "Saturday evening and Tuesday evening work."
     },
     {
       "role": "assistant",
@@ -161,26 +162,26 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Hiking and records",
-      "quote": "I hike on Sundays and dig through record stores on Saturdays",
+      "value": "Climbing outdoors",
+      "quote": "I climb at Mount Tam most Saturdays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Indian and Italian food",
-      "quote": "I make my own pasta and my mother's dal",
+      "value": "Ramen obsessive",
+      "quote": "I rate every ramen shop I visit on a ten-point scale",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I'll have a drink or two with friends",
+      "quote": "I'll have a beer or two, maybe weekly",
       "share": "private"
     },
     {
       "field": "lifestyle",
       "value": "Does not smoke",
-      "quote": "I don't smoke or vape",
+      "quote": "I don't smoke",
       "share": "private"
     },
     {
@@ -198,13 +199,13 @@
     {
       "field": "logistics",
       "value": "Early bird",
-      "quote": "I'm up at six for hikes",
+      "quote": "I'm up at six",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants kind, adventurous partner",
-      "quote": "I want someone kind and adventurous who'll eat anything I cook",
+      "value": "Wants adventurous, thoughtful partner",
+      "quote": "I want someone adventurous and thoughtful who'll try a V4 with me",
       "share": "public"
     },
     {
@@ -215,8 +216,8 @@
     },
     {
       "field": "logistics",
-      "value": "Free Sunday morning and Tuesday evening",
-      "quote": "Sunday morning and Tuesday evening work",
+      "value": "Free Saturday evening and Tuesday evening",
+      "quote": "Saturday evening and Tuesday evening work",
       "share": "public"
     }
   ]

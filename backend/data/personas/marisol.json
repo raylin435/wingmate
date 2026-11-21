@@ -1,44 +1,38 @@
 {
-  "id": "caleb",
-  "first_name": "Caleb",
-  "alias": "Cat Dad Carpenter",
-  "age": 35,
-  "gender": "man",
+  "id": "marisol",
+  "first_name": "Marisol",
+  "alias": "missionpastry",
+  "age": 27,
+  "gender": "woman",
   "seeking": {
     "genders": [
-      "man"
+      "woman"
     ],
-    "min_age": 30,
-    "max_age": 40
+    "min_age": 25,
+    "max_age": 33
   },
-  "neighborhood": "Glen Park",
-  "tagline": "Carpenter with two cats and a very patient sourdough.",
-  "avatar_color": "#E9C46A",
+  "neighborhood": "Mission",
+  "tagline": "Pastry cook, bouldering newbie, dance floor loyalist.",
+  "avatar_color": "#F2CC8F",
   "attributes": {
     "smokes": false,
-    "wants_kids": "no",
-    "drinks": "socially",
-    "pets": "has_cat",
+    "wants_kids": "unsure",
+    "drinks": "often",
+    "pets": "none",
     "religion_important": false,
-    "early_bird": true
+    "early_bird": false
   },
-  "dealbreakers": [
-    {
-      "attr": "smokes",
-      "equals": true,
-      "label": "smoking"
-    }
-  ],
+  "dealbreakers": [],
   "interests": [
-    "woodworking",
-    "wine",
-    "cats",
-    "hiking"
+    "bouldering",
+    "tacos",
+    "ramen",
+    "queer dance nights"
   ],
   "free_slots": [
-    "2026-11-22T11:00",
-    "2026-11-25T18:30",
-    "2026-11-27T18:30"
+    "2026-11-21T18:00",
+    "2026-11-24T19:00",
+    "2026-11-25T20:00"
   ],
   "chat": [
     {
@@ -47,7 +41,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a carpenter who builds furniture. A good week has woodworking, a hike, and wine."
+      "text": "I'm a pastry cook and I just got into bouldering. A good week has a climb, tacos, and a queer dance night."
     },
     {
       "role": "assistant",
@@ -55,7 +49,7 @@
     },
     {
       "role": "user",
-      "text": "I build furniture on Saturdays and hike on Sundays."
+      "text": "I boulder on Saturdays and dance on Saturday night."
     },
     {
       "role": "assistant",
@@ -63,7 +57,7 @@
     },
     {
       "role": "user",
-      "text": "I love wine and cheese nights."
+      "text": "I'll eat tacos or ramen any day of the week."
     },
     {
       "role": "assistant",
@@ -71,7 +65,7 @@
     },
     {
       "role": "user",
-      "text": "Cats, hiking, and cooking."
+      "text": "Baking, dance nights, and thrift stores."
     },
     {
       "role": "assistant",
@@ -79,7 +73,7 @@
     },
     {
       "role": "user",
-      "text": "Steady hours."
+      "text": "Pastry hours start at four so I'm in bed early on work nights."
     },
     {
       "role": "assistant",
@@ -87,7 +81,7 @@
     },
     {
       "role": "user",
-      "text": "I drink wine socially."
+      "text": "I like going out and I drink a few nights a week."
     },
     {
       "role": "assistant",
@@ -103,7 +97,7 @@
     },
     {
       "role": "user",
-      "text": "I don't want kids."
+      "text": "I'm undecided about kids."
     },
     {
       "role": "assistant",
@@ -111,7 +105,7 @@
     },
     {
       "role": "user",
-      "text": "I have two cats."
+      "text": "No pets yet."
     },
     {
       "role": "assistant",
@@ -127,7 +121,7 @@
     },
     {
       "role": "user",
-      "text": "I'm up at six."
+      "text": "I'm a night owl on days off."
     },
     {
       "role": "assistant",
@@ -135,7 +129,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone warm and steady."
+      "text": "I want someone playful and caring who is not afraid of the dance floor."
     },
     {
       "role": "assistant",
@@ -143,7 +137,7 @@
     },
     {
       "role": "user",
-      "text": "I can't date a smoker."
+      "text": "I don't really have hard dealbreakers, just kindness."
     },
     {
       "role": "assistant",
@@ -151,7 +145,7 @@
     },
     {
       "role": "user",
-      "text": "Sunday morning or Wednesday evening work."
+      "text": "Saturday evening or Tuesday night work for me."
     },
     {
       "role": "assistant",
@@ -161,20 +155,20 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Woodworking and hiking",
-      "quote": "I build furniture on Saturdays and hike on Sundays",
+      "value": "Bouldering and dancing",
+      "quote": "I boulder on Saturdays and dance on Saturday night",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Wine and cheese",
-      "quote": "I love wine and cheese nights",
+      "value": "Tacos and ramen",
+      "quote": "I'll eat tacos or ramen any day of the week",
       "share": "public"
     },
     {
       "field": "lifestyle",
-      "value": "Drinks socially",
-      "quote": "I drink wine socially",
+      "value": "Drinks often",
+      "quote": "I like going out and I drink a few nights a week",
       "share": "private"
     },
     {
@@ -185,8 +179,8 @@
     },
     {
       "field": "value",
-      "value": "Does not want kids",
-      "quote": "I don't want kids",
+      "value": "Unsure about kids",
+      "quote": "I'm undecided about kids",
       "share": "private"
     },
     {
@@ -197,26 +191,26 @@
     },
     {
       "field": "logistics",
-      "value": "Early bird",
-      "quote": "I'm up at six",
+      "value": "Night owl",
+      "quote": "I'm a night owl on days off",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants warm, steady partner",
-      "quote": "I want someone warm and steady",
+      "value": "Wants playful, caring partner",
+      "quote": "I want someone playful and caring who is not afraid of the dance floor",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "Dealbreaker: smoking",
-      "quote": "I can't date a smoker",
+      "value": "No hard dealbreakers",
+      "quote": "I don't really have hard dealbreakers, just kindness",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Sunday morning and Wednesday evening",
-      "quote": "Sunday morning or Wednesday evening work",
+      "value": "Free Saturday evening and Tuesday night",
+      "quote": "Saturday evening or Tuesday night work for me",
       "share": "public"
     }
   ]

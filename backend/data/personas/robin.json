@@ -1,39 +1,40 @@
 {
-  "id": "miles",
-  "first_name": "Miles",
-  "alias": "Night DJ",
-  "age": 26,
-  "gender": "man",
+  "id": "robin",
+  "first_name": "Robin",
+  "alias": "risoprints",
+  "age": 28,
+  "gender": "nonbinary",
   "seeking": {
     "genders": [
       "man",
+      "woman",
       "nonbinary"
     ],
     "min_age": 25,
-    "max_age": 32
+    "max_age": 35
   },
-  "neighborhood": "Western Addition",
-  "tagline": "DJ and gallery assistant chasing the perfect bassline.",
-  "avatar_color": "#F4A261",
+  "neighborhood": "Mission",
+  "tagline": "Zine maker, bouldering regular, bakery scout.",
+  "avatar_color": "#9A8C98",
   "attributes": {
     "smokes": false,
-    "wants_kids": "unsure",
-    "drinks": "often",
-    "pets": "none",
+    "wants_kids": "no",
+    "drinks": "socially",
+    "pets": "has_cat",
     "religion_important": false,
     "early_bird": false
   },
   "dealbreakers": [],
   "interests": [
-    "DJing",
-    "art shows",
-    "synths",
-    "dancing"
+    "zine fairs",
+    "bouldering",
+    "bakeries",
+    "thrifting"
   ],
   "free_slots": [
-    "2026-11-21T20:00",
-    "2026-11-24T20:00",
-    "2026-11-27T20:00"
+    "2026-11-21T18:00",
+    "2026-11-22T11:00",
+    "2026-11-24T19:00"
   ],
   "chat": [
     {
@@ -42,7 +43,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a DJ and gallery assistant. A good week has a set, an art show, and dancing."
+      "text": "I'm a graphic designer who makes zines. A good week has bouldering, a bakery crawl, and a zine fair."
     },
     {
       "role": "assistant",
@@ -50,7 +51,7 @@
     },
     {
       "role": "user",
-      "text": "I DJ on Saturday nights and dance on Fridays."
+      "text": "I make zines on Fridays and boulder on Saturdays."
     },
     {
       "role": "assistant",
@@ -58,7 +59,7 @@
     },
     {
       "role": "user",
-      "text": "I love late-night ramen and dumplings."
+      "text": "I plan weekends around bakeries and thrift stores."
     },
     {
       "role": "assistant",
@@ -66,7 +67,7 @@
     },
     {
       "role": "user",
-      "text": "Synths, art shows, and thrifting."
+      "text": "Zines, bouldering, and thrifting."
     },
     {
       "role": "assistant",
@@ -74,7 +75,7 @@
     },
     {
       "role": "user",
-      "text": "Gallery hours are flexible."
+      "text": "Design work is flexible."
     },
     {
       "role": "assistant",
@@ -82,7 +83,7 @@
     },
     {
       "role": "user",
-      "text": "I go out and drink a few nights a week."
+      "text": "I'll have a drink with friends."
     },
     {
       "role": "assistant",
@@ -98,7 +99,7 @@
     },
     {
       "role": "user",
-      "text": "I'm not sure about kids."
+      "text": "I don't want kids."
     },
     {
       "role": "assistant",
@@ -106,7 +107,7 @@
     },
     {
       "role": "user",
-      "text": "No pets."
+      "text": "I have a cat named Pixel Dust."
     },
     {
       "role": "assistant",
@@ -130,7 +131,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone creative and fun who loves music."
+      "text": "I'm open to any gender, I want someone creative and kind."
     },
     {
       "role": "assistant",
@@ -146,7 +147,7 @@
     },
     {
       "role": "user",
-      "text": "Saturday night or Tuesday night work."
+      "text": "Saturday evening or Sunday morning work."
     },
     {
       "role": "assistant",
@@ -156,20 +157,20 @@
   "facts": [
     {
       "field": "interest",
-      "value": "DJing and dancing",
-      "quote": "I DJ on Saturday nights and dance on Fridays",
+      "value": "Zines and bouldering",
+      "quote": "I make zines on Fridays and boulder on Saturdays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Late-night eats",
-      "quote": "I love late-night ramen and dumplings",
+      "value": "Bakeries and thrift stores",
+      "quote": "I plan weekends around bakeries and thrift stores",
       "share": "public"
     },
     {
       "field": "lifestyle",
-      "value": "Drinks often",
-      "quote": "I go out and drink a few nights a week",
+      "value": "Drinks socially",
+      "quote": "I'll have a drink with friends",
       "share": "private"
     },
     {
@@ -180,8 +181,8 @@
     },
     {
       "field": "value",
-      "value": "Unsure about kids",
-      "quote": "I'm not sure about kids",
+      "value": "Does not want kids",
+      "quote": "I don't want kids",
       "share": "private"
     },
     {
@@ -198,8 +199,8 @@
     },
     {
       "field": "seeking",
-      "value": "Wants creative, fun partner",
-      "quote": "I want someone creative and fun who loves music",
+      "value": "Open to any gender; wants creative partner",
+      "quote": "I'm open to any gender, I want someone creative and kind",
       "share": "public"
     },
     {
@@ -210,8 +211,8 @@
     },
     {
       "field": "logistics",
-      "value": "Free Saturday night and Tuesday night",
-      "quote": "Saturday night or Tuesday night work",
+      "value": "Free Saturday evening and Sunday morning",
+      "quote": "Saturday evening or Sunday morning work",
       "share": "public"
     }
   ]

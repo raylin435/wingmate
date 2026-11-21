@@ -68,7 +68,7 @@ export function SponsorsStrip() {
           {error ? (
             <span className="whitespace-normal text-danger">Status unavailable: backend not reachable at {API_BASE}</span>
           ) : (
-            <span>All personas are synthetic.</span>
+            <span>Personas are fictional, except Cici, a real teammate who shared her own data.</span>
           )}
           <ResetButton />
         </div>

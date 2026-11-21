@@ -33,8 +33,8 @@ RERANK_MODEL = env("SIE_RERANK_MODEL", "Qwen/Qwen3-Reranker-4B")
 CLASSIFY_MODEL = env("SIE_CLASSIFY_MODEL", "fastino/gliner2-large-v1")
 PII_MODEL = env("SIE_PII_MODEL", "numind/NuNER_Zero")
 
-DEMO_PERSONA = "maya"
-WARM_MEMORY = (env("WARM_MEMORY", "maya,theo,jordan,ben,kenji,diego") or "").split(",")
+DEMO_PERSONA = "rachel"
+WARM_MEMORY = (env("WARM_MEMORY", "rachel,matt,chris,greg,kevin,javier") or "").split(",")
 TIMEZONE = "America/Los_Angeles"
 
 DEFAULT_POLICY = {

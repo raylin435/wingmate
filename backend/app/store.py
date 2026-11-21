@@ -21,6 +21,12 @@ class MemoryDirectory:
     def upsert(self, card: dict[str, Any], vec: np.ndarray) -> None:
         self.cards[card["agent_id"]] = {**card, "embedding": vec}
 
+    def prune(self, keep: set[str]) -> int:
+        stale = [aid for aid in self.cards if aid not in keep]
+        for aid in stale:
+            del self.cards[aid]
+        return len(stale)
+
     def set_verified(self, agent_id: str, verified: bool) -> None:
         if agent_id in self.cards:
             self.cards[agent_id]["verified"] = verified
@@ -113,6 +119,15 @@ class SingleStoreDirectory:
                  json.dumps(card["seeks"]), card["min_age"], card["max_age"], card["verified"],
                  card["summary"], json.dumps([round(float(x), 6) for x in vec])),
             )
+
+    def prune(self, keep: set[str]) -> int:
+        """Drop cards for agents no longer in the seed (e.g. after personas are renamed)."""
+        if self.dim is None or not keep:
+            return 0
+        placeholders = ", ".join(["%s"] * len(keep))
+        with self.cursor() as cur:
+            cur.execute(f"DELETE FROM agent_cards WHERE agent_id NOT IN ({placeholders})", sorted(keep))
+            return cur.rowcount or 0
 
     def set_verified(self, agent_id: str, verified: bool) -> None:
         with self.cursor() as cur:

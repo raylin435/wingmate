@@ -6,8 +6,9 @@ import { ArrowRight, Check, ClipboardCopy, FileUp, ListTree, Sparkles, Upload } 
 import { api, errorMessage, type ImportResult } from "@/lib/api";
 import { Button, Card, CardTitle, ErrorBanner, Pill, cx } from "../ui";
 
-export const IMPORT_PROMPT =
-  "List everything you know about me that would matter for dating: values, interests, lifestyle, deal-breakers, what I'm looking for. Use my own words where you can. Leave out health, finances and work details.";
+import { IMPORT_PROMPT } from "./importPrompt";
+
+export { IMPORT_PROMPT };
 
 type Tab = "paste" | "export";
 
@@ -93,8 +94,10 @@ export function ImportPanel({
             <p className="mb-2 text-sm text-muted">
               <span className="font-medium text-fg">Step 1.</span> Ask your assistant this:
             </p>
-            <div className="relative rounded-xl border border-agent/30 bg-agent-soft/60 p-4 pr-14 text-sm leading-relaxed">
-              {IMPORT_PROMPT}
+            <div className="relative rounded-xl border border-agent/30 bg-agent-soft/60">
+              <div className="max-h-72 overflow-y-auto p-4 pr-20 text-sm leading-relaxed whitespace-pre-wrap">
+                {IMPORT_PROMPT}
+              </div>
               <button
                 onClick={copyPrompt}
                 className="absolute top-3 right-3 inline-flex items-center gap-1 rounded-md bg-surface px-2 py-1 text-xs font-medium text-agent ring-1 ring-agent/30 hover:bg-agent-soft"

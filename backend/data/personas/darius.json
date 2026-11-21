@@ -1,22 +1,22 @@
 {
-  "id": "jordan",
-  "first_name": "Jordan",
-  "alias": "Late-Night Cartographer",
+  "id": "darius",
+  "first_name": "Darius",
+  "alias": "dubocehiker",
   "age": 31,
   "gender": "man",
   "seeking": {
     "genders": [
-      "woman"
+      "man"
     ],
-    "min_age": 26,
-    "max_age": 35
+    "min_age": 28,
+    "max_age": 37
   },
-  "neighborhood": "Hayes Valley",
-  "tagline": "Sound engineer, trail runner, dumpling scholar.",
-  "avatar_color": "#3D405B",
+  "neighborhood": "Duboce Triangle",
+  "tagline": "Pastry-curious hiker with too many records.",
+  "avatar_color": "#355070",
   "attributes": {
-    "smokes": true,
-    "wants_kids": "unsure",
+    "smokes": false,
+    "wants_kids": "yes",
     "drinks": "socially",
     "pets": "none",
     "religion_important": false,
@@ -24,15 +24,15 @@
   },
   "dealbreakers": [],
   "interests": [
-    "trail running",
-    "dumplings",
-    "live jazz",
-    "board games"
+    "cooking",
+    "hiking",
+    "vinyl records",
+    "farmers markets"
   ],
   "free_slots": [
     "2026-11-22T11:00",
-    "2026-11-23T19:00",
-    "2026-11-25T18:30"
+    "2026-11-24T19:00",
+    "2026-11-27T18:00"
   ],
   "chat": [
     {
@@ -41,7 +41,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a sound engineer and a bit of a night-time wanderer. A perfect week is a trail run, a good jazz set, and dumplings with friends."
+      "text": "I'm a product manager who cooks when stressed. A good week has a hike, a farmers market run, and a vinyl night."
     },
     {
       "role": "assistant",
@@ -49,7 +49,7 @@
     },
     {
       "role": "user",
-      "text": "I'm out on the Marin Headlands trails most Saturday mornings, then I'm hunting for the best dumplings in the city."
+      "text": "I hike on Saturdays and hit the farmers market on Sundays."
     },
     {
       "role": "assistant",
@@ -57,7 +57,7 @@
     },
     {
       "role": "user",
-      "text": "Soup dumplings are my love language. Also a hole-in-the-wall noodle guy. I'll cook for you if you let me."
+      "text": "I cook a big dinner for friends most Sundays."
     },
     {
       "role": "assistant",
@@ -65,7 +65,7 @@
     },
     {
       "role": "user",
-      "text": "Live jazz, board games with my roommates, and long runs. I play upright bass, badly."
+      "text": "Vinyl collecting, hiking, and cooking classes."
     },
     {
       "role": "assistant",
@@ -73,7 +73,7 @@
     },
     {
       "role": "user",
-      "text": "I freelance so my hours bend. I actually have time and energy for dating, which is rare."
+      "text": "Steady hours. I have energy for dating."
     },
     {
       "role": "assistant",
@@ -81,7 +81,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a whiskey or two when there's music, but never to excess."
+      "text": "I'll have wine with dinner, a few nights a week."
     },
     {
       "role": "assistant",
@@ -89,7 +89,7 @@
     },
     {
       "role": "user",
-      "text": "I still smoke a few cigarettes when I'm out with friends, mostly at shows. I'm trying to cut down but I'm not there yet."
+      "text": "I don't smoke."
     },
     {
       "role": "assistant",
@@ -97,7 +97,7 @@
     },
     {
       "role": "user",
-      "text": "I could see kids in the future but I'm in no rush."
+      "text": "I want kids, ideally through adoption."
     },
     {
       "role": "assistant",
@@ -105,7 +105,7 @@
     },
     {
       "role": "user",
-      "text": "No pets right now because my landlord is strict, but I'm a dog person all the way."
+      "text": "No pets right now."
     },
     {
       "role": "assistant",
@@ -113,7 +113,7 @@
     },
     {
       "role": "user",
-      "text": "Religion isn't a big thing for me. Honesty, loyalty and showing up matter more."
+      "text": "Religion isn't important to me."
     },
     {
       "role": "assistant",
@@ -121,7 +121,7 @@
     },
     {
       "role": "user",
-      "text": "I'm up early for runs, so I'm a morning person even after late shows. Weird combo, I know."
+      "text": "I'm up at six."
     },
     {
       "role": "assistant",
@@ -129,7 +129,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone adventurous and kind who is up for a spontaneous trail and a late dumpling dinner."
+      "text": "I want someone kind and curious who likes cooking with me."
     },
     {
       "role": "assistant",
@@ -137,7 +137,7 @@
     },
     {
       "role": "user",
-      "text": "Flakiness is my pet peeve. I'm pretty easy otherwise."
+      "text": "I don't have hard dealbreakers except cruelty."
     },
     {
       "role": "assistant",
@@ -145,7 +145,7 @@
     },
     {
       "role": "user",
-      "text": "Sunday late morning, Monday evening and Wednesday evening all work for me."
+      "text": "Sunday morning or Tuesday evening work."
     },
     {
       "role": "assistant",
@@ -155,62 +155,62 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Runs trails on weekends",
-      "quote": "out on the Marin Headlands trails most Saturday mornings",
+      "value": "Hiking and farmers markets",
+      "quote": "I hike on Saturdays and hit the farmers market on Sundays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Dumpling devotee",
-      "quote": "Soup dumplings are my love language",
+      "value": "Cooking from scratch",
+      "quote": "I cook a big dinner for friends most Sundays",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I'll have a whiskey or two when there's music, but never to excess",
+      "quote": "I'll have wine with dinner, a few nights a week",
       "share": "private"
     },
     {
       "field": "lifestyle",
-      "value": "Smokes occasionally",
-      "quote": "I still smoke a few cigarettes when I'm out with friends",
+      "value": "Does not smoke",
+      "quote": "I don't smoke",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Unsure about kids",
-      "quote": "I could see kids in the future but I'm in no rush",
+      "value": "Wants kids",
+      "quote": "I want kids, ideally through adoption",
       "share": "private"
     },
     {
       "field": "value",
       "value": "Religion not important",
-      "quote": "Religion isn't a big thing for me",
+      "quote": "Religion isn't important to me",
       "share": "public"
     },
     {
       "field": "logistics",
-      "value": "Early riser",
-      "quote": "I'm a morning person even after late shows",
+      "value": "Early bird",
+      "quote": "I'm up at six",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants adventurous, kind partner",
-      "quote": "I want someone adventurous and kind who is up for a spontaneous trail and a late dumpling dinner",
+      "value": "Wants kind, curious partner",
+      "quote": "I want someone kind and curious who likes cooking with me",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "Dislikes flakiness",
-      "quote": "Flakiness is my pet peeve",
+      "value": "No hard dealbreakers",
+      "quote": "I don't have hard dealbreakers except cruelty",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Sunday morning, Monday and Wednesday evening",
-      "quote": "Sunday late morning, Monday evening and Wednesday evening all work for me",
+      "value": "Free Sunday morning and Tuesday evening",
+      "quote": "Sunday morning or Tuesday evening work",
       "share": "public"
     }
   ]

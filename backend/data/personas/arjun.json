@@ -1,22 +1,22 @@
 {
-  "id": "theo",
-  "first_name": "Theo",
-  "alias": "Fog Chaser 30",
+  "id": "arjun",
+  "first_name": "Arjun",
+  "alias": "trailhead.cook",
   "age": 30,
   "gender": "man",
   "seeking": {
     "genders": [
-      "woman"
+      "man"
     ],
-    "min_age": 26,
-    "max_age": 34
+    "min_age": 27,
+    "max_age": 36
   },
-  "neighborhood": "Outer Richmond",
-  "tagline": "Science teacher, drummer, will race you to the dim sum.",
-  "avatar_color": "#81B29A",
+  "neighborhood": "Lower Nob Hill",
+  "tagline": "Line cook with a backpack always packed.",
+  "avatar_color": "#EAAC8B",
   "attributes": {
     "smokes": false,
-    "wants_kids": "yes",
+    "wants_kids": "unsure",
     "drinks": "socially",
     "pets": "none",
     "religion_important": false,
@@ -30,17 +30,15 @@
     }
   ],
   "interests": [
-    "trail running",
-    "dumplings",
-    "board games",
-    "live jazz",
-    "bouldering"
+    "hiking",
+    "cooking",
+    "vinyl records",
+    "board games"
   ],
   "free_slots": [
     "2026-11-22T11:00",
     "2026-11-24T19:00",
-    "2026-11-25T12:00",
-    "2026-11-27T18:00"
+    "2026-11-27T10:00"
   ],
   "chat": [
     {
@@ -49,7 +47,7 @@
     },
     {
       "role": "user",
-      "text": "I teach high school science and spend every free hour outside. A good week has a couple of runs, a dumpling night, and a board game with friends."
+      "text": "I'm a sous chef who spends days off outside. A good week has a hike, a record store, and a long dinner."
     },
     {
       "role": "assistant",
@@ -57,7 +55,7 @@
     },
     {
       "role": "user",
-      "text": "I run trails on Saturday mornings and boulder on Sundays. Then dumplings, because I have a problem."
+      "text": "I hike on Sundays and dig through record stores on Saturdays."
     },
     {
       "role": "assistant",
@@ -65,7 +63,7 @@
     },
     {
       "role": "user",
-      "text": "I'll happily eat dumplings three times a week. Dim sum in the Richmond is basically my church."
+      "text": "I make my own pasta and my mother's dal."
     },
     {
       "role": "assistant",
@@ -73,7 +71,7 @@
     },
     {
       "role": "user",
-      "text": "Live jazz is my guilty pleasure, I drum in a terrible garage band, and I'll play any board game with a wooden meeple."
+      "text": "Hiking, cooking, board games, and records."
     },
     {
       "role": "assistant",
@@ -81,7 +79,7 @@
     },
     {
       "role": "user",
-      "text": "Teaching is draining on weekdays but I save energy for evenings. I'm very much up for dates."
+      "text": "Kitchen hours but I'm off Sundays."
     },
     {
       "role": "assistant",
@@ -89,7 +87,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a beer or two with friends, nothing crazy."
+      "text": "I'll have a drink or two with friends."
     },
     {
       "role": "assistant",
@@ -97,7 +95,7 @@
     },
     {
       "role": "user",
-      "text": "I've never smoked and I don't vape. It's just never been my thing."
+      "text": "I don't smoke or vape."
     },
     {
       "role": "assistant",
@@ -105,7 +103,7 @@
     },
     {
       "role": "user",
-      "text": "I'd like kids one day but I'm in no rush."
+      "text": "I'm not sure about kids."
     },
     {
       "role": "assistant",
@@ -113,7 +111,7 @@
     },
     {
       "role": "user",
-      "text": "No pet yet, but I'm planning to adopt a dog next spring. I adore beagles."
+      "text": "No pets yet."
     },
     {
       "role": "assistant",
@@ -121,7 +119,7 @@
     },
     {
       "role": "user",
-      "text": "Religion isn't important to me, but I try to be thoughtful and kind, especially with my students."
+      "text": "Religion isn't important to me."
     },
     {
       "role": "assistant",
@@ -129,7 +127,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a morning person, up at six and ready to go."
+      "text": "I'm up at six for hikes."
     },
     {
       "role": "assistant",
@@ -137,7 +135,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone curious and outdoorsy who likes dumplings and dancing around the kitchen."
+      "text": "I want someone kind and adventurous who'll eat anything I cook."
     },
     {
       "role": "assistant",
@@ -145,7 +143,7 @@
     },
     {
       "role": "user",
-      "text": "I can't stand people who are unkind to waiters or animals. That's about it."
+      "text": "I can't date a smoker."
     },
     {
       "role": "assistant",
@@ -153,7 +151,7 @@
     },
     {
       "role": "user",
-      "text": "Sunday late morning and Tuesday at seven both work. Wednesday lunch is open too."
+      "text": "Sunday morning and Tuesday evening work."
     },
     {
       "role": "assistant",
@@ -163,32 +161,32 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Trail runs and bouldering",
-      "quote": "I run trails on Saturday mornings and boulder on Sundays",
+      "value": "Hiking and records",
+      "quote": "I hike on Sundays and dig through record stores on Saturdays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Dumplings and dim sum",
-      "quote": "I'll happily eat dumplings three times a week",
+      "value": "Indian and Italian food",
+      "quote": "I make my own pasta and my mother's dal",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I'll have a beer or two with friends, nothing crazy",
+      "quote": "I'll have a drink or two with friends",
       "share": "private"
     },
     {
       "field": "lifestyle",
       "value": "Does not smoke",
-      "quote": "I've never smoked and I don't vape",
+      "quote": "I don't smoke or vape",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Open to kids",
-      "quote": "I'd like kids one day but I'm in no rush",
+      "value": "Unsure about kids",
+      "quote": "I'm not sure about kids",
       "share": "private"
     },
     {
@@ -200,25 +198,25 @@
     {
       "field": "logistics",
       "value": "Early bird",
-      "quote": "I'm a morning person, up at six",
+      "quote": "I'm up at six for hikes",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants curious, outdoorsy partner",
-      "quote": "I want someone curious and outdoorsy who likes dumplings and dancing around the kitchen",
+      "value": "Wants kind, adventurous partner",
+      "quote": "I want someone kind and adventurous who'll eat anything I cook",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "Dislikes unkindness",
-      "quote": "I can't stand people who are unkind to waiters or animals",
+      "value": "Dealbreaker: smoking",
+      "quote": "I can't date a smoker",
       "share": "private"
     },
     {
       "field": "logistics",
       "value": "Free Sunday morning and Tuesday evening",
-      "quote": "Sunday late morning and Tuesday at seven both work",
+      "quote": "Sunday morning and Tuesday evening work",
       "share": "public"
     }
   ]

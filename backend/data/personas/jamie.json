@@ -1,39 +1,39 @@
 {
-  "id": "imani",
-  "first_name": "Imani",
-  "alias": "Garden Poet",
-  "age": 33,
-  "gender": "woman",
+  "id": "jamie",
+  "first_name": "Jamie",
+  "alias": "patchcables",
+  "age": 27,
+  "gender": "nonbinary",
   "seeking": {
     "genders": [
-      "woman",
+      "man",
       "nonbinary"
     ],
-    "min_age": 29,
-    "max_age": 38
+    "min_age": 25,
+    "max_age": 33
   },
-  "neighborhood": "Bayview",
-  "tagline": "Community gardener and poet with a soul food problem.",
-  "avatar_color": "#6D597A",
+  "neighborhood": "Potrero Hill",
+  "tagline": "Modular synth tinkerer with an eye for thrift finds.",
+  "avatar_color": "#C97C5D",
   "attributes": {
     "smokes": false,
-    "wants_kids": "yes",
+    "wants_kids": "unsure",
     "drinks": "socially",
-    "pets": "has_dog",
-    "religion_important": true,
-    "early_bird": true
+    "pets": "none",
+    "religion_important": false,
+    "early_bird": false
   },
   "dealbreakers": [],
   "interests": [
-    "gardening",
-    "poetry",
-    "soul food",
-    "live jazz"
+    "modular synths",
+    "thrifting",
+    "bike rides",
+    "ramen"
   ],
   "free_slots": [
-    "2026-11-22T13:00",
-    "2026-11-25T18:30",
-    "2026-11-27T18:30"
+    "2026-11-21T19:00",
+    "2026-11-24T19:30",
+    "2026-11-27T19:00"
   ],
   "chat": [
     {
@@ -42,7 +42,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a librarian and a community gardener. A good week has a poetry night, garden work, and Sunday supper."
+      "text": "I'm a sound designer. A good week has synths, thrifting, and ramen."
     },
     {
       "role": "assistant",
@@ -50,7 +50,7 @@
     },
     {
       "role": "user",
-      "text": "I garden Saturday mornings and read poetry on Sundays."
+      "text": "I tinker with synths on Saturdays and thrift on Sundays."
     },
     {
       "role": "assistant",
@@ -58,7 +58,7 @@
     },
     {
       "role": "user",
-      "text": "I cook collards and cornbread for my whole block."
+      "text": "I love ramen and dumplings."
     },
     {
       "role": "assistant",
@@ -66,7 +66,7 @@
     },
     {
       "role": "user",
-      "text": "Jazz at small rooms, poetry open mics, and volunteering."
+      "text": "Bike rides, synths, and thrifting."
     },
     {
       "role": "assistant",
@@ -74,7 +74,7 @@
     },
     {
       "role": "user",
-      "text": "Library hours are steady, I have evenings free."
+      "text": "Sound design hours are flexible."
     },
     {
       "role": "assistant",
@@ -82,7 +82,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a glass of wine at dinner."
+      "text": "I'll have a drink with friends."
     },
     {
       "role": "assistant",
@@ -98,7 +98,7 @@
     },
     {
       "role": "user",
-      "text": "I want kids, maybe through adoption."
+      "text": "I'm not sure about kids."
     },
     {
       "role": "assistant",
@@ -106,7 +106,7 @@
     },
     {
       "role": "user",
-      "text": "I have a dog named Maple."
+      "text": "No pets."
     },
     {
       "role": "assistant",
@@ -114,7 +114,7 @@
     },
     {
       "role": "user",
-      "text": "My faith is important to me, and community matters most."
+      "text": "Religion isn't important to me."
     },
     {
       "role": "assistant",
@@ -122,7 +122,7 @@
     },
     {
       "role": "user",
-      "text": "I'm up at six to garden."
+      "text": "I'm a night owl."
     },
     {
       "role": "assistant",
@@ -130,7 +130,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone grounded and loving who cares about community."
+      "text": "I want someone creative and kind."
     },
     {
       "role": "assistant",
@@ -138,7 +138,7 @@
     },
     {
       "role": "user",
-      "text": "I can't stand disrespect."
+      "text": "I don't have hard dealbreakers."
     },
     {
       "role": "assistant",
@@ -146,7 +146,7 @@
     },
     {
       "role": "user",
-      "text": "Sunday afternoon or Wednesday evening work."
+      "text": "Saturday evening or Tuesday evening work."
     },
     {
       "role": "assistant",
@@ -156,20 +156,20 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Gardening and poetry",
-      "quote": "I garden Saturday mornings and read poetry on Sundays",
+      "value": "Synths and thrifting",
+      "quote": "I tinker with synths on Saturdays and thrift on Sundays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Soul food",
-      "quote": "I cook collards and cornbread for my whole block",
+      "value": "Ramen and dumplings",
+      "quote": "I love ramen and dumplings",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I'll have a glass of wine at dinner",
+      "quote": "I'll have a drink with friends",
       "share": "private"
     },
     {
@@ -180,38 +180,38 @@
     },
     {
       "field": "value",
-      "value": "Wants kids",
-      "quote": "I want kids, maybe through adoption",
+      "value": "Unsure about kids",
+      "quote": "I'm not sure about kids",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Faith is important",
-      "quote": "My faith is important to me",
+      "value": "Religion not important",
+      "quote": "Religion isn't important to me",
       "share": "public"
     },
     {
       "field": "logistics",
-      "value": "Early bird",
-      "quote": "I'm up at six to garden",
+      "value": "Night owl",
+      "quote": "I'm a night owl",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants grounded, loving partner",
-      "quote": "I want someone grounded and loving who cares about community",
+      "value": "Wants creative, kind partner",
+      "quote": "I want someone creative and kind",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "Dislikes disrespect",
-      "quote": "I can't stand disrespect",
+      "value": "No hard dealbreakers",
+      "quote": "I don't have hard dealbreakers",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Sunday afternoon and Wednesday evening",
-      "quote": "Sunday afternoon or Wednesday evening work",
+      "value": "Free Saturday evening and Tuesday evening",
+      "quote": "Saturday evening or Tuesday evening work",
       "share": "public"
     }
   ]

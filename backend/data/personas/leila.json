@@ -1,45 +1,44 @@
 {
-  "id": "kit",
-  "first_name": "Kit",
-  "alias": "Boulder Baker",
-  "age": 31,
-  "gender": "nonbinary",
+  "id": "leila",
+  "first_name": "Leila",
+  "alias": "noevalley.alto",
+  "age": 33,
+  "gender": "woman",
   "seeking": {
     "genders": [
-      "woman",
-      "nonbinary"
+      "man"
     ],
-    "min_age": 27,
-    "max_age": 36
+    "min_age": 30,
+    "max_age": 38
   },
-  "neighborhood": "Bernal Heights",
-  "tagline": "Baker who climbs, zines, and thrifts on weekends.",
-  "avatar_color": "#4A6FA5",
+  "neighborhood": "Noe Valley",
+  "tagline": "School counselor, alto, cardamom bun enthusiast.",
+  "avatar_color": "#9A8C98",
   "attributes": {
     "smokes": false,
-    "wants_kids": "no",
-    "drinks": "socially",
+    "wants_kids": "yes",
+    "drinks": "rarely",
     "pets": "none",
-    "religion_important": false,
+    "religion_important": true,
     "early_bird": true
   },
   "dealbreakers": [
     {
-      "attr": "smokes",
-      "equals": true,
-      "label": "smoking"
+      "attr": "wants_kids",
+      "equals": "no",
+      "label": "not wanting kids"
     }
   ],
   "interests": [
-    "bouldering",
     "baking",
-    "zine fairs",
-    "thrifting"
+    "choir",
+    "hiking",
+    "volunteering"
   ],
   "free_slots": [
-    "2026-11-22T11:00",
-    "2026-11-24T19:00",
-    "2026-11-27T18:30"
+    "2026-11-23T18:30",
+    "2026-11-25T18:30",
+    "2026-11-27T15:00"
   ],
   "chat": [
     {
@@ -48,7 +47,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a baker who climbs. A good week has bouldering, a zine fair, and a thrift run."
+      "text": "I'm a middle school counselor and an alto in my church choir. A good week has choir, a Marin hike, and Sunday dinner with family."
     },
     {
       "role": "assistant",
@@ -56,7 +55,7 @@
     },
     {
       "role": "user",
-      "text": "I boulder on Saturdays and bake all day Sundays."
+      "text": "I sing in choir on Sundays and hike Muir Woods on Saturdays."
     },
     {
       "role": "assistant",
@@ -64,7 +63,7 @@
     },
     {
       "role": "user",
-      "text": "I love bakeries and ramen."
+      "text": "I bake cardamom buns every weekend."
     },
     {
       "role": "assistant",
@@ -72,7 +71,7 @@
     },
     {
       "role": "user",
-      "text": "Zines, thrifting, and bouldering."
+      "text": "Baking, hiking, and volunteering with the youth program."
     },
     {
       "role": "assistant",
@@ -80,7 +79,7 @@
     },
     {
       "role": "user",
-      "text": "Baker hours start at four."
+      "text": "School keeps me busy but I'm free most evenings."
     },
     {
       "role": "assistant",
@@ -88,7 +87,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a glass of wine."
+      "text": "I rarely drink, maybe a glass of wine at a wedding."
     },
     {
       "role": "assistant",
@@ -96,7 +95,7 @@
     },
     {
       "role": "user",
-      "text": "I don't smoke."
+      "text": "I don't smoke or vape."
     },
     {
       "role": "assistant",
@@ -104,7 +103,7 @@
     },
     {
       "role": "user",
-      "text": "I don't want kids."
+      "text": "I want kids, two at least, and I'd like to start in the next few years."
     },
     {
       "role": "assistant",
@@ -112,7 +111,7 @@
     },
     {
       "role": "user",
-      "text": "No pets."
+      "text": "No pets, but I'd welcome a dog."
     },
     {
       "role": "assistant",
@@ -120,7 +119,7 @@
     },
     {
       "role": "user",
-      "text": "Religion isn't important to me."
+      "text": "My faith is a big part of my life, and I want to share it."
     },
     {
       "role": "assistant",
@@ -128,7 +127,7 @@
     },
     {
       "role": "user",
-      "text": "I'm up at four for work."
+      "text": "I'm up at six for a prayer and a walk."
     },
     {
       "role": "assistant",
@@ -136,7 +135,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone creative and adventurous."
+      "text": "I want a partner who wants a family and who's grounded and kind."
     },
     {
       "role": "assistant",
@@ -144,7 +143,7 @@
     },
     {
       "role": "user",
-      "text": "I can't date a smoker."
+      "text": "If someone doesn't want kids I can't continue."
     },
     {
       "role": "assistant",
@@ -152,7 +151,7 @@
     },
     {
       "role": "user",
-      "text": "Sunday morning or Tuesday evening work."
+      "text": "Monday and Wednesday evenings work."
     },
     {
       "role": "assistant",
@@ -162,62 +161,62 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Bouldering and baking",
-      "quote": "I boulder on Saturdays and bake all day Sundays",
+      "value": "Choir and hiking",
+      "quote": "I sing in choir on Sundays and hike Muir Woods on Saturdays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Bakeries and ramen",
-      "quote": "I love bakeries and ramen",
+      "value": "Baking",
+      "quote": "I bake cardamom buns every weekend",
       "share": "public"
     },
     {
       "field": "lifestyle",
-      "value": "Drinks socially",
-      "quote": "I'll have a glass of wine",
+      "value": "Rarely drinks",
+      "quote": "I rarely drink, maybe a glass of wine at a wedding",
       "share": "private"
     },
     {
       "field": "lifestyle",
       "value": "Does not smoke",
-      "quote": "I don't smoke",
+      "quote": "I don't smoke or vape",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Does not want kids",
-      "quote": "I don't want kids",
+      "value": "Wants kids",
+      "quote": "I want kids, two at least, and I'd like to start in the next few years",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Religion not important",
-      "quote": "Religion isn't important to me",
+      "value": "Faith is important",
+      "quote": "My faith is a big part of my life",
       "share": "public"
     },
     {
       "field": "logistics",
       "value": "Early bird",
-      "quote": "I'm up at four for work",
+      "quote": "I'm up at six for a prayer and a walk",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants creative, adventurous partner",
-      "quote": "I want someone creative and adventurous",
+      "value": "Wants partner who wants family",
+      "quote": "I want a partner who wants a family and who's grounded and kind",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "Dealbreaker: smoking",
-      "quote": "I can't date a smoker",
+      "value": "Dealbreaker: no kids",
+      "quote": "If someone doesn't want kids I can't continue",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Sunday morning and Tuesday evening",
-      "quote": "Sunday morning or Tuesday evening work",
+      "value": "Free Monday and Wednesday evenings",
+      "quote": "Monday and Wednesday evenings work",
       "share": "public"
     }
   ]

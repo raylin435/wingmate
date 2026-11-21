@@ -1,50 +1,44 @@
 {
-  "id": "marcus",
-  "first_name": "Marcus",
-  "alias": "Sunday Pitmaster",
-  "age": 34,
-  "gender": "man",
+  "id": "megan",
+  "first_name": "Megan",
+  "alias": "richmondclay",
+  "age": 29,
+  "gender": "woman",
   "seeking": {
     "genders": [
       "woman"
     ],
-    "min_age": 28,
-    "max_age": 37
+    "min_age": 26,
+    "max_age": 35
   },
-  "neighborhood": "Bernal Heights",
-  "tagline": "ER nurse, cookout captain, choir-loft alumnus.",
-  "avatar_color": "#6D597A",
+  "neighborhood": "Richmond",
+  "tagline": "Ceramicist with a corgi and a strong opinion on trail snacks.",
+  "avatar_color": "#B56576",
   "attributes": {
     "smokes": false,
-    "wants_kids": "yes",
+    "wants_kids": "unsure",
     "drinks": "socially",
-    "pets": "none",
-    "religion_important": true,
+    "pets": "has_dog",
+    "religion_important": false,
     "early_bird": true
   },
   "dealbreakers": [
     {
-      "attr": "religion_important",
-      "equals": false,
-      "label": "not religious"
-    },
-    {
-      "attr": "wants_kids",
-      "equals": "no",
-      "label": "not wanting kids"
+      "attr": "smokes",
+      "equals": true,
+      "label": "smoking"
     }
   ],
   "interests": [
-    "bbq",
-    "soccer",
+    "ceramics",
     "hiking",
-    "soul records",
-    "church"
+    "dogs",
+    "board games"
   ],
   "free_slots": [
-    "2026-11-23T18:30",
-    "2026-11-27T18:00",
-    "2026-11-27T12:00"
+    "2026-11-22T10:00",
+    "2026-11-24T19:00",
+    "2026-11-25T18:30"
   ],
   "chat": [
     {
@@ -53,7 +47,7 @@
     },
     {
       "role": "user",
-      "text": "I'm an ER nurse and a deacon's kid. A good week is long shifts, a big cookout, and a hike to reset."
+      "text": "I'm a ceramicist and part-time barista. A good week has studio time, a hike with my corgi, and board games."
     },
     {
       "role": "assistant",
@@ -61,7 +55,7 @@
     },
     {
       "role": "user",
-      "text": "I grill ribs in my backyard most Saturdays, and Sundays I'm at church followed by pickup soccer."
+      "text": "I throw pottery on Saturdays and hike on Sundays."
     },
     {
       "role": "assistant",
@@ -69,7 +63,7 @@
     },
     {
       "role": "user",
-      "text": "Mac and cheese, ribs, peach cobbler, I'll eat all of it. I make a mean gumbo."
+      "text": "I love dumplings and anything with butter."
     },
     {
       "role": "assistant",
@@ -77,7 +71,7 @@
     },
     {
       "role": "user",
-      "text": "Pickup soccer, hiking Mount Sutro, and digging through old soul records."
+      "text": "Board games, baking, and walks with Waffles."
     },
     {
       "role": "assistant",
@@ -85,7 +79,7 @@
     },
     {
       "role": "user",
-      "text": "Twelve-hour nursing shifts three days a week, so my weeks are lumpy but my days off are all yours."
+      "text": "Studio hours are flexible. I have energy for dates."
     },
     {
       "role": "assistant",
@@ -93,7 +87,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a glass of wine at a wedding and that's about it."
+      "text": "I'll have a beer with friends."
     },
     {
       "role": "assistant",
@@ -101,7 +95,7 @@
     },
     {
       "role": "user",
-      "text": "I don't smoke, my mom raised me better."
+      "text": "I don't smoke."
     },
     {
       "role": "assistant",
@@ -109,7 +103,7 @@
     },
     {
       "role": "user",
-      "text": "I definitely want kids, two or three. That's a big part of my plan."
+      "text": "I'm not sure about kids."
     },
     {
       "role": "assistant",
@@ -117,7 +111,7 @@
     },
     {
       "role": "user",
-      "text": "No pets with my shift schedule, but I grew up with a golden retriever."
+      "text": "I have a corgi named Waffles."
     },
     {
       "role": "assistant",
@@ -125,7 +119,7 @@
     },
     {
       "role": "user",
-      "text": "My faith is really important to me, and I'd want a partner who respects that or shares it."
+      "text": "Religion isn't important to me."
     },
     {
       "role": "assistant",
@@ -133,7 +127,7 @@
     },
     {
       "role": "user",
-      "text": "I'm up at five to hit the gym before shifts."
+      "text": "I'm up at six."
     },
     {
       "role": "assistant",
@@ -141,7 +135,7 @@
     },
     {
       "role": "user",
-      "text": "I want a partner who wants a family and a home full of laughter."
+      "text": "I want someone creative and kind who loves dogs."
     },
     {
       "role": "assistant",
@@ -149,7 +143,7 @@
     },
     {
       "role": "user",
-      "text": "I need someone who is not against faith, and who is open to kids."
+      "text": "I can't date a smoker."
     },
     {
       "role": "assistant",
@@ -157,7 +151,7 @@
     },
     {
       "role": "user",
-      "text": "I'm off Monday and Friday evenings. Saturday daytime sometimes too."
+      "text": "Sunday morning and Tuesday evening work."
     },
     {
       "role": "assistant",
@@ -167,62 +161,62 @@
   "facts": [
     {
       "field": "interest",
-      "value": "BBQ and cookouts",
-      "quote": "I grill ribs in my backyard most Saturdays",
+      "value": "Ceramics and hiking",
+      "quote": "I throw pottery on Saturdays and hike on Sundays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Southern comfort food",
-      "quote": "Mac and cheese, ribs, peach cobbler, I'll eat all of it",
+      "value": "Dumplings and baked goods",
+      "quote": "I love dumplings and anything with butter",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I'll have a glass of wine at a wedding and that's about it",
+      "quote": "I'll have a beer with friends",
       "share": "private"
     },
     {
       "field": "lifestyle",
       "value": "Does not smoke",
-      "quote": "I don't smoke, my mom raised me better",
+      "quote": "I don't smoke",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Wants kids",
-      "quote": "I definitely want kids, two or three",
+      "value": "Unsure about kids",
+      "quote": "I'm not sure about kids",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Faith is important",
-      "quote": "My faith is really important to me",
+      "value": "Religion not important",
+      "quote": "Religion isn't important to me",
       "share": "public"
     },
     {
       "field": "logistics",
       "value": "Early bird",
-      "quote": "I'm up at five to hit the gym before shifts",
+      "quote": "I'm up at six",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants partner with shared family goals",
-      "quote": "I want a partner who wants a family and a home full of laughter",
+      "value": "Wants creative, kind partner",
+      "quote": "I want someone creative and kind who loves dogs",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "Needs faith-friendly, kid-friendly partner",
-      "quote": "I need someone who is not against faith, and who is open to kids",
+      "value": "Dealbreaker: smoking",
+      "quote": "I can't date a smoker",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Monday and Friday evenings",
-      "quote": "I'm off Monday and Friday evenings",
+      "value": "Free Sunday morning and Tuesday evening",
+      "quote": "Sunday morning and Tuesday evening work",
       "share": "public"
     }
   ]

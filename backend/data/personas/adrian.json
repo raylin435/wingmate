@@ -1,38 +1,44 @@
 {
-  "id": "rosa",
-  "first_name": "Rosa",
-  "alias": "Boulder Bunny",
+  "id": "adrian",
+  "first_name": "Adrian",
+  "alias": "dogpatch_tacos",
   "age": 27,
-  "gender": "woman",
+  "gender": "man",
   "seeking": {
     "genders": [
       "woman"
     ],
     "min_age": 25,
-    "max_age": 33
+    "max_age": 32
   },
-  "neighborhood": "Mission",
-  "tagline": "Pastry cook, bouldering newbie, dance floor loyalist.",
-  "avatar_color": "#F2CC8F",
+  "neighborhood": "Dogpatch",
+  "tagline": "Junior game designer, boulderer, taco truck completionist.",
+  "avatar_color": "#2A9D8F",
   "attributes": {
     "smokes": false,
-    "wants_kids": "unsure",
+    "wants_kids": "yes",
     "drinks": "often",
     "pets": "none",
     "religion_important": false,
     "early_bird": false
   },
-  "dealbreakers": [],
+  "dealbreakers": [
+    {
+      "attr": "smokes",
+      "equals": true,
+      "label": "smoking"
+    }
+  ],
   "interests": [
-    "bouldering",
+    "climbing",
+    "video games",
     "tacos",
-    "ramen",
-    "queer dance nights"
+    "board games"
   ],
   "free_slots": [
-    "2026-11-21T18:00",
-    "2026-11-24T19:00",
-    "2026-11-25T20:00"
+    "2026-11-21T19:00",
+    "2026-11-23T19:00",
+    "2026-11-24T20:00"
   ],
   "chat": [
     {
@@ -41,7 +47,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a pastry cook and I just got into bouldering. A good week has a climb, tacos, and a queer dance night."
+      "text": "I'm a junior game designer. A good week has two climbing sessions, one big taco night and a lot of co-op games."
     },
     {
       "role": "assistant",
@@ -49,7 +55,7 @@
     },
     {
       "role": "user",
-      "text": "I boulder on Saturdays and dance on Saturday night."
+      "text": "I climb Saturday mornings and play co-op games on Sundays."
     },
     {
       "role": "assistant",
@@ -57,7 +63,7 @@
     },
     {
       "role": "user",
-      "text": "I'll eat tacos or ramen any day of the week."
+      "text": "I'll eat tacos every day if no one stops me."
     },
     {
       "role": "assistant",
@@ -65,7 +71,7 @@
     },
     {
       "role": "user",
-      "text": "Baking, dance nights, and thrift stores."
+      "text": "Bouldering, co-op board games, and a little live music."
     },
     {
       "role": "assistant",
@@ -73,7 +79,7 @@
     },
     {
       "role": "user",
-      "text": "Pastry hours start at four so I'm in bed early on work nights."
+      "text": "Startup hours are fine, I leave by six most days."
     },
     {
       "role": "assistant",
@@ -81,7 +87,7 @@
     },
     {
       "role": "user",
-      "text": "I like going out and I drink a few nights a week."
+      "text": "I go out for drinks a few nights a week."
     },
     {
       "role": "assistant",
@@ -97,7 +103,7 @@
     },
     {
       "role": "user",
-      "text": "I'm undecided about kids."
+      "text": "I want kids someday, probably in my thirties."
     },
     {
       "role": "assistant",
@@ -105,7 +111,7 @@
     },
     {
       "role": "user",
-      "text": "No pets yet."
+      "text": "No pet, but I love cats."
     },
     {
       "role": "assistant",
@@ -121,7 +127,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a night owl on days off."
+      "text": "I'm a night owl for sure."
     },
     {
       "role": "assistant",
@@ -129,7 +135,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone playful and caring who is not afraid of the dance floor."
+      "text": "I want someone fun and easygoing who'll try a new taco truck with me."
     },
     {
       "role": "assistant",
@@ -137,7 +143,7 @@
     },
     {
       "role": "user",
-      "text": "I don't really have hard dealbreakers, just kindness."
+      "text": "I can't deal with cigarette smoke."
     },
     {
       "role": "assistant",
@@ -145,7 +151,7 @@
     },
     {
       "role": "user",
-      "text": "Saturday evening or Tuesday night work for me."
+      "text": "Saturday evening, Monday after seven and Tuesday night work."
     },
     {
       "role": "assistant",
@@ -155,20 +161,20 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Bouldering and dancing",
-      "quote": "I boulder on Saturdays and dance on Saturday night",
+      "value": "Climbing and video games",
+      "quote": "I climb Saturday mornings and play co-op games on Sundays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Tacos and ramen",
-      "quote": "I'll eat tacos or ramen any day of the week",
+      "value": "Tacos and Korean BBQ",
+      "quote": "I'll eat tacos every day if no one stops me",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks often",
-      "quote": "I like going out and I drink a few nights a week",
+      "quote": "I go out for drinks a few nights a week",
       "share": "private"
     },
     {
@@ -179,8 +185,8 @@
     },
     {
       "field": "value",
-      "value": "Unsure about kids",
-      "quote": "I'm undecided about kids",
+      "value": "Wants kids",
+      "quote": "I want kids someday, probably in my thirties",
       "share": "private"
     },
     {
@@ -192,25 +198,25 @@
     {
       "field": "logistics",
       "value": "Night owl",
-      "quote": "I'm a night owl on days off",
+      "quote": "I'm a night owl for sure",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants playful, caring partner",
-      "quote": "I want someone playful and caring who is not afraid of the dance floor",
+      "value": "Wants fun, easygoing partner",
+      "quote": "I want someone fun and easygoing who'll try a new taco truck with me",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "No hard dealbreakers",
-      "quote": "I don't really have hard dealbreakers, just kindness",
+      "value": "Dealbreaker: smoking",
+      "quote": "I can't deal with cigarette smoke",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Saturday evening and Tuesday night",
-      "quote": "Saturday evening or Tuesday night work for me",
+      "value": "Free Saturday evening, Monday evening, Tuesday night",
+      "quote": "Saturday evening, Monday after seven and Tuesday night work",
       "share": "public"
     }
   ]
