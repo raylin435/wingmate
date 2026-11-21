@@ -153,7 +153,10 @@ Only report delivery as successful after receiving a successful HTTP response. I
               <span className="font-medium text-fg">Step 1.</span> Ask your assistant to read the prompt file:
             </p>
             <div className="relative rounded-2xl rounded-bl-md bg-bubble-me p-4 pr-20 whitespace-pre-wrap break-words text-sm leading-relaxed text-white">
-              {prompt}
+              <span>
+                Read <span className="font-semibold underline decoration-white/50 underline-offset-2">{promptUrl}</span> and follow the instructions in it.
+              </span>
+              <span className="mt-2 block text-xs text-white/75">Copy includes instructions to send the answer back to Wingmate.</span>
               <button
                 onClick={copyPrompt}
                 disabled={!callbackId}
