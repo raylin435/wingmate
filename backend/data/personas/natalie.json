@@ -1,27 +1,27 @@
 {
-  "id": "lena",
-  "first_name": "Lena",
-  "alias": "Chalk Hands",
-  "age": 30,
+  "id": "natalie",
+  "first_name": "Natalie",
+  "alias": "35mm.mission",
+  "age": 28,
   "gender": "woman",
   "seeking": {
     "genders": [
-      "woman",
-      "nonbinary"
+      "man",
+      "woman"
     ],
-    "min_age": 27,
-    "max_age": 36
+    "min_age": 26,
+    "max_age": 35
   },
-  "neighborhood": "Outer Sunset",
-  "tagline": "Climbing coach, ramen devotee, indie film nerd.",
-  "avatar_color": "#81B29A",
+  "neighborhood": "Mission",
+  "tagline": "Film photographer with a marketing day job.",
+  "avatar_color": "#4A6FA5",
   "attributes": {
     "smokes": false,
     "wants_kids": "unsure",
     "drinks": "socially",
     "pets": "none",
     "religion_important": false,
-    "early_bird": true
+    "early_bird": false
   },
   "dealbreakers": [
     {
@@ -31,15 +31,15 @@
     }
   ],
   "interests": [
-    "climbing",
-    "ramen",
-    "indie films",
-    "hiking"
+    "photography",
+    "murals",
+    "gallery openings",
+    "mezcal"
   ],
   "free_slots": [
-    "2026-11-21T18:00",
-    "2026-11-24T19:00",
-    "2026-11-26T11:00"
+    "2026-11-21T19:00",
+    "2026-11-22T15:00",
+    "2026-11-27T19:00"
   ],
   "chat": [
     {
@@ -48,7 +48,7 @@
     },
     {
       "role": "user",
-      "text": "I coach at a climbing gym and moonlight as a ramen critic. A good week has outdoor climbing, a new noodle shop, and an indie film."
+      "text": "I'm a photographer with a day job in marketing. A good week has a street photography walk, a gallery night, and a long dinner."
     },
     {
       "role": "assistant",
@@ -56,7 +56,7 @@
     },
     {
       "role": "user",
-      "text": "I climb at Mount Tam most Saturdays, then a long soup."
+      "text": "I walk around the Mission with my film camera every Saturday."
     },
     {
       "role": "assistant",
@@ -64,7 +64,7 @@
     },
     {
       "role": "user",
-      "text": "I rate every ramen shop I visit on a ten-point scale."
+      "text": "I'm always down for ceviche or a really good burrito."
     },
     {
       "role": "assistant",
@@ -72,7 +72,7 @@
     },
     {
       "role": "user",
-      "text": "Indie films, hiking, and thrifted sweaters."
+      "text": "Film photography, gallery openings, and mural walks."
     },
     {
       "role": "assistant",
@@ -80,7 +80,7 @@
     },
     {
       "role": "user",
-      "text": "Coaching ends by seven. I have energy for dates after."
+      "text": "Marketing job, nine to six. Evenings are mine."
     },
     {
       "role": "assistant",
@@ -88,7 +88,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a beer or two, maybe weekly."
+      "text": "I'll have a mezcal or a glass of wine with friends."
     },
     {
       "role": "assistant",
@@ -112,7 +112,7 @@
     },
     {
       "role": "user",
-      "text": "No pets, I'm allergic to cats."
+      "text": "No pets, my apartment is tiny."
     },
     {
       "role": "assistant",
@@ -128,7 +128,7 @@
     },
     {
       "role": "user",
-      "text": "I'm up at six."
+      "text": "I'm a night owl."
     },
     {
       "role": "assistant",
@@ -136,7 +136,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone adventurous and thoughtful who'll try a V4 with me."
+      "text": "I'm open to men or women, I just want someone creative and curious."
     },
     {
       "role": "assistant",
@@ -144,7 +144,7 @@
     },
     {
       "role": "user",
-      "text": "I can't date a smoker."
+      "text": "I can't date smokers."
     },
     {
       "role": "assistant",
@@ -152,7 +152,7 @@
     },
     {
       "role": "user",
-      "text": "Saturday evening and Tuesday evening work."
+      "text": "Friday evening or Sunday afternoon work for me."
     },
     {
       "role": "assistant",
@@ -162,20 +162,20 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Climbing outdoors",
-      "quote": "I climb at Mount Tam most Saturdays",
+      "value": "Street photography",
+      "quote": "I walk around the Mission with my film camera every Saturday",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Ramen obsessive",
-      "quote": "I rate every ramen shop I visit on a ten-point scale",
+      "value": "Mexican and Peruvian food",
+      "quote": "I'm always down for ceviche or a really good burrito",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I'll have a beer or two, maybe weekly",
+      "quote": "I'll have a mezcal or a glass of wine with friends",
       "share": "private"
     },
     {
@@ -198,26 +198,26 @@
     },
     {
       "field": "logistics",
-      "value": "Early bird",
-      "quote": "I'm up at six",
+      "value": "Night owl",
+      "quote": "I'm a night owl",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants adventurous, thoughtful partner",
-      "quote": "I want someone adventurous and thoughtful who'll try a V4 with me",
+      "value": "Open to men or women, wants creative partner",
+      "quote": "I'm open to men or women, I just want someone creative and curious",
       "share": "public"
     },
     {
       "field": "dealbreaker",
       "value": "Dealbreaker: smoking",
-      "quote": "I can't date a smoker",
+      "quote": "I can't date smokers",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Saturday evening and Tuesday evening",
-      "quote": "Saturday evening and Tuesday evening work",
+      "value": "Free Friday evening and Sunday afternoon",
+      "quote": "Friday evening or Sunday afternoon work for me",
       "share": "public"
     }
   ]

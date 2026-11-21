@@ -1,39 +1,38 @@
 {
-  "id": "river",
-  "first_name": "River",
-  "alias": "Synth & Thrift",
-  "age": 27,
-  "gender": "nonbinary",
+  "id": "chris",
+  "first_name": "Chris",
+  "alias": "headlands_at_dawn",
+  "age": 31,
+  "gender": "man",
   "seeking": {
     "genders": [
-      "man",
-      "nonbinary"
+      "woman"
     ],
-    "min_age": 25,
-    "max_age": 33
+    "min_age": 26,
+    "max_age": 35
   },
-  "neighborhood": "Potrero Hill",
-  "tagline": "Modular synth tinkerer with an eye for thrift finds.",
-  "avatar_color": "#C97C5D",
+  "neighborhood": "Hayes Valley",
+  "tagline": "Sound engineer, trail runner, dumpling scholar.",
+  "avatar_color": "#3D405B",
   "attributes": {
-    "smokes": false,
+    "smokes": true,
     "wants_kids": "unsure",
     "drinks": "socially",
     "pets": "none",
     "religion_important": false,
-    "early_bird": false
+    "early_bird": true
   },
   "dealbreakers": [],
   "interests": [
-    "modular synths",
-    "thrifting",
-    "bike rides",
-    "ramen"
+    "trail running",
+    "dumplings",
+    "live jazz",
+    "board games"
   ],
   "free_slots": [
-    "2026-11-21T19:00",
-    "2026-11-24T19:30",
-    "2026-11-27T19:00"
+    "2026-11-22T11:00",
+    "2026-11-23T19:00",
+    "2026-11-25T18:30"
   ],
   "chat": [
     {
@@ -42,7 +41,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a sound designer. A good week has synths, thrifting, and ramen."
+      "text": "I'm a sound engineer and a bit of a night-time wanderer. A perfect week is a trail run, a good jazz set, and dumplings with friends."
     },
     {
       "role": "assistant",
@@ -50,7 +49,7 @@
     },
     {
       "role": "user",
-      "text": "I tinker with synths on Saturdays and thrift on Sundays."
+      "text": "I'm out on the Marin Headlands trails most Saturday mornings, then I'm hunting for the best dumplings in the city."
     },
     {
       "role": "assistant",
@@ -58,7 +57,7 @@
     },
     {
       "role": "user",
-      "text": "I love ramen and dumplings."
+      "text": "Soup dumplings are my love language. Also a hole-in-the-wall noodle guy. I'll cook for you if you let me."
     },
     {
       "role": "assistant",
@@ -66,7 +65,7 @@
     },
     {
       "role": "user",
-      "text": "Bike rides, synths, and thrifting."
+      "text": "Live jazz, board games with my roommates, and long runs. I play upright bass, badly."
     },
     {
       "role": "assistant",
@@ -74,7 +73,7 @@
     },
     {
       "role": "user",
-      "text": "Sound design hours are flexible."
+      "text": "I freelance so my hours bend. I actually have time and energy for dating, which is rare."
     },
     {
       "role": "assistant",
@@ -82,7 +81,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a drink with friends."
+      "text": "I'll have a whiskey or two when there's music, but never to excess."
     },
     {
       "role": "assistant",
@@ -90,7 +89,7 @@
     },
     {
       "role": "user",
-      "text": "I don't smoke."
+      "text": "I still smoke a few cigarettes when I'm out with friends, mostly at shows. I'm trying to cut down but I'm not there yet."
     },
     {
       "role": "assistant",
@@ -98,7 +97,7 @@
     },
     {
       "role": "user",
-      "text": "I'm not sure about kids."
+      "text": "I could see kids in the future but I'm in no rush."
     },
     {
       "role": "assistant",
@@ -106,7 +105,7 @@
     },
     {
       "role": "user",
-      "text": "No pets."
+      "text": "No pets right now because my landlord is strict, but I'm a dog person all the way."
     },
     {
       "role": "assistant",
@@ -114,7 +113,7 @@
     },
     {
       "role": "user",
-      "text": "Religion isn't important to me."
+      "text": "Religion isn't a big thing for me. Honesty, loyalty and showing up matter more."
     },
     {
       "role": "assistant",
@@ -122,7 +121,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a night owl."
+      "text": "I'm up early for runs, so I'm a morning person even after late shows. Weird combo, I know."
     },
     {
       "role": "assistant",
@@ -130,7 +129,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone creative and kind."
+      "text": "I want someone adventurous and kind who is up for a spontaneous trail and a late dumpling dinner."
     },
     {
       "role": "assistant",
@@ -138,7 +137,7 @@
     },
     {
       "role": "user",
-      "text": "I don't have hard dealbreakers."
+      "text": "Flakiness is my pet peeve. I'm pretty easy otherwise."
     },
     {
       "role": "assistant",
@@ -146,7 +145,7 @@
     },
     {
       "role": "user",
-      "text": "Saturday evening or Tuesday evening work."
+      "text": "Sunday late morning, Monday evening and Wednesday evening all work for me."
     },
     {
       "role": "assistant",
@@ -156,62 +155,62 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Synths and thrifting",
-      "quote": "I tinker with synths on Saturdays and thrift on Sundays",
+      "value": "Runs trails on weekends",
+      "quote": "out on the Marin Headlands trails most Saturday mornings",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Ramen and dumplings",
-      "quote": "I love ramen and dumplings",
+      "value": "Dumpling devotee",
+      "quote": "Soup dumplings are my love language",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I'll have a drink with friends",
+      "quote": "I'll have a whiskey or two when there's music, but never to excess",
       "share": "private"
     },
     {
       "field": "lifestyle",
-      "value": "Does not smoke",
-      "quote": "I don't smoke",
+      "value": "Smokes occasionally",
+      "quote": "I still smoke a few cigarettes when I'm out with friends",
       "share": "private"
     },
     {
       "field": "value",
       "value": "Unsure about kids",
-      "quote": "I'm not sure about kids",
+      "quote": "I could see kids in the future but I'm in no rush",
       "share": "private"
     },
     {
       "field": "value",
       "value": "Religion not important",
-      "quote": "Religion isn't important to me",
+      "quote": "Religion isn't a big thing for me",
       "share": "public"
     },
     {
       "field": "logistics",
-      "value": "Night owl",
-      "quote": "I'm a night owl",
+      "value": "Early riser",
+      "quote": "I'm a morning person even after late shows",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants creative, kind partner",
-      "quote": "I want someone creative and kind",
+      "value": "Wants adventurous, kind partner",
+      "quote": "I want someone adventurous and kind who is up for a spontaneous trail and a late dumpling dinner",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "No hard dealbreakers",
-      "quote": "I don't have hard dealbreakers",
+      "value": "Dislikes flakiness",
+      "quote": "Flakiness is my pet peeve",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Saturday evening and Tuesday evening",
-      "quote": "Saturday evening or Tuesday evening work",
+      "value": "Free Sunday morning, Monday and Wednesday evening",
+      "quote": "Sunday late morning, Monday evening and Wednesday evening all work for me",
       "share": "public"
     }
   ]

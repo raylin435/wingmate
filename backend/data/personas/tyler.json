@@ -1,44 +1,39 @@
 {
-  "id": "june",
-  "first_name": "June",
-  "alias": "Clay & Corgi",
+  "id": "tyler",
+  "first_name": "Tyler",
+  "alias": "excelsiorskate",
   "age": 29,
-  "gender": "woman",
+  "gender": "man",
   "seeking": {
     "genders": [
-      "woman"
+      "man",
+      "nonbinary"
     ],
     "min_age": 26,
     "max_age": 35
   },
-  "neighborhood": "Richmond",
-  "tagline": "Ceramicist with a corgi and a strong opinion on trail snacks.",
-  "avatar_color": "#B56576",
+  "neighborhood": "Excelsior",
+  "tagline": "Bike mechanic and skater with a punk-show habit.",
+  "avatar_color": "#264653",
   "attributes": {
-    "smokes": false,
+    "smokes": true,
     "wants_kids": "unsure",
     "drinks": "socially",
-    "pets": "has_dog",
+    "pets": "none",
     "religion_important": false,
-    "early_bird": true
+    "early_bird": false
   },
-  "dealbreakers": [
-    {
-      "attr": "smokes",
-      "equals": true,
-      "label": "smoking"
-    }
-  ],
+  "dealbreakers": [],
   "interests": [
-    "ceramics",
-    "hiking",
-    "dogs",
-    "board games"
+    "skating",
+    "ramen",
+    "bike rides",
+    "punk shows"
   ],
   "free_slots": [
-    "2026-11-22T10:00",
+    "2026-11-21T19:00",
     "2026-11-24T19:00",
-    "2026-11-25T18:30"
+    "2026-11-25T19:00"
   ],
   "chat": [
     {
@@ -47,7 +42,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a ceramicist and part-time barista. A good week has studio time, a hike with my corgi, and board games."
+      "text": "I'm a bike mechanic. A good week has skating, a punk show, and ramen."
     },
     {
       "role": "assistant",
@@ -55,7 +50,7 @@
     },
     {
       "role": "user",
-      "text": "I throw pottery on Saturdays and hike on Sundays."
+      "text": "I skate on Saturdays and go to a punk show most Sundays."
     },
     {
       "role": "assistant",
@@ -63,7 +58,7 @@
     },
     {
       "role": "user",
-      "text": "I love dumplings and anything with butter."
+      "text": "I'll eat ramen and burritos all week."
     },
     {
       "role": "assistant",
@@ -71,7 +66,7 @@
     },
     {
       "role": "user",
-      "text": "Board games, baking, and walks with Waffles."
+      "text": "Bike rides, skating, and zines."
     },
     {
       "role": "assistant",
@@ -79,7 +74,7 @@
     },
     {
       "role": "user",
-      "text": "Studio hours are flexible. I have energy for dates."
+      "text": "Shop hours are flexible."
     },
     {
       "role": "assistant",
@@ -87,7 +82,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a beer with friends."
+      "text": "I'll have a beer at shows."
     },
     {
       "role": "assistant",
@@ -95,7 +90,7 @@
     },
     {
       "role": "user",
-      "text": "I don't smoke."
+      "text": "I vape sometimes, mostly when I'm skating with friends."
     },
     {
       "role": "assistant",
@@ -111,7 +106,7 @@
     },
     {
       "role": "user",
-      "text": "I have a corgi named Waffles."
+      "text": "No pets."
     },
     {
       "role": "assistant",
@@ -127,7 +122,7 @@
     },
     {
       "role": "user",
-      "text": "I'm up at six."
+      "text": "I'm a night owl."
     },
     {
       "role": "assistant",
@@ -135,7 +130,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone creative and kind who loves dogs."
+      "text": "I want someone easygoing who doesn't mind loud shows."
     },
     {
       "role": "assistant",
@@ -143,7 +138,7 @@
     },
     {
       "role": "user",
-      "text": "I can't date a smoker."
+      "text": "I don't have hard dealbreakers."
     },
     {
       "role": "assistant",
@@ -151,7 +146,7 @@
     },
     {
       "role": "user",
-      "text": "Sunday morning and Tuesday evening work."
+      "text": "Saturday evening, Tuesday evening or Wednesday evening work."
     },
     {
       "role": "assistant",
@@ -161,26 +156,26 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Ceramics and hiking",
-      "quote": "I throw pottery on Saturdays and hike on Sundays",
+      "value": "Skating and punk shows",
+      "quote": "I skate on Saturdays and go to a punk show most Sundays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Dumplings and baked goods",
-      "quote": "I love dumplings and anything with butter",
+      "value": "Ramen and burritos",
+      "quote": "I'll eat ramen and burritos all week",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I'll have a beer with friends",
+      "quote": "I'll have a beer at shows",
       "share": "private"
     },
     {
       "field": "lifestyle",
-      "value": "Does not smoke",
-      "quote": "I don't smoke",
+      "value": "Vapes sometimes",
+      "quote": "I vape sometimes, mostly when I'm skating with friends",
       "share": "private"
     },
     {
@@ -197,26 +192,26 @@
     },
     {
       "field": "logistics",
-      "value": "Early bird",
-      "quote": "I'm up at six",
+      "value": "Night owl",
+      "quote": "I'm a night owl",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants creative, kind partner",
-      "quote": "I want someone creative and kind who loves dogs",
+      "value": "Wants easygoing, loud partner",
+      "quote": "I want someone easygoing who doesn't mind loud shows",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "Dealbreaker: smoking",
-      "quote": "I can't date a smoker",
+      "value": "No hard dealbreakers",
+      "quote": "I don't have hard dealbreakers",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Sunday morning and Tuesday evening",
-      "quote": "Sunday morning and Tuesday evening work",
+      "value": "Free Saturday evening, Tuesday and Wednesday evening",
+      "quote": "Saturday evening, Tuesday evening or Wednesday evening work",
       "share": "public"
     }
   ]

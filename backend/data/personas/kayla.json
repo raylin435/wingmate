@@ -1,27 +1,26 @@
 {
-  "id": "sofia",
-  "first_name": "Sofia",
-  "alias": "Street Photo",
-  "age": 28,
+  "id": "kayla",
+  "first_name": "Kayla",
+  "alias": "dawnpatrol.sunset",
+  "age": 26,
   "gender": "woman",
   "seeking": {
     "genders": [
-      "man",
-      "woman"
+      "man"
     ],
-    "min_age": 26,
-    "max_age": 35
+    "min_age": 25,
+    "max_age": 33
   },
-  "neighborhood": "Mission",
-  "tagline": "Film photographer with a marketing day job.",
-  "avatar_color": "#4A6FA5",
+  "neighborhood": "Outer Sunset",
+  "tagline": "Vet tech who surfs at dawn and dreams of a camper van.",
+  "avatar_color": "#E07A5F",
   "attributes": {
     "smokes": false,
-    "wants_kids": "unsure",
+    "wants_kids": "yes",
     "drinks": "socially",
-    "pets": "none",
+    "pets": "has_dog",
     "religion_important": false,
-    "early_bird": false
+    "early_bird": true
   },
   "dealbreakers": [
     {
@@ -31,15 +30,15 @@
     }
   ],
   "interests": [
-    "photography",
-    "murals",
-    "gallery openings",
-    "mezcal"
+    "surfing",
+    "matcha",
+    "camping",
+    "vintage shopping"
   ],
   "free_slots": [
-    "2026-11-21T19:00",
-    "2026-11-22T15:00",
-    "2026-11-27T19:00"
+    "2026-11-21T18:00",
+    "2026-11-22T09:00",
+    "2026-11-24T18:30"
   ],
   "chat": [
     {
@@ -48,7 +47,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a photographer with a day job in marketing. A good week has a street photography walk, a gallery night, and a long dinner."
+      "text": "I'm a veterinary tech and I surf before work. A good week has three dawn sessions, a camping trip planned, and one night out."
     },
     {
       "role": "assistant",
@@ -56,7 +55,7 @@
     },
     {
       "role": "user",
-      "text": "I walk around the Mission with my film camera every Saturday."
+      "text": "I paddle out at Ocean Beach at six every weekend and then grab matcha."
     },
     {
       "role": "assistant",
@@ -64,7 +63,7 @@
     },
     {
       "role": "user",
-      "text": "I'm always down for ceviche or a really good burrito."
+      "text": "I'm a matcha person and a burrito snob."
     },
     {
       "role": "assistant",
@@ -72,7 +71,7 @@
     },
     {
       "role": "user",
-      "text": "Film photography, gallery openings, and mural walks."
+      "text": "Camping, thrift shopping, and long beach walks with my dog."
     },
     {
       "role": "assistant",
@@ -80,7 +79,7 @@
     },
     {
       "role": "user",
-      "text": "Marketing job, nine to six. Evenings are mine."
+      "text": "Vet clinic shifts end at five. I have energy for dates."
     },
     {
       "role": "assistant",
@@ -88,7 +87,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a mezcal or a glass of wine with friends."
+      "text": "I'll have a beer at the beach bonfire, just casually."
     },
     {
       "role": "assistant",
@@ -96,7 +95,7 @@
     },
     {
       "role": "user",
-      "text": "I don't smoke."
+      "text": "I don't smoke or vape, and I try to keep my lungs happy for surfing."
     },
     {
       "role": "assistant",
@@ -104,7 +103,7 @@
     },
     {
       "role": "user",
-      "text": "I'm not sure about kids."
+      "text": "I want kids someday and I'm not shy about it."
     },
     {
       "role": "assistant",
@@ -112,7 +111,7 @@
     },
     {
       "role": "user",
-      "text": "No pets, my apartment is tiny."
+      "text": "I have a dog named Kelp, a lab mix who sort of surfs."
     },
     {
       "role": "assistant",
@@ -120,7 +119,7 @@
     },
     {
       "role": "user",
-      "text": "Religion isn't important to me."
+      "text": "Religion isn't important to me, but I care about kindness to animals."
     },
     {
       "role": "assistant",
@@ -128,7 +127,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a night owl."
+      "text": "I'm in bed by nine and up at five."
     },
     {
       "role": "assistant",
@@ -136,7 +135,7 @@
     },
     {
       "role": "user",
-      "text": "I'm open to men or women, I just want someone creative and curious."
+      "text": "I want someone outdoorsy and kind who loves dogs."
     },
     {
       "role": "assistant",
@@ -144,7 +143,7 @@
     },
     {
       "role": "user",
-      "text": "I can't date smokers."
+      "text": "I can't date a smoker."
     },
     {
       "role": "assistant",
@@ -152,7 +151,7 @@
     },
     {
       "role": "user",
-      "text": "Friday evening or Sunday afternoon work for me."
+      "text": "Saturday evening and Sunday morning work."
     },
     {
       "role": "assistant",
@@ -162,32 +161,32 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Street photography",
-      "quote": "I walk around the Mission with my film camera every Saturday",
+      "value": "Surfing at dawn",
+      "quote": "I paddle out at Ocean Beach at six every weekend",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Mexican and Peruvian food",
-      "quote": "I'm always down for ceviche or a really good burrito",
+      "value": "Matcha and burritos",
+      "quote": "I'm a matcha person and a burrito snob",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I'll have a mezcal or a glass of wine with friends",
+      "quote": "I'll have a beer at the beach bonfire, just casually",
       "share": "private"
     },
     {
       "field": "lifestyle",
       "value": "Does not smoke",
-      "quote": "I don't smoke",
+      "quote": "I don't smoke or vape",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Unsure about kids",
-      "quote": "I'm not sure about kids",
+      "value": "Wants kids",
+      "quote": "I want kids someday and I'm not shy about it",
       "share": "private"
     },
     {
@@ -198,26 +197,26 @@
     },
     {
       "field": "logistics",
-      "value": "Night owl",
-      "quote": "I'm a night owl",
+      "value": "Early bird",
+      "quote": "I'm in bed by nine and up at five",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Open to men or women, wants creative partner",
-      "quote": "I'm open to men or women, I just want someone creative and curious",
+      "value": "Wants outdoorsy, kind partner",
+      "quote": "I want someone outdoorsy and kind who loves dogs",
       "share": "public"
     },
     {
       "field": "dealbreaker",
       "value": "Dealbreaker: smoking",
-      "quote": "I can't date smokers",
+      "quote": "I can't date a smoker",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Friday evening and Sunday afternoon",
-      "quote": "Friday evening or Sunday afternoon work for me",
+      "value": "Free Saturday evening and Sunday morning",
+      "quote": "Saturday evening and Sunday morning work",
       "share": "public"
     }
   ]

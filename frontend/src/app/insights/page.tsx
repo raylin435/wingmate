@@ -100,7 +100,7 @@ export default function InsightsPage() {
             }
           />
           <p className="mb-5 rounded-lg bg-warn/5 px-3 py-2 text-xs text-warn ring-1 ring-warn/20">
-            Simulated synthetic users. These numbers come from a simulation over fictional personas, not real people.
+            Simulated users. These numbers come from a simulation over the demo personas (all fictional except Cici), not real usage.
           </p>
           {simError && <ErrorBanner message={simError} onRetry={simulate} />}
           {!sim && !simError && (

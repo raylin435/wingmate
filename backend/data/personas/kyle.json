@@ -1,40 +1,38 @@
 {
-  "id": "ash",
-  "first_name": "Ash",
-  "alias": "Zine Wanderer",
+  "id": "kyle",
+  "first_name": "Kyle",
+  "alias": "soma.lifts",
   "age": 28,
-  "gender": "nonbinary",
+  "gender": "man",
   "seeking": {
     "genders": [
-      "man",
-      "woman",
-      "nonbinary"
+      "man"
     ],
-    "min_age": 25,
-    "max_age": 35
+    "min_age": 26,
+    "max_age": 34
   },
-  "neighborhood": "Mission",
-  "tagline": "Zine maker, bouldering regular, bakery scout.",
-  "avatar_color": "#9A8C98",
+  "neighborhood": "SoMa",
+  "tagline": "Fitness coach, football obsessive, secret poet.",
+  "avatar_color": "#2A9D8F",
   "attributes": {
     "smokes": false,
     "wants_kids": "no",
-    "drinks": "socially",
-    "pets": "has_cat",
+    "drinks": "often",
+    "pets": "none",
     "religion_important": false,
-    "early_bird": false
+    "early_bird": true
   },
   "dealbreakers": [],
   "interests": [
-    "zine fairs",
-    "bouldering",
-    "bakeries",
-    "thrifting"
+    "lifting",
+    "football",
+    "podcasts",
+    "brunch"
   ],
   "free_slots": [
-    "2026-11-21T18:00",
-    "2026-11-22T11:00",
-    "2026-11-24T19:00"
+    "2026-11-21T19:00",
+    "2026-11-23T19:00",
+    "2026-11-27T19:00"
   ],
   "chat": [
     {
@@ -43,7 +41,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a graphic designer who makes zines. A good week has bouldering, a bakery crawl, and a zine fair."
+      "text": "I'm a fitness coach. A good week has lifting, football, and brunch."
     },
     {
       "role": "assistant",
@@ -51,7 +49,7 @@
     },
     {
       "role": "user",
-      "text": "I make zines on Fridays and boulder on Saturdays."
+      "text": "I lift on Saturdays and watch football on Sundays."
     },
     {
       "role": "assistant",
@@ -59,7 +57,7 @@
     },
     {
       "role": "user",
-      "text": "I plan weekends around bakeries and thrift stores."
+      "text": "I'll eat brunch every weekend."
     },
     {
       "role": "assistant",
@@ -67,7 +65,7 @@
     },
     {
       "role": "user",
-      "text": "Zines, bouldering, and thrifting."
+      "text": "Podcasts, poetry, and trying new restaurants."
     },
     {
       "role": "assistant",
@@ -75,7 +73,7 @@
     },
     {
       "role": "user",
-      "text": "Design work is flexible."
+      "text": "Coaching hours start at five."
     },
     {
       "role": "assistant",
@@ -83,7 +81,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a drink with friends."
+      "text": "I drink a few nights a week."
     },
     {
       "role": "assistant",
@@ -107,7 +105,7 @@
     },
     {
       "role": "user",
-      "text": "I have a cat named Pixel Dust."
+      "text": "No pets."
     },
     {
       "role": "assistant",
@@ -123,7 +121,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a night owl."
+      "text": "I'm up at five."
     },
     {
       "role": "assistant",
@@ -131,7 +129,7 @@
     },
     {
       "role": "user",
-      "text": "I'm open to any gender, I want someone creative and kind."
+      "text": "I want someone fun and driven who likes the gym."
     },
     {
       "role": "assistant",
@@ -139,7 +137,7 @@
     },
     {
       "role": "user",
-      "text": "I don't have hard dealbreakers."
+      "text": "I don't have any hard dealbreakers."
     },
     {
       "role": "assistant",
@@ -147,7 +145,7 @@
     },
     {
       "role": "user",
-      "text": "Saturday evening or Sunday morning work."
+      "text": "Saturday evening or Monday evening work."
     },
     {
       "role": "assistant",
@@ -157,20 +155,20 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Zines and bouldering",
-      "quote": "I make zines on Fridays and boulder on Saturdays",
+      "value": "Lifting and football",
+      "quote": "I lift on Saturdays and watch football on Sundays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Bakeries and thrift stores",
-      "quote": "I plan weekends around bakeries and thrift stores",
+      "value": "Brunch and burgers",
+      "quote": "I'll eat brunch every weekend",
       "share": "public"
     },
     {
       "field": "lifestyle",
-      "value": "Drinks socially",
-      "quote": "I'll have a drink with friends",
+      "value": "Drinks often",
+      "quote": "I drink a few nights a week",
       "share": "private"
     },
     {
@@ -193,26 +191,26 @@
     },
     {
       "field": "logistics",
-      "value": "Night owl",
-      "quote": "I'm a night owl",
+      "value": "Early bird",
+      "quote": "I'm up at five",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Open to any gender; wants creative partner",
-      "quote": "I'm open to any gender, I want someone creative and kind",
+      "value": "Wants fun, driven partner",
+      "quote": "I want someone fun and driven who likes the gym",
       "share": "public"
     },
     {
       "field": "dealbreaker",
       "value": "No hard dealbreakers",
-      "quote": "I don't have hard dealbreakers",
+      "quote": "I don't have any hard dealbreakers",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Saturday evening and Sunday morning",
-      "quote": "Saturday evening or Sunday morning work",
+      "value": "Free Saturday evening and Monday evening",
+      "quote": "Saturday evening or Monday evening work",
       "share": "public"
     }
   ]

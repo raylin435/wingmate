@@ -64,9 +64,9 @@ Tests: `cd backend && uv run pytest -q`
 - Experiment `matching_strategy` with a string parameter `strategy`: `vector_only` or `agent_predate`.
 
 ## Demo storyline
-Maya imports her ChatGPT export. Hundreds of conversations get filtered to the personal ones, and
-she approves the facts. Her agent searches the directory. Jordan looks perfect on paper, but his agent
-honestly says he smokes, which is Maya's deal-breaker, and her agent passes. Theo is a real match: both
+Rachel imports her ChatGPT export. Hundreds of conversations get filtered to the personal ones, and
+she approves the facts. Her agent searches the directory. Chris looks perfect on paper, but his agent
+honestly says he smokes, which is Rachel's deal-breaker, and her agent passes. Matt is a real match: both
 people accept, and the agents book a first date.
 
 The `/insights` page runs a simulation over the 30 synthetic personas, comparing vector-only

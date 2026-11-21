@@ -1,39 +1,45 @@
 {
-  "id": "eli",
-  "first_name": "Eli",
-  "alias": "Skatepark Eli",
+  "id": "kevin",
+  "first_name": "Kevin",
+  "alias": "noodlemap.sf",
   "age": 29,
   "gender": "man",
   "seeking": {
     "genders": [
-      "man",
-      "nonbinary"
+      "woman"
     ],
-    "min_age": 26,
-    "max_age": 35
+    "min_age": 25,
+    "max_age": 34
   },
-  "neighborhood": "Excelsior",
-  "tagline": "Bike mechanic and skater with a punk-show habit.",
-  "avatar_color": "#264653",
+  "neighborhood": "Inner Richmond",
+  "tagline": "UX researcher mapping every noodle shop in the city.",
+  "avatar_color": "#355070",
   "attributes": {
-    "smokes": true,
+    "smokes": false,
     "wants_kids": "unsure",
     "drinks": "socially",
-    "pets": "none",
+    "pets": "has_dog",
     "religion_important": false,
-    "early_bird": false
+    "early_bird": true
   },
-  "dealbreakers": [],
+  "dealbreakers": [
+    {
+      "attr": "smokes",
+      "equals": true,
+      "label": "smoking"
+    }
+  ],
   "interests": [
-    "skating",
+    "mountain biking",
+    "climbing",
     "ramen",
-    "bike rides",
-    "punk shows"
+    "dumplings",
+    "film photography"
   ],
   "free_slots": [
-    "2026-11-21T19:00",
-    "2026-11-24T19:00",
-    "2026-11-25T19:00"
+    "2026-11-22T11:00",
+    "2026-11-25T19:00",
+    "2026-11-27T18:30"
   ],
   "chat": [
     {
@@ -42,7 +48,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a bike mechanic. A good week has skating, a punk show, and ramen."
+      "text": "I'm a UX researcher who plans weekends around ramen maps. A good week includes a climb, a long bike ride, and a new noodle spot."
     },
     {
       "role": "assistant",
@@ -50,7 +56,7 @@
     },
     {
       "role": "user",
-      "text": "I skate on Saturdays and go to a punk show most Sundays."
+      "text": "I'm on my mountain bike or at the climbing gym every weekend, then ramen."
     },
     {
       "role": "assistant",
@@ -58,7 +64,7 @@
     },
     {
       "role": "user",
-      "text": "I'll eat ramen and burritos all week."
+      "text": "I keep a spreadsheet of every ramen and dumpling place I've tried. Eighty-four and counting."
     },
     {
       "role": "assistant",
@@ -66,7 +72,7 @@
     },
     {
       "role": "user",
-      "text": "Bike rides, skating, and zines."
+      "text": "Film photography, mountain biking, and quiet live jazz at small clubs."
     },
     {
       "role": "assistant",
@@ -74,7 +80,7 @@
     },
     {
       "role": "user",
-      "text": "Shop hours are flexible."
+      "text": "Hybrid work and lots of energy after hours. I'd love midweek dates."
     },
     {
       "role": "assistant",
@@ -82,7 +88,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a beer at shows."
+      "text": "I drink sake or a beer with food, maybe once a week."
     },
     {
       "role": "assistant",
@@ -90,7 +96,7 @@
     },
     {
       "role": "user",
-      "text": "I vape sometimes, mostly when I'm skating with friends."
+      "text": "I don't smoke or vape."
     },
     {
       "role": "assistant",
@@ -98,7 +104,7 @@
     },
     {
       "role": "user",
-      "text": "I'm not sure about kids."
+      "text": "I'm genuinely unsure about kids, I'd want to talk about it."
     },
     {
       "role": "assistant",
@@ -106,7 +112,7 @@
     },
     {
       "role": "user",
-      "text": "No pets."
+      "text": "I have a shiba named Mochi, a cranky little guy."
     },
     {
       "role": "assistant",
@@ -114,7 +120,7 @@
     },
     {
       "role": "user",
-      "text": "Religion isn't important to me."
+      "text": "Religion isn't important to me, though I like the New Year traditions."
     },
     {
       "role": "assistant",
@@ -122,7 +128,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a night owl."
+      "text": "I'm usually up at six for the first ride."
     },
     {
       "role": "assistant",
@@ -130,7 +136,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone easygoing who doesn't mind loud shows."
+      "text": "I want someone adventurous and curious about food who doesn't mind a long bike ride."
     },
     {
       "role": "assistant",
@@ -138,7 +144,7 @@
     },
     {
       "role": "user",
-      "text": "I don't have hard dealbreakers."
+      "text": "Cigarette smoke is a dealbreaker, my asthma flares up."
     },
     {
       "role": "assistant",
@@ -146,7 +152,7 @@
     },
     {
       "role": "user",
-      "text": "Saturday evening, Tuesday evening or Wednesday evening work."
+      "text": "Sunday late morning and Wednesday evening work for me."
     },
     {
       "role": "assistant",
@@ -156,32 +162,32 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Skating and punk shows",
-      "quote": "I skate on Saturdays and go to a punk show most Sundays",
+      "value": "Mountain biking and climbing",
+      "quote": "I'm on my mountain bike or at the climbing gym every weekend",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Ramen and burritos",
-      "quote": "I'll eat ramen and burritos all week",
+      "value": "Ramen and dumplings",
+      "quote": "I keep a spreadsheet of every ramen and dumpling place I've tried",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I'll have a beer at shows",
+      "quote": "I drink sake or a beer with food, maybe once a week",
       "share": "private"
     },
     {
       "field": "lifestyle",
-      "value": "Vapes sometimes",
-      "quote": "I vape sometimes, mostly when I'm skating with friends",
+      "value": "Does not smoke",
+      "quote": "I don't smoke or vape",
       "share": "private"
     },
     {
       "field": "value",
       "value": "Unsure about kids",
-      "quote": "I'm not sure about kids",
+      "quote": "I'm genuinely unsure about kids",
       "share": "private"
     },
     {
@@ -192,26 +198,26 @@
     },
     {
       "field": "logistics",
-      "value": "Night owl",
-      "quote": "I'm a night owl",
+      "value": "Early bird",
+      "quote": "I'm usually up at six for the first ride",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants easygoing, loud partner",
-      "quote": "I want someone easygoing who doesn't mind loud shows",
+      "value": "Wants adventurous foodie",
+      "quote": "I want someone adventurous and curious about food who doesn't mind a long bike ride",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "No hard dealbreakers",
-      "quote": "I don't have hard dealbreakers",
+      "value": "Smoke bothers him",
+      "quote": "Cigarette smoke is a dealbreaker, my asthma flares up",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Saturday evening, Tuesday and Wednesday evening",
-      "quote": "Saturday evening, Tuesday evening or Wednesday evening work",
+      "value": "Free Sunday morning and Wednesday evening",
+      "quote": "Sunday late morning and Wednesday evening work for me",
       "share": "public"
     }
   ]

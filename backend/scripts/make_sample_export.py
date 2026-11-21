@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Generates synthetic chat-history exports for Maya (fictional) in the ChatGPT and Claude formats.
+"""Generates synthetic chat-history exports for Rachel (fictional) in the ChatGPT and Claude formats.
 
 Run:  python3 scripts/make_sample_export.py
-Writes data/exports/maya_chatgpt_conversations.json and data/exports/maya_claude_conversations.json
+Writes data/exports/rachel_chatgpt_conversations.json and data/exports/rachel_claude_conversations.json
 """
 import datetime as dt
 import json
@@ -65,7 +65,7 @@ IRRELEVANT = [
 ]
 
 # --------------------------------------------------------------------------
-# ~15 personal conversations consistent with Maya's persona (plus new details)
+# ~15 personal conversations consistent with Rachel's persona (plus new details)
 # --------------------------------------------------------------------------
 PERSONAL = [
     ("Trail half marathon training plan", [
@@ -204,9 +204,9 @@ def main():
     for j, (t, m) in enumerate(PERSONAL):
         items.insert(min(len(items), 2 + j * (step + 1)), (t, m, True))
     convs = [chatgpt_conv(i, t, m, ts(i)) for i, (t, m, _) in enumerate(items)]
-    (OUT / "maya_chatgpt_conversations.json").write_text(json.dumps(convs, indent=2, ensure_ascii=False) + "\n")
+    (OUT / "rachel_chatgpt_conversations.json").write_text(json.dumps(convs, indent=2, ensure_ascii=False) + "\n")
     claude = [claude_conv(i, t, m, ts(i, base=1_772_000_000.0, step=86_400 * 9)) for i, (t, m) in enumerate(CLAUDE)]
-    (OUT / "maya_claude_conversations.json").write_text(json.dumps(claude, indent=2, ensure_ascii=False) + "\n")
+    (OUT / "rachel_claude_conversations.json").write_text(json.dumps(claude, indent=2, ensure_ascii=False) + "\n")
     print(f"chatgpt: {len(convs)} conversations ({len(PERSONAL)} personal), claude: {len(claude)}")
 
 

@@ -3,6 +3,7 @@ Only the user's own messages are used, and only personal conversations are kept.
 
 import io
 import json
+import re
 import zipfile
 from typing import Any
 
@@ -84,7 +85,26 @@ def import_paste(pid: str, text: str) -> dict[str, Any]:
     if not text:
         raise ValueError("Paste the answer from ChatGPT or Claude first.")
     audit.log(run_id, "memory_pasted", f"human:{pid}", None, None, chars=len(text))
-    facts, dropped = core.extract_facts(pid, [("Pasted assistant memory", text)], "import", run_id)
+    sections = split_sections(text)
+    facts, dropped = core.extract_facts(pid, sections, "import", run_id)
     integrations.track(pid, "memory_imported", source="paste", facts=len(facts), dropped=dropped)
     return {"run_id": run_id, "source": "paste", "conversations_seen": 1, "conversations_kept": 1,
-            "messages_used": 1, "facts": facts, "dropped_untraceable": dropped}
+            "messages_used": len(sections), "facts": facts, "dropped_untraceable": dropped}
+
+
+def split_sections(text: str) -> list[tuple[str, str]]:
+    """Split a pasted Markdown portrait on its #/## headings so long pastes chunk cleanly and each
+    fact can name the section it came from. Text without headings stays one section."""
+    sections: list[tuple[str, str]] = []
+    title, body = "Pasted assistant memory", []
+    for line in text.splitlines():
+        heading = re.match(r"^#{1,2}\s+(.+?)\s*$", line)
+        if heading:
+            if "\n".join(body).strip():
+                sections.append((title, "\n".join(body).strip()))
+            title, body = heading.group(1), []
+        else:
+            body.append(line)
+    if "\n".join(body).strip():
+        sections.append((title, "\n".join(body).strip()))
+    return sections or [("Pasted assistant memory", text)]

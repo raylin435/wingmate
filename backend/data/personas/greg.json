@@ -1,44 +1,45 @@
 {
-  "id": "tessa",
-  "first_name": "Tessa",
-  "alias": "Salt & Matcha",
-  "age": 26,
-  "gender": "woman",
+  "id": "greg",
+  "first_name": "Greg",
+  "alias": "catan_after_dark",
+  "age": 32,
+  "gender": "man",
   "seeking": {
     "genders": [
-      "man"
+      "woman"
     ],
-    "min_age": 25,
-    "max_age": 33
+    "min_age": 27,
+    "max_age": 35
   },
-  "neighborhood": "Outer Sunset",
-  "tagline": "Vet tech who surfs at dawn and dreams of a camper van.",
-  "avatar_color": "#E07A5F",
+  "neighborhood": "Mission",
+  "tagline": "Data analyst with a shelf of board games and strong latte opinions.",
+  "avatar_color": "#F2CC8F",
   "attributes": {
     "smokes": false,
-    "wants_kids": "yes",
+    "wants_kids": "no",
     "drinks": "socially",
-    "pets": "has_dog",
+    "pets": "has_cat",
     "religion_important": false,
-    "early_bird": true
+    "early_bird": false
   },
   "dealbreakers": [
     {
-      "attr": "smokes",
-      "equals": true,
-      "label": "smoking"
+      "attr": "wants_kids",
+      "equals": "yes",
+      "label": "wanting kids"
     }
   ],
   "interests": [
-    "surfing",
-    "matcha",
-    "camping",
-    "vintage shopping"
+    "board games",
+    "comedy",
+    "dumplings",
+    "coffee",
+    "pickleball"
   ],
   "free_slots": [
-    "2026-11-21T18:00",
-    "2026-11-22T09:00",
-    "2026-11-24T18:30"
+    "2026-11-21T19:00",
+    "2026-11-25T18:30",
+    "2026-11-27T19:30"
   ],
   "chat": [
     {
@@ -47,7 +48,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a veterinary tech and I surf before work. A good week has three dawn sessions, a camping trip planned, and one night out."
+      "text": "I'm a data analyst who collects board games the way other people collect shoes. A good week is a game night, a standup show, and a very long coffee."
     },
     {
       "role": "assistant",
@@ -55,7 +56,7 @@
     },
     {
       "role": "user",
-      "text": "I paddle out at Ocean Beach at six every weekend and then grab matcha."
+      "text": "I host board game night every Saturday, usually a heavy euro, and Sundays I sleep in and wander the Mission for coffee."
     },
     {
       "role": "assistant",
@@ -63,7 +64,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a matcha person and a burrito snob."
+      "text": "I'll go for dumplings any time and I'm a latte art snob. Dessert first, always."
     },
     {
       "role": "assistant",
@@ -71,7 +72,7 @@
     },
     {
       "role": "user",
-      "text": "Camping, thrift shopping, and long beach walks with my dog."
+      "text": "Standup comedy, pickleball badly, and baking sourdough. I try to catch a show every week."
     },
     {
       "role": "assistant",
@@ -79,7 +80,7 @@
     },
     {
       "role": "user",
-      "text": "Vet clinic shifts end at five. I have energy for dates."
+      "text": "I work hybrid so I have plenty of energy. Dating is a priority this year."
     },
     {
       "role": "assistant",
@@ -87,7 +88,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have a beer at the beach bonfire, just casually."
+      "text": "I'll have a cocktail with friends once or twice a week."
     },
     {
       "role": "assistant",
@@ -95,7 +96,7 @@
     },
     {
       "role": "user",
-      "text": "I don't smoke or vape, and I try to keep my lungs happy for surfing."
+      "text": "I don't smoke or vape. Never have."
     },
     {
       "role": "assistant",
@@ -103,7 +104,7 @@
     },
     {
       "role": "user",
-      "text": "I want kids someday and I'm not shy about it."
+      "text": "I don't want kids, I've known that since my twenties. I'm happy being the fun uncle."
     },
     {
       "role": "assistant",
@@ -111,7 +112,7 @@
     },
     {
       "role": "user",
-      "text": "I have a dog named Kelp, a lab mix who sort of surfs."
+      "text": "I have a cat named Pixel. Not a dog person, but dogs are fine in small doses."
     },
     {
       "role": "assistant",
@@ -119,7 +120,7 @@
     },
     {
       "role": "user",
-      "text": "Religion isn't important to me, but I care about kindness to animals."
+      "text": "Religion isn't important to me. Loyalty and a sense of humor matter."
     },
     {
       "role": "assistant",
@@ -127,7 +128,7 @@
     },
     {
       "role": "user",
-      "text": "I'm in bed by nine and up at five."
+      "text": "I'm a total night owl, my best thinking happens after ten."
     },
     {
       "role": "assistant",
@@ -135,7 +136,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone outdoorsy and kind who loves dogs."
+      "text": "I want someone funny and playful who will take game night seriously."
     },
     {
       "role": "assistant",
@@ -143,7 +144,7 @@
     },
     {
       "role": "user",
-      "text": "I can't date a smoker."
+      "text": "If someone really wants kids that's a dealbreaker for me, just because I'm sure about my answer."
     },
     {
       "role": "assistant",
@@ -151,7 +152,7 @@
     },
     {
       "role": "user",
-      "text": "Saturday evening and Sunday morning work."
+      "text": "Saturday after seven, Wednesday evening or Friday after six work best."
     },
     {
       "role": "assistant",
@@ -161,20 +162,20 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Surfing at dawn",
-      "quote": "I paddle out at Ocean Beach at six every weekend",
+      "value": "Hosts board game nights",
+      "quote": "I host board game night every Saturday",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Matcha and burritos",
-      "quote": "I'm a matcha person and a burrito snob",
+      "value": "Dumplings and coffee",
+      "quote": "I'll go for dumplings any time and I'm a latte art snob",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks socially",
-      "quote": "I'll have a beer at the beach bonfire, just casually",
+      "quote": "I'll have a cocktail with friends once or twice a week",
       "share": "private"
     },
     {
@@ -185,8 +186,8 @@
     },
     {
       "field": "value",
-      "value": "Wants kids",
-      "quote": "I want kids someday and I'm not shy about it",
+      "value": "Does not want kids",
+      "quote": "I don't want kids, I've known that since my twenties",
       "share": "private"
     },
     {
@@ -197,26 +198,26 @@
     },
     {
       "field": "logistics",
-      "value": "Early bird",
-      "quote": "I'm in bed by nine and up at five",
+      "value": "Night owl",
+      "quote": "I'm a total night owl, my best thinking happens after ten",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants outdoorsy, kind partner",
-      "quote": "I want someone outdoorsy and kind who loves dogs",
+      "value": "Wants funny, playful partner",
+      "quote": "I want someone funny and playful who will take game night seriously",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "Dealbreaker: smoking",
-      "quote": "I can't date a smoker",
+      "value": "Dealbreaker: wants kids",
+      "quote": "If someone really wants kids that's a dealbreaker for me",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Saturday evening and Sunday morning",
-      "quote": "Saturday evening and Sunday morning work",
+      "value": "Free Saturday evening, Wednesday evening, Friday evening",
+      "quote": "Saturday after seven, Wednesday evening or Friday after six",
       "share": "public"
     }
   ]

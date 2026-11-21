@@ -1,44 +1,39 @@
 {
-  "id": "diego",
-  "first_name": "Diego",
-  "alias": "Salsa Sunday",
-  "age": 28,
+  "id": "isaiah",
+  "first_name": "Isaiah",
+  "alias": "basslinesf",
+  "age": 26,
   "gender": "man",
   "seeking": {
     "genders": [
-      "woman"
+      "man",
+      "nonbinary"
     ],
     "min_age": 25,
-    "max_age": 34
+    "max_age": 32
   },
-  "neighborhood": "Mission",
-  "tagline": "Bar manager by night, hiker by day, loud laugher always.",
-  "avatar_color": "#B56576",
+  "neighborhood": "Western Addition",
+  "tagline": "DJ and gallery assistant chasing the perfect bassline.",
+  "avatar_color": "#F4A261",
   "attributes": {
     "smokes": false,
-    "wants_kids": "yes",
+    "wants_kids": "unsure",
     "drinks": "often",
-    "pets": "has_dog",
+    "pets": "none",
     "religion_important": false,
     "early_bird": false
   },
-  "dealbreakers": [
-    {
-      "attr": "smokes",
-      "equals": true,
-      "label": "smoking"
-    }
-  ],
+  "dealbreakers": [],
   "interests": [
-    "salsa dancing",
-    "hiking",
-    "tacos",
-    "live music"
+    "DJing",
+    "art shows",
+    "synths",
+    "dancing"
   ],
   "free_slots": [
-    "2026-11-22T14:00",
-    "2026-11-23T18:00",
-    "2026-11-24T18:00"
+    "2026-11-21T20:00",
+    "2026-11-24T20:00",
+    "2026-11-27T20:00"
   ],
   "chat": [
     {
@@ -47,7 +42,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a bar manager, so I live by the clock when everyone else is off. A good week has a salsa class, tacos, and a day by the ocean."
+      "text": "I'm a DJ and gallery assistant. A good week has a set, an art show, and dancing."
     },
     {
       "role": "assistant",
@@ -55,7 +50,7 @@
     },
     {
       "role": "user",
-      "text": "I go salsa dancing Saturday night and hike Lands End on Sunday to recover."
+      "text": "I DJ on Saturday nights and dance on Fridays."
     },
     {
       "role": "assistant",
@@ -63,7 +58,7 @@
     },
     {
       "role": "user",
-      "text": "Al pastor tacos from a truck at 1am are my happy place. I also make my abuela's pozole."
+      "text": "I love late-night ramen and dumplings."
     },
     {
       "role": "assistant",
@@ -71,7 +66,7 @@
     },
     {
       "role": "user",
-      "text": "Salsa classes, pickup volleyball, live Latin music, and the occasional jazz night."
+      "text": "Synths, art shows, and thrifting."
     },
     {
       "role": "assistant",
@@ -79,7 +74,7 @@
     },
     {
       "role": "user",
-      "text": "Bar hours are late, but I have Mondays and Tuesdays off."
+      "text": "Gallery hours are flexible."
     },
     {
       "role": "assistant",
@@ -87,7 +82,7 @@
     },
     {
       "role": "user",
-      "text": "I work in bars so I drink more than most, a few nights a week."
+      "text": "I go out and drink a few nights a week."
     },
     {
       "role": "assistant",
@@ -95,7 +90,7 @@
     },
     {
       "role": "user",
-      "text": "I quit cigarettes two years ago and I don't smoke."
+      "text": "I don't smoke."
     },
     {
       "role": "assistant",
@@ -103,7 +98,7 @@
     },
     {
       "role": "user",
-      "text": "I want kids eventually, I'm close to my big family."
+      "text": "I'm not sure about kids."
     },
     {
       "role": "assistant",
@@ -111,7 +106,7 @@
     },
     {
       "role": "user",
-      "text": "I have a rescue dog, Chispa, who hates salsa music."
+      "text": "No pets."
     },
     {
       "role": "assistant",
@@ -119,7 +114,7 @@
     },
     {
       "role": "user",
-      "text": "Religion isn't important to me, but I love family traditions."
+      "text": "Religion isn't important to me."
     },
     {
       "role": "assistant",
@@ -127,7 +122,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a night owl by profession and I sleep in until ten."
+      "text": "I'm a night owl."
     },
     {
       "role": "assistant",
@@ -135,7 +130,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone warm, playful and not afraid to dance badly."
+      "text": "I want someone creative and fun who loves music."
     },
     {
       "role": "assistant",
@@ -143,7 +138,7 @@
     },
     {
       "role": "user",
-      "text": "I can't date a smoker. I quit, so I'm sensitive to it."
+      "text": "I don't have hard dealbreakers."
     },
     {
       "role": "assistant",
@@ -151,7 +146,7 @@
     },
     {
       "role": "user",
-      "text": "Sunday afternoon, Monday and Tuesday evenings are free."
+      "text": "Saturday night or Tuesday night work."
     },
     {
       "role": "assistant",
@@ -161,32 +156,32 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Salsa dancing and hiking",
-      "quote": "I go salsa dancing Saturday night and hike Lands End on Sunday",
+      "value": "DJing and dancing",
+      "quote": "I DJ on Saturday nights and dance on Fridays",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Tacos and mariscos",
-      "quote": "Al pastor tacos from a truck at 1am are my happy place",
+      "value": "Late-night eats",
+      "quote": "I love late-night ramen and dumplings",
       "share": "public"
     },
     {
       "field": "lifestyle",
       "value": "Drinks often",
-      "quote": "I work in bars so I drink more than most, a few nights a week",
+      "quote": "I go out and drink a few nights a week",
       "share": "private"
     },
     {
       "field": "lifestyle",
       "value": "Does not smoke",
-      "quote": "I quit cigarettes two years ago and I don't smoke",
+      "quote": "I don't smoke",
       "share": "private"
     },
     {
       "field": "value",
-      "value": "Wants kids",
-      "quote": "I want kids eventually, I'm close to my big family",
+      "value": "Unsure about kids",
+      "quote": "I'm not sure about kids",
       "share": "private"
     },
     {
@@ -198,25 +193,25 @@
     {
       "field": "logistics",
       "value": "Night owl",
-      "quote": "I'm a night owl by profession",
+      "quote": "I'm a night owl",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants warm, playful partner",
-      "quote": "I want someone warm, playful and not afraid to dance badly",
+      "value": "Wants creative, fun partner",
+      "quote": "I want someone creative and fun who loves music",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "Dealbreaker: smoking",
-      "quote": "I can't date a smoker",
+      "value": "No hard dealbreakers",
+      "quote": "I don't have hard dealbreakers",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Sunday afternoon, Monday and Tuesday evenings",
-      "quote": "Sunday afternoon, Monday and Tuesday evenings are free",
+      "value": "Free Saturday night and Tuesday night",
+      "quote": "Saturday night or Tuesday night work",
       "share": "public"
     }
   ]

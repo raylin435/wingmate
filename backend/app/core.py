@@ -62,7 +62,8 @@ def load_personas() -> None:
     for pid, p in PERSONAS.items():
         p["card_summary"] = summaries[pid]
         DIRECTORY.upsert(card_for(p), vecs[pid])
-    audit.log(run_id, "directory_loaded", "system", backend=DIRECTORY.name, agents=len(PERSONAS))
+    pruned = DIRECTORY.prune(set(PERSONAS))
+    audit.log(run_id, "directory_loaded", "system", backend=DIRECTORY.name, agents=len(PERSONAS), pruned=pruned)
     print(f"[core] loaded {len(PERSONAS)} personas into {DIRECTORY.name} directory")
 
 

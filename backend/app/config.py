@@ -37,8 +37,8 @@ PII_MODEL = env("SIE_PII_MODEL", "numind/NuNER_Zero")
 # made-up handles with names revealed only after both people accept.
 REAL_NAMES = (env("REAL_NAMES", "1") or "1").lower() not in ("0", "false", "no", "off")
 
-DEMO_PERSONA = "maya"
-WARM_MEMORY = (env("WARM_MEMORY", "maya,theo,jordan,ben,kenji,diego") or "").split(",")
+DEMO_PERSONA = "rachel"
+WARM_MEMORY = (env("WARM_MEMORY", "rachel,matt,chris,greg,kevin,javier") or "").split(",")
 TIMEZONE = "America/Los_Angeles"
 
 DEFAULT_POLICY = {

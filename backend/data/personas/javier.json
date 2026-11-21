@@ -1,38 +1,44 @@
 {
-  "id": "andre",
-  "first_name": "Andre",
-  "alias": "Vinyl & Veg",
-  "age": 31,
+  "id": "javier",
+  "first_name": "Javier",
+  "alias": "missionbartender",
+  "age": 28,
   "gender": "man",
   "seeking": {
     "genders": [
-      "man"
+      "woman"
     ],
-    "min_age": 28,
-    "max_age": 37
+    "min_age": 25,
+    "max_age": 34
   },
-  "neighborhood": "Duboce Triangle",
-  "tagline": "Pastry-curious hiker with too many records.",
-  "avatar_color": "#355070",
+  "neighborhood": "Mission",
+  "tagline": "Bar manager by night, hiker by day, loud laugher always.",
+  "avatar_color": "#B56576",
   "attributes": {
     "smokes": false,
     "wants_kids": "yes",
-    "drinks": "socially",
-    "pets": "none",
+    "drinks": "often",
+    "pets": "has_dog",
     "religion_important": false,
-    "early_bird": true
+    "early_bird": false
   },
-  "dealbreakers": [],
+  "dealbreakers": [
+    {
+      "attr": "smokes",
+      "equals": true,
+      "label": "smoking"
+    }
+  ],
   "interests": [
-    "cooking",
+    "salsa dancing",
     "hiking",
-    "vinyl records",
-    "farmers markets"
+    "tacos",
+    "live music"
   ],
   "free_slots": [
-    "2026-11-22T11:00",
-    "2026-11-24T19:00",
-    "2026-11-27T18:00"
+    "2026-11-22T14:00",
+    "2026-11-23T18:00",
+    "2026-11-24T18:00"
   ],
   "chat": [
     {
@@ -41,7 +47,7 @@
     },
     {
       "role": "user",
-      "text": "I'm a product manager who cooks when stressed. A good week has a hike, a farmers market run, and a vinyl night."
+      "text": "I'm a bar manager, so I live by the clock when everyone else is off. A good week has a salsa class, tacos, and a day by the ocean."
     },
     {
       "role": "assistant",
@@ -49,7 +55,7 @@
     },
     {
       "role": "user",
-      "text": "I hike on Saturdays and hit the farmers market on Sundays."
+      "text": "I go salsa dancing Saturday night and hike Lands End on Sunday to recover."
     },
     {
       "role": "assistant",
@@ -57,7 +63,7 @@
     },
     {
       "role": "user",
-      "text": "I cook a big dinner for friends most Sundays."
+      "text": "Al pastor tacos from a truck at 1am are my happy place. I also make my abuela's pozole."
     },
     {
       "role": "assistant",
@@ -65,7 +71,7 @@
     },
     {
       "role": "user",
-      "text": "Vinyl collecting, hiking, and cooking classes."
+      "text": "Salsa classes, pickup volleyball, live Latin music, and the occasional jazz night."
     },
     {
       "role": "assistant",
@@ -73,7 +79,7 @@
     },
     {
       "role": "user",
-      "text": "Steady hours. I have energy for dating."
+      "text": "Bar hours are late, but I have Mondays and Tuesdays off."
     },
     {
       "role": "assistant",
@@ -81,7 +87,7 @@
     },
     {
       "role": "user",
-      "text": "I'll have wine with dinner, a few nights a week."
+      "text": "I work in bars so I drink more than most, a few nights a week."
     },
     {
       "role": "assistant",
@@ -89,7 +95,7 @@
     },
     {
       "role": "user",
-      "text": "I don't smoke."
+      "text": "I quit cigarettes two years ago and I don't smoke."
     },
     {
       "role": "assistant",
@@ -97,7 +103,7 @@
     },
     {
       "role": "user",
-      "text": "I want kids, ideally through adoption."
+      "text": "I want kids eventually, I'm close to my big family."
     },
     {
       "role": "assistant",
@@ -105,7 +111,7 @@
     },
     {
       "role": "user",
-      "text": "No pets right now."
+      "text": "I have a rescue dog, Chispa, who hates salsa music."
     },
     {
       "role": "assistant",
@@ -113,7 +119,7 @@
     },
     {
       "role": "user",
-      "text": "Religion isn't important to me."
+      "text": "Religion isn't important to me, but I love family traditions."
     },
     {
       "role": "assistant",
@@ -121,7 +127,7 @@
     },
     {
       "role": "user",
-      "text": "I'm up at six."
+      "text": "I'm a night owl by profession and I sleep in until ten."
     },
     {
       "role": "assistant",
@@ -129,7 +135,7 @@
     },
     {
       "role": "user",
-      "text": "I want someone kind and curious who likes cooking with me."
+      "text": "I want someone warm, playful and not afraid to dance badly."
     },
     {
       "role": "assistant",
@@ -137,7 +143,7 @@
     },
     {
       "role": "user",
-      "text": "I don't have hard dealbreakers except cruelty."
+      "text": "I can't date a smoker. I quit, so I'm sensitive to it."
     },
     {
       "role": "assistant",
@@ -145,7 +151,7 @@
     },
     {
       "role": "user",
-      "text": "Sunday morning or Tuesday evening work."
+      "text": "Sunday afternoon, Monday and Tuesday evenings are free."
     },
     {
       "role": "assistant",
@@ -155,32 +161,32 @@
   "facts": [
     {
       "field": "interest",
-      "value": "Hiking and farmers markets",
-      "quote": "I hike on Saturdays and hit the farmers market on Sundays",
+      "value": "Salsa dancing and hiking",
+      "quote": "I go salsa dancing Saturday night and hike Lands End on Sunday",
       "share": "public"
     },
     {
       "field": "interest",
-      "value": "Cooking from scratch",
-      "quote": "I cook a big dinner for friends most Sundays",
+      "value": "Tacos and mariscos",
+      "quote": "Al pastor tacos from a truck at 1am are my happy place",
       "share": "public"
     },
     {
       "field": "lifestyle",
-      "value": "Drinks socially",
-      "quote": "I'll have wine with dinner, a few nights a week",
+      "value": "Drinks often",
+      "quote": "I work in bars so I drink more than most, a few nights a week",
       "share": "private"
     },
     {
       "field": "lifestyle",
       "value": "Does not smoke",
-      "quote": "I don't smoke",
+      "quote": "I quit cigarettes two years ago and I don't smoke",
       "share": "private"
     },
     {
       "field": "value",
       "value": "Wants kids",
-      "quote": "I want kids, ideally through adoption",
+      "quote": "I want kids eventually, I'm close to my big family",
       "share": "private"
     },
     {
@@ -191,26 +197,26 @@
     },
     {
       "field": "logistics",
-      "value": "Early bird",
-      "quote": "I'm up at six",
+      "value": "Night owl",
+      "quote": "I'm a night owl by profession",
       "share": "public"
     },
     {
       "field": "seeking",
-      "value": "Wants kind, curious partner",
-      "quote": "I want someone kind and curious who likes cooking with me",
+      "value": "Wants warm, playful partner",
+      "quote": "I want someone warm, playful and not afraid to dance badly",
       "share": "public"
     },
     {
       "field": "dealbreaker",
-      "value": "No hard dealbreakers",
-      "quote": "I don't have hard dealbreakers except cruelty",
+      "value": "Dealbreaker: smoking",
+      "quote": "I can't date a smoker",
       "share": "private"
     },
     {
       "field": "logistics",
-      "value": "Free Sunday morning and Tuesday evening",
-      "quote": "Sunday morning or Tuesday evening work",
+      "value": "Free Sunday afternoon, Monday and Tuesday evenings",
+      "quote": "Sunday afternoon, Monday and Tuesday evenings are free",
       "share": "public"
     }
   ]

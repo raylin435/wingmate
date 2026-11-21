@@ -1,13 +1,13 @@
 # Wingmate API contract
 
 Backend: FastAPI at `http://localhost:8000`, all routes under `/api`, CORS open for `http://localhost:3000`.
-Every response is JSON unless noted. IDs are lowercase slugs (`maya`, `jordan`).
+Every response is JSON unless noted. IDs are lowercase slugs (`rachel`, `chris`).
 
 ## Types
 
 ```ts
 type Fact = {
-  id: string;                 // "maya-f3"
+  id: string;                 // "rachel-f3"
   field: "value" | "interest" | "lifestyle" | "dealbreaker" | "logistics" | "seeking";
   value: string;              // short normalized statement, e.g. "Loves bouldering"
   quote: string;              // exact words from the owner's own messages
@@ -39,7 +39,7 @@ type AuditEvent = { id: number; run_id: string; ts: string; step: string; actor:
 
 | Method | Path | Body | Returns |
 |---|---|---|---|
-| GET | `/api/status` | | `{ sponsors: {sie, singlestore, cognee, statsig, amplitude: boolean}, demo_persona: "maya" }` |
+| GET | `/api/status` | | `{ sponsors: {sie, singlestore, cognee, statsig, amplitude: boolean}, demo_persona: "rachel" }` |
 | GET | `/api/personas` | | `PersonaSummary[]` |
 | GET | `/api/personas/{id}` | | `Persona` |
 | POST | `/api/personas/{id}/import/paste` | `{ text: string }` | `ImportResult` |
